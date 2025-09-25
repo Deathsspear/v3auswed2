@@ -2,7 +2,7 @@
 	s:STATE_SVEALAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = swedish
 				size = 1081208
 			}
 			create_pop = {
@@ -18,7 +18,7 @@
 	s:STATE_GOTALAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = swedish
 				size = 800208
 			}
 			create_pop = {
@@ -34,7 +34,7 @@
 	s:STATE_SCANIA = {
 		region_state:SWE = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = swedish
 				size = 512860
 			}
 			create_pop = {
@@ -46,7 +46,7 @@
 	s:STATE_NORRLAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = swedish
 				size = 289400
 			}
 			create_pop = {
@@ -62,7 +62,7 @@
 	s:STATE_GOTLAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = swedish
 				size = 33208
 			}
 		}
@@ -70,7 +70,7 @@
 	s:STATE_JUTLAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = danish
 				size = 548908
 			}
 		}
@@ -78,7 +78,7 @@
 	s:STATE_ZEALAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = danish
 				size = 647996
 			}
 			create_pop = {
@@ -94,7 +94,7 @@
 	s:STATE_WESTERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = norwegian
 				size = 546800
 			}
 		}
@@ -102,7 +102,7 @@
 	s:STATE_NORTHERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = norwegian
 				size = 284860
 			}
 			create_pop = {
@@ -118,7 +118,7 @@
 	s:STATE_EASTERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = norwegian
 				size = 345800
 			}
 			create_pop = {
@@ -130,11 +130,11 @@
 	s:STATE_ICELAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = icelandic
 				size = 63200
 			}
 			create_pop = {
-				culture = minority_scandinavian
+				culture = danish
 				size = 520
 			}
 		}
@@ -142,16 +142,16 @@
 	s:STATE_GREENLAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = minority_scandinavian
+				culture = danish
 				size = 410
 			}
 			create_pop = {
-				culture = minority_north_american
+				culture = inuit
 				religion = protestant
 				size = 9254
 			}
 			create_pop = {
-				culture = minority_north_american
+				culture = inuit
 				religion = animist
 				size = 1510
 			}
@@ -491,7 +491,7 @@
 				size = 167963
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = catalan
 				size = 145206
 			}
 			create_pop = {
@@ -800,7 +800,7 @@
 				size = 58129
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = basque
 				size = 60145
 			}
 			create_pop = {
@@ -1020,7 +1020,7 @@
 				size = 16000
 			}
 			create_pop = {
-				culture = minority_west_slavic
+				culture = czech
 				religion = catholic
 				size = 24000
 			}
@@ -1038,13 +1038,46 @@
 				size = 1499608
 			}
 			create_pop = {
-				culture = minority_west_slavic
+				culture = czech
 				religion = catholic
-				size = 2574808
+				pop_type = shopkeepers
+				size = 20000
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 75996
+				pop_type = shopkeepers
+				size = 5000
+			}
+			create_pop = {
+				culture = ashkenazi
+				pop_type = clerks
+				size = 15000
+			}
+			create_pop = {
+				culture = ashkenazi
+				pop_type = laborers
+				size = 30000
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				pop_type = soldiers
+				size = 30000
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				pop_type = clerks
+				size = 20000
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				size = 2504808
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 25996
 			}
 		}
 	}
@@ -1052,19 +1085,62 @@
 		region_state:AUS = {
 			create_pop = {
 				culture = south_german
-				size = 480408
+				size = 10000
+				pop_type = aristocrats
 			}
 			create_pop = {
-				culture = minority_west_slavic
-				religion = catholic
-				size = 1131996
+				culture = czech
+				size = 3500
+				pop_type = aristocrats
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 28000
+				pop_type = shopkeepers
+				size = 1000
 			}
 			create_pop = {
-				culture = minority_west_slavic
+				culture = ashkenazi
+				pop_type = clerks
+				size = 2000
+			}
+			create_pop = {
+				culture = ashkenazi
+				pop_type = laborers
+				size = 10000
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				pop_type = shopkeepers
+				size = 10000
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				pop_type = soldiers
+				size = 30000
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				pop_type = clerks
+				size = 5000
+			}
+			create_pop = {
+				culture = south_german
+				size = 470408
+			}
+			create_pop = {
+				culture = czech
+				religion = catholic
+				size = 1083496
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 15000
+			}
+			create_pop = {
+				culture = polish
 				size = 56004
 			}
 		}
@@ -1099,11 +1175,11 @@
 		region_state:AUS = {
 			create_pop = {
 				culture = south_german
-				size = 174100
+				size = 183000
 			}
 			create_pop = {
 				culture = north_italian
-				size = 5900
+				size = 308000
 			}
 		}
 	}
@@ -1119,7 +1195,7 @@
 				size = 104000
 			}
 			create_pop = {
-				culture = minority_west_slavic
+				culture = polish
 				size = 20000
 			}
 			create_pop = {
@@ -1366,7 +1442,7 @@
 				size = 44000
 			}
 			create_pop = {
-				culture = minority_west_slavic
+				culture = polish
 				size = 20000
 			}
 		}
@@ -1387,7 +1463,7 @@
 				size = 8000
 			}
 			create_pop = {
-				culture = minority_scandinavian
+				culture = danish
 				size = 20000
 			}
 		}
@@ -1408,7 +1484,7 @@
 				size = 200000
 			}
 			create_pop = {
-				culture = minority_scandinavian
+				culture = danish
 				size = 136404
 			}
 		}
@@ -1574,12 +1650,12 @@
 				culture = ashkenazi
 				size = 5072
 			}
-			create_pop = { # rough estimate of 200k minority_west_slavics in 1836
-				culture = minority_west_slavic
+			create_pop = { # rough estimate of 200k Sorbs in 1836
+				culture = sorb
 				size = 150106
 			}
 			create_pop = {
-				culture = minority_west_slavic
+				culture = sorb
 				religion = protestant
 				size = 50106
 			}
