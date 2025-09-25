@@ -1625,7 +1625,7 @@ WTU = { # Witu/Wituland/Sultanate of Pate in exile
 
 	tier = principality
 
-	cultures = { swahili }
+	cultures = { minority_east_african }
 	capital = STATE_KENYA
 }
 
@@ -1636,7 +1636,7 @@ MBS = { # Mombasa
 
 	tier = principality
 
-	cultures = { swahili }
+	cultures = { minority_east_african }
 	religion = ibadi			# the Mazrui were Ibadis /until/ the Busaidi conquest of Mombasa in 1837
 	capital = STATE_KENYA
 	is_named_from_capital = yes
@@ -1649,7 +1649,7 @@ AJR = { # Ajuran, also spelled Ajuuraan
 
 	tier = principality
 
-	cultures = { somali }
+	cultures = { minority_east_african }
 	religion = sunni
 	capital = STATE_KENYA
 }
@@ -1661,7 +1661,7 @@ AUL = { # Aulihan, also sometimes spelled Awlihan
 
 	tier = principality
 
-	cultures = { somali }
+	cultures = { minority_east_african }
 	religion = sunni
 	capital = STATE_KENYA
 }
@@ -1673,7 +1673,7 @@ MJK = { # Mijikenda
 
 	tier = principality
 
-	cultures = { lacustrine_bantu }
+	cultures = { minority_central_african }
 	capital = STATE_KENYA
 }
 
@@ -1684,7 +1684,7 @@ ORM = { # Orma
 
 	tier = principality
 
-	cultures = { oromo }
+	cultures = { minority_ethiopian }
 	religion = animist
 	capital = STATE_KENYA
 }
@@ -1696,7 +1696,7 @@ SKY = { # Sakuye
 
 	tier = principality
 
-	cultures = { oromo }
+	cultures = { minority_ethiopian }
 	religion = animist
 	capital = STATE_KENYA
 }
@@ -1708,7 +1708,7 @@ UTR = { # Utetera
 
 	tier = principality
 
-	cultures = { swahili }
+	cultures = { minority_east_african }
 	religion = ibadi
 	capital = STATE_CONGO_ORIENTALE # 'Lualaba' in-game
 }
@@ -1720,7 +1720,7 @@ OGD = { # Ogaden
 
 	tier = principality
 
-	cultures = { somali }
+	cultures = { minority_east_african }
 
 	capital = STATE_OROMIA
 }
@@ -1732,7 +1732,7 @@ QWR = { # Qwara, sometimes spelled 'Quara' in literature, or even 'Quoara' if yo
 
 	tier = principality
 
-	cultures = { amhara }
+	cultures = { minority_ethiopian }
 	capital = STATE_GONDER
 }
 
@@ -1743,7 +1743,7 @@ TGI = { # Tungi
 
 	tier = principality
 
-	cultures = { swahili }
+	cultures = { minority_east_african }
 	capital = STATE_MOCAMBIQUE
 }
 
@@ -1753,7 +1753,7 @@ WLT = {
 
 	tier = principality
 
-	cultures = { sidama }
+	cultures = { minority_ethiopian }
 	religion = oriental_orthodox
 	capital = STATE_AMHARA
 }
@@ -1764,7 +1764,7 @@ HDY = {
 
 	tier = principality
 
-	cultures = { oromo }
+	cultures = { minority_ethiopian }
 	religion = sunni
 	capital = STATE_AMHARA
 }
@@ -1775,7 +1775,7 @@ ARS = {
 
 	tier = principality
 
-	cultures = { oromo }
+	cultures = { minority_ethiopian }
 	religion = sunni
 	capital = STATE_OROMIA
 }
@@ -1786,7 +1786,7 @@ ANU = {
 
 	tier = principality
 
-	cultures = { luo }
+	cultures = { minority_east_african }
 	religion = animist
 	capital = STATE_AMHARA
 }
@@ -1797,7 +1797,7 @@ OMO = {
 
 	tier = principality
 
-	cultures = { sidama }
+	cultures = { minority_ethiopian }
 	religion = animist
 	capital = STATE_AMHARA
 }

@@ -5014,7 +5014,7 @@ MPH = {
 
 	tier = principality
 
-	cultures = { lao }
+	cultures = { thai }
 	capital = STATE_LAOS
 }
 
@@ -5053,6 +5053,6 @@ SCT = {
 
 	tier = principality
 
-	cultures = { lao }
+	cultures = { thai }
 	capital = STATE_TONKIN
 }
