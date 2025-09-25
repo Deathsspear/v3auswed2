@@ -518,63 +518,52 @@ minority_north_american={
 }
 
 minority_indian={
-	color= hsv{ 0.79 0.37 0.36 }
+	color = { 123 123 233 }
 	religion = hindu
-	traits = { dravidian south_asian_heritage indo_aryan_language }
-	male_common_first_names={
-		Ahmad
-		Alauddin
-		Alivardi
-		Hasan
-		Mansur
-		Mir_Muhammad
-		Mubarak
-		Murshid
-		Najimuddin
-		Quli
-		Reza
-		Saifuddaula
-		Shujauddin
-		Sirajuddaula
-		Waris
-		Wasif
-		Zainul
+	heritage = heritage_gangetic
+	language = language_hindustani
+	traditions = { }
+	male_common_first_names = {
+		Aakash
+		Bhanwari
+		Dharmraj
+		Govind
+		Nitin Nikhil Nathuram Narendra
+		Pawan
+		Santosh
 	}
 	female_common_first_names = {
-		Iffat
-		Laila
-		Rahima
-		Rama
-		Razia
-		Selima
-		Sitara
-		Syeda
-		Tarana
-		Zohra
+		Alka Abhilasha Aruna
+		Chandrama
+		Hema
+		Jaya
+		Omvati
+		Priyanka
+		Subhashini Sucheta
+		Uma
 	}
 	noble_last_names = {
-		Bahadur
-		Bogra
-		Deva
-		Mirza
-		Roy
-		Suhrawardy
+		Arkvanshi
+		Bajpai
+		Choudhary Chauhan
+		Nehru
+		Tiwari
 	}
-	common_last_names={
-		Ali
-		Chaudhury
-		Jafar
-		Muhammad
-		Najabut
-		Parvin
-		Qasim_Ali
-		Sarfaraz
-		Tajuddin
+	common_last_names = {
+		Agrahari
+		Bharti
+		Gandhi Gautam Giri Gupta
+		Joshi
+		Kardam Katiyar Kumari
+		Nayar
+		Tandon
+		Verma Varun
+		Yadav
 	}
 	ethnicities = {
-		1 = asian
+		1 = indian
 	}
-	graphics = asian
+	graphics = south_asian
 }
 
 minority_melayu={
