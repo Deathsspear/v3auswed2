@@ -213,7 +213,7 @@
 		# 840792
 		region_state:SPA = {
 			create_pop = {
-				culture = minority_iberian
+				culture = galician
 				size = 828528
 			}
 			create_pop = {
@@ -230,7 +230,7 @@
 				size = 614264
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = basque
 				size = 32000
 			}
 		}
@@ -242,7 +242,7 @@
 				size = 1430808
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = basque
 				size = 4000
 			}
 		}
@@ -254,11 +254,11 @@
 				size = 579200
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = catalan
 				size = 32220
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = basque
 				size = 700060
 			}
 		}
@@ -270,11 +270,11 @@
 				size = 401200
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = basque
 				size = 100008
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = catalan
 				size = 77996
 			}
 		}
@@ -282,7 +282,7 @@
 	s:STATE_CATALONIA = {
 		region_state:SPA = {
 			create_pop = {
-				culture = minority_iberian
+				culture = catalan
 				size = 704308
 			}
 			create_pop = {
@@ -294,7 +294,7 @@
 	s:STATE_BALEARES = {
 		region_state:SPA = {
 			create_pop = {
-				culture = minority_iberian
+				culture = catalan
 				size = 145244
 			}
 			create_pop = {
@@ -348,7 +348,7 @@
 				size = 989604
 			}
 			create_pop = {
-				culture = minority_iberian
+				culture = catalan
 				size = 490392
 			}
 		}
@@ -443,7 +443,7 @@
 				size = 80004
 			}
 			create_pop = {
-				culture = minority_caucasian
+				culture = armenian
 				size = 67996
 			}
 			create_pop = {
@@ -452,12 +452,12 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = minority_caucasian
+				culture = north_caucasian
 				size = 6000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = minority_east_african
+				culture = lacustrine_bantu
 				size = 16000
 			}
 		}
@@ -620,7 +620,7 @@
 		}
 	}
 	s:STATE_CROATIA = {
-		region_state:AUS = {
+		region_state:CRO = {
 			create_pop = {
 				culture = croat
 				size = 563592
@@ -645,7 +645,7 @@
 		}
 	}
 	s:STATE_SLAVONIA = {
-		region_state:AUS = {
+		region_state:CRO = {
 			create_pop = {
 				culture = croat
 				size = 282048
@@ -688,29 +688,34 @@
 			}
 		}
 	}
+	# Inceased based on research into the area
 	s:STATE_MONTENEGRO = {
 		region_state:TUR = {
 			create_pop = {
 				culture = bosniak
-				size = 43196
+				size = 23196
 			}
 			create_pop = {
 				culture = serb
-				size = 184000
+				size = 124000
 			}
 			create_pop = {
 				culture = albanian
-				size = 43800
+				size = 23800
 			}
 		}
 		region_state:MON = {
 			create_pop = {
 				culture = serb
-				size = 34396
+				size = 114396 #History says 80-120,000. They end up with less due to some weird gameplay mechanic, I suspect some sort of instant starvation.
 			}
 			create_pop = {
 				culture = albanian
-				size = 200
+				size = 2200
+			}
+			create_pop = {
+				culture = bosniak
+				size = 3800
 			}
 		}
 		# Cattaro Region, downscaled version of 1880 census, with inflated Italian numbers, and decreased German ones
@@ -733,39 +738,116 @@
 			}
 		}
 	}
-	s:STATE_NORTHERN_SERBIA = {
+	s:STATE_WESTERN_SERBIA = {
 		region_state:SER = {
 			create_pop = {
 				culture = serb
-				size = 809604
-			}
-		}
-	}
-	s:STATE_SOUTHERN_SERBIA = {
-		region_state:TUR = {
-			create_pop = {
-				culture = turkish
-				size = 124400
-			}
-			create_pop = {
-				culture = bosniak
-				size = 22396
-			}
-			create_pop = {
-				culture = serb
-				size = 581800
-			}
-			create_pop = {
-				culture = greek
-				size = 8000
+				size = 436604
 			}
 			create_pop = {
 				culture = albanian
-				size = 192596
+				size = 1021
 			}
 			create_pop = {
-				culture = bulgarian
-				size = 49404
+				culture = sephardic
+				size = 912
+			}
+		}
+		region_state:TUR = {
+			create_pop = {
+				culture = bosniak
+				size = 36010
+			}
+			create_pop = {
+				culture = albanian
+				size = 10102
+			}
+			create_pop = {
+				culture = turkish
+				size = 3201
+			}
+			create_pop = {
+				culture = serb
+				size = 23101
+			}
+			create_pop = {
+				culture = romanian
+				size = 1201
+			}
+			create_pop = {
+				culture = sephardic
+				size = 102
+			}
+		}
+	}
+	s:STATE_EASTERN_SERBIA = {
+		region_state:SER = {
+			create_pop = {
+				culture = serb
+				size = 203567
+			}
+			create_pop = {
+				culture = romanian
+				size = 75573
+			}
+			create_pop = {
+				culture = albanian
+				size = 2031
+			}
+			create_pop = {
+				culture = sephardic
+				size = 201
+			}
+		}
+		region_state:TUR = {
+			create_pop = {
+				culture = serb
+				size = 175355
+			}
+			create_pop = {
+				culture = albanian
+				size = 43839
+			}
+			create_pop = {
+				culture = turkish
+				size = 29226
+			}
+			create_pop = {
+				culture = romanian
+				size = 5845
+			}
+			create_pop = {
+				culture = sephardic
+				size = 120
+			}
+		}
+	}
+	s:STATE_KOSOVO = {
+		region_state:TUR = {
+			create_pop = {
+				culture = albanian
+				size = 167012
+			}
+			create_pop = {
+				culture = albanian
+				religion = catholic
+				size = 23010
+			}
+			create_pop = {
+				culture = serb
+				size = 85010
+			}
+			create_pop = {
+				culture = turkish
+				size = 21020
+			}
+			create_pop = {
+				culture = bosniak
+				size = 7912
+			}
+			create_pop = {
+				culture = romanian
+				size = 4929
 			}
 		}
 	}
@@ -883,12 +965,12 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = minority_caucasian
+				culture = north_caucasian
 				size = 200
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = minority_east_african
+				culture = lacustrine_bantu
 				size = 700
 			}
 		}
@@ -909,12 +991,12 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = minority_caucasian
+				culture = north_caucasian
 				size = 300
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = minority_east_african
+				culture = lacustrine_bantu
 				size = 1500
 			}
 
