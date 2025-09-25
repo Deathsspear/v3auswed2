@@ -21,12 +21,13 @@ ethiopia.1 = {
 
 	trigger = {
 		NOT = { has_global_variable = tewodros_var }
+		country_has_primary_culture = cu:amhara
 		has_law_or_variant = law_type:law_monarchy
 		OR = {
 			is_player = yes
 			NOT = {
 				any_country = {
-					country_has_primary_culture = cu:minority_ethiopian
+					country_has_primary_culture = cu:amhara
 					is_player = yes
 					NOT = { has_variable = tewdoros_refused }
 				}
