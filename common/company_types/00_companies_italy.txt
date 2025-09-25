@@ -39,7 +39,7 @@ company_ilva = {
 		}
 	}
 
-	possible = { #shut the fuck up vegas - blaze
+	possible = {
 		has_technology_researched = bessemer_process
 		any_scope_state = {
 			state_region = s:STATE_PIEDMONT
@@ -177,6 +177,8 @@ company_ansaldo = {
 company_ricordi = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/ricordi.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_farm_corn.dds"
+
+	category = academic_owned
 
 	flavored_company = yes
 
