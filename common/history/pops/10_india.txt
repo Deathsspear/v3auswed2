@@ -46,7 +46,7 @@ POPS = {
 				size = 3572012
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 40102
 			}
 			create_pop = {
@@ -70,7 +70,7 @@ POPS = {
 				size = 210002
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 901
 			}
 			create_pop = {
@@ -124,7 +124,7 @@ POPS = {
 				size = 14617600
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 20102
 			}
 			create_pop = {
@@ -192,13 +192,13 @@ POPS = {
 		}
 		region_state:KKI = {
 			create_pop = {
-				culture = lushai
+				culture = burmese
 				size = 24591
 			}
 		}
 		region_state:NGA = {
 			create_pop = {
-				culture = naga
+				culture = burmese
 				size = 123919
 			}
 		}
@@ -213,23 +213,23 @@ POPS = {
 				size = 77096
 			}
 			create_pop = {
-				culture = lushai
+				culture = burmese
 				size = 29192
 			}
 			create_pop = {
-				culture = naga
+				culture = burmese
 				size = 39192
 			}
 		}
 		region_state:MGH = {
 			create_pop = {
-				culture = naga # Khasi
+				culture = burmese # Khasi
 				size = 62201
 			}
 		}
 		region_state:TIP = {
 			create_pop = {
-				culture = lushai # Tipperah
+				culture = burmese # Tipperah
 				size = 45102
 			}
 		}
@@ -254,7 +254,7 @@ POPS = {
 				size = 61020
 			}
 			create_pop = {
-				culture = naga
+				culture = burmese
 				size = 150201
 			}
 		}
@@ -428,7 +428,7 @@ POPS = {
 				size = 36010
 			}
 			create_pop = {
-				culture = pathan
+				culture = minority_central_asian
 				religion = sunni
 				size = 5020
 			}
@@ -449,7 +449,7 @@ POPS = {
 				size = 9012
 			}
 			create_pop = {
-				culture = pathan
+				culture = minority_central_asian
 				religion = sunni
 				size = 1720
 			}
@@ -487,7 +487,7 @@ POPS = {
 				size = 4121
 			}
 			create_pop = {
-				culture = pathan
+				culture = minority_central_asian
 				religion = sunni
 				size = 720
 			}
@@ -545,7 +545,7 @@ POPS = {
 				size = 7123
 			}
 			create_pop = {
-				culture = pathan
+				culture = minority_central_asian
 				religion = sunni
 				size = 7720
 			}
@@ -587,7 +587,7 @@ POPS = {
 				size = 30700
 			}
 			create_pop = {
-				culture = pathan
+				culture = minority_central_asian
 				religion = sunni
 				size = 6720
 			}
@@ -660,7 +660,7 @@ POPS = {
 				size = 310
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 210
 			}
 			create_pop = {
@@ -674,7 +674,7 @@ POPS = {
 				size = 6010
 			}
 			create_pop = {
-				culture = pashtun  # pathan
+				culture = minority_central_asian  # minority_central_asian
 				religion = sunni
 				size = 9120
 			}
@@ -786,7 +786,7 @@ POPS = {
 				size = 89339
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 21054
 			}
 			create_pop = {
@@ -831,7 +831,7 @@ POPS = {
 				size = 249384
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 37727
 			}
 			create_pop = {
@@ -841,7 +841,7 @@ POPS = {
 		}
 		region_state:CHT = {
 			create_pop = {
-				culture = kho # and Shina
+				culture = minority_indian # and Shina
 				size = 30210
 			}
 			create_pop = {
@@ -882,7 +882,7 @@ POPS = {
 				size = 3491500
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				religion = sunni
 				size = 231520
 			}
@@ -906,7 +906,7 @@ POPS = {
 				size = 37120
 			}
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 7110
 			}
 		}
@@ -1128,7 +1128,7 @@ POPS = {
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 31000
 			}
 			create_pop = {
@@ -1379,7 +1379,7 @@ POPS = {
 				size = 849208
 			}
 			create_pop = {
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size =700
 			}
 			create_pop = {
@@ -1387,7 +1387,7 @@ POPS = {
 				size = 194000
 			}
 			create_pop = {
-				culture = mashriqi
+				culture = minority_midde_east
 				religion = sunni
 				size = 32000
 			}
@@ -1397,7 +1397,7 @@ POPS = {
 				size = 24000
 			}
 			create_pop = {
-				culture = malay
+				culture = minority_melayu
 				size = 16400
 			}
 			create_pop = {
@@ -1437,7 +1437,7 @@ POPS = {
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 2301
 			}
 		}
@@ -1458,7 +1458,7 @@ POPS = {
 				size = 49
 			}
 			create_pop = {
-				culture = swahili
+				culture = minority_east_african
 				pop_type = laborers
 				size = 46
 			}
@@ -1480,7 +1480,7 @@ POPS = {
 				size = 68000
 			}
 			create_pop = {
-				culture = swahili
+				culture = minority_east_african
 				size = 2000
 			}
 			create_pop = {
@@ -2159,7 +2159,7 @@ POPS = {
 				size = 45162
 			}
 			create_pop = {
-				culture = pathan
+				culture = minority_central_asian
 				size = 5001
 			}
 			create_pop = {
@@ -2248,7 +2248,7 @@ POPS = {
 				size = 158858
 			}
 			create_pop = {
-				culture = pathan
+				culture = minority_central_asian
 				religion = sunni
 				size = 425012
 			}
@@ -2283,7 +2283,7 @@ POPS = {
 				size = 200
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 451
 			}
 		}
