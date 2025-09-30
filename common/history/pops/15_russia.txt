@@ -107,7 +107,7 @@
 				size = 15800
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 4424
 			}
 			create_pop = {
@@ -300,7 +300,7 @@
 	s:STATE_UUSIMAA = { #DONE
 		region_state:FIN = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 101334
 			}
 			create_pop = {
@@ -321,7 +321,7 @@
 				size = 15000
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 8715
 			}
 			create_pop = {
@@ -333,7 +333,7 @@
 	s:STATE_ALAND = { #DONE
 		region_state:FIN = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 25800
 			}
 			create_pop = {
@@ -349,7 +349,7 @@
 				size = 135542
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 66458
 			}
 		}
@@ -361,7 +361,7 @@
 				size = 116250
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 1250
 			}
 			create_pop = {
@@ -377,7 +377,7 @@
 				size = 301794
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 1145
 			}
 		}

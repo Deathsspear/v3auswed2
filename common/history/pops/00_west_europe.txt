@@ -2,7 +2,7 @@
 	s:STATE_SVEALAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 1081208
 			}
 			create_pop = {
@@ -18,7 +18,7 @@
 	s:STATE_GOTALAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 800208
 			}
 			create_pop = {
@@ -34,7 +34,7 @@
 	s:STATE_SCANIA = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 512860
 			}
 			create_pop = {
@@ -46,7 +46,7 @@
 	s:STATE_NORRLAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 289400
 			}
 			create_pop = {
@@ -62,7 +62,7 @@
 	s:STATE_GOTLAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 33208
 			}
 		}
