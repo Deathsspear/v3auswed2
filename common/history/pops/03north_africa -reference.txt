@@ -31,7 +31,7 @@ minority_caucasian
 north_caucasian
 armenian
 
-minority_middle_east
+minority_midde_east
 bedouin
 misri
 berber
