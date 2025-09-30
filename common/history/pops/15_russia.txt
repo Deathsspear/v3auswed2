@@ -6,11 +6,11 @@
 				size = 147130
 			}
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 258
 			}
 			create_pop = {
-				culture = lithuanian
+				culture = minority_baltic
 				size = 178882
 			}
 			create_pop = {
@@ -26,7 +26,7 @@
 				size = 2062
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 600
 			}
 			create_pop = {
@@ -42,7 +42,7 @@
 	s:STATE_COURLAND = { #DONE
 		region_state:UBD = {
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 354472
 			}
 			create_pop = {
@@ -58,7 +58,7 @@
 				size = 17936
 			}
 			create_pop = {
-				culture = lithuanian
+				culture = minority_baltic
 				size = 12744
 			}
 			create_pop = {
@@ -66,7 +66,7 @@
 				size = 9440
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				religion = protestant
 				size = 2360
 			}
@@ -79,11 +79,11 @@
 	s:STATE_TARTU = { #DONE
 		region_state:UBD = {
 			create_pop = {
-				culture = estonian
+				culture = minority_baltic
 				size = 288007
 			}
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 2207
 			}
 			create_pop = {
@@ -99,7 +99,7 @@
 	s:STATE_TALINN = { #DONE
 		region_state:UBD = {
 			create_pop = {
-				culture = estonian
+				culture = minority_baltic
 				size = 280292
 			}
 			create_pop = {
@@ -107,7 +107,7 @@
 				size = 15800
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 4424
 			}
 			create_pop = {
@@ -119,7 +119,7 @@
 	s:STATE_RIGA = { #DONE
 		region_state:UBD = {
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 362898
 			}
 			create_pop = {
@@ -127,7 +127,7 @@
 				size = 52775
 			}
 			create_pop = {
-				culture = estonian
+				culture = minority_baltic
 				size = 10824
 			}
 			create_pop = {
@@ -135,7 +135,7 @@
 				size = 12963
 			}
 			create_pop = {
-				culture = ugrian #Livs
+				culture = finnish #Livs
 				religion = protestant
 				size = 900
 			}
@@ -148,13 +148,13 @@
 				size = 32459
 			}
 			create_pop = {
-				culture = lithuanian
+				culture = minority_baltic
 				size = 4118
 			}
 		}
 		region_state:RUS = {
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 96273
 			}
 			create_pop = {
@@ -186,7 +186,7 @@
 	s:STATE_KAUNAS = { #DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = lithuanian
+				culture = minority_baltic
 				size = 442209
 			}
 			create_pop = {
@@ -194,7 +194,7 @@
 				size = 91653
 			}
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 15387
 			}
 			create_pop = {
@@ -300,7 +300,7 @@
 	s:STATE_UUSIMAA = { #DONE
 		region_state:FIN = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 101334
 			}
 			create_pop = {
@@ -321,7 +321,7 @@
 				size = 15000
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 8715
 			}
 			create_pop = {
@@ -333,7 +333,7 @@
 	s:STATE_ALAND = { #DONE
 		region_state:FIN = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 25800
 			}
 			create_pop = {
@@ -349,7 +349,7 @@
 				size = 135542
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 66458
 			}
 		}
@@ -361,11 +361,11 @@
 				size = 116250
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 1250
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 7500
 			}
 		}
@@ -377,7 +377,7 @@
 				size = 301794
 			}
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 1145
 			}
 		}
@@ -389,7 +389,7 @@
 				size = 3975
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 1178
 			}
 			create_pop = {
@@ -397,11 +397,11 @@
 				size = 737
 			}
 			create_pop = {
-				culture = norwegian
+				culture = minority_scandinavian
 				size = 126
 			}
 			create_pop = {
-				culture = karelian
+				culture = finnish
 				size = 258
 			}
 		}
@@ -417,7 +417,7 @@
 				size = 757
 			}
 			create_pop = {
-				culture = karelian
+				culture = finnish
 				size = 53619
 			}
 		}
@@ -429,7 +429,7 @@
 				size = 17170
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				size = 13904
 			}
 		}
@@ -449,7 +449,7 @@
 				size = 682176
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				religion = orthodox
 				size = 64328
 			}
@@ -462,7 +462,7 @@
 				size = 512334
 			}
 			create_pop = {
-				culture = lithuanian
+				culture = minority_baltic
 				size = 10524
 			}
 			create_pop = {
@@ -542,7 +542,7 @@
 				size = 5933
 			}
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 3077
 			}
 		}
@@ -566,7 +566,7 @@
 				size = 40819
 			}
 			create_pop = {
-				culture = czech
+				culture = polish
 				size = 10026
 			}
 			create_pop = {
@@ -614,7 +614,7 @@
 				size = 72719
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 75704
 			}
 			create_pop = {
@@ -634,7 +634,7 @@
 				size = 6582
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 2626
 			}
 			create_pop = {
@@ -642,11 +642,11 @@
 				size = 2097
 			}
 			create_pop = {
-				culture = czech
+				culture = polish
 				size = 239
 			}
 			create_pop = {
-				culture = estonian
+				culture = minority_baltic
 				size = 318
 			}
 			create_pop = {
@@ -795,7 +795,7 @@
 				size = 16443
 			}
 			create_pop = {
-				culture = chechen
+				culture = minority_caucasian
 				size = 21197
 			}
 			create_pop = {
@@ -803,11 +803,11 @@
 				size = 79030
 			}
 			create_pop = {
-				culture = circassian
+				culture = minority_caucasian
 				size = 5050
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 15405
 			}
 			create_pop = {
@@ -817,7 +817,7 @@
 		}
 		region_state:CHC = {
 			create_pop = {
-				culture = chechen
+				culture = minority_caucasian
 				size = 85000
 			}
 			create_pop = {
@@ -827,7 +827,7 @@
 		}
 		region_state:CIR = {
 			create_pop = {
-				culture = circassian
+				culture = minority_caucasian
 				size = 57809
 			}
 			create_pop = {
@@ -839,11 +839,11 @@
 	s:STATE_ELIZAVETPOL = { #DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 91660
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				religion = sunni
 				size = 55000
 			}
@@ -856,7 +856,7 @@
 				size = 2909
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 92855
 			}
 			create_pop = {
@@ -864,7 +864,7 @@
 				size = 681
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 4691
 			}
 		}
@@ -880,15 +880,15 @@
 				size = 191784
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 12054
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 8908
 			}
 			create_pop = {
-				culture = kalmyk
+				culture = minority_central_asian
 				size = 6288
 			}
 		}
@@ -896,7 +896,7 @@
 	s:STATE_KALMYKIA = { #DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = kalmyk
+				culture = minority_central_asian
 				size = 123512
 			}
 			create_pop = {
@@ -912,11 +912,11 @@
 				size = 680165
 			}
 			create_pop = {
-				culture = estonian
+				culture = minority_baltic
 				size = 7189
 			}
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 7109
 			}
 			create_pop = {
@@ -944,7 +944,7 @@
 				size = 3005300
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				size = 4795
 			}
 		}
@@ -956,7 +956,7 @@
 				size = 1235720
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 7452
 			}
 		}
@@ -968,11 +968,11 @@
 				size = 2383492
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 218090
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 42697
 			}
 		}
@@ -984,15 +984,15 @@
 				size = 1432715
 			}
 			create_pop = {
-				culture = chuvash
+				culture = turkish
 				size = 34193
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 58187
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 57838
 			}
 		}
@@ -1004,19 +1004,19 @@
 				size = 173968
 			}
 			create_pop = {
-				culture = chuvash
+				culture = turkish
 				size = 240262
 			}
 			create_pop = {
-				culture = mari
+				culture = finnish
 				size = 87860
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 17154
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 36199
 			}
 		}
@@ -1028,15 +1028,15 @@
 				size = 1215648
 			}
 			create_pop = {
-				culture = udmurt
+				culture = finnish
 				size = 211680
 			}
 			create_pop = {
-				culture = mari
+				culture = finnish
 				size = 24192
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 60480
 			}
 		}
@@ -1044,7 +1044,7 @@
 	s:STATE_UFA = { #DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = bashkir
+				culture = turkish
 				size = 156746
 			}
 			create_pop = {
@@ -1052,19 +1052,19 @@
 				size = 137400
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 44970
 			}
 			create_pop = {
-				culture = mari
+				culture = finnish
 				size = 13488
 			}
 			create_pop = {
-				culture = chuvash
+				culture = turkish
 				size = 10220
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 6711
 			}
 		}
@@ -1076,19 +1076,19 @@
 				size = 27045
 			}
 			create_pop = {
-				culture = bashkir
+				culture = turkish
 				size = 34132
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 39601
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 9149
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 4978
 			}
 			create_pop = {
@@ -1096,7 +1096,7 @@
 				size = 5785
 			}
 			create_pop = {
-				culture = chuvash
+				culture = turkish
 				size = 1346
 			}
 		}
@@ -1106,7 +1106,7 @@
 				size = 22140
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 34440
 			}
 			create_pop = {
@@ -1114,11 +1114,11 @@
 				size = 3780
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 420
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 710
 			}
 		}
@@ -1128,11 +1128,11 @@
 				size = 278355
 			}
 			create_pop = {
-				culture = bashkir
+				culture = turkish
 				size = 46034
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 1218
 			}
 		}
@@ -1144,15 +1144,15 @@
 				size = 320760
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				size = 23760
 			}
 			create_pop = {
-				culture = bashkir
+				culture = turkish
 				size = 13484
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 19800
 			}
 		}
@@ -1165,7 +1165,7 @@
 				size = 22940
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 3410
 			}
 			create_pop = {
