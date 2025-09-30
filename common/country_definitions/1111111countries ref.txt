@@ -135,8 +135,8 @@ uighur
 baluchi (keep for formation)
 hazara
 turkmen (check state)
-tatar
-turkish (check state)
+minority_central_asian
+minority_central_asian (check state)
 pathan (keep for formation)
 
  

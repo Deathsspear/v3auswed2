@@ -10,12 +10,12 @@
 				size = 2400
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				religion = animist
 				size = 10200
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 15000
 			}
 			create_pop = {
@@ -35,7 +35,7 @@
 				size = 386252
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 17424
 			}
 			create_pop = {
@@ -71,7 +71,7 @@
 				size = 169990
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 17665
 			}
 			create_pop = {
@@ -131,7 +131,7 @@
 				size = 3960
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 7920
 			}
 		}
@@ -147,7 +147,7 @@
 				size = 506
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 431
 			}
 		}
@@ -164,7 +164,7 @@
 				size = 3204
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 250
 			}
 		}
