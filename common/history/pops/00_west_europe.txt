@@ -94,7 +94,7 @@
 	s:STATE_WESTERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = norwegian
+				culture = minority_scandinavian
 				size = 546800
 			}
 		}
@@ -102,7 +102,7 @@
 	s:STATE_NORTHERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = norwegian
+				culture = minority_scandinavian
 				size = 284860
 			}
 			create_pop = {
@@ -118,7 +118,7 @@
 	s:STATE_EASTERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = norwegian
+				culture = minority_scandinavian
 				size = 345800
 			}
 			create_pop = {
@@ -130,7 +130,7 @@
 	s:STATE_ICELAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = icelandic
+				culture = minority_scandinavian
 				size = 63200
 			}
 			create_pop = {

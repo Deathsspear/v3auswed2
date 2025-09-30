@@ -29,7 +29,7 @@ SCA = {
 
 	tier = empire
 
-	cultures = { minority_scandinavian norwegian danish icelandic }
+	cultures = { minority_scandinavian}
 	capital = STATE_SVEALAND
 }
 
@@ -258,7 +258,7 @@ NOR = {
 
 	tier = kingdom
 
-	cultures= { norwegian }
+	cultures= { minority_scandinavian }
 	capital = STATE_EASTERN_NORWAY
 }
 
@@ -2425,7 +2425,7 @@ ICL = {
 
 	tier = principality
 
-	cultures = { icelandic }
+	cultures = { minority_scandinavian }
 	capital = STATE_ICELAND
 	is_named_from_capital = yes
 }
@@ -2493,7 +2493,7 @@ JAN = {
 	tier = city_state
 
 	capital = STATE_NORTHERN_NORWAY
-	cultures = { norwegian }
+	cultures = { minority_scandinavian }
 }
 
 BIC = {
