@@ -221,7 +221,7 @@
 		}
 		region_state:DEN = {
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 3992
 			}
 			create_pop = {

@@ -1824,7 +1824,7 @@ POPS = {
 				size = 4010
 			}
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 201
 			}
 		}

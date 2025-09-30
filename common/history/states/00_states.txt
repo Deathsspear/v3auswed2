@@ -3569,7 +3569,7 @@ STATES = {
 			owned_provinces = { x00BFDF x83E6B1 x951AF2 x770871 x2D2259 xBA6413 x8041E0 x1F29B8 x94468F xB0B469 xEBF079 x0040DF }
 		}
 
-		add_homeland = cu:danish
+		add_homeland = cu:minority_scandinavian
 	}
 	s:STATE_ZEALAND = {
 		create_state = {
@@ -3577,7 +3577,7 @@ STATES = {
 			owned_provinces = { x0CAEA7 x7F0BF0 xED2792 xC16C09 x9000E0 }
 		}
 
-		add_homeland = cu:danish
+		add_homeland = cu:minority_scandinavian
 	}
 	s:STATE_WESTERN_NORWAY = {
 		create_state = {
@@ -7744,7 +7744,7 @@ STATES = {
 			owned_provinces = { x00C060 x78B203 xE3C876 xBFCC21 }
 		}
 
-		add_homeland = cu:danish
+		add_homeland = cu:minority_scandinavian
 		add_homeland = cu:north_german
 	}
 	s:STATE_WURTTEMBERG = {

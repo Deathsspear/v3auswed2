@@ -236,7 +236,7 @@ DEN = {
 
 	tier = kingdom
 
-	cultures = { danish }
+	cultures = { minority_scandinavian }
 	capital = STATE_ZEALAND
 }
 
@@ -2771,7 +2771,7 @@ GRN = {
 
 	tier = principality
 
-	cultures = { danish inuit }
+	cultures = { minority_scandinavian inuit }
 	capital = STATE_GREENLAND
 	is_named_from_capital = yes
 }
@@ -3859,7 +3859,7 @@ SCH = {
 
 	tier = principality
 
-	cultures = { north_german danish }
+	cultures = { north_german minority_scandinavian }
 	capital = STATE_SCHLESWIG_HOLSTEIN
 	is_named_from_capital = yes
 }

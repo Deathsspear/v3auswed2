@@ -70,7 +70,7 @@
 	s:STATE_JUTLAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 548908
 			}
 		}
@@ -78,7 +78,7 @@
 	s:STATE_ZEALAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 647996
 			}
 			create_pop = {
@@ -134,7 +134,7 @@
 				size = 63200
 			}
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 520
 			}
 		}
@@ -142,7 +142,7 @@
 	s:STATE_GREENLAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 410
 			}
 			create_pop = {
@@ -1463,7 +1463,7 @@
 				size = 8000
 			}
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 20000
 			}
 		}
@@ -1484,7 +1484,7 @@
 				size = 200000
 			}
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 136404
 			}
 		}
