@@ -2771,7 +2771,7 @@ GRN = {
 
 	tier = principality
 
-	cultures = { minority_scandinavian inuit }
+	cultures = { minority_scandinavian minority_north_american }
 	capital = STATE_GREENLAND
 	is_named_from_capital = yes
 }
@@ -2866,7 +2866,7 @@ SIB = { # Siberia
 	country_type = unrecognized
 
 	tier = kingdom
-	cultures = { yakut siberian inuit buryat }
+	cultures = { yakut siberian minority_north_american buryat }
 	capital = STATE_TOMSK
 }
 
@@ -3143,7 +3143,7 @@ NNV = { # Nunavut
 
 	tier = principality
 
-	cultures = { inuit }
+	cultures = { minority_north_american }
 
 	capital = STATE_NUNAVUT
 }
@@ -3468,7 +3468,7 @@ FER = {
  	color = { 147 25 25 }
 	country_type = unrecognized
 	tier = principality
-	cultures = { siberian inuit }
+	cultures = { siberian minority_north_american }
 	capital = STATE_TRANS_BAIKAL
 }
 

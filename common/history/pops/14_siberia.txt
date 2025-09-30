@@ -173,7 +173,7 @@
 	s:STATE_CHUKOTKA = {
 		region_state:RUS = {
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 1310
 			}
 			create_pop = {

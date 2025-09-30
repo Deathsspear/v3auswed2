@@ -121,7 +121,7 @@
 				size = 1000
 			}
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 1968
 			}
 		}
@@ -131,7 +131,7 @@
 				size = 28000
 			}
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 16000
 			}
 		}
@@ -1160,7 +1160,7 @@
 		}
 		region_state:HBC = {
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 4000
 			}
 			create_pop = {
@@ -1180,7 +1180,7 @@
 	s:STATE_NEWFOUNDLAND = {
 		region_state:GBR = {
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 7980
 			}
 			create_pop = {
@@ -1343,7 +1343,7 @@
 	s:STATE_NUNAVUT = {
 		region_state:HBC = {
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 11980
 			}
 		}
