@@ -213,7 +213,7 @@
 		# 840792
 		region_state:SPA = {
 			create_pop = {
-				culture = galician
+				culture = minority_iberian
 				size = 828528
 			}
 			create_pop = {
@@ -230,7 +230,7 @@
 				size = 614264
 			}
 			create_pop = {
-				culture = basque
+				culture = minority_iberian
 				size = 32000
 			}
 		}
@@ -242,7 +242,7 @@
 				size = 1430808
 			}
 			create_pop = {
-				culture = basque
+				culture = minority_iberian
 				size = 4000
 			}
 		}
@@ -254,11 +254,11 @@
 				size = 579200
 			}
 			create_pop = {
-				culture = catalan
+				culture = minority_iberian
 				size = 32220
 			}
 			create_pop = {
-				culture = basque
+				culture = minority_iberian
 				size = 700060
 			}
 		}
@@ -270,11 +270,11 @@
 				size = 401200
 			}
 			create_pop = {
-				culture = basque
+				culture = minority_iberian
 				size = 100008
 			}
 			create_pop = {
-				culture = catalan
+				culture = minority_iberian
 				size = 77996
 			}
 		}
@@ -282,7 +282,7 @@
 	s:STATE_CATALONIA = {
 		region_state:SPA = {
 			create_pop = {
-				culture = catalan
+				culture = minority_iberian
 				size = 704308
 			}
 			create_pop = {
@@ -294,7 +294,7 @@
 	s:STATE_BALEARES = {
 		region_state:SPA = {
 			create_pop = {
-				culture = catalan
+				culture = minority_iberian
 				size = 145244
 			}
 			create_pop = {
@@ -348,7 +348,7 @@
 				size = 989604
 			}
 			create_pop = {
-				culture = catalan
+				culture = minority_iberian
 				size = 490392
 			}
 		}
@@ -443,7 +443,7 @@
 				size = 80004
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 67996
 			}
 			create_pop = {
@@ -452,12 +452,12 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 6000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 16000
 			}
 		}
@@ -469,7 +469,7 @@
 				size = 59044
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 3000
 			}
 			create_pop = {
@@ -491,7 +491,7 @@
 				size = 2560
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 9000
 			}
 			create_pop = {
@@ -965,12 +965,12 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 200
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 700
 			}
 		}
@@ -991,12 +991,12 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 300
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 1500
 			}
 

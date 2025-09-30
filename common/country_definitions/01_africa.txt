@@ -5,7 +5,7 @@
 
 	tier = kingdom
 
-	cultures = { maghrebi berber }
+	cultures = { minority_midde_east minority_midde_east }
 
 	capital = STATE_ALGIERS
 }
@@ -18,7 +18,7 @@ CON = {
 
 	tier = principality
 
-	cultures = { maghrebi berber }
+	cultures = { minority_midde_east minority_midde_east }
 
 	capital = STATE_CONSTANTINE
 }
@@ -41,7 +41,7 @@ ETH = {
 
 	tier = empire
 
-	cultures = { minority_ethiopian }
+	cultures = { minority_ethiopian minority_ethiopian minority_ethiopian }
 	capital = STATE_GONDER
 }
 
@@ -63,7 +63,7 @@ MAS = {
 
 	tier = principality
 
-	cultures = { maghrebi berber }
+	cultures = { minority_midde_east minority_midde_east }
 
 	capital = STATE_ORAN
 }
@@ -87,7 +87,7 @@ MOR = {
 
 	tier = kingdom
 
-	cultures = { maghrebi berber }
+	cultures = { minority_midde_east minority_midde_east }
 	capital = STATE_FEZ
 }
 
@@ -132,7 +132,7 @@ SOK = {
 
 	tier = kingdom
 
-	cultures = { minority_west_african }
+	cultures = { minority_west_african minority_west_african }
 	capital = STATE_HAUSALAND
 }
 
@@ -143,7 +143,7 @@ TRI = {
 
 	tier = principality
 
-	cultures = { maghrebi }
+	cultures = { minority_midde_east }
 	capital = STATE_TRIPOLI
 	is_named_from_capital = yes
 }
@@ -167,7 +167,7 @@ TUN = {
 
 	tier = kingdom
 
-	cultures = { maghrebi }
+	cultures = { minority_midde_east }
 	capital = STATE_TUNISIA
 	is_named_from_capital = yes
 }
@@ -215,7 +215,7 @@ MTB = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_southern_african minority_southern_african }
 	capital = STATE_ZAMBEZI
 }
 
@@ -270,7 +270,7 @@ HRO = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_southern_african minority_southern_african }
 	capital = STATE_HEREROLAND
 }
 
@@ -303,7 +303,7 @@ WBL = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_southern_african minority_southern_african }
 	capital = STATE_NORTHERN_CAPE
 }
 
@@ -325,7 +325,7 @@ BMB = {
 
 	tier = principality
 
-	cultures = { minority_central_african }
+	cultures = { minority_east_african }
 	capital = STATE_KAZEMBE
 }
 
@@ -395,14 +395,14 @@ MNB = {
 	capital = STATE_CONGO_ORIENTALE
 }
 
-NYM = {
+NYM = {	# Unymanwezi. Nyamwezi is the name of the people, the U- prefix turns it into the name of a land
 	color = { 164 125 26 }
 
 	country_type = decentralized
 
 	tier = principality
 
-	cultures = { minority_east_african }
+	cultures = { nyamwezi }
 	capital = STATE_TANGANYIKA
 }
 
@@ -413,7 +413,7 @@ HHE = {
 
 	tier = principality
 
-	cultures = { minority_central_african }
+	cultures = { minority_east_african }
 	capital = STATE_LINDI
 }
 
@@ -457,7 +457,7 @@ YKA = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_central_african minority_central_african }
 	capital = STATE_BAS_CONGO
 }
 
@@ -536,7 +536,7 @@ BOB = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_central_african minority_central_african }
 	capital = STATE_EQUATEUR
 }
 
@@ -580,7 +580,7 @@ BNY = {
 
 	tier = principality
 
-	cultures = { minority_east_african minority_central_african }
+	cultures = { minority_east_african minority_east_african }
 	capital = STATE_UGANDA
 }
 
@@ -591,18 +591,18 @@ ANK = {
 
 	tier = principality
 
-	cultures = { minority_east_african minority_central_african }
+	cultures = { minority_east_african minority_east_african }
 	capital = STATE_UGANDA
 }
 
 ACH = {
 	color = { 166 225 217 }
 
-	country_type = unrecognized
+	country_type = decentralized
 
 	tier = principality
 
-	cultures = { minority_east_african minority_central_african }
+	cultures = { minority_east_african minority_east_african }
 	capital = STATE_UGANDA
 }
 
@@ -613,7 +613,7 @@ KRG = {
 
 	tier = principality
 
-	cultures = { minority_central_african minority_east_african }
+	cultures = { minority_east_african minority_east_african }
 	capital = STATE_TANGANYIKA
 }
 
@@ -657,7 +657,7 @@ TRK = {
 
 	tier = principality
 
-	cultures = { minority_east_african }
+	cultures = { minority_east_african minority_east_african }
 	capital = STATE_RIFT_VALLEY
 }
 
@@ -679,7 +679,7 @@ GGO = {
 
 	tier = principality
 
-	cultures = { minority_central_african }
+	cultures = { minority_east_african }
 	capital = STATE_LINDI
 }
 
@@ -690,7 +690,7 @@ SNG = {
 
 	tier = principality
 
-	cultures = { minority_central_african }
+	cultures = { minority_east_african }
 	capital = STATE_LINDI
 }
 
@@ -855,7 +855,7 @@ SHW = {
 
 	tier = principality
 
-	cultures = { minority_ethiopian }
+	cultures = { minority_ethiopian minority_ethiopian }
 	capital = STATE_OROMIA
 }
 
@@ -866,17 +866,19 @@ HAR = {
 
 	tier = principality
 
-	cultures = { minority_east_african minority_ethiopian }
+	cultures = { minority_ethiopian }
+	religion = sunni
 	capital = STATE_OROMIA
 }
 
 BRN = {
 	color = { 236 236 104 }
-	country_type = unrecognized
+	country_type = decentralized
 
 	tier = principality
 
 	cultures = { minority_ethiopian }
+	religion = sunni
 	capital = STATE_AMHARA
 }
 
@@ -886,7 +888,8 @@ KFA = {
 
 	tier = principality
 
-	cultures = { minority_ethiopian }
+	cultures = { minority_ethiopian minority_ethiopian }
+	religion = oriental_orthodox
 	capital = STATE_AMHARA
 }
 
@@ -897,6 +900,7 @@ SDM = {
 	tier = principality
 
 	cultures = { minority_ethiopian }
+	religion = oriental_orthodox
 	capital = STATE_AMHARA
 }
 
@@ -916,7 +920,7 @@ TGR = {
 
 	tier = principality
 
-	cultures =  { minority_ethiopian }
+	cultures =  { minority_ethiopian minority_ethiopian }
 	capital = STATE_AMHARA
 }
 
@@ -946,7 +950,7 @@ BGM = {
 
 	tier = principality
 
-	cultures = { minority_ethiopian }
+	cultures = { minority_ethiopian minority_ethiopian minority_ethiopian }
 	capital = STATE_AMHARA
 }
 
@@ -1046,7 +1050,7 @@ FTR = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_west_african minority_west_african }
 	capital = STATE_SENEGAL
 }
 
@@ -1056,7 +1060,7 @@ KNG = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_west_african minority_west_african }
 	capital = STATE_IVORY_COAST
 }
 
@@ -1129,7 +1133,7 @@ BND = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_west_african minority_west_african }
 	capital = STATE_GAMBIA
 }
 
@@ -1295,7 +1299,7 @@ ADG = {
 	capital = STATE_TIMBUKTU
 }
 
-BSS = { # minority_west_african
+BSS = { # Bassa
 	color = { 203 48 37 }
 
 	country_type = decentralized
@@ -1317,7 +1321,7 @@ TIR = { # Tiris
 	capital = STATE_MAURITANIA
 }
 
-IBL = { # minority_west_africanland
+IBL = { # Ibibioland
 	color = { 142 134 187 }
 
 	country_type = decentralized
@@ -1328,7 +1332,7 @@ IBL = { # minority_west_africanland
 	capital = STATE_NIGER_DELTA
 }
 
-KSS = { # minority_west_african
+KSS = { # Kissi
 	color = { 61 75 109 }
 
 	country_type = decentralized
@@ -1361,7 +1365,7 @@ TIV = { # Tivland
 	capital = STATE_NIGERIA
 }
 
-SRA = { # minority_central_african
+SRA = { # Sara
 	color = { 179 236 217 }
 
 	country_type = decentralized
@@ -1383,7 +1387,7 @@ EQU = { # Equatoria
 	capital = STATE_EQUATORIA
 }
 
-BJA = { # minority_east_african
+BJA = { # Beja
 	color = { 140 65 135 }
 
 	country_type = decentralized
@@ -1394,7 +1398,7 @@ BJA = { # minority_east_african
 	capital = STATE_DONGOLA
 }
 
-NBA = { # minority_east_african
+NBA = { # Nuba
 	color = { 138 187 72 }
 
 	country_type = decentralized
@@ -1405,18 +1409,18 @@ NBA = { # minority_east_african
 	capital = STATE_EQUATORIA
 }
 
-SUD = { # minority_east_african
+SUD = { # Sudanese
 	color = { 189 159 69 }
 
 	country_type = unrecognized
 
 	tier = kingdom
 
-	cultures = { minority_east_african minority_midde_east }
+	cultures = { minority_east_african minority_east_african minority_midde_east }
 	capital = STATE_BLUE_NILE
 }
 
-SKM = { # minority_east_african
+SKM = { # Usukuma. Sukuma is the name of the people, the U- prefix turns it into the name of a land
 	color = { 101 122 158 }
 
 	country_type = decentralized
@@ -1427,7 +1431,7 @@ SKM = { # minority_east_african
 	capital = STATE_TANGANYIKA
 }
 
-CHW = { # minority_southern_african
+CHW = { # Chewa
 	color = { 116 157 102 }
 
 	country_type = decentralized
@@ -1438,7 +1442,7 @@ CHW = { # minority_southern_african
 	capital = STATE_KAZEMBE
 }
 
-LMW = { # minority_southern_african
+LMW = { # Lomwe
 	color = { 201 10 48 }
 
 	country_type = decentralized
@@ -1449,7 +1453,7 @@ LMW = { # minority_southern_african
 	capital = STATE_MOCAMBIQUE
 }
 
-MKU = { # minority_southern_african
+MKU = { # Makua
 	color = { 38 140 40 }
 
 	country_type = decentralized
@@ -1460,7 +1464,7 @@ MKU = { # minority_southern_african
 	capital = STATE_MOCAMBIQUE
 }
 
-SNA = { # minority_southern_african
+SNA = { # Sena
 	color = { 91 132 128 }
 
 	country_type = decentralized
@@ -1471,7 +1475,7 @@ SNA = { # minority_southern_african
 	capital = STATE_MOCAMBIQUE
 }
 
-BTG = { # Baminority_southern_african
+BTG = { # Batonga
 	color = { 200 193 108 }
 
 	country_type = decentralized
@@ -1482,7 +1486,7 @@ BTG = { # Baminority_southern_african
 	capital = STATE_LOURENCO_MARQUES
 }
 
-XHO = { # minority_southern_african
+XHO = { # Xhosa
 	color = { 88 80 163 }
 
 	country_type = decentralized
@@ -1493,7 +1497,7 @@ XHO = { # minority_southern_african
 	capital = STATE_EASTERN_CAPE
 }
 
-UYA = { # Uminority_southern_african
+UYA = { # Uyao
 	color = { 192 204 111 }
 
 	country_type = decentralized
@@ -1511,7 +1515,7 @@ ZIM = {
 
 	tier = kingdom
 
-	cultures = { minority_west_african}
+	cultures = { minority_southern_african minority_southern_african}
 	capital = STATE_ZAMBEZIA
 }
 
@@ -1519,7 +1523,7 @@ MAL = {
 	color = { 75 179 27}
 	country_type = unrecognized
 	tier = kingdom
-	cultures = { minority_west_african }
+	cultures = { minority_west_african minority_west_african minority_west_african minority_west_african }
 	capital = STATE_WESTERN_MALI
 }
 
@@ -1536,7 +1540,7 @@ SAH = { # Sahrawi
 
 	tier = principality
 
-	cultures = { berber }
+	cultures = { minority_midde_east }
 	capital = STATE_WEST_SAHARA
 }
 
@@ -1547,7 +1551,7 @@ TUG = {
 
 	tier = principality
 
-	cultures = { berber }
+	cultures = { minority_midde_east }
 	capital = STATE_EAST_SAHARA
 }
 
@@ -1558,7 +1562,7 @@ AIT = {
 
 	tier = principality
 
-	cultures = { berber }
+	cultures = { minority_midde_east }
 	capital = STATE_CONSTANTINE
 }
 
@@ -1591,7 +1595,7 @@ BRG = {
 
 	tier = principality
 
-	cultures = { minority_west_african }
+	cultures = { minority_west_african minority_west_african }
 	capital = STATE_HAUSALAND
 }
 
@@ -1614,7 +1618,7 @@ MGB = {
 
 	tier = empire
 
-	cultures = { maghrebi berber minority_west_african }
+	cultures = { minority_midde_east minority_midde_east minority_west_african }
 	capital = STATE_TUNISIA
 }
 
@@ -1673,7 +1677,7 @@ MJK = { # Mijikenda
 
 	tier = principality
 
-	cultures = { minority_central_african }
+	cultures = { minority_east_african }
 	capital = STATE_KENYA
 }
 

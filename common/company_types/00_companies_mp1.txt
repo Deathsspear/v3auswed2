@@ -1445,7 +1445,7 @@ company_lanfang_kongsi = {
 
 	possible = {
 		cultural_acceptance_base = {
-			target = cu:hakka
+			target = cu:han
 			value >= acceptance_status_4
 		}
 		any_scope_state = {
@@ -1469,7 +1469,7 @@ company_lanfang_kongsi = {
 
 	ai_will_do = {
 		cultural_acceptance_base = {
-			target = cu:hakka
+			target = cu:han
 			value >= acceptance_status_4
 		}
 		any_scope_state = {

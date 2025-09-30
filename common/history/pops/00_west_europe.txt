@@ -2,7 +2,7 @@
 	s:STATE_SVEALAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 1081208
 			}
 			create_pop = {
@@ -18,7 +18,7 @@
 	s:STATE_GOTALAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 800208
 			}
 			create_pop = {
@@ -34,7 +34,7 @@
 	s:STATE_SCANIA = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 512860
 			}
 			create_pop = {
@@ -46,7 +46,7 @@
 	s:STATE_NORRLAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 289400
 			}
 			create_pop = {
@@ -54,7 +54,7 @@
 				size = 20000
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 18000
 			}
 		}
@@ -62,7 +62,7 @@
 	s:STATE_GOTLAND = {
 		region_state:SWE = {
 			create_pop = {
-				culture = swedish
+				culture = minority_scandinavian
 				size = 33208
 			}
 		}
@@ -70,7 +70,7 @@
 	s:STATE_JUTLAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 548908
 			}
 		}
@@ -78,7 +78,7 @@
 	s:STATE_ZEALAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 647996
 			}
 			create_pop = {
@@ -94,7 +94,7 @@
 	s:STATE_WESTERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = norwegian
+				culture = minority_scandinavian
 				size = 546800
 			}
 		}
@@ -102,11 +102,11 @@
 	s:STATE_NORTHERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = norwegian
+				culture = minority_scandinavian
 				size = 284860
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 40000
 			}
 			create_pop = {
@@ -118,7 +118,7 @@
 	s:STATE_EASTERN_NORWAY = {
 		region_state:NOR = {
 			create_pop = {
-				culture = norwegian
+				culture = minority_scandinavian
 				size = 345800
 			}
 			create_pop = {
@@ -130,11 +130,11 @@
 	s:STATE_ICELAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = icelandic
+				culture = minority_scandinavian
 				size = 63200
 			}
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 520
 			}
 		}
@@ -142,16 +142,16 @@
 	s:STATE_GREENLAND = {
 		region_state:DEN = {
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 410
 			}
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				religion = protestant
 				size = 9254
 			}
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				religion = animist
 				size = 1510
 			}
@@ -491,7 +491,7 @@
 				size = 167963
 			}
 			create_pop = {
-				culture = catalan
+				culture = minority_iberian
 				size = 145206
 			}
 			create_pop = {
@@ -800,7 +800,7 @@
 				size = 58129
 			}
 			create_pop = {
-				culture = basque
+				culture = minority_iberian
 				size = 60145
 			}
 			create_pop = {
@@ -1463,7 +1463,7 @@
 				size = 8000
 			}
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 20000
 			}
 		}
@@ -1484,7 +1484,7 @@
 				size = 200000
 			}
 			create_pop = {
-				culture = danish
+				culture = minority_scandinavian
 				size = 136404
 			}
 		}

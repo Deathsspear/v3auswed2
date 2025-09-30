@@ -12,11 +12,11 @@ POPS = {
 				size = 72600
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 427596
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 12000
 			}
 			create_pop = {
@@ -38,7 +38,7 @@ POPS = {
 				size = 632
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 7796
 			}
 			create_pop = {
@@ -52,7 +52,7 @@ POPS = {
 				size = 1592
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 4000
 			}
 			create_pop = {
@@ -70,7 +70,7 @@ POPS = {
 				size = 3588
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 8000
 			}
 		}
@@ -82,7 +82,7 @@ POPS = {
 				size = 325608
 			}
 			create_pop = {
-				culture = cariban
+				culture = minority_south_american
 				religion = catholic
 				size = 4004
 			}
@@ -96,7 +96,7 @@ POPS = {
 				size = 25300
 			}
 			create_pop = {
-				culture = guajiro
+				culture = minority_south_american
 				size = 4004
 			}
 
@@ -109,7 +109,7 @@ POPS = {
 				size = 266908
 			}
 			create_pop = {
-				culture = cariban
+				culture = minority_south_american
 				religion = catholic
 				size = 8004
 			}
@@ -141,7 +141,7 @@ POPS = {
 				size = 4630
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 28000
 			}
 		}
@@ -153,7 +153,7 @@ POPS = {
 				size = 269804
 			}
 			create_pop = {
-				culture = guajiro
+				culture = minority_south_american
 				size = 12000
 			}
 			create_pop = {
@@ -166,7 +166,7 @@ POPS = {
 				size = 62000
 			}
 			create_pop = {
-				culture = muisca
+				culture = minority_south_american
 				religion = catholic
 				size = 32004
 			}
@@ -175,7 +175,7 @@ POPS = {
 	s:STATE_GUAVIARE = {
 		region_state:CLM = {
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 88000
 			}
 			create_pop = {
@@ -209,7 +209,7 @@ POPS = {
 				size = 3000
 			}
 			create_pop = {
-				culture = muisca
+				culture = minority_south_american
 				religion = catholic
 				size = 44204
 			}
@@ -222,11 +222,11 @@ POPS = {
 				size = 164400
 			}
 			create_pop = {
-				culture = muisca
+				culture = minority_south_american
 				size = 12000
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 68000
 			}
 			create_pop = {
@@ -243,7 +243,7 @@ POPS = {
 	s:STATE_PASTAZA = {
 		region_state:NPU = {
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 40000
 			}
 			create_pop = {
@@ -251,13 +251,13 @@ POPS = {
 				size = 11996
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 4004
 			}
 		}
 		region_state:ECU = {
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 32000
 			}
 			create_pop = {
@@ -265,7 +265,7 @@ POPS = {
 				size = 1700
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 3200
 			}
 		}
@@ -277,7 +277,7 @@ POPS = {
 				size = 12000
 			}
 			create_pop = {
-				culture = aimara
+				culture = minority_south_american
 				size = 38500
 			}
 			create_pop = {
@@ -298,7 +298,7 @@ POPS = {
 				size = 43996
 			}
 			create_pop = {
-				culture = aimara
+				culture = minority_south_american
 				size = 64200
 			}
 			create_pop = {
@@ -306,7 +306,7 @@ POPS = {
 				size = 600
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 3400
 			}
 		}
@@ -318,15 +318,15 @@ POPS = {
 				size = 28200
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 8000
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 102800
 			}
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 32000
 			}
 		}
@@ -338,15 +338,15 @@ POPS = {
 				size = 220792
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 318000
 			}
 			create_pop = {
-				culture = aimara
+				culture = minority_south_american
 				size = 268004
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 47000
 			}
 			create_pop = {
@@ -362,11 +362,11 @@ POPS = {
 				size = 24000
 			}
 			create_pop = {
-				culture = aimara
+				culture = minority_south_american
 				size = 121996
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 14000
 			}
 		}
@@ -387,11 +387,11 @@ POPS = {
 				size = 4000
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 12000
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 186696
 			}
 		}
@@ -403,7 +403,7 @@ POPS = {
 				size = 248000
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 212000
 			}
 			create_pop = {
@@ -416,7 +416,7 @@ POPS = {
 				size = 6200
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 16000
 			}
 		}
@@ -437,17 +437,17 @@ POPS = {
 				size = 650
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 242804
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 12000
 			}
 		}
 		region_state:IQU = {
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 55000
 			}
 		}
@@ -459,11 +459,11 @@ POPS = {
 				size = 48000
 			}
 			create_pop = {
-				culture = aimara
+				culture = minority_south_american
 				size = 80400
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 146500
 			}
 			create_pop = {
@@ -505,7 +505,7 @@ POPS = {
 				size = 4000
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 51000
 			}
 			create_pop = {
@@ -519,7 +519,7 @@ POPS = {
 				size = 12304
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 1100
 			}
 		}
@@ -528,7 +528,7 @@ POPS = {
 	s:STATE_ALTO_PARAGUAY = {
 		region_state:GNI = {
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 11000
 			}
 			create_pop = {
@@ -549,12 +549,12 @@ POPS = {
 				size = 807
 			}
 			create_pop = { # Creoles (~1/4)
-				culture = guarani
+				culture = minority_south_american
 				religion = catholic
 				size = 48588
 			}
 			create_pop = { # Indians
-				culture = guarani
+				culture = minority_south_american
 				religion = catholic
 				size = 22050
 			}
@@ -568,7 +568,7 @@ POPS = {
 				size = 16851
 			}
 			create_pop = { # Indians (non census)
-				culture = guarani
+				culture = minority_south_american
 				size = 24012
 			}
 		}
@@ -589,13 +589,13 @@ POPS = {
 				size = 13200
 			}
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 2000
 			}
 		}
 		region_state:PAT = {
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 30000
 			}
 		}
@@ -603,13 +603,13 @@ POPS = {
 	s:STATE_PATAGONIA = {
 		region_state:THL = {
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 25100
 			}
 		}
 		region_state:PAT = {
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 31100
 			}
 			create_pop = {
@@ -621,7 +621,7 @@ POPS = {
 	s:STATE_RIO_NEGRO = {
 		region_state:ARG = {
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 6880
 			}
 			create_pop = {
@@ -640,7 +640,7 @@ POPS = {
 		}
 		region_state:PAT = {
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 17000
 			}
 			create_pop = {
@@ -665,7 +665,7 @@ POPS = {
 				size = 60
 			}
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 16000
 			}
 		}
@@ -688,7 +688,7 @@ POPS = {
 		}
 		region_state:GNI = {
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 8000
 			}
 		}
@@ -704,7 +704,7 @@ POPS = {
 				size = 16004
 			}
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 35996
 			}
 			create_pop = {
@@ -734,7 +734,7 @@ POPS = {
 				size = 80
 			}
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 2600
 			}
 		}
@@ -742,11 +742,11 @@ POPS = {
 	s:STATE_CHACO = {
 		region_state:GNI = {
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 9000
 			}
 			create_pop = {
-				culture = quechua # Santiagueño Quechua
+				culture = minority_south_american # Santiagueño Quechua
 				size = 400
 			}
 		}
@@ -756,11 +756,11 @@ POPS = {
 				size = 34804
 			}
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 1500
 			}
 			create_pop = {
-				culture = quechua # Santiagueño Quechua
+				culture = minority_south_american # Santiagueño Quechua
 				size = 1200
 			}
 		}
@@ -784,7 +784,7 @@ POPS = {
 				size = 204892
 			}
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 48000
 			}
 		}
@@ -796,19 +796,19 @@ POPS = {
 				size = 52004
 			}
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 3200
 			}
 		}
 		region_state:THL = {
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 28200
 			}
 		}
 		region_state:SLK = {
 			create_pop = {
-				culture = patagonian
+				culture = minority_south_american
 				size = 12000
 			}
 		}
@@ -824,7 +824,7 @@ POPS = {
 	s:STATE_ACRE={
 		region_state:BOL = { # sources indicate existence of small numbers of both peruvians and brazilians
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 16100
 			}
 			create_pop = {
@@ -840,7 +840,7 @@ POPS = {
 	s:STATE_AMAZONAS = {
 		region_state:CLM = {
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 12000
 			}
 			create_pop = {
@@ -850,7 +850,7 @@ POPS = {
 		}
 		region_state:PRA = {
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 36800
 			}
 			create_pop = {
@@ -869,7 +869,7 @@ POPS = {
 		}
 		region_state:BOL = { # I have literally no idea what number to put here.
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 11000
 			}
 		}
@@ -877,11 +877,11 @@ POPS = {
 	s:STATE_MATO_GROSSO = {
 		region_state:PRG = {
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 20000
 			}
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				religion = catholic
 				size = 6700
 			}
@@ -905,17 +905,17 @@ POPS = {
 				size = 15532 # 1828 census
 			}
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 30000
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 44000
 			}
 		}
 		region_state:BOL = {
 			create_pop = {
-				culture = quechua
+				culture = minority_south_american
 				size = 2300
 			}
 			create_pop = {
@@ -923,11 +923,11 @@ POPS = {
 				size = 500
 			}
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 2500
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 2560
 			}
 		}
@@ -948,7 +948,7 @@ POPS = {
 				size = 4086
 			}
 			create_pop = {
-				culture = guarani
+				culture = minority_south_american
 				size = 40000
 			}
 		}
@@ -1007,7 +1007,7 @@ POPS = {
 				size = 66265 # 1836 census
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 8000
 			}
 		}
@@ -1074,7 +1074,7 @@ POPS = {
 				size = 29902
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 4944
 			}
 			create_pop = {
@@ -1095,7 +1095,7 @@ POPS = {
 				size = 69779
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 2000
 			}
 			create_pop = {
@@ -1116,7 +1116,7 @@ POPS = {
 				size = 31839
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 3000
 			}
 			create_pop = {
@@ -1137,7 +1137,7 @@ POPS = {
 				size = 188932
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 29920
 			}
 			create_pop = {
@@ -1158,7 +1158,7 @@ POPS = {
 				size = 45114
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 7445
 			}
 			create_pop = {
@@ -1179,7 +1179,7 @@ POPS = {
 				size = 42595
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 7294
 			}
 			create_pop = {
@@ -1200,7 +1200,7 @@ POPS = {
 				size = 21921
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 994 # 1825 estimate
 			}
 			create_pop = {
@@ -1231,11 +1231,11 @@ POPS = {
 				size = 77642
 			}
 			create_pop = {
-				culture = amazonian
+				culture = minority_south_american
 				size = 43800
 			}
 			create_pop = {
-				culture = tupinamba
+				culture = minority_south_american
 				size = 3646
 			}
 			create_pop = {

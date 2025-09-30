@@ -3,7 +3,7 @@ POPS = {
 	#s:STATE_MINSK = {
 	#	region_state:RUS = {
 	#		create_pop = {
-	#			culture = byelorussian
+	#			culture = russian
 	#			size = 176925
 	#		}
 	#

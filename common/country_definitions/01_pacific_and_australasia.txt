@@ -118,7 +118,7 @@ SKH = { # Sakhalin
 
 	tier = principality
 
-	cultures = { minority_siberian }
+	cultures = { minority_siberian minority_siberian }
 	capital = STATE_SAKHALIN
 }
 
@@ -175,7 +175,7 @@ AOT = { # Aotearoa
 
 	tier = kingdom
 
-	cultures = { maori }
+	cultures = { minority_polynesian }
 	capital = STATE_NORTH_ISLAND
 }
 
@@ -232,7 +232,7 @@ UNT = { # United Tribes of New Zealand
 	tier = principality
 
 	capital = STATE_NORTH_ISLAND
-	cultures = { maori }
+	cultures = { minority_polynesian }
 	religion = protestant
 }
 
@@ -256,7 +256,7 @@ KAU = { # Kaurna
 
 	tier = principality
 
-	cultures = { aborigine }
+	cultures = { minority_polynesian }
 	capital = STATE_SOUTH_AUSTRALIA
 }
 
@@ -409,7 +409,7 @@ SEL = {
 	tier = principality
 
 	cultures = { minority_melayu }
-	capital = STATE_minority_melayuA
+	capital = STATE_MALAYA
 }
 
 # Perak
@@ -421,7 +421,7 @@ PRK = {
 	tier = principality
 
 	cultures = { minority_melayu }
-	capital = STATE_minority_melayuA
+	capital = STATE_MALAYA
 }
 
 # Sulu
@@ -492,7 +492,7 @@ IDN = {
 
 	tier = empire
 
-	cultures = { minority_melayu }
+	cultures = { minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu }
 	capital = STATE_WEST_JAVA
 }
 
@@ -508,7 +508,7 @@ MGD = {
 	capital = STATE_MINDANAO
 }
 
-YUZ = { # minority_polynesian
+YUZ = { # Yuanzhumin
 	color = { 97 44 96 }
 
 	country_type = unrecognized
@@ -526,7 +526,7 @@ PNS = { # Polynesia
 
 	tier = empire
 
-	cultures = { hawaiian aborigine maori minority_polynesian }
+	cultures = { hawaiian minority_polynesian minority_polynesian minority_polynesian minority_polynesian minority_polynesian }
 	capital = STATE_HAWAIIAN_ISLANDS
 }
 

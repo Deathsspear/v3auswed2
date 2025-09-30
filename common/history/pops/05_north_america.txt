@@ -23,7 +23,7 @@
 	s:STATE_LOUISIANA = {
 		region_state:USA = {
 			create_pop = {
-				culture = cajun
+				culture = franco_canadian
 				religion = catholic
 				size = 35992
 			}
@@ -78,7 +78,7 @@
 				size = 16000
 			}
 			create_pop = {
-				culture = iroquoian
+				culture = minority_north_american
 				size = 8000
 			}
 		}
@@ -108,11 +108,11 @@
 	s:STATE_ALASKA = {
 		region_state:ALK = {
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 7780
 			}
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 3280
 				religion = orthodox
 			}
@@ -121,17 +121,17 @@
 				size = 1000
 			}
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 1968
 			}
 		}
 		region_state:ATB = {
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 28000
 			}
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 16000
 			}
 		}
@@ -143,11 +143,11 @@
 				size = 2000
 			}
 			create_pop = {
-				culture = nez_perce
+				culture = minority_north_american
 				size = 10000
 			}
 			create_pop = {
-				culture = salish
+				culture = minority_north_american
 				size = 10000
 			}
 		}
@@ -159,15 +159,15 @@
 				size = 4848
 			}
 			create_pop = {
-				culture = salish
+				culture = minority_north_american
 				size = 8000
 			}
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 8000
 			}
 			create_pop = {
-				culture = nez_perce
+				culture = minority_north_american
 				size = 4000
 			}
 		}
@@ -175,7 +175,7 @@
 	s:STATE_IDAHO = {
 		region_state:ORG = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 3000
 			}
 			create_pop = {
@@ -189,13 +189,13 @@
 		}
 		region_state:NZP = {
 			create_pop = {
-				culture = nez_perce
+				culture = minority_north_american
 				size = 40000
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 20000
 			}
 		}
@@ -203,33 +203,33 @@
 	s:STATE_COLORADO = {
 		region_state:MEX = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 2000
 			}
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 800
 			}
 		}
 		region_state:ARP = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 10000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 4000
 			}
 			create_pop = {
-				culture = apache
+				culture = minority_north_american
 				size = 4000
 			}
 		}
 		region_state:USA = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 1200
 			}
 			create_pop = {
@@ -241,38 +241,38 @@
 	s:STATE_WYOMING = {
 		region_state:USA = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 8000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 6000
 			}
 		}
 		region_state:ARP = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4000
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 12000
 			}
 		}
 		region_state:SLS = {
 			create_pop = {
-				culture = salish
+				culture = minority_north_american
 				#size = 1300 #historical increased for gameplay
 				size = 5600
 			}
 		}
 		region_state:ABS = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 6500
 			}
 		}
@@ -280,35 +280,35 @@
 	s:STATE_MONTANA = {
 		region_state:USA = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 5000
 			}
 			create_pop = {
-				culture = dakota
+				culture = minority_north_american
 				size = 2000
 			}
 		}
 		region_state:ABS = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 28000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = dakota
+				culture = minority_north_american
 				size = 6000
 			}
 		}
 		region_state:BLF = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 14000
 			}
 		}
 		region_state:SLS = {
 			create_pop = {
-				culture = salish
+				culture = minority_north_american
 				#size = 5500 # historical increased for gameplay
 				size = 8600
 			}
@@ -317,18 +317,18 @@
 	s:STATE_NORTH_DAKOTA = {
 		region_state:USA = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 6000
 			}
 		}
 		# DKT had 22000
 		region_state:LKT = {
 			create_pop = {
-				culture = dakota
+				culture = minority_north_american
 				size = 30000
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4000
 			}
 		}
@@ -336,13 +336,13 @@
 	s:STATE_SOUTH_DAKOTA = {
 		region_state:LKT = {
 			create_pop = {
-				culture = dakota
+				culture = minority_north_american
 				size = 34000
 			}
 		}
 		region_state:USA = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4000
 			}
 		}
@@ -351,23 +351,23 @@
 	s:STATE_NEBRASKA = {
 		region_state:USA = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = dakota
+				culture = minority_north_american
 				size = 4000
 			}
 		}
 		region_state:PWN = {
 			create_pop = {
-				culture = caddoan
+				culture = minority_north_american
 				size = 10000
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 2000
 			}
 		}
@@ -375,19 +375,19 @@
 	s:STATE_KANSAS = {
 		region_state:USA = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 12000
 			}
 		}
 		region_state:PWN = {
 			create_pop = {
-				culture = caddoan
+				culture = minority_north_american
 				size = 8000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4000
 			}
 		}
@@ -395,7 +395,7 @@
 	s:STATE_OKLAHOMA = {
 		region_state:SEQ = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 2000
 			}
 			create_pop = {
@@ -404,7 +404,7 @@
 				size = 1200
 			}
 			create_pop = {
-				culture = caddoan
+				culture = minority_north_american
 				size = 8000
 			}
 			create_pop = {
@@ -414,7 +414,7 @@
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 18000
 			}
 		}
@@ -422,7 +422,7 @@
 	s:STATE_ARKANSAS = {
 		region_state:USA = {
 			create_pop = {
-				culture = cajun
+				culture = franco_canadian
 				religion = catholic
 				size = 12635
 			}
@@ -448,7 +448,7 @@
 	s:STATE_MISSOURI = {
 		region_state:USA = {
 			create_pop = {
-				culture = cajun
+				culture = franco_canadian
 				religion = catholic
 				size = 9642
 			}
@@ -487,11 +487,11 @@
 	s:STATE_IOWA = {
 		region_state:USA = {
 			create_pop = {
-				culture = algonquian
+				culture = minority_north_american
 				size = 12000
 			}
 			create_pop = {
-				culture = dakota
+				culture = minority_north_american
 				size = 8000
 			}
 			create_pop = {
@@ -503,13 +503,13 @@
 	s:STATE_MINNESOTA = {
 		region_state:USA = {
 			create_pop = {
-				culture = algonquian
+				culture = minority_north_american
 				size = 16000
 			}
 		}
 		region_state:LKT = {
 			create_pop = {
-				culture = dakota
+				culture = minority_north_american
 				size = 22000
 			}
 		}
@@ -517,7 +517,7 @@
 	s:STATE_WISCONSIN = {
 		region_state:USA = {
 			create_pop = {
-				culture = algonquian
+				culture = minority_north_american
 				size = 8000
 			}
 			create_pop = {
@@ -553,11 +553,11 @@
 				size = 123996
 			}
 			create_pop = {
-				culture = algonquian
+				culture = minority_north_american
 				size = 12000
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4000
 			}
 			create_pop = {
@@ -691,7 +691,7 @@
 				size = 1424 # 1835 Cherokee Census "Henderson Roll"
 			}
 			create_pop = {
-				culture = muskogean # Creeks tallied in the "Parsons and Albert Roll" after the 1832 Treaty of Cusseta
+				culture = minority_north_american # Creeks tallied in the "Parsons and Albert Roll" after the 1832 Treaty of Cusseta
 				size = 22240
 			}
 		}
@@ -712,13 +712,13 @@
 				size = 31183
 			}
 			create_pop = {
-				culture = muskogean
+				culture = minority_north_american
 				size = 3000
 			}
 		}
 		region_state:SML = {
 			create_pop = {
-				culture = muskogean
+				culture = minority_north_american
 				#size = 5000 # historical increased for gameplay
 				size = 10000
 			}
@@ -971,23 +971,23 @@
 	s:STATE_UTAH = {
 		region_state:MEX = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 3000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 2000
 			}
 			create_pop = {
-				culture = navajo
+				culture = minority_north_american
 				size = 4000
 			}
 		}
 		region_state:UTE = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 11000
 			}
 		}
@@ -1065,7 +1065,7 @@
 				size = 366792
 			}
 			create_pop = {
-				culture = cree
+				culture = minority_north_american
 				size = 12200
 			}
 			create_pop = {
@@ -1073,11 +1073,11 @@
 				size = 23400
 			}
 			create_pop = {
-				culture = iroquoian
+				culture = minority_north_american
 				size = 3902
 			}
 			create_pop = {
-				culture = algonquian
+				culture = minority_north_american
 				size = 3902
 			}
 			create_pop = {
@@ -1088,11 +1088,11 @@
 		}
 		region_state:HBC = {
 			create_pop = {
-				culture = metis
+				culture = minority_north_american
 				size = 3996
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4000
 			}
 			create_pop = {
@@ -1100,7 +1100,7 @@
 				size = 12000
 			}
 			create_pop = {
-				culture = cree
+				culture = minority_north_american
 				size = 28200
 			}
 		}
@@ -1122,7 +1122,7 @@
 			}
 			# 1871 census figure; not easy to get numbers or estimates before the 1871 census, and changes afterwards make it hard to say if 1836-1871 should following a growing trend or shrinking trend for First Nations in Canada
 			create_pop = {
-				culture = algonquian
+				culture = minority_north_american
 				size = 1403
 			}
 		}
@@ -1138,7 +1138,7 @@
 			}
 			# 1871 census figure; not easy to get numbers or estimates before the 1871 census, and changes afterwards make it hard to say if 1836-1871 should following a growing trend or shrinking trend for First Nations in Canada
 			create_pop = {
-				culture = algonquian
+				culture = minority_north_american
 				size = 1666
 			}
 		}
@@ -1154,17 +1154,17 @@
 				size = 5000
 			}
 			create_pop = {
-				culture = cree
+				culture = minority_north_american
 				size = 3000
 			}
 		}
 		region_state:HBC = {
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 4000
 			}
 			create_pop = {
-				culture = cree
+				culture = minority_north_american
 				size = 18204
 			}
 			create_pop = {
@@ -1180,7 +1180,7 @@
 	s:STATE_NEWFOUNDLAND = {
 		region_state:GBR = {
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 7980
 			}
 			create_pop = {
@@ -1200,31 +1200,31 @@
 				size = 3999
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 8200
 			}
 			create_pop = {
-				culture = metis
+				culture = minority_north_american
 				size = 11000
 			}
 		}
 		region_state:IRC = {
 			create_pop = {
-				culture = cree
+				culture = minority_north_american
 				size = 12000
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 12004
 			}
 		}
 		region_state:BLF = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 15400
 			}
 			create_pop = {
-				culture = metis
+				culture = minority_north_american
 				size = 5000
 			}
 		}
@@ -1236,17 +1236,17 @@
 				size = 6500
 			}
 			create_pop = {
-				culture = salish
+				culture = minority_north_american
 				size = 27396
 			}
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 7000
 			}
 		}
 		region_state:ATB = {
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 35200
 			}
 		}
@@ -1256,7 +1256,7 @@
 				size = 1500
 			}
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 13000
 			}
 		}
@@ -1268,21 +1268,21 @@
 				size = 3000
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 4200
 			}
 			create_pop = {
-				culture = metis
+				culture = minority_north_american
 				size = 16000
 			}
 		}
 		region_state:IRC = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 8000
 			}
 			create_pop = {
-				culture = cree
+				culture = minority_north_american
 				size = 24000
 			}
 		}
@@ -1294,26 +1294,26 @@
 				size = 14848
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 12000
 			}
 			create_pop = {
-				culture = metis
+				culture = minority_north_american
 				religion = protestant
 				size = 3996
 			}
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 16000
 			}
 			create_pop = {
-				culture = metis
+				culture = minority_north_american
 				size = 20004
 			}
 		}
 		region_state:IRC = {
 			create_pop = {
-				culture = cree
+				culture = minority_north_american
 				size = 12000
 			}
 		}
@@ -1321,13 +1321,13 @@
 	s:STATE_YUKON_TERRITORY = {
 		region_state:HBC = {
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 5500
 			}
 		}
 		region_state:ATB = {
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 6500
 			}
 		}
@@ -1335,7 +1335,7 @@
 	s:STATE_NORTHWEST_TERRITORIES = {
 		region_state:HBC = {
 			create_pop = {
-				culture = athabaskan
+				culture = minority_north_american
 				size = 16000
 			}
 		}
@@ -1343,7 +1343,7 @@
 	s:STATE_NUNAVUT = {
 		region_state:HBC = {
 			create_pop = {
-				culture = inuit
+				culture = minority_north_american
 				size = 11980
 			}
 		}
@@ -1367,11 +1367,11 @@
 				size = 42224
 			}
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 1996
 			}
 			create_pop = {
-				culture = caddoan
+				culture = minority_north_american
 				size = 4000
 			}
 			create_pop = {
@@ -1380,27 +1380,27 @@
 				size = 6040
 			}
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 2004
 			}
 		}
 		region_state:MEX = {
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 12000
 			}
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 3000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = comanche
+				culture = minority_north_american
 				size = 18000
 			}
 			create_pop = {
-				culture = apache
+				culture = minority_north_american
 				size = 4000
 			}
 		}
@@ -1408,13 +1408,13 @@
 	s:STATE_NEVADA = {
 		region_state:MEX = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 22000
 			}
 		}
 		region_state:BNN = {
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 6000
 			}
 		}
@@ -1422,35 +1422,35 @@
 	s:STATE_ARIZONA = {
 		region_state:MEX = {
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 4000
 			}
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 1004
 			}
 			create_pop = {
-				culture = pueblo
+				culture = minority_north_american
 				size = 3000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = navajo
+				culture = minority_north_american
 				size = 24000
 			}
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 4000
 			}
 		}
 		region_state:APC = {
 			create_pop = {
-				culture = apache
+				culture = minority_north_american
 				size = 11000
 			}
 			create_pop = {
-				culture = pueblo
+				culture = minority_north_american
 				size = 2000
 			}
 		}
@@ -1458,33 +1458,33 @@
 	s:STATE_NEW_MEXICO = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 27796
 			}
 			create_pop = {
-				culture = pueblo
+				culture = minority_north_american
 				size = 18000
 			}
 		}
 		region_state:NVJ = {
 			create_pop = {
-				culture = navajo
+				culture = minority_north_american
 				size = 6000
 			}
 			create_pop = {
-				culture = paiute
+				culture = minority_north_american
 				size = 2000
 			}
 		}
 		region_state:COM = {
 			create_pop = {
-				culture = siouan
+				culture = minority_north_american
 				size = 3000
 			}
 		}
 		region_state:APC = {
 			create_pop = {
-				culture = apache
+				culture = minority_north_american
 				size = 11000
 			}
 		}
@@ -1492,11 +1492,11 @@
 	s:STATE_CALIFORNIA = {
 		region_state:MEX = {
 			create_pop = {
-				culture = hokan
+				culture = minority_central_american
 				size = 52000
 			}
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 11996
 			}
 		}
@@ -1506,11 +1506,11 @@
 	s:STATE_SONORA = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 69087
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 43637
 			}
 		}
@@ -1518,15 +1518,15 @@
 	s:STATE_CHIHUAHUA = { # total population: 132189 (1830), 147600 (1840)
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 139895
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 8000
 			}
 			create_pop = {
-				culture = apache
+				culture = minority_north_american
 				size = 16000
 			}
 		}
@@ -1534,15 +1534,15 @@
 	s:STATE_RIO_GRANDE = { # Coahuila, Nuevo Leon and Tamaulipas. est. pop 182352 in 1830, 266647 in 1840
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 121499
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 27000
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				religion = catholic
 				size = 70004
 			}
@@ -1555,7 +1555,7 @@
 	s:STATE_VERACRUZ = { # 242658 in 1830, 259463 in 1840
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 251061
 			}
 		}
@@ -1563,11 +1563,11 @@
 	s:STATE_DURANGO = { # est. total of 156999. 153810 in 1830, 160187 in 1840
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 136199
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 20000
 			}
 			create_pop = {
@@ -1579,11 +1579,11 @@
 	s:STATE_SINALOA = { # est. total of 134941. 122285 in 1830, 147596 in 1840
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 113841
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 20000
 			}
 			create_pop = {
@@ -1599,15 +1599,15 @@
 	s:STATE_BAJIO = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 594909
 			}
 			create_pop = {
-				culture = nahua
+				culture = minority_central_american
 				size = 266461
 			}
 			create_pop = {
-				culture = tarascan
+				culture = minority_central_american
 				size = 85162
 			}
 			create_pop = {
@@ -1623,11 +1623,11 @@
 	s:STATE_YUCATAN = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 226764
 			}
 			create_pop = {
-				culture = mayan
+				culture = minority_central_american
 				size = 388804
 			}
 			create_pop = {
@@ -1643,20 +1643,20 @@
 	s:STATE_MEXICO = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 763486
 			}
 			create_pop = {
-				culture = mixtec
+				culture = minority_central_american
 				religion = catholic
 				size = 39996
 			}
 			create_pop = {
-				culture = nahua
+				culture = minority_central_american
 				size = 689604
 			}
 			create_pop = {
-				culture = zapotec
+				culture = minority_central_american
 				size = 264004
 			}
 			create_pop = {
@@ -1671,19 +1671,19 @@
 	s:STATE_GUERRERO = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 114874
 			}
 			create_pop = {
-				culture = zapotec
+				culture = minority_central_american
 				size = 13183
 			}
 			create_pop = {
-				culture = tarascan
+				culture = minority_central_american
 				size = 60846
 			}
 			create_pop = {
-				culture = nahua
+				culture = minority_central_american
 				size = 27381
 			}
 			create_pop = {
@@ -1695,19 +1695,19 @@
 	s:STATE_OAXACA = { # approx 479674. 457504 in 1830, 501844 in 1840.
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 143903
 			}
 			create_pop = {
-				culture = zapotec
+				culture = minority_central_american
 				size = 40532
 			}
 			create_pop = {
-				culture = tarascan
+				culture = minority_central_american
 				size = 187073
 			}
 			create_pop = {
-				culture = nahua
+				culture = minority_central_american
 				size = 84182
 			}
 			create_pop = {
@@ -1724,16 +1724,16 @@
 	s:STATE_JALISCO = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 1011710
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				religion = catholic
 				size = 152078
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 26373
 			}
 		}
@@ -1744,11 +1744,11 @@
 	s:STATE_ZACATECAS = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 137347
 			}
 			create_pop = {
-				culture = nahua
+				culture = minority_central_american
 				size = 175961
 			}
 		}
@@ -1758,25 +1758,25 @@
 	s:STATE_CHIAPAS = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 57846
 			}
 			create_pop = {
-				culture = mayan
+				culture = minority_central_american
 				size = 72164
 			}
 		}
 		region_state:UCA = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 5562
 			}
 			create_pop = {
-				culture = central_american
+				culture = minority_spanish
 				size = 1854
 			}
 			create_pop = {
-				culture = mayan
+				culture = minority_central_american
 				size = 9251
 			}
 		}
@@ -1784,11 +1784,11 @@
 	s:STATE_BAJA_CALIFORNIA = {
 		region_state:MEX = {
 			create_pop = {
-				culture = mexican
+				culture = minority_spanish
 				size = 8264
 			}
 			create_pop = {
-				culture = oodham
+				culture = minority_north_american
 				size = 13300
 			}
 			create_pop = {
