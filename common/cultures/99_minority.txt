@@ -289,7 +289,9 @@ color= hsv{ 0.25 0.43 0.55 }
 minority_south_american={
 	color= hsv{ 0.10 0.22 0.69 }
 	religion = catholic
-	traits = { indigenous_american_heritage south_american_group }
+	heritage = heritage_andean
+	language = language_quechuan
+	traditions = { }
 	male_common_first_names={
 		Agustin
 		Alejandro
