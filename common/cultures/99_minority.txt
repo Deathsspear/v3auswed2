@@ -1,7 +1,9 @@
 minority_east_african={
 	color= hsv{ 0.88 0.35 0.64 }
 	religion = sunni
-	traits = { east_african_culture_group african_heritage }
+	heritage = heritage_eastern_bantu
+	language = language_swahili
+	traditions = { }
 	male_common_first_names={
 		Banyingela
 		Banza
@@ -47,7 +49,9 @@ minority_east_african={
 minority_southern_african={
 	color= hsv{ 0.45 0.6 0.34 }
 	religion = animist
-	traits = { southern_african_culture_group african_heritage }
+	heritage = heritage_southern_bantu
+	language = language_nguni
+	traditions = { }
 	male_common_first_names={
 		Amadi
 		Andikan
@@ -120,7 +124,8 @@ minority_southern_african={
 minority_west_african={
 	color= hsv{ 0.98 0.38 0.94 }
 	religion = sunni
-	traits = { west_african_culture_group african_heritage }
+	heritage = heritage_sahelian
+	language = language_wolof
 	male_common_first_names={
 		Abisi
 		Adebo
@@ -191,8 +196,10 @@ minority_west_african={
 
 minority_central_african={
 	color= hsv{ 0.23 0.49 0.77 }
-	religion = sunni
-	traits = { central_african_culture_group african_heritage }
+	religion = animist
+	heritage = heritage_congolese
+	language = language_equatorial_bantu
+	traditions = { }
 	male_common_first_names={
 		Adham
 		Ahmad
@@ -233,7 +240,9 @@ minority_central_african={
 minority_ethiopian={
 color= hsv{ 0.25 0.43 0.55 }
 	religion = oriental_orthodox
-	traits = { ethiopian east_african_culture_group african_heritage }
+	heritage = heritage_abyssinian
+	language = language_amharic
+	traditions = { }
 	male_common_first_names={
 		Amare
 		Amha
