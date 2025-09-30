@@ -49,7 +49,7 @@
 	s:STATE_KUBAN = {
 		region_state:RUS = {
 			create_pop = {
-				culture = circassian
+				culture = minority_caucasian
 				size = 149000
 			}
 			create_pop = {
@@ -75,7 +75,7 @@
 		}
 		region_state:CIR = {
 			create_pop = {
-				culture = circassian
+				culture = minority_caucasian
 				size = 540000
 			}
 			create_pop = {
@@ -112,7 +112,7 @@
 				size = 433
 			}
 			create_pop = {
-				culture = assyrian
+				culture = minority_midde_east
 				size = 891
 			}
 			create_pop = {
@@ -161,7 +161,7 @@
 	s:STATE_GREATER_CAUCASUS = { #Tbilsi - and DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = georgian
+				culture = minority_caucasian
 				size = 832950
 			}
 			create_pop = {
@@ -393,7 +393,7 @@
 
 		region_state:TRM = {
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 9607
 			}
 			create_pop = {
@@ -491,7 +491,7 @@
 				size = 428468
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 180427
 			}
 			create_pop = {
@@ -509,7 +509,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = turkmen
+				culture = minority_central_asian
 				size = 20102
 			}
 			create_pop = {
@@ -520,7 +520,7 @@
 		}
 		region_state:TRM = {
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 12222
 			}
 			create_pop = {
@@ -548,7 +548,7 @@
 				size = 692396
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 38000
 			}
 			create_pop = {
@@ -571,7 +571,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = mashriqi
+				culture = minority_midde_east
 				size = 2500
 			}
 			create_pop = {
@@ -580,7 +580,7 @@
 				size = 4700
 			}
 			create_pop = {
-				culture = mashriqi
+				culture = minority_midde_east
 				religion = sunni
 				size = 18000
 			}
@@ -752,7 +752,7 @@
 	s:STATE_MERZ = {
 		region_state:TRM = {
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 151020
 			}
 			create_pop = {
@@ -767,7 +767,7 @@
 		}
 		region_state:KHI = {
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 32001
 			}
 			create_pop = {
@@ -778,7 +778,7 @@
 		}
 		region_state:BUK = {
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 45120
 			}
 			create_pop = {
@@ -825,7 +825,7 @@
 	s:STATE_TURKMENIA = {
 		region_state:TRM = {
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 246004
 			}
 			create_pop = {
@@ -840,11 +840,11 @@
 		}
 		region_state:KHI = {
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 48004
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 30004
 			}
 			create_pop = {
@@ -1010,7 +1010,7 @@
 				size = 25356
 			}
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 5123
 			}
 			create_pop = {
@@ -1125,7 +1125,7 @@
 				size = 60120
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 20192
 			}
 		}
@@ -1134,7 +1134,7 @@
 	s:STATE_NORTHERN_BALUCHISTAN = {
 		region_state:KAN = {
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 21400
 			}
 			create_pop = {
@@ -1147,7 +1147,7 @@
 				size = 1404
 			}
 			create_pop = {
-				culture = baluchi # Brahui
+				culture = minority_central_asian # Brahui
 				size = 5312
 			}
 		}
@@ -1168,11 +1168,11 @@
 				size = 12042
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 10002
 			}
 			create_pop = {
-				culture = bedouin
+				culture = minority_midde_east
 				size = 1020
 			}
 			create_pop = {
@@ -1222,11 +1222,11 @@
 				size = 8410
 			}
 			create_pop = {
-				culture = bedouin
+				culture = minority_midde_east
 				size = 3012
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 4012
 			}
 			create_pop = {
@@ -1240,7 +1240,7 @@
 				size = 31022
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 15021
 			}
 			create_pop = {
@@ -1271,7 +1271,7 @@
 				size = 75779
 			}
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 40315
 			}
 			create_pop = {
@@ -1300,11 +1300,11 @@
 				size = 7177
 			}
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 20012
 			}
 			create_pop = {
-				culture = baluchi # Brahui
+				culture = minority_central_asian # Brahui
 				size = 10012
 			}
 			create_pop = {
@@ -1383,7 +1383,7 @@
 	s:STATE_BALUCHISTAN = {
 		region_state:MAK = {
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 440296
 			}
 			create_pop = {
@@ -1393,13 +1393,13 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = baluchi
+				culture = minority_central_asian
 				size = 7000
 			}
 		}
 		region_state:KAL = {
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 512392
 			}
 			create_pop = {
@@ -1413,13 +1413,13 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = baluchi
+				culture = minority_central_asian
 				size = 10000
 			}
 		}
 		region_state:OMA = {
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 4100
 			}
 			create_pop = {
@@ -1428,17 +1428,17 @@
 				size = 300
 			}
 			create_pop = {
-				culture = bedouin
+				culture = minority_midde_east
 				size = 160
 			}
 		}
 		region_state:KAN = {
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 28100
 			}
 			create_pop = {
-				culture = baluchi # Brahui
+				culture = minority_central_asian # Brahui
 				size = 3185
 			}
 			create_pop = {

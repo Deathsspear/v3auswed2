@@ -763,7 +763,7 @@ arabic_clothes_trigger = {
 					NOT = { has_discrimination_trait = heritage_christian }
 				}
 			}
-			culture = cu:circassian
+			culture = cu:minority_caucasian
 			AND = { # Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
 				culture = cu:albanian
 				exists = home_country
@@ -817,7 +817,7 @@ european_clothes_trigger = {
 					has_discrimination_trait_group = heritage_group_european
 				}
 				NOT = {
-					culture = cu:circassian
+					culture = cu:minority_caucasian
 				}
 				NOT = {
 					AND = { # Albanian characters serving either the Ottomans or Egyptians should wear that country's clothing.
@@ -1095,7 +1095,7 @@ european_clothes_pop_trigger = {
 			has_discrimination_trait_group = heritage_group_european
 		}
 		NOT = {
-			culture = cu:circassian
+			culture = cu:minority_caucasian
 		}
 	}
 }
@@ -1107,7 +1107,7 @@ arabic_clothes_pop_trigger = {
 			culture = {
 				has_discrimination_trait_group = heritage_group_middle_eastern
 			}
-			culture = cu:circassian
+			culture = cu:minority_caucasian
 		}
 	}
 }
@@ -1137,7 +1137,7 @@ circumpolar_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		OR = {
-			culture = cu:inuit
+			culture = cu:minority_north_american
 			culture = {
 				has_discrimination_trait = heritage_siberian
 			}
@@ -1222,8 +1222,8 @@ integrated_south_american_natives_pop_trigger = { # Represents those South Ameri
 			}
 			NOT = {
 				OR = {
-					this = cu:patagonian
-					this = cu:amazonian
+					this = cu:minority_south_american
+					this = cu:minority_south_american
 				}
 			}
 		}
@@ -1234,8 +1234,8 @@ cold_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		OR = {
-			has_pop_culture = inuit
-			has_pop_culture = athabaskan
+			has_pop_culture = minority_north_american
+			has_pop_culture = minority_north_american
 			has_pop_culture = siberian
 		}
 	}
@@ -1596,9 +1596,9 @@ should_be_naked_trigger = {
 			is_pop_type = slaves
 		}
 		OR = {
-			culture = cu:amazonian
-			culture = cu:nuba
-			culture = cu:dinka
+			culture = cu:minority_south_american
+			culture = cu:minority_east_african
+			culture = cu:minority_east_african
 		}
 	}
 }

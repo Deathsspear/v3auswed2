@@ -1,8 +1,8 @@
-cu:amhara
-cu:tigray
-cu:afar
-cu:oromo
-cu:sidama
+cu:minority_ethiopian
+cu:minority_ethiopian
+cu:minority_ethiopian
+cu:minority_ethiopian
+cu:minority_ethiopian
 
 --->cu:minority_ethiopian
 

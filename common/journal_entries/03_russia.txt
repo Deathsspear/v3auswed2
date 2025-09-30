@@ -320,12 +320,12 @@ je_circassian_expulsions = {
                 exists = c:CIR
             }
         }
-        cultural_acceptance_base = { target = cu:circassian value < acceptance_status_4 }
+        cultural_acceptance_base = { target = cu:minority_caucasian value < acceptance_status_4 }
         owns_entire_state_region = STATE_KUBAN
     }
 
     immediate = {
-        cu:circassian = {
+        cu:minority_caucasian = {
             save_scope_as = circassian_culture_scope
         }
         random_country = {
@@ -354,7 +354,7 @@ je_circassian_expulsions = {
             custom_tooltip = {
                 text = circassians_below_5_percent
                 culture_percent_state = {
-                    target = cu:circassian
+                    target = cu:minority_caucasian
                     value <= 0.05
                 }
             }
@@ -373,7 +373,7 @@ je_circassian_expulsions = {
                 has_variable = halted_circassian_deportations
             }
             c:RUS ?= {
-                cultural_acceptance_base = { target = cu:circassian value >= acceptance_status_4 }
+                cultural_acceptance_base = { target = cu:minority_caucasian value >= acceptance_status_4 }
             }
         }
     }
@@ -398,7 +398,7 @@ je_circassian_expulsions = {
                     limit = {
                         region = sr:region_caucasus
                         any_scope_pop = {
-                            culture = cu:circassian
+                            culture = cu:minority_caucasian
                         }
                     }
                     save_scope_as = circassian_expulsion_state
@@ -425,7 +425,7 @@ je_circassian_expulsions = {
                         save_scope_as = expulsion_destination_state
                     }
                 }
-                cu:circassian = {
+                cu:minority_caucasian = {
                     save_scope_as = circassian_culture
                 }
                 set_variable = {
@@ -441,34 +441,34 @@ je_circassian_expulsions = {
                         }
                         kill_population_percent_in_state = {
                             percent = 0.06
-                            culture = cu:circassian
+                            culture = cu:minority_caucasian
                         }
                     }
                     else = {
                         kill_population_percent_in_state = {
                             percent = 0.04
-                            culture = cu:circassian
+                            culture = cu:minority_caucasian
                         }
                     }
                     custom_tooltip = {
                         text = three_pops_deported_tt
                         random_scope_pop = {
                             limit = {
-                                culture = cu:circassian
+                                culture = cu:minority_caucasian
                                 strata = lower
                             }
                             move_pop = scope:expulsion_destination_state
                         }
                         random_scope_pop = {
                             limit = {
-                                culture = cu:circassian
+                                culture = cu:minority_caucasian
                                 strata = middle
                             }
                             move_pop = scope:expulsion_destination_state
                         }
                         random_scope_pop = {
                             limit = {
-                                culture = cu:circassian
+                                culture = cu:minority_caucasian
                                 strata = upper
                             }
                             move_pop = scope:expulsion_destination_state
@@ -891,7 +891,7 @@ je_pacify_the_steppes = {
                             OR = {
                                 country_has_primary_culture = cu:kirgiz
                                 country_has_primary_culture = cu:uzbek
-                                country_has_primary_culture = cu:turkmen
+                                country_has_primary_culture = cu:minority_central_asian
                                 country_has_primary_culture = cu:uighur
                             }
                             has_interest_marker_in_region = region_central_asia

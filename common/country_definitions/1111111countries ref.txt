@@ -12,50 +12,50 @@ SCH +
 
 
 minority_south_american
-quechua
-amazonian
-guajiro
-aimara
-muisca
-guarani
-patagonian
-tupinamba
-cariban
+minority_south_american
+minority_south_american
+minority_south_american
+minority_south_american
+minority_south_american
+minority_south_american
+minority_south_american
+minority_south_american
+minority_south_american
 
 minority_north_american
-iroquoian
-inuit
-nez_perce
-salish
-paiute
-siouan
-apache
-dakota(check state)
-caddoan
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american(check state)
+minority_north_american
 cherokee -keep
-athabaskan
-algonquian
-muskogean
-navajo
-cree
-metis
-oodham
-comanche
-pueblo
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
+minority_north_american
 
 minority_central_american
-mayan
-miskito
-hokan (X)
-nahua
-tarascan
-zapotec
-mixtec
+minority_central_american
+minority_central_american
+minority_central_american (X)
+minority_central_american
+minority_central_american
+minority_central_american
+minority_central_american
 
 minority_spanish
-central_american (check minority_central_american)
-caribeno (check afro)
-mexican
+minority_spanish (check minority_central_american)
+minority_spanish (check afro)
+minority_spanish
 
 
 -han-
@@ -91,10 +91,10 @@ khmu
 
 
 minority_midde_east
-yemenite
-bedouin
-mashriqi
-misri
+minority_midde_east
+minority_midde_east
+minority_midde_east
+minority_midde_east
 
 minority_indian
 assamese
@@ -132,9 +132,9 @@ kirgiz
 tajik (-> pashtun) (check state)
 pashtun (keep for formation)
 uighur
-baluchi (keep for formation)
+minority_central_asian (keep for formation)
 hazara
-turkmen (check state)
+minority_central_asian (check state)
 minority_central_asian
 minority_central_asian (check state)
 pathan (keep for formation)

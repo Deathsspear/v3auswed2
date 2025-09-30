@@ -803,7 +803,7 @@
 				size = 79030
 			}
 			create_pop = {
-				culture = circassian
+				culture = minority_caucasian
 				size = 5050
 			}
 			create_pop = {
@@ -827,7 +827,7 @@
 		}
 		region_state:CIR = {
 			create_pop = {
-				culture = circassian
+				culture = minority_caucasian
 				size = 57809
 			}
 			create_pop = {
@@ -884,7 +884,7 @@
 				size = 12054
 			}
 			create_pop = {
-				culture = turkmen
+				culture = minority_central_asian
 				size = 8908
 			}
 			create_pop = {

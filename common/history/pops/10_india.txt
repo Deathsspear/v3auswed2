@@ -906,7 +906,7 @@ POPS = {
 				size = 37120
 			}
 			create_pop = {
-				culture = baluchi
+				culture = minority_central_asian
 				size = 7110
 			}
 		}
@@ -1387,7 +1387,7 @@ POPS = {
 				size = 194000
 			}
 			create_pop = {
-				culture = mashriqi
+				culture = minority_midde_east
 				religion = sunni
 				size = 32000
 			}
@@ -1431,7 +1431,7 @@ POPS = {
 				size = 53020
 			}
 			create_pop = {
-				culture = bedouin
+				culture = minority_midde_east
 				religion = sunni
 				size = 671
 			}
@@ -1458,7 +1458,7 @@ POPS = {
 				size = 49
 			}
 			create_pop = {
-				culture = swahili
+				culture = minority_east_african
 				pop_type = laborers
 				size = 46
 			}
@@ -1480,7 +1480,7 @@ POPS = {
 				size = 68000
 			}
 			create_pop = {
-				culture = swahili
+				culture = minority_east_african
 				size = 2000
 			}
 			create_pop = {
