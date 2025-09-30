@@ -990,7 +990,7 @@ minority_caucasian={
 	graphics = european
 }
 
-minority_midde_east={
+minority_middle_east={
 	color= rgb{ 154 164 89 }
 	religion = sunni
 	obsessions = {
