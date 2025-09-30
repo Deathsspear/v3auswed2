@@ -847,7 +847,7 @@ indian_clothes_trigger = {
 			culture = {
 				OR = {
 					has_discrimination_trait_group = heritage_group_south_asian
-					cu:pathan ?= this
+					cu:minority_central_asian ?= this
 				}
 			}
 			religion = rel:sikh
@@ -1067,8 +1067,8 @@ east_asian_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		NOR = {
-			culture = cu:yakut
-			culture = cu:siberian
+			culture = cu:minority_siberian
+			culture = cu:minority_siberian
 		}
 		culture = {
 			OR = {
@@ -1236,7 +1236,7 @@ cold_clothes_pop_trigger = {
 		OR = {
 			has_pop_culture = minority_north_american
 			has_pop_culture = minority_north_american
-			has_pop_culture = siberian
+			has_pop_culture = minority_siberian
 		}
 	}
 }
@@ -1246,7 +1246,7 @@ japanese_clothes_pop_trigger = {
 	scope:pop = {
 		OR = {
 			culture = cu:japanese
-			culture = cu:ainu
+			culture = cu:minority_siberian
 		}
 	}
 }
@@ -1257,7 +1257,7 @@ japanese_clothes_trigger = {
 	scope:character = {
           OR = {
           	culture = cu:japanese
-          	culture = cu:ainu
+          	culture = cu:minority_siberian
           }
 	}
 }

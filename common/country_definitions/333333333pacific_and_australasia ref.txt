@@ -9,7 +9,7 @@ maori
 melanesian
 polynesian
 micronesian
-yuanzhumin
+minority_polynesian
 aborigine
 
 
@@ -21,7 +21,7 @@ minority_melayu (check IDN)
 bornean
 sumatran
 moluccan
-malay
+minority_melayu
 moro
 balinese
 javan
@@ -29,8 +29,8 @@ batak
 dayak
 
 minority_siberian
-ainu
-siberian
+minority_siberian
+minority_siberian
 
 
 

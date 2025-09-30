@@ -1,10 +1,10 @@
 ﻿l_braz_por:
  minority_ethiopian:0 "Etíope"
  minority_midde_east:0 "Árabe"
- hindustani:0 "Norte Indiano"
- kannada:0 "Sul Indiano"
+ minority_indian:0 "Norte Indiano"
+ minority_indian:0 "Sul Indiano"
  swedish:0 "Escandinavo"
  russian:0 "Eslavos Orientais"
  polish:0 "Eslavos Ocidentais"
  minority_caucasian:0 "Cáucaso"
- malay:0 "Malaio"
+ minority_melayu:0 "Malaio"

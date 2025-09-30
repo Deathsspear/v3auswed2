@@ -976,7 +976,7 @@
 				size = 28000
 			}
 			create_pop = {
-				culture = gujarati
+				culture = minority_indian
 				religion = shiite
 				size = 200
 			}

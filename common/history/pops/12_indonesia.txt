@@ -2,75 +2,75 @@
 	s:STATE_MALAYA = {
 		region_state:JOH = {
 			create_pop = {
-				culture = malay
+				culture = minority_melayu
 				size = 399600
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = malay
+				culture = minority_melayu
 				size = 11000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 27404
 			}
 		}
 		region_state:SEL = {
 			create_pop = {
-				culture = malay
+				culture = minority_melayu
 				size = 209000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = malay
+				culture = minority_melayu
 				size = 7000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 22000
 			}
 		}
 		region_state:PRK = {
 			create_pop = {
-				culture = malay
+				culture = minority_melayu
 				size = 136000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = malay
+				culture = minority_melayu
 				size = 2000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 9000
 			}
 		}
 		region_state:SIA = {
 			create_pop = {
-				culture = malay
+				culture = minority_melayu
 				size = 248000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 12800
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = yue
+				culture = han
 				size = 4000
 			}
 		}
 		region_state:BIC = {
 			create_pop = {
-				culture = malay
+				culture = minority_melayu
 				size = 100000
 			}
 			create_pop = {
-				culture = tamil
+				culture = minority_indian
 				size = 4400
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 17000
 			}
 			create_pop = {
@@ -96,7 +96,7 @@
 				size = 18000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 7196
 			}
 			create_pop = {
@@ -128,7 +128,7 @@
 				size = 15200
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 400
 			}
 		}
@@ -169,7 +169,7 @@
 				size = 6700
 			}
 			create_pop = {
-				culture = hakka
+				culture = han
 				size = 26000
 			}
 		}
@@ -218,7 +218,7 @@
 				size = 1000
 			}
 			create_pop = {
-				culture = hakka
+				culture = han
 				size = 1000
 			}
 		}
@@ -242,7 +242,7 @@
 				size = 4900
 			}
 			create_pop = {
-				culture = hakka
+				culture = han
 				size = 1200
 			}
 		}
@@ -293,7 +293,7 @@
 				size = 10000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 800
 			}
 		}
@@ -370,7 +370,7 @@
 				size = 3432000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 60400
 			}
 			create_pop = {
@@ -397,7 +397,7 @@
 				size = 1873792
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 30400
 			}
 			create_pop = {
@@ -424,7 +424,7 @@
 				size = 1772712
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 20400
 			}
 			create_pop = {
@@ -449,7 +449,7 @@
 				size = 43021
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 890
 			}
 			create_pop = {
@@ -470,7 +470,7 @@
 				size = 32890
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 547
 			}
 			create_pop = {
@@ -516,7 +516,7 @@
 				size = 5200
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 5120
 			}
 		}
@@ -540,7 +540,7 @@
 				size = 3928
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 15200
 			}
 		}
@@ -564,7 +564,7 @@
 				size = 1928
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 1004
 			}
 		}
@@ -599,7 +599,7 @@
 				size = 2200
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 3400
 			}
 		}
@@ -611,7 +611,7 @@
 				size = 255996
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 9800
 			}
 			create_pop = {
@@ -635,7 +635,7 @@
 				size = 116019
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 3600
 			}
 			create_pop = {
@@ -659,7 +659,7 @@
 				size = 12040
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 200
 			}
 			create_pop = {
@@ -1008,7 +1008,7 @@
 				size = 6300
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 1200
 			}
 		}
@@ -1061,7 +1061,7 @@
 				size = 5000
 			}
 			create_pop = {
-				culture = yue
+				culture = han
 				size = 230
 			}
 		}

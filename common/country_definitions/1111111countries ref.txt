@@ -59,7 +59,7 @@ minority_spanish
 
 
 -han-
-lan hakka -> han
+lan han -> han
 
 Do not change the culture of the east asian people, because if you do, the liberated country will collapse.
 
@@ -68,7 +68,7 @@ minority_melayu (check IDN)
 bornean
 sumatran
 moluccan
-malay (check state)(check culutre malayalam)
+minority_melayu (check state)(check culutre minority_indian)
 moro
 balinese
 javan
@@ -77,17 +77,17 @@ dayak
 
 
 -thai-
-shan (check state)
-lao (check state)
+thai (check state)
+thai (check state)
 
 -burmese-
-karen
+burmese
 burmese (check state)
-lushai
+burmese
 
 -khmer-
-mon (check mongol)
-khmu
+khmer (check mongol)
+khmer
 
 
 minority_midde_east
@@ -98,31 +98,31 @@ minority_midde_east
 
 minority_indian
 minority_indian
-bengali (keep for event)
+minority_indian (keep for event)
 minority_indian
-manipuri
 minority_indian
-oriya
-sinhala
-avadhi
-kanauji
 minority_indian
-kashmiri
-gujarati
-marathi
 minority_indian
-rajput (check state)
-kannada
-malayalam
-tamil
-telegu
-hindustani
-bundeli
-pahari
-deccani
-gondi
-chhattisgarhi
-bageli
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian (check state)
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
+minority_indian
 minority_indian  ( Chitral)
 
 minority_central_asian
@@ -137,7 +137,7 @@ minority_central_asian
 minority_central_asian (check state)
 minority_central_asian
 minority_central_asian (check state)
-pathan (keep for formation)
+minority_central_asian (keep for formation)
 
  
 minority_west_slavic

@@ -118,7 +118,7 @@ SKH = { # Sakhalin
 
 	tier = principality
 
-	cultures = { ainu siberian }
+	cultures = { minority_siberian minority_siberian }
 	capital = STATE_SAKHALIN
 }
 
@@ -408,7 +408,7 @@ SEL = {
 
 	tier = principality
 
-	cultures = { malay }
+	cultures = { minority_melayu }
 	capital = STATE_MALAYA
 }
 
@@ -420,7 +420,7 @@ PRK = {
 
 	tier = principality
 
-	cultures = { malay }
+	cultures = { minority_melayu }
 	capital = STATE_MALAYA
 }
 
@@ -492,7 +492,7 @@ IDN = {
 
 	tier = empire
 
-	cultures = { balinese batak bornean dayak javan malay moluccan sumatran }
+	cultures = { balinese batak bornean dayak javan minority_melayu moluccan sumatran }
 	capital = STATE_WEST_JAVA
 }
 
@@ -515,7 +515,7 @@ YUZ = { # Yuanzhumin
 
 	tier = principality
 
-	cultures = { yuanzhumin }
+	cultures = { minority_polynesian }
 	capital = STATE_FORMOSA
 }
 
@@ -526,7 +526,7 @@ PNS = { # Polynesia
 
 	tier = empire
 
-	cultures = { hawaiian maori melanesian polynesian micronesian yuanzhumin }
+	cultures = { hawaiian maori melanesian polynesian micronesian minority_polynesian }
 	capital = STATE_HAWAIIAN_ISLANDS
 }
 

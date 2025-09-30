@@ -6,7 +6,7 @@
 				size = 309600
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 2400
 			}
 			create_pop = {
@@ -87,7 +87,7 @@
 				size = 26550
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 8640
 			}
 		}
@@ -103,7 +103,7 @@
 				size = 93847
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 3665
 			}
 			create_pop = {
@@ -123,7 +123,7 @@
 				size = 73920
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 2640
 			}
 			create_pop = {
@@ -177,7 +177,7 @@
 				size = 1310
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 11570
 			}
 			create_pop = {
@@ -189,7 +189,7 @@
 	s:STATE_KAMCHATKA = {
 		region_state:RUS = {
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 4140
 			}
 			create_pop = {
@@ -202,11 +202,11 @@
 	s:STATE_OKHOTSK = {
 		region_state:RUS = {
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 5800
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				religion = orthodox
 				size = 4900
 			}
@@ -220,11 +220,11 @@
 	s:STATE_YAKUTSK = { #DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = yakut
+				culture = minority_siberian
 				size = 92805
 			}
 			create_pop = {
-				culture = yakut
+				culture = minority_siberian
 				religion = animist
 				size = 27200
 			}
@@ -233,7 +233,7 @@
 				size = 22343
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 4410
 			}
 		}
@@ -242,11 +242,11 @@
 	s:STATE_KOLYMA = { #DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = yakut
+				culture = minority_siberian
 				size = 21490
 			}
 			create_pop = {
-				culture = yakut
+				culture = minority_siberian
 				religion = animist
 				size = 15411
 			}
@@ -255,7 +255,7 @@
 				size = 1640
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 3280
 			}
 		}
@@ -272,7 +272,7 @@
 				size = 25151
 			}
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 15298
 			}
 			create_pop = {
@@ -288,7 +288,7 @@
 	s:STATE_OUTER_MANCHURIA = { #DONE
 		region_state:CHI = {
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 67800
 			}
 			create_pop = {
@@ -300,7 +300,7 @@
 	s:STATE_AMUR = { #DONE
 		region_state:CHI = {
 			create_pop = {
-				culture = siberian
+				culture = minority_siberian
 				size = 81123
 			}
 			create_pop = {

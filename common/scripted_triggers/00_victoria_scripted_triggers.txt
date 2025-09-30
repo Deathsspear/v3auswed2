@@ -587,7 +587,7 @@ independent_chinese_country_exists_in_region = {
 				any_primary_culture = {
 					has_discrimination_trait = heritage_han
 				}
-				country_has_primary_culture = cu:yi
+				country_has_primary_culture = cu:minority_east_asian
 				country_has_primary_culture = cu:manchu
 			}
 		}
@@ -626,33 +626,33 @@ state_is_homeland_of_indian_cultures = {
 		OR = {
 			is_homeland = cu:minority_indian
 			is_homeland = cu:minority_indian
-			is_homeland = cu:bengali
 			is_homeland = cu:minority_indian
-			is_homeland = cu:manipuri
 			is_homeland = cu:minority_indian
-			is_homeland = cu:oriya
-			is_homeland = cu:sinhala
-			is_homeland = cu:avadhi
 			is_homeland = cu:minority_indian
-			is_homeland = cu:kashmiri
-			is_homeland = cu:gujarati
-			is_homeland = cu:marathi
 			is_homeland = cu:minority_indian
-			is_homeland = cu:rajput
-			is_homeland = cu:kannada
-			is_homeland = cu:malayalam
-			is_homeland = cu:tamil
-			is_homeland = cu:telegu
-			is_homeland = cu:hindustani
-			is_homeland = cu:lushai
-			is_homeland = cu:bundeli
-			is_homeland = cu:pahari
-			is_homeland = cu:gondi
-			is_homeland = cu:bageli
-			is_homeland = cu:chhattisgarhi
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
 			is_homeland = cu:burmese
-			is_homeland = cu:deccani
-			is_homeland = cu:pathan
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_indian
+			is_homeland = cu:burmese
+			is_homeland = cu:minority_indian
+			is_homeland = cu:minority_central_asian
 		}
 	}
 }

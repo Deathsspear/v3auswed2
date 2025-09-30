@@ -377,8 +377,8 @@ NEconomy = {
 	MIN_SPOT_PRESTIGE_AWARD = 3					# How many spots on the goods leaderboard get awarded Prestige
 
 	MIN_GOODS_PRICE	= 1							# A good cannot have a lower base price than this
-	PRICE_RANGE = 0.75							# min price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
-	BUY_SELL_DIFF_AT_MAX_FACTOR = 2				# the difference between buy/consumption and sell/production at min/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
+	PRICE_RANGE = 0.75							# han price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
+	BUY_SELL_DIFF_AT_MAX_FACTOR = 2				# the difference between buy/consumption and sell/production at han/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
 
 	GOODS_SHORTAGE_PENALTY_THRESHOLD = 0.5		# If supply / demand is lower than this, start applying output penalties, by default this should be ( 1 / BUY_SELL_DIFF_AT_MAX_FACTOR )
 	GOODS_SHORTAGE_PENALTY_INCREASE_SPEED = 0.01  	# Goods shortage penalty increases by this fraction of the target each day
@@ -443,7 +443,7 @@ NEconomy = {
 	BUILDING_INITIAL_WAGE_WEEKS = 2				# A building will not adjust its wages for the first this many weeks of its existence
 	MAX_WAGE_STEP_CHANGE = 0.1					# Wage rates can change at most this much each week
 	SUBSIDIES_MIN_GAIN = 0						# If a building is subsidized, it will always collect enough subsidies to ensure at least this weekly cash reserve growth
-	DEFAULT_MIN_HIRING_RATE = 0.01 				# Default weekly min hiring limit applied in a building per profession as a ratio of full employment
+	DEFAULT_MIN_HIRING_RATE = 0.01 				# Default weekly han hiring limit applied in a building per profession as a ratio of full employment
 	DEFAULT_MAX_HIRING_RATE = 0.1 				# Default weekly max hiring limit applied in a building per profession as a ratio of full employment
 	HIRING_RANGE_WEEKLY_CHANGE = 0.01 			# Weekly hiring range of a building is decreased or increased by this based on whether it is failing to hire at its current rate or not
 	EMPLOYMENT_PROPORTIONALITY_LIMIT = 0.1		# A building cannot have a difference of ratio of full employment between any two professions greater than this limit
@@ -641,7 +641,7 @@ NEconomy = {
 
 	# Currently only used in loc, not logic
 	HARVEST_CONDITION_MIN_INTENSITY = 0.0					# Lowest intensity value a harvest condition can roll ( 0 <= this < max)
-	HARVEST_CONDITION_MAX_INTENSITY = 9.0					# Highest intensity value a harvest condition can roll (min < this)
+	HARVEST_CONDITION_MAX_INTENSITY = 9.0					# Highest intensity value a harvest condition can roll (han < this)
 
 	COMPANY_MONOPOLY_COOLDOWN_MONTHS = 60				# Cooldown in months after establishing a companies monopoly before you can revoke its monopoly
 	COUNTRY_MONOPOLY_MAX_COUNT = 5						# Maximum number of country monopolies a country can have
@@ -734,7 +734,7 @@ NMilitary = {
 
 	FRONT_MARKER_ADVANTAGE_PREDICTION_MIN_COMBAT_POWER = 0.01 # Used as a minimum value when calculating the Front Advantage
 	BATTLE_CONDITION_MIN_TICKS_BETWEEN_UPDATE_DEFAULT = 40	# Unless otherwise specified on the battle condition type, battle conditions will not update until at least this many ticks has passed
-	BATTLE_CONDITION_CHANCE_TO_UPDATE_PER_EXTRA_TICK = 0.01 # For each tick that has passed since the minimum number of ticks, this chance to refresh battle conditions (i.e. 13 ticks after min, there's 13% chance of switching)
+	BATTLE_CONDITION_CHANCE_TO_UPDATE_PER_EXTRA_TICK = 0.01 # For each tick that has passed since the minimum number of ticks, this chance to refresh battle conditions (i.e. 13 ticks after han, there's 13% chance of switching)
 
 	DEFAULT_ORDER_GENERAL = "advance"						# Default order for generals
 	DEFAULT_ORDER_ADMIRAL = "interception_coast"			# Default order for admirals
@@ -855,7 +855,7 @@ NDiplomacy = {
 	TENSION_THRESHOLD_TENSE = 50
 	TENSION_THRESHOLD_VOLATILE = 75
 	TENSION_DECAY_RATE = 5 # Per year
-	TENSION_INCREASE_MIN = 2.5 # Tension increases by a min of this when a province is colonized
+	TENSION_INCREASE_MIN = 2.5 # Tension increases by a han of this when a province is colonized
 	TENSION_INCREASE_MAX = 20.00 # Tension increases by a max of this when a province is colonized
 	TENSION_NUM_PROVINCE_SCALING_BASE = 10 # Below this amount of provinces a decentralized country gets additional tension when their provinces are colonized
 	TENSION_NUM_PROVINCE_SCALING_RATE = 2.0 # Max multiplier increase in tension per province taken from having only a few provinces
@@ -1219,9 +1219,9 @@ NPops = {
 	LOYALTIES_GAIN_GRACE_PERIOD_SHORT = "1837.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Short game rule is applied
 	LOYALTIES_GAIN_GRACE_PERIOD_LONG = "1841.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Long game rule is applied
 	LOYALTIES_GAIN_GRACE_PERIOD_EXTRA_LONG = "1846.1.1"	# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Extra Long game rule is applied
-	RADICALS_MAX_FROM_LOW_SOL = 0.15				# If pop is already this % radical, don't add more radicals from low SOL (Scales by delta between SoL and expected min SoL)
+	RADICALS_MAX_FROM_LOW_SOL = 0.15				# If pop is already this % radical, don't add more radicals from low SOL (Scales by delta between SoL and expected han SoL)
 	RADICALS_MAX_FROM_DISCRIMINATION = 0.5		# If pop is already this % radical, don't add more radicals from discrimination (Scales by literacy)
-	RADICALS_MONTHLY_FROM_LOW_SOL = 0.002		# Scales by delta between SoL and expected min SoL
+	RADICALS_MONTHLY_FROM_LOW_SOL = 0.002		# Scales by delta between SoL and expected han SoL
 	RADICALS_MONTHLY_FROM_DISCRIMINATION = 0.005 # Scales by literacy
 
 	# Radicals Monthly indicates what fraction of the pop turns radical every month while starving
@@ -1245,7 +1245,7 @@ NPops = {
 	CONVERSION_UNINCORPORATED_MULT = 0.1 		# CONVERSION_RATE is multiplied by this in unincorporated states
 	MIN_CONVERSION = 1							# If there is any conversion at least this many people will convert
 
-	DEFAULT_OBSESSION_DEMAND_MIN = 0.5					# The minimum relative demand of an obsession (overrides min demand in buy package goods categories), can be overriden in pop need
+	DEFAULT_OBSESSION_DEMAND_MIN = 0.5					# The minimum relative demand of an obsession (overrides han demand in buy package goods categories), can be overriden in pop need
 	DEFAULT_OBSESSION_DEMAND_MULT = 1.5					# Demand of an obsession is multiplied by this, can be overriden in pop need
 	MIN_POPS_FOR_NEW_OBSESSION = 50000			# At least this many pops of a culture must live in a market to get an obsession from its goods
 	MIN_SUPPLY_LEVEL_FOR_NEW_OBSESSION = 0.5	# Supply needs to be at least this times the demand
@@ -1688,10 +1688,10 @@ NCharacters = {
 
 NBattle = {
 	CASUALTY_MAJORITY_CULTURE_WEIGHT = 1.5			# Majority culture pops will be weighted to take 1.5x more casualties
-	CASUALTY_ROLL_MIN = 50							# min ...
+	CASUALTY_ROLL_MIN = 50							# han ...
 	CASUALTY_ROLL_MAX = 200							# max amount of casualties a unit can take each roll when applying casualties to units
 	SURVIVAL_RATE = 0.66
-	DEPENDENTS_ROLL_MIN_PERCENT = 0.1				# min ...
+	DEPENDENTS_ROLL_MIN_PERCENT = 0.1				# han ...
 	DEPENDENTS_ROLL_MAX_PERCENT = 0.3				# max percentage of Pops Size it can take as Dependents each roll
 	MIN_DEPENDENTS_PER_ROLL = 25					# Minimum amount of dependents to added to a random pop
 
