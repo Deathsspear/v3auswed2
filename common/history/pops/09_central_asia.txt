@@ -2,7 +2,7 @@
 	s:STATE_DAGESTAN = {
 		region_state:RUS = {
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 56100
 			}
 			create_pop = {
@@ -10,12 +10,12 @@
 				size = 7078
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				religion = orthodox
 				size = 42200
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 2440
 			}
 			create_pop = {
@@ -27,7 +27,7 @@
 				size = 32156
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 2777
 			}
 			create_pop = {
@@ -37,7 +37,7 @@
 		}
 		region_state:CHC = {
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 198000
 			}
 			create_pop = {
@@ -53,7 +53,7 @@
 				size = 149000
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 22000
 			}
 			create_pop = {
@@ -65,7 +65,7 @@
 				size = 114400
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 124800
 			}
 			create_pop = {
@@ -79,7 +79,7 @@
 				size = 540000
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 50000
 			}
 		}
@@ -87,7 +87,7 @@
 	s:STATE_ARMENIA = {
 		region_state:RUS = {
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 135345
 			}
 			create_pop = {
@@ -137,11 +137,11 @@
 				size = 79604
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 18294
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 21014
 			}
 			create_pop = {
@@ -173,16 +173,16 @@
 				size = 6306
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				religion = orthodox
 				size = 112000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 261189
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 29996
 			}
 			create_pop = {
@@ -228,7 +228,7 @@
 				size = 43939
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 50224
 			}
 			create_pop = {
@@ -303,7 +303,7 @@
 				size = 54224
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 62827
 			}
 			create_pop = {
@@ -341,7 +341,7 @@
 				size = 3605
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 45578
 			}
 			create_pop = {
@@ -459,7 +459,7 @@
 				size = 3581
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 5004
 			}
 			create_pop = {

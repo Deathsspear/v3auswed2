@@ -271,7 +271,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 3000
 			}
 			create_pop = {
@@ -304,7 +304,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 100
 			}
 			create_pop = {
@@ -325,7 +325,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 200
 			}
 			create_pop = {
@@ -357,7 +357,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 360
 			}
 			create_pop = {
@@ -396,7 +396,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 100
 			}
 			create_pop = {
@@ -439,12 +439,12 @@
 				size = 18000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 1400
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 1200
 			}
 			create_pop = {
@@ -486,12 +486,12 @@
 				size = 78000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				religion = catholic
 				size = 4000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 1000
 			}
 			create_pop = {
@@ -501,7 +501,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 2000
 			}
 			create_pop = {
@@ -544,7 +544,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 3000
 			}
 			create_pop = {
@@ -587,7 +587,7 @@
 				size = 96000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 29000
 			}
 			create_pop = {
@@ -606,7 +606,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 4000
 			}
 			create_pop = {
@@ -641,12 +641,12 @@
 				size = 19996
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				religion = catholic
 				size = 700
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 370
 			}
 			create_pop = {
@@ -659,7 +659,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 5000
 			}
 			create_pop = {
@@ -681,7 +681,7 @@
 				size = 52000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				religion = catholic
 				size = 7000
 			}
@@ -704,7 +704,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 3200
 			}
 			create_pop = {
@@ -736,7 +736,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 300
 			}
 			create_pop = {
@@ -768,7 +768,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 2000
 			}
 			create_pop = {
@@ -781,11 +781,11 @@
 				size = 1200
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 100
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				religion = catholic
 				size = 200
 			}
@@ -1050,7 +1050,7 @@
 				size = 29130
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 19130
 			}
 			create_pop = {
@@ -1059,7 +1059,7 @@
 				size = 7001
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				religion = catholic
 				size = 400
 			}
@@ -1133,7 +1133,7 @@
 				size = 8810
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 3150
 			}
 			create_pop = {
@@ -1193,7 +1193,7 @@
 				size = 10012
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 58402
 			}
 			create_pop = {
@@ -1253,7 +1253,7 @@
 				size = 1562
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 12050
 			}
 			create_pop = {
@@ -1295,7 +1295,7 @@
 				size = 4976
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 3910
 			}
 			create_pop = {
@@ -1325,7 +1325,7 @@
 				size = 56923
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 500
 			}
 			create_pop = {
@@ -1360,7 +1360,7 @@
 				size = 2010
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 63277
 			}
 			create_pop = {
@@ -1378,7 +1378,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 2000
 			}
 			create_pop = {
@@ -1395,7 +1395,7 @@
 				size = 598129
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 7368
 			}
 			create_pop = {
@@ -1421,7 +1421,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 2400
 			}
 			create_pop = {
@@ -1442,7 +1442,7 @@
 				size = 20102
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 9020
 			}
 			create_pop = {
@@ -1455,7 +1455,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 100
 			}
 			create_pop = {
@@ -1476,12 +1476,12 @@
 				size = 16426
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 404
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 3000
 			}
 			create_pop = {
@@ -1518,12 +1518,12 @@
 				size = 29129
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 219482
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 5000
 			}
 			create_pop = {
@@ -1544,7 +1544,7 @@
 				size = 24002
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 33596
 			}
 			create_pop = {
@@ -1558,7 +1558,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 400
 			}
 			create_pop = {
@@ -1573,7 +1573,7 @@
 				size = 30012
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 2010
 			}
 			create_pop = {
@@ -1582,7 +1582,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 100
 			}
 			create_pop = {
@@ -1599,11 +1599,11 @@
 				size = 678712
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 36003
 			}
 			create_pop = { # Hemshin
-				culture = armenian
+				culture = minority_caucasian
 				religion = sunni
 				size = 10103
 			}
@@ -1618,7 +1618,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 8732
 			}
 			create_pop = {
@@ -1663,17 +1663,17 @@
 				size = 160
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 255800
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				religion = catholic
 				size = 4010
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 4300
 			}
 			create_pop = {
@@ -1709,7 +1709,7 @@
 				size = 15000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 28500
 			}
 			create_pop = {
@@ -1718,7 +1718,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 2300
 			}
 			create_pop = {
@@ -1737,7 +1737,7 @@
 				size = 7000
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 11000
 			}
 		}
@@ -1768,11 +1768,11 @@
 				size = 89187
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 153262
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				religion = catholic
 				size = 4201
 			}
@@ -1782,7 +1782,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 1000
 			}
 			create_pop = {

@@ -6,7 +6,7 @@
 				size = 816543
 			}
 			create_pop = {
-				culture = estonian
+				culture = minority_baltic
 				size = 29910
 			}
 			create_pop = {
@@ -18,11 +18,11 @@
 				size = 61814
 			}
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 12961
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				religion = orthodox
 				size = 4187
 			}
@@ -75,7 +75,7 @@
 				size = 4148
 			}
 			create_pop = {
-				culture = byelorussian
+				culture = russian
 				size = 68442
 			}
 		}
@@ -87,7 +87,7 @@
 				size = 1149142
 			}
 			create_pop = {
-				culture = karelian
+				culture = finnish
 				size = 82966
 			}
 		}
@@ -115,16 +115,16 @@
 				size = 6562
 			}
 			create_pop = {
-				culture = karelian
+				culture = finnish
 				size = 3281
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				religion = orthodox
 				size = 5495
 			}
 			create_pop = {
-				culture = latvian
+				culture = minority_baltic
 				size = 3281
 			}
 		}
@@ -136,7 +136,7 @@
 				size = 427520
 			}
 			create_pop = {
-				culture = ukrainian
+				culture = russian
 				size = 179840
 			}
 			create_pop = {
@@ -148,7 +148,7 @@
 				size = 8320
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 7040
 			}
 		}
@@ -160,7 +160,7 @@
 				size = 682318
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				size = 5002
 			}
 			create_pop = {
@@ -172,7 +172,7 @@
 				size = 29880
 			}
 			create_pop = {
-				culture = ugrian
+				culture = finnish
 				religion = orthodox
 				size = 41453
 			}
@@ -332,7 +332,7 @@
 				size = 2600
 			}
 			create_pop = {
-				culture = lithuanian
+				culture = minority_baltic
 				religion = protestant
 				size = 117196
 			}

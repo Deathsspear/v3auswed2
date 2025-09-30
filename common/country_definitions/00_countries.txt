@@ -812,7 +812,7 @@ EST = {
 
 	tier = principality
 
-	cultures = { estonian }
+	cultures = { minority_baltic }
 	capital = STATE_TALINN
 }
 
@@ -838,7 +838,7 @@ LIT = {
 
 	tier = principality
 
-	cultures = { lithuanian }
+	cultures = { minority_baltic }
 	capital = STATE_KAUNAS
 }
 
@@ -849,7 +849,7 @@ LAT = {
 
 	tier = principality
 
-	cultures = { latvian }
+	cultures = { minority_baltic }
 	capital = STATE_RIGA
 }
 
@@ -871,7 +871,7 @@ GAL = {
 
 	tier = principality
 
-	cultures = { polish ukrainian }
+	cultures = { polish russian }
 	capital = STATE_EAST_GALICIA
 }
 
@@ -916,7 +916,7 @@ UKR = {
 
 	tier = kingdom
 
-	cultures = { ukrainian }
+	cultures = { russian }
 	capital = STATE_KIEV
 }
 
@@ -1149,7 +1149,7 @@ ARM = {
 
 	tier = kingdom
 
-	cultures = { armenian }
+	cultures = { minority_caucasian }
 	capital = STATE_ARMENIA
 	is_named_from_capital = yes
 }
@@ -1161,7 +1161,7 @@ DAG = {
 
 	tier = kingdom
 
-	cultures = { north_caucasian }
+	cultures = { minority_caucasian }
 	capital = STATE_DAGESTAN
 	is_named_from_capital = yes
 }
@@ -2448,7 +2448,7 @@ UBD = {
 
 	tier = grand_principality
 
-	cultures = { latvian estonian lithuanian }
+	cultures = { minority_baltic }
 	capital = STATE_RIGA
 }
 
@@ -2459,7 +2459,7 @@ BYE = {
 
 	tier = kingdom
 
-	cultures = { byelorussian }
+	cultures = { russian }
 	capital = STATE_MINSK
 }
 
@@ -2470,7 +2470,7 @@ PLC = {
 
 	tier = empire
 
-	cultures = { polish lithuanian }
+	cultures = { polish minority_baltic }
 	capital = STATE_WEST_GALICIA
 }
 
@@ -2593,7 +2593,7 @@ IBE = {
 
 	tier = empire
 
-	cultures = { spanish minority_iberian portuguese  galician }
+	cultures = { spanish minority_iberian portuguese }
 	capital = STATE_TOLEDO
 }
 
@@ -2831,7 +2831,7 @@ PRM = { # Perm
 
 	tier = principality
 
-	cultures = { ugrian }
+	cultures = { finnish }
 
 	capital = STATE_PERM
 }
@@ -3484,7 +3484,7 @@ NCA = {
 	color = { 97 162 242 }
 	country_type = recognized
 	tier = principality
-	cultures = { north_caucasian }
+	cultures = { minority_caucasian }
 	capital = STATE_NORTH_CAUCASUS
 }
 
@@ -3492,7 +3492,7 @@ DON = {
 	color = { 37 168 217 }
 	country_type = recognized
 	tier = principality
-	cultures = { russian ukrainian }
+	cultures = { russian russian }
 	capital = STATE_ROSTOV
 }
 
@@ -3631,7 +3631,7 @@ GLI = {
 
 	tier = principality
 
-	cultures = { galician }
+	cultures = { minority_iberian }
 	capital = STATE_GALICIA
 }
 
@@ -3904,7 +3904,7 @@ CAU = {
 
 	tier = empire
 
-	cultures = { azerbaijani armenian georgian }
+	cultures = { azerbaijani minority_caucasian georgian }
 	capital = STATE_GREATER_CAUCASUS
 }
 
@@ -3951,7 +3951,7 @@ KRL = {
 
 	tier = principality
 
-	cultures = { karelian }
+	cultures = { finnish }
 	capital = STATE_EAST_KARELIA
 }
 
@@ -4039,7 +4039,7 @@ KNT = {
 
 	tier = principality
 
-	cultures = { ugrian }
+	cultures = { finnish }
 	capital = STATE_SURGUT
 }
 
@@ -4466,7 +4466,7 @@ ABK = { # Abkhazia
 
 	tier = principality
 
-	cultures = { north_caucasian }
+	cultures = { minority_caucasian }
 
 	capital = STATE_GREATER_CAUCASUS
 }

@@ -70,7 +70,7 @@ POPS = {
 				size = 210002
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 901
 			}
 			create_pop = {
@@ -660,7 +660,7 @@ POPS = {
 				size = 310
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 210
 			}
 			create_pop = {
@@ -2283,7 +2283,7 @@ POPS = {
 				size = 200
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 451
 			}
 		}

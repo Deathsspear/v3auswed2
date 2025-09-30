@@ -30,7 +30,7 @@
 				size = 20590
 			}
 			create_pop = {
-				culture = north_caucasian
+				culture = minority_caucasian
 				size = 28588
 			}
 			create_pop = {
@@ -42,7 +42,7 @@
 				size = 26410
 			}
 			create_pop = {
-				culture = armenian
+				culture = minority_caucasian
 				size = 2741
 			}
 			create_pop = {
