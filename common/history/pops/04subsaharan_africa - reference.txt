@@ -60,7 +60,7 @@ kikuyu
 swahili
 fur
 sudanese
-somali
+somali - careful of state somaliland
 baganda
 luo
 fluvian_bantu
