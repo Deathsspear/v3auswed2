@@ -854,7 +854,7 @@ minority_polynesian={
 		Tuabayi
 	}
 	ethnicities = {
-		1 = polynesian
+		1 = minority_polynesian
 	}
 	graphics = generic
 }

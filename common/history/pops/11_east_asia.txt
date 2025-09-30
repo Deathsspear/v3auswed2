@@ -1768,7 +1768,7 @@
 				size = 3170167
 			}
 			create_pop = {
-				culture = micronesian
+				culture = minority_polynesian
 				size = 132
 			}
 			create_pop = {

@@ -19,7 +19,7 @@ NTU = {
 
 	tier = principality
 
-	cultures = { maori }
+	cultures = { minority_polynesian }
 	capital = STATE_SOUTH_ISLAND
 }
 
@@ -30,7 +30,7 @@ NTO = {
 
 	tier = principality
 
-	cultures = { maori }
+	cultures = { minority_polynesian }
 	capital = STATE_NORTH_ISLAND
 }
 
@@ -41,7 +41,7 @@ KNK = {
 
 	tier = principality
 
-	cultures = { melanesian }
+	cultures = { minority_polynesian }
 	capital = STATE_KANAK
 }
 
@@ -52,7 +52,7 @@ PPU = {
 
 	tier = principality
 
-	cultures = { melanesian }
+	cultures = { minority_polynesian }
 	capital = STATE_EASTERN_NEW_GUINEA
 }
 
@@ -63,7 +63,7 @@ HLA = { # Halia, for Bougainville
 
 	tier = principality
 
-	cultures = { melanesian }
+	cultures = { minority_polynesian }
 	capital = STATE_BOUGAINVILLE
 }
 
@@ -74,7 +74,7 @@ BLA = { # Bilua
 
 	tier = principality
 
-	cultures = { melanesian }
+	cultures = { minority_polynesian }
 	capital = STATE_SOLOMON_ISLANDS
 }
 
@@ -85,7 +85,7 @@ BLG = { # Bulungan
 
 	tier = principality
 
-	cultures = { bornean }
+	cultures = { minority_melayu }
 	capital = STATE_EAST_BORNEO
 }
 
@@ -96,7 +96,7 @@ KTI = { # Kutai
 
 	tier = principality
 
-	cultures = { bornean }
+	cultures = { minority_melayu }
 	capital = STATE_EAST_BORNEO
 }
 
@@ -107,7 +107,7 @@ FJI = { # Fiji
 
 	tier = principality
 
-	cultures = { melanesian }
+	cultures = { minority_polynesian }
 	capital = STATE_FIJI
 }
 
@@ -129,7 +129,7 @@ MCR = { # Micronesia
 
 	tier = principality
 
-	cultures = { micronesian }
+	cultures = { minority_polynesian }
 	capital = STATE_EAST_MICRONESIA
 }
 
@@ -141,7 +141,7 @@ VNT = { # Vanuatu
 
 	tier = principality
 
-	cultures = { melanesian }
+	cultures = { minority_polynesian }
 	capital = STATE_VANUATU
 }
 
@@ -152,7 +152,7 @@ NRU = { # Nauru
 
 	tier = principality
 
-	cultures = { melanesian }
+	cultures = { minority_polynesian }
 	capital = STATE_NAURU
 }
 
@@ -163,7 +163,7 @@ PLY = { # Tahiti
 
 	tier = principality
 
-	cultures = { polynesian }
+	cultures = { minority_polynesian }
 	religion = protestant
 	capital = STATE_TAHITI
 }
@@ -175,7 +175,7 @@ AOT = { # Aotearoa
 
 	tier = kingdom
 
-	cultures = { maori }
+	cultures = { minority_polynesian }
 	capital = STATE_NORTH_ISLAND
 }
 
@@ -186,7 +186,7 @@ ULR = { # Uluru
 
 	country_type = decentralized
 
-	cultures = { aborigine }
+	cultures = { minority_polynesian }
 
 	capital = STATE_NORTHERN_TERRITORY
 }
@@ -232,7 +232,7 @@ UNT = { # United Tribes of New Zealand
 	tier = principality
 
 	capital = STATE_NORTH_ISLAND
-	cultures = { maori }
+	cultures = { minority_polynesian }
 	religion = protestant
 }
 
@@ -244,7 +244,7 @@ NNG = { # Noongar
 
 	tier = principality
 
-	cultures = { aborigine }
+	cultures = { minority_polynesian }
 	capital = STATE_WESTERN_AUSTRALIA
 }
 
@@ -256,7 +256,7 @@ KAU = { # Kaurna
 
 	tier = principality
 
-	cultures = { aborigine }
+	cultures = { minority_polynesian }
 	capital = STATE_SOUTH_AUSTRALIA
 }
 
@@ -268,7 +268,7 @@ GML = { # Gamilaraay
 
 	tier = principality
 
-	cultures = { aborigine }
+	cultures = { minority_polynesian }
 	capital = STATE_NEW_SOUTH_WALES
 }
 
@@ -324,7 +324,7 @@ SAK = {
 
 	tier = principality
 
-	cultures = { sumatran }
+	cultures = { minority_melayu }
 	capital = STATE_NORTH_SUMATRA
 }
 
@@ -336,7 +336,7 @@ PON = {
 
 	tier = principality
 
-	cultures = { bornean }
+	cultures = { minority_melayu }
 	capital = STATE_WEST_BORNEO
 }
 
@@ -348,7 +348,7 @@ SMB = {
 
 	tier = principality
 
-	cultures = { bornean }
+	cultures = { minority_melayu }
 	capital = STATE_WEST_BORNEO
 }
 
@@ -360,7 +360,7 @@ JMB = {
 
 	tier = principality
 
-	cultures = { sumatran }
+	cultures = { minority_melayu }
 	capital = STATE_NORTH_SUMATRA
 }
 
@@ -372,7 +372,7 @@ YOG = {
 
 	tier = principality
 
-	cultures = { javan }
+	cultures = { minority_melayu }
 	capital = STATE_CENTRAL_JAVA
 }
 
@@ -384,7 +384,7 @@ SRK = {
 
 	tier = principality
 
-	cultures = { javan }
+	cultures = { minority_melayu }
 	capital = STATE_CENTRAL_JAVA
 }
 
@@ -396,7 +396,7 @@ BTN = {
 
 	tier = principality
 
-	cultures = { moluccan }
+	cultures = { minority_melayu }
 	capital = STATE_CELEBES
 }
 
@@ -432,7 +432,7 @@ SUL = {
 
 	tier = principality
 
-	cultures = { moro }
+	cultures = { minority_melayu }
 	capital = STATE_MINDANAO
 }
 
@@ -444,7 +444,7 @@ SLW = {
 
 	tier = principality
 
-	cultures = { moluccan }
+	cultures = { minority_melayu }
 	capital = STATE_CELEBES
 }
 
@@ -456,7 +456,7 @@ TID = {
 
 	tier = principality
 
-	cultures = { moluccan }
+	cultures = { minority_melayu }
 	capital = STATE_MOLUCCAS
 }
 
@@ -468,7 +468,7 @@ STG = {
 
 	tier = principality
 
-	cultures = { bornean }
+	cultures = { minority_melayu }
 	capital = STATE_WEST_BORNEO
 }
 
@@ -480,7 +480,7 @@ BNJ = {
 
 	tier = principality
 
-	cultures = { bornean }
+	cultures = { minority_melayu }
 	capital = STATE_EAST_BORNEO
 }
 
@@ -492,7 +492,7 @@ IDN = {
 
 	tier = empire
 
-	cultures = { balinese batak bornean dayak javan minority_melayu moluccan sumatran }
+	cultures = { minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu minority_melayu }
 	capital = STATE_WEST_JAVA
 }
 
@@ -504,7 +504,7 @@ MGD = {
 
 	tier = principality
 
-	cultures = { moro }
+	cultures = { minority_melayu }
 	capital = STATE_MINDANAO
 }
 
@@ -526,7 +526,7 @@ PNS = { # Polynesia
 
 	tier = empire
 
-	cultures = { hawaiian maori melanesian polynesian micronesian minority_polynesian }
+	cultures = { hawaiian minority_polynesian minority_polynesian minority_polynesian minority_polynesian minority_polynesian }
 	capital = STATE_HAWAIIAN_ISLANDS
 }
 
@@ -537,7 +537,7 @@ WTI = { # Wati
 
 	country_type = decentralized
 
-	cultures = { aborigine }
+	cultures = { minority_polynesian }
 
 	capital = STATE_WESTERN_AUSTRALIA
 }
@@ -549,7 +549,7 @@ MRN = { # Mirning
 
 	country_type = decentralized
 
-	cultures = { aborigine }
+	cultures = { minority_polynesian }
 
 	capital = STATE_WESTERN_AUSTRALIA
 }

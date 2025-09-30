@@ -401,7 +401,7 @@
 				size = 126
 			}
 			create_pop = {
-				culture = karelian
+				culture = finnish
 				size = 258
 			}
 		}
@@ -417,7 +417,7 @@
 				size = 757
 			}
 			create_pop = {
-				culture = karelian
+				culture = finnish
 				size = 53619
 			}
 		}
@@ -839,11 +839,11 @@
 	s:STATE_ELIZAVETPOL = { #DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 91660
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				religion = sunni
 				size = 55000
 			}
@@ -1008,7 +1008,7 @@
 				size = 240262
 			}
 			create_pop = {
-				culture = mari
+				culture = finnish
 				size = 87860
 			}
 			create_pop = {
@@ -1028,11 +1028,11 @@
 				size = 1215648
 			}
 			create_pop = {
-				culture = udmurt
+				culture = finnish
 				size = 211680
 			}
 			create_pop = {
-				culture = mari
+				culture = finnish
 				size = 24192
 			}
 			create_pop = {
@@ -1056,7 +1056,7 @@
 				size = 44970
 			}
 			create_pop = {
-				culture = mari
+				culture = finnish
 				size = 13488
 			}
 			create_pop = {

@@ -95,12 +95,12 @@
 				size = 4888
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				religion = sunni
 				size = 75112
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 21000
 			}
 			create_pop = {
@@ -124,7 +124,7 @@
 	s:STATE_AZERBAIJAN = { #Baku - and DONE
 		region_state:RUS = {
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 90245
 			}
 			create_pop = {
@@ -132,7 +132,7 @@
 				size = 2866
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				religion = sunni
 				size = 79604
 			}
@@ -186,12 +186,12 @@
 				size = 29996
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				religion = sunni
 				size = 30000
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 59335
 			}
 			create_pop = {
@@ -287,7 +287,7 @@
 				size = 15722
 			}
 			create_pop = {
-				culture = mari
+				culture = finnish
 				size = 8794
 			}
 		}

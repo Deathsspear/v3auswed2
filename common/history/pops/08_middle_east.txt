@@ -1095,7 +1095,7 @@
 				size = 4700
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 5000
 			}
 			create_pop = {
@@ -1125,7 +1125,7 @@
 				size = 1405000
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 80012
 			}
 			create_pop = { # Teheran, Hamadan
@@ -1177,7 +1177,7 @@
 	s:STATE_TABRIZ = {
 		region_state:PER = {
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 730400
 			}
 			create_pop = {
@@ -1245,7 +1245,7 @@
 				size = 155047
 			}
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 120100
 			}
 			create_pop = { # Urmia
@@ -1729,7 +1729,7 @@
 		}
 		region_state:RUS = {
 			create_pop = {
-				culture = azerbaijani
+				culture = minority_caucasian
 				size = 17000
 			}
 			create_pop = {

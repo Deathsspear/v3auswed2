@@ -6,7 +6,7 @@ cu:minority_ethiopian
 
 --->cu:minority_ethiopian
 
-cu:swedish
+cu:minority_scandinavian
 cu:norwegian
 cu:icelandic
 cu:danish
@@ -48,12 +48,12 @@ cu:minority_indian
 Modify the homeland to prevent assimilation into Netherlands!
 cu:minority_melayu
 
-cu:batak
-cu:dayak
-cu:moro
-cu:javan
-cu:moluccan
 cu:minority_melayu
-cu:bornean
-cu:sumatran
-cu:balinese
+cu:minority_melayu
+cu:minority_melayu
+cu:minority_melayu
+cu:minority_melayu
+cu:minority_melayu
+cu:minority_melayu
+cu:minority_melayu
+cu:minority_melayu

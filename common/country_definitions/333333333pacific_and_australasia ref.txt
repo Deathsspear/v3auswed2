@@ -5,28 +5,28 @@ dutch
 
 
 minority_polynesian (CHECK PNS)
-maori
-melanesian
-polynesian
-micronesian
 minority_polynesian
-aborigine
+minority_polynesian
+minority_polynesian
+minority_polynesian
+minority_polynesian
+minority_polynesian
 
 
-maori =  keep UNT for australia
-aborigine = keep KAU For australia 
+minority_polynesian =  keep UNT for australia
+minority_polynesian = keep KAU For australia 
 
 
 minority_melayu (check IDN)
-bornean
-sumatran
-moluccan
 minority_melayu
-moro
-balinese
-javan
-batak
-dayak
+minority_melayu
+minority_melayu
+minority_melayu
+minority_melayu
+minority_melayu
+minority_melayu
+minority_melayu
+minority_melayu
 
 minority_siberian
 minority_siberian

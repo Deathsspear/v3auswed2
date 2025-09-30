@@ -1284,7 +1284,7 @@ STATES = {
 		}
 
 		add_homeland = cu:australian
-		add_homeland = cu:aborigine
+		add_homeland = cu:minority_polynesian
 	}
 	s:STATE_VICTORIA = {
 		create_state = {
@@ -1296,7 +1296,7 @@ STATES = {
 
 
 		add_homeland = cu:australian
-		add_homeland = cu:aborigine
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_TASMANIA = {
@@ -1308,7 +1308,7 @@ STATES = {
 		}
 
 		add_homeland = cu:australian
-		add_homeland = cu:aborigine
+		add_homeland = cu:minority_polynesian
 
 	}
 
@@ -1319,7 +1319,7 @@ STATES = {
 		}
 
 		add_homeland = cu:australian
-		add_homeland = cu:aborigine
+		add_homeland = cu:minority_polynesian
 	}
 	s:STATE_SOUTH_AUSTRALIA = {
 		create_state = {
@@ -1349,7 +1349,7 @@ STATES = {
 			}
 		}
 		add_homeland = cu:australian
-		add_homeland = cu:aborigine
+		add_homeland = cu:minority_polynesian
 		add_claim = c:SAS
 	}
 	s:STATE_WESTERN_AUSTRALIA = {
@@ -1392,7 +1392,7 @@ STATES = {
 			}
 		}
 		add_homeland = cu:australian
-		add_homeland = cu:aborigine
+		add_homeland = cu:minority_polynesian
 		add_claim = c:WAS
 	}
 	s:STATE_NORTHERN_TERRITORY = {
@@ -1424,7 +1424,7 @@ STATES = {
 			}
 		}
 		add_homeland = cu:australian
-		add_homeland = cu:aborigine
+		add_homeland = cu:minority_polynesian
 		add_claim = c:NSW
 	}
 	s:STATE_NORTH_ISLAND = {
@@ -1448,7 +1448,7 @@ STATES = {
 		}
 
 		add_homeland = cu:australian
-		add_homeland = cu:maori
+		add_homeland = cu:minority_polynesian
 		add_claim = c:WAS
 		add_claim = c:UNT
 	}
@@ -1463,7 +1463,7 @@ STATES = {
 		}
 
 		add_homeland = cu:australian
-		add_homeland = cu:maori
+		add_homeland = cu:minority_polynesian
 
 		add_claim = c:NSW
 		add_claim = c:UNT
@@ -1474,7 +1474,7 @@ STATES = {
 			owned_provinces = { xF5DBBF x80C011 x808090 x808011 xCD1EA0 x527F6C }
 		}
 
-		add_homeland = cu:micronesian
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_WEST_MICRONESIA = {
@@ -1483,7 +1483,7 @@ STATES = {
 			owned_provinces = { x414170 xa7f7e3 x71414d x6e4206  }
 		}
 
-		add_homeland = cu:micronesian
+		add_homeland = cu:minority_polynesian
 	}
 	s:STATE_WEST_JAVA = {
 		create_state = {
@@ -1492,7 +1492,7 @@ STATES = {
 			state_type = unincorporated
 		}
 
-		add_homeland = cu:javan
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_EAST_JAVA = {
 		create_state = {
@@ -1500,7 +1500,7 @@ STATES = {
 			owned_provinces = { x2060EF x1D38B7 xEF70EC xA8B603 xC226AF xD91A27 xA0E070 xAD1F3C x5C2239 x5C2250 }
 		}
 
-		add_homeland = cu:javan
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_CENTRAL_JAVA = {
 		create_state = {
@@ -1516,7 +1516,7 @@ STATES = {
 			owned_provinces = { x143969 }
 		}
 
-		add_homeland = cu:javan
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_CEYLON = {
 		create_state = {
@@ -4147,8 +4147,8 @@ STATES = {
 			owned_provinces = { x5157D3 xDA82F4 x7AC280 xAE71B4 xEC5DEA xA2F773 x6ED39E xE4C2D6 }
 		}
 
-		add_homeland = cu:sumatran
-		add_homeland = cu:batak
+		add_homeland = cu:minority_melayu
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_SOUTH_SUMATRA = {
 		create_state = {
@@ -4156,8 +4156,8 @@ STATES = {
 			owned_provinces = { xDBE794 xA97585 x74812B x847F76 xE226FB x31E5B1 x067967 xE49A2F xE962F4 x8FBCF4 xCC1A24 x174432 x7945C0 xFB099E xD10CCE x42D05B xB0F538 x7A4DC8 x0F65F5 x27FD1C x7D6D54 x3099D2 x3441E9 xD2193E x8527A9 x7FFD6B x0D0BEB x4CF770 x00F15A x03CEC7 }
 		}
 
-		add_homeland = cu:sumatran
-		add_homeland = cu:batak
+		add_homeland = cu:minority_melayu
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_ACEH = {
 		create_state = {
@@ -4173,7 +4173,7 @@ STATES = {
 			owned_provinces = { x9A7E0B x388ABB x60E050 xE3CB2E }
 		}
 
-		add_homeland = cu:sumatran
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_WESTERN_NEW_GUINEA = {
 		create_state = {
@@ -4185,7 +4185,7 @@ STATES = {
 			owned_provinces = { xD3B54D x0A9EBC x39DD3B x42EB5E x3ECEED x12A1F1 xB40E08 x1C9F62 xAFF001 xC8615D x524F67 xC8A7EB xB4957C x918FAF x0DC0D2 x1EFBC7 x54B094 xA2083C x185D9A xBA1AF0 x51FF7F xB4FAF7 xE8222C xA5F7BC xC7965B x83923F x5A8ABF x817083 x822774 xC153E3 xFC62DC x9769DB xC6416E xD729BB }
 		}
 
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 	s:STATE_MOLUCCAS = {
 		create_state = {
@@ -4197,7 +4197,7 @@ STATES = {
 			owned_provinces = { x22A870 xD02FE9 xB346EB x7A7A6E xF0CE19 xF94D86 }
 		}
 
-		add_homeland = cu:moluccan
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_CELEBES = {
 		create_state = {
@@ -4217,7 +4217,7 @@ STATES = {
 			owned_provinces = { x7A4DF4 }
 		}
 
-		add_homeland = cu:moluccan
+		add_homeland = cu:minority_melayu
 		add_claim = c:DEI
 	}
 	s:STATE_WEST_BORNEO = {
@@ -4242,8 +4242,8 @@ STATES = {
 			owned_provinces = { x477680 xA6D36E xCF4105 x7FFBF0 xBC374E xA5A916 x56FE77 x445D59 x9910E9 x939612 x04BB3B }
 		}
 
-		add_homeland = cu:bornean
-		add_homeland = cu:dayak
+		add_homeland = cu:minority_melayu
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_EAST_BORNEO = {
 		create_state = {
@@ -4269,8 +4269,8 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:bornean
-		add_homeland = cu:dayak
+		add_homeland = cu:minority_melayu
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_SUNDA_ISLANDS = {
 		create_state = {
@@ -4287,8 +4287,8 @@ STATES = {
 			owned_provinces = { x900090 x108090 x4CFCE1 x28EC3F x699245 xCF8A98 x5F978F  xE90740  }
 		}
 
-		add_homeland = cu:moluccan
-		add_homeland = cu:balinese
+		add_homeland = cu:minority_melayu
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_MALAYA = {
 		create_state = {
@@ -4329,8 +4329,8 @@ STATES = {
 			owned_provinces = { x75D5D2 x821B67 }
 		}
 
-		add_homeland = cu:bornean
-		add_homeland = cu:dayak
+		add_homeland = cu:minority_melayu
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_MINDANAO = {
 		create_state = {
@@ -4347,7 +4347,7 @@ STATES = {
 		}
 
 		add_homeland = cu:filipino
-		add_homeland = cu:moro
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_LUZON = {
 		create_state = {
@@ -4360,7 +4360,7 @@ STATES = {
 		}
 
 		add_homeland = cu:filipino
-		add_homeland = cu:moro
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_VISAYAS = {
 		create_state = {
@@ -4369,7 +4369,7 @@ STATES = {
 		}
 
 		add_homeland = cu:filipino
-		add_homeland = cu:moro
+		add_homeland = cu:minority_melayu
 	}
 	s:STATE_ATTICA = {
 		create_state = {
@@ -5543,7 +5543,7 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 	s:STATE_SOLOMON_ISLANDS = {
 
@@ -5555,7 +5555,7 @@ STATES = {
 		}
 
 
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_BOUGAINVILLE = {
@@ -5567,7 +5567,7 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_NAURU = {
@@ -5579,7 +5579,7 @@ STATES = {
 		}
 
 
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 
 
@@ -5590,7 +5590,7 @@ STATES = {
 				x53FA6E x61A3E3 xC04D30
 			}
 		}
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_VANUATU = {
@@ -5600,7 +5600,7 @@ STATES = {
 				x504090 x75a377 x5178bc
 			}
 		}
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_KANAK = {
@@ -5610,7 +5610,7 @@ STATES = {
 				x2BEBD1 x302090 x665aaf
 			}
 		}
-		add_homeland = cu:melanesian
+		add_homeland = cu:minority_polynesian
 	}
 	s:STATE_TAHITI = {
 		create_state = {
@@ -5621,7 +5621,7 @@ STATES = {
 		}
 
 
-		add_homeland = cu:polynesian
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_TONGA = {
@@ -5632,7 +5632,7 @@ STATES = {
 			}
 		}
 
-		add_homeland = cu:polynesian
+		add_homeland = cu:minority_polynesian
 	}
 
 	s:STATE_HAIL = {
@@ -5844,7 +5844,7 @@ STATES = {
 
 		add_homeland = cu:persian
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:azerbaijani
+		add_homeland = cu:minority_caucasian
 	}
 
 	s:STATE_URMIA = {
@@ -5855,7 +5855,7 @@ STATES = {
 
 		add_homeland = cu:persian
 		add_homeland = cu:minority_midde_east
-		add_homeland = cu:azerbaijani
+		add_homeland = cu:minority_caucasian
 		add_homeland = cu:minority_caucasian
 		add_homeland = cu:minority_midde_east
 	}
@@ -5885,7 +5885,7 @@ STATES = {
 		}
 
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:azerbaijani
+		add_homeland = cu:minority_caucasian
 		add_claim = c:PER
 	}
 	s:STATE_AZERBAIJAN = {
@@ -5896,7 +5896,7 @@ STATES = {
 		}
 
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:azerbaijani
+		add_homeland = cu:minority_caucasian
 		add_claim = c:PER
 	}
 	s:STATE_ELIZAVETPOL = {
@@ -5907,7 +5907,7 @@ STATES = {
 		}
 
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:azerbaijani
+		add_homeland = cu:minority_caucasian
 		add_claim = c:PER
 	}
 	s:STATE_GREATER_CAUCASUS = {
@@ -6943,7 +6943,7 @@ STATES = {
 		}
 
 		add_homeland = cu:russian
-		add_homeland = cu:karelian
+		add_homeland = cu:finnish
 		add_homeland = cu:finnish
 	}
 	s:STATE_KOLA = {
@@ -8270,7 +8270,7 @@ STATES = {
 	    }
 	    add_homeland = cu:russian
 	    add_homeland = cu:turkish
-	    add_homeland = cu:mari
+	    add_homeland = cu:finnish
 	}
 
 	s:STATE_VYATKA = {
@@ -8279,7 +8279,7 @@ STATES = {
 	    	owned_provinces = { x003051 x0A78C3 x0DC008 x132F3A x199917 x1C24B7 x1DFAE3 x206020 x2080C0 x2101B3 x29245A x2D9E21 x336835 x34999F x3BB87B x40D3F3 x41DF7D x426858 x4344A1 x4401F4 x454C45 x494CD7 x49C31C x4CB925 x568002 x5A83AD x5B57D5 x5D5433 x624DC2 x643CDB x6578DF x67657B x6C1B87 x78F48B x7CFCC5 x7D0DB0 x8BAC4A x8C2EE8 x948973 x9E8C5F xAB7912 xB6C701 xB7D465 xB9522D xC29095 xC410CF xCA4466 xCB3697 xCE626F xD754F9 xD80177 xDBB080 xDCF9AE xE365BE xEF2B33 xEFA1B1 xF4A935 xFBBA97 xFD9F1D }
 	    }
 	    add_homeland = cu:russian
-	    add_homeland = cu:udmurt
+	    add_homeland = cu:finnish
 	}
 
 	s:STATE_UFA = {
