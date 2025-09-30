@@ -54,7 +54,7 @@
 				size = 20000
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 18000
 			}
 		}
@@ -106,7 +106,7 @@
 				size = 284860
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 40000
 			}
 			create_pop = {
@@ -491,7 +491,7 @@
 				size = 167963
 			}
 			create_pop = {
-				culture = catalan
+				culture = minority_iberian
 				size = 145206
 			}
 			create_pop = {
@@ -800,7 +800,7 @@
 				size = 58129
 			}
 			create_pop = {
-				culture = basque
+				culture = minority_iberian
 				size = 60145
 			}
 			create_pop = {

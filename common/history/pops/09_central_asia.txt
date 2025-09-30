@@ -1284,7 +1284,7 @@
 				size = 25022
 			}
 			create_pop = {
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				pop_type = slaves
 				size = 12312
 			}
@@ -1312,7 +1312,7 @@
 				size = 6001
 			}
 			create_pop = {
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				pop_type = slaves
 				size = 22312
 			}
@@ -1388,7 +1388,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 14800
 			}
 			create_pop = {
@@ -1408,7 +1408,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 21000
 			}
 			create_pop = {
@@ -1424,7 +1424,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 300
 			}
 			create_pop = {
@@ -1443,7 +1443,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 300
 			}
 		}

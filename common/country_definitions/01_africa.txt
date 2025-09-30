@@ -325,7 +325,7 @@ BMB = {
 
 	tier = principality
 
-	cultures = { lacustrine_bantu }
+	cultures = { minority_east_african }
 	capital = STATE_KAZEMBE
 }
 
@@ -413,7 +413,7 @@ HHE = {
 
 	tier = principality
 
-	cultures = { lacustrine_bantu }
+	cultures = { minority_east_african }
 	capital = STATE_LINDI
 }
 
@@ -580,7 +580,7 @@ BNY = {
 
 	tier = principality
 
-	cultures = { baganda lacustrine_bantu }
+	cultures = { baganda minority_east_african }
 	capital = STATE_UGANDA
 }
 
@@ -591,7 +591,7 @@ ANK = {
 
 	tier = principality
 
-	cultures = { baganda lacustrine_bantu }
+	cultures = { baganda minority_east_african }
 	capital = STATE_UGANDA
 }
 
@@ -602,7 +602,7 @@ ACH = {
 
 	tier = principality
 
-	cultures = { luo lacustrine_bantu }
+	cultures = { luo minority_east_african }
 	capital = STATE_UGANDA
 }
 
@@ -613,7 +613,7 @@ KRG = {
 
 	tier = principality
 
-	cultures = { lacustrine_bantu baganda }
+	cultures = { minority_east_african baganda }
 	capital = STATE_TANGANYIKA
 }
 
@@ -679,7 +679,7 @@ GGO = {
 
 	tier = principality
 
-	cultures = { lacustrine_bantu }
+	cultures = { minority_east_african }
 	capital = STATE_LINDI
 }
 
@@ -690,7 +690,7 @@ SNG = {
 
 	tier = principality
 
-	cultures = { lacustrine_bantu }
+	cultures = { minority_east_african }
 	capital = STATE_LINDI
 }
 
@@ -1677,7 +1677,7 @@ MJK = { # Mijikenda
 
 	tier = principality
 
-	cultures = { lacustrine_bantu }
+	cultures = { minority_east_african }
 	capital = STATE_KENYA
 }
 

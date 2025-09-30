@@ -1128,7 +1128,7 @@ POPS = {
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 31000
 			}
 			create_pop = {
@@ -1379,7 +1379,7 @@ POPS = {
 				size = 849208
 			}
 			create_pop = {
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size =700
 			}
 			create_pop = {
@@ -1437,7 +1437,7 @@ POPS = {
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = lacustrine_bantu
+				culture = minority_east_african
 				size = 2301
 			}
 		}

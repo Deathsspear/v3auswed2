@@ -303,7 +303,7 @@ CAT = {
 
 	tier = principality
 
-	cultures = { catalan }
+	cultures = { minority_iberian }
 	capital = STATE_CATALONIA
 	is_named_from_capital = yes
 }
@@ -407,7 +407,7 @@ NAV = {
 
 	tier = kingdom
 
-	cultures = { basque }
+	cultures = { minority_iberian }
 	capital = STATE_NAVARRA
 	is_named_from_capital = yes
 }
@@ -2593,7 +2593,7 @@ IBE = {
 
 	tier = empire
 
-	cultures = { spanish catalan portuguese basque galician }
+	cultures = { spanish minority_iberian portuguese  galician }
 	capital = STATE_TOLEDO
 }
 
@@ -2807,7 +2807,7 @@ SMI = { # Sapmi
 
 	tier = city_state
 
-	cultures = { sami }
+	cultures = { finnish }
 
 	capital = STATE_NORTHERN_NORWAY
 }

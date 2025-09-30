@@ -1137,7 +1137,7 @@ circumpolar_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		OR = {
-			culture = cu:minority_north_american
+			culture = cu:inuit
 			culture = {
 				has_discrimination_trait = heritage_siberian
 			}
@@ -1149,7 +1149,7 @@ circumpolar_clothes_pop_trigger = {
 sami_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		culture = cu:sami
+		culture = cu:finnish
 	}
 }
 
@@ -1234,7 +1234,7 @@ cold_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		OR = {
-			has_pop_culture = minority_north_american
+			has_pop_culture = inuit
 			has_pop_culture = athabaskan
 			has_pop_culture = siberian
 		}

@@ -365,7 +365,7 @@
 				size = 1250
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 7500
 			}
 		}
@@ -389,7 +389,7 @@
 				size = 3975
 			}
 			create_pop = {
-				culture = sami
+				culture = finnish
 				size = 1178
 			}
 			create_pop = {
