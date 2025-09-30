@@ -3476,7 +3476,7 @@ IUS = {
 	color = { 11 115 39 }
 	country_type = recognized
 	tier = kingdom
-	cultures = { tatar bashkir udmurt mari chuvash mordvin }
+	cultures = { tatar turkish udmurt mari turkish mordvin }
 	capital = STATE_KAZAN
 }
 
@@ -3973,7 +3973,7 @@ BKR = {
 
 	tier = principality
 
-	cultures = { bashkir }
+	cultures = { turkish }
 	capital = STATE_UFA
 }
 
@@ -4061,7 +4061,7 @@ CHV = {
 
 	tier = principality
 
-	cultures = { chuvash }
+	cultures = { turkish }
 	capital = STATE_CHUVASHIA
 }
 

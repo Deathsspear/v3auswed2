@@ -9,7 +9,7 @@ STATES = {
 		}
 
 		add_homeland = cu:russian
-		add_homeland = cu:byelorussian
+		add_homeland = cu:russian
 	}
 	s:STATE_LOUISIANA = {
 		create_state = {
@@ -6964,7 +6964,7 @@ STATES = {
 		}
 
 		add_homeland = cu:russian
-		add_homeland = cu:ugrian
+		add_homeland = cu:finnish
 	}
 	s:STATE_TARTARIA = {
 		create_state = {
@@ -7187,7 +7187,7 @@ STATES = {
 
 		add_homeland = cu:russian
 		add_homeland = cu:siberian
-		add_homeland = cu:ugrian
+		add_homeland = cu:finnish
 	}
 
 	s:STATE_UPPER_YENISEYSK = {
@@ -7398,7 +7398,7 @@ STATES = {
 			owned_provinces = { x01E061 x062D3B x0B93F6 x1197EA x26415C x361946 x3B1EB3 x79C34B x7E7DA7 x8061E0 x87E9EC x8F8DDD xB13CAC xB81A41 xBCCBB1 xC0A0E0 xC3026F xC6D645 xC9634A xD9956C xE1577C xF208D0 }
 		}
 
-		add_homeland = cu:byelorussian
+		add_homeland = cu:russian
 		add_homeland = cu:russian
 	}
 	s:STATE_CAMPANIA = {
@@ -7903,7 +7903,7 @@ STATES = {
 			owned_provinces = { x157352 x18020B x1917E9 x241A22 x406020 x66FB56 x6D7F7E x75F1B4 x7E7F58 x806161 x84294C x84FE3D x862F77 x8ABE62 x936BF9 xA201E3 xA6BED3 xA93262 xAB3AC5 xAC6FAE xB338E8 xBCB94C xBFDF20 xC15AD8 xC1D9C0 xC3FA73 xCB21FD xCCD197 xDE471E xE06176 xE87D11 xF02643 }
 		}
 
-		add_homeland = cu:byelorussian
+		add_homeland = cu:russian
 		add_homeland = cu:russian
 	}
 	s:STATE_GREATER_POLAND = {
@@ -8174,7 +8174,7 @@ STATES = {
 	    	country = c:RUS
 	    	owned_provinces = { x12A2B2 x12D336 x1B6544 x1D7F6C x1EBACB x2D1E10 x3AC527 x653DD0 x693D71 x741AD9 x7C7526 x801040 x8ACA65 x96C1A2 x9743F5 xA79C89 xCAF7B3 xCC78E2 xD19AC4 xD63384 xD99F59 xDDC14D xDFC9F0 xEEDC59 xFA0465 }
 	    }
-	    add_homeland = cu:kalmyk
+	    add_homeland = cu:turkish
 	}
 
 	s:STATE_NORTH_CAUCASUS = {
@@ -8236,7 +8236,7 @@ STATES = {
 	    	country = c:RUS
 	    	owned_provinces = { x0020E0 x0153E3 x016161 x061F7B x1AE461 x1D8857 x1DE5C6 x2B4670 x3D1AAA x6CEBE0 x9126B4 x9EF309 xA42E0B xBF1F6F xD4812D xEF4591 }
 	    }
-	    add_homeland = cu:byelorussian
+	    add_homeland = cu:russian
 	}
 
 	s:STATE_PSKOV = {
@@ -8269,7 +8269,7 @@ STATES = {
 	    	owned_provinces = { x062B1B x0D7D00 x1066EF x1D5A12 x307CEB x5D97AC x635E09 x67980D x80F7CE x811458 x83DB48 xA000C0 xC23BD0 xD13AC6 xD6E65F xDA0014 xDB5DBD xE89369 }
 	    }
 	    add_homeland = cu:russian
-	    add_homeland = cu:chuvash
+	    add_homeland = cu:turkish
 	    add_homeland = cu:mari
 	}
 
@@ -8287,7 +8287,7 @@ STATES = {
 	    	country = c:RUS
 	    	owned_provinces = { x02CBC3 x09A64F x18A32A x231291 x2C4BD2 x2E1658 x40CEBB x41FA73 x420ECB x4394A4 x44BA57 x47E0AE x48D3F2 x4F79AF x564079 x57469E x5A8F76 x5B6AF2 x62B005 x67C3D6 x73031E x756FF5 x76B781 x77A67F x79E5C3 x7B9902 x84C5D0 x95F664 xA060A0 xA66FC0 xA6E140 xA7BD05 xA91E4A xA920A8 xB37D6F xB42F67 xB4E168 xB7CB0E xB808A3 xC4AD2A xCB2D15 xCE72AB xD1DF3A xD1FB41 xD518C5 xDA5316 xDCE3DC xE3D900 xEF14C8 xEF4BDA xF05B8B xF413F5 xFC5E47 xFDDA04 xFEBB19 }
 	    }
-	    add_homeland = cu:bashkir
+	    add_homeland = cu:turkish
 	    add_homeland = cu:russian
 	}
 
@@ -8359,7 +8359,7 @@ STATES = {
 	    	owned_provinces = { x389A65 x45F63E x47EC86 x6453FB x942B77 }
 	    }
 	    add_homeland = cu:russian
-	    add_homeland = cu:bashkir
+	    add_homeland = cu:turkish
 	}
 
 	s:STATE_KURNOOL = {

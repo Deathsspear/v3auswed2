@@ -232,11 +232,11 @@
 				size = 50224
 			}
 			create_pop = {
-				culture = chuvash
+				culture = turkish
 				size = 42970
 			}
 			create_pop = {
-				culture = bashkir
+				culture = turkish
 				size = 24145
 			}
 		}
@@ -250,7 +250,7 @@
 				size = 12000
 			}
 			create_pop = {
-				culture = bashkir
+				culture = turkish
 				size = 31000
 			}
 			create_pop = {
@@ -275,11 +275,11 @@
 				size = 462676
 			}
 			create_pop = {
-				culture = chuvash
+				culture = turkish
 				size = 66257
 			}
 			create_pop = {
-				culture = bashkir
+				culture = turkish
 				size = 46043
 			}
 			create_pop = {
@@ -311,7 +311,7 @@
 				size = 67811
 			}
 			create_pop = {
-				culture = chuvash
+				culture = turkish
 				size = 17643
 			}
 			create_pop = {
