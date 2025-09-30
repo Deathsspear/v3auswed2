@@ -1001,11 +1001,13 @@ minority_caucasian={
 
 minority_middle_east={
 	color= rgb{ 154 164 89 }
-	religion = sunni
+	religion = shiite	
+	heritage = heritage_arab
+	language = language_arabic
+	traditions = { }
 	obsessions = {
 		coffee
 	}
-	traits = { arab_speaking middle_eastern_heritage }
 	male_common_first_names={
 		Abd_Allah
 		Abd_al-Karim
