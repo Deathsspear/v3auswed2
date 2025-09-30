@@ -18,11 +18,11 @@
 				size = 60000
 			}
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				size = 4000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 10000
 			}
 			create_pop = {
@@ -35,7 +35,7 @@
 			}
 			# Khumul Khanate
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				size = 12000
 			}
 			create_pop = {
@@ -52,7 +52,7 @@
 				size = 1000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 500
 			}
 			create_pop = {
@@ -61,7 +61,7 @@
 			}
 			# Turfan
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				size = 10000
 			}
 		}
@@ -80,7 +80,7 @@
 				size = 400
 			}
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				size = 340000
 			}
 			create_pop = {
@@ -92,11 +92,11 @@
 				size = 500
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 16000
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 9000
 			}
 			create_pop = {
@@ -489,7 +489,7 @@
 				size = 401660
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 48000
 			}
 		}
@@ -535,12 +535,12 @@
 				size = 264000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				religion = animist
 				size = 100000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 56000
 			}
 			create_pop = {
@@ -1036,7 +1036,7 @@
 				size = 623
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 13000
 			}
 		}
@@ -1499,12 +1499,12 @@
 				size = 59102
 			}
 			create_pop = {
-				culture = kachin
+				culture = burmese
 				religion = animist
 				size = 43010
 			}
 			create_pop = {
-				culture = kachin
+				culture = burmese
 				religion = theravada
 				size = 16459
 			}
@@ -1515,7 +1515,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = kachin
+				culture = burmese
 				size = 21000
 			}
 		}
@@ -1532,7 +1532,7 @@
 				religion = animist
 			}
 			create_pop = {
-				culture = kachin
+				culture = burmese
 				size = 48300
 			}
 			create_pop = {

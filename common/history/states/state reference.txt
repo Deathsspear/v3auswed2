@@ -18,20 +18,20 @@ Modify the homeland to prevent assimilation into Britain!
 
 cu:minority_indian
 
-cu:assamese
+cu:minority_indian
 cu:bengali
-cu:bihari
+cu:minority_indian
 cu:manipuri
-cu:nepali
+cu:minority_indian
 cu:oriya
 cu:sinhala
 cu:avadhi
 cu:kanauji
-cu:panjabi
+cu:minority_indian
 cu:kashmiri
 cu:gujarati
 cu:marathi
-cu:sindi
+cu:minority_indian
 cu:rajput
 cu:kannada
 cu:malayalam

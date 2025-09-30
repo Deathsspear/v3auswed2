@@ -3,7 +3,7 @@ POPS = {
 	s:STATE_BIHAR = {
 		region_state:BIC = {
 			create_pop = {
-				culture = bihari
+				culture = minority_indian
 				size = 9969689
 			}
 			create_pop = {
@@ -12,23 +12,23 @@ POPS = {
 				size = 192
 			}
 			create_pop = {
-				culture = bihari
+				culture = minority_indian
 				religion = sunni
 				size = 1442941
 			}
 			create_pop = {
-				culture = bihari
+				culture = minority_indian
 				religion = theravada
 				size = 102011
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = bihari
+				culture = minority_indian
 				size = 597575
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = bihari
+				culture = minority_indian
 				religion = sunni
 				size = 128903
 			}
@@ -46,11 +46,11 @@ POPS = {
 				size = 3572012
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 40102
 			}
 			create_pop = {
-				culture = nepali
+				culture = minority_indian
 				size = 30120
 			}
 			create_pop = {
@@ -124,7 +124,7 @@ POPS = {
 				size = 14617600
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 20102
 			}
 			create_pop = {
@@ -158,7 +158,7 @@ POPS = {
 	s:STATE_ASSAM = {
 		region_state:BIC = {
 			create_pop = {
-				culture = assamese
+				culture = minority_indian
 				size = 341202
 			}
 			create_pop = {
@@ -166,7 +166,7 @@ POPS = {
 				size = 10002
 			}
 			create_pop = {
-				culture = assamese
+				culture = minority_indian
 				pop_type = slaves
 				size = 51020
 			}
@@ -198,7 +198,7 @@ POPS = {
 		}
 		region_state:NGA = {
 			create_pop = {
-				culture = naga
+				culture = burmese
 				size = 123919
 			}
 		}
@@ -217,13 +217,13 @@ POPS = {
 				size = 29192
 			}
 			create_pop = {
-				culture = naga
+				culture = burmese
 				size = 39192
 			}
 		}
 		region_state:MGH = {
 			create_pop = {
-				culture = naga # Khasi
+				culture = burmese # Khasi
 				size = 62201
 			}
 		}
@@ -235,26 +235,26 @@ POPS = {
 		}
 		region_state:ASM = {
 			create_pop = {
-				culture = assamese
+				culture = minority_indian
 				size = 705200
 			}
 			create_pop = {
-				culture = assamese
+				culture = minority_indian
 				pop_type = slaves
 				size = 45561
 			}
 			create_pop = {
-				culture = assamese
+				culture = minority_indian
 				religion = animist
 				size = 250201
 			}
 			create_pop = {
-				culture = assamese
+				culture = minority_indian
 				religion = sunni
 				size = 61020
 			}
 			create_pop = {
-				culture = naga
+				culture = burmese
 				size = 150201
 			}
 		}
@@ -267,7 +267,7 @@ POPS = {
 				size = 1881169
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 152527
 			}
@@ -277,12 +277,12 @@ POPS = {
 				size = 706490
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 57283
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 74401
 			}
@@ -299,7 +299,7 @@ POPS = {
 				size = 355557
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 27341
 			}
@@ -309,7 +309,7 @@ POPS = {
 				size = 116506
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 8960
 			}
@@ -326,12 +326,12 @@ POPS = {
 		}
 		region_state:PTA = {
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 14123
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 4123
 			}
@@ -345,7 +345,7 @@ POPS = {
 				size = 4308835
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 2006
 			}
@@ -362,12 +362,12 @@ POPS = {
 		}
 		region_state:BIC = {
 			create_pop = {
-				culture = bihari
+				culture = minority_indian
 				religion = hindu
 				size = 1571251
 			}
 			create_pop = {
-				culture = bihari
+				culture = minority_indian
 				religion = sunni
 				size = 229104
 			}
@@ -454,7 +454,7 @@ POPS = {
 				size = 1720
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 11020
 			}
 		}
@@ -483,7 +483,7 @@ POPS = {
 				size = 12122
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 4121
 			}
 			create_pop = {
@@ -541,7 +541,7 @@ POPS = {
 				size = 6512
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 7123
 			}
 			create_pop = {
@@ -571,7 +571,7 @@ POPS = {
 				size = 3212
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 2134
 			}
 		}
@@ -674,7 +674,7 @@ POPS = {
 				size = 6010
 			}
 			create_pop = {
-				culture = pashtun  # pathan
+				culture = minority_central_asian  # pathan
 				religion = sunni
 				size = 9120
 			}
@@ -786,7 +786,7 @@ POPS = {
 				size = 89339
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 21054
 			}
 			create_pop = {
@@ -818,7 +818,7 @@ POPS = {
 				size = 928002
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				size = 37727
 			}
 			create_pop = {
@@ -831,7 +831,7 @@ POPS = {
 				size = 249384
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 37727
 			}
 			create_pop = {
@@ -841,7 +841,7 @@ POPS = {
 		}
 		region_state:CHT = {
 			create_pop = {
-				culture = kho # and Shina
+				culture = minority_indian # and Shina
 				size = 30210
 			}
 			create_pop = {
@@ -854,7 +854,7 @@ POPS = {
 				size = 6369
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 3127
 			}
@@ -877,17 +877,17 @@ POPS = {
 	s:STATE_PUNJAB = {
 		region_state:PAN = {
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 3491500
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				religion = sunni
 				size = 231520
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 1201001
 			}
@@ -897,12 +897,12 @@ POPS = {
 				size = 84000
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 428000
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 37120
 			}
 			create_pop = {
@@ -912,17 +912,17 @@ POPS = {
 		}
 		region_state:BHW = {
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 162022
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 32012
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				pop_type = slaves
 				size = 12012
@@ -932,11 +932,11 @@ POPS = {
 				size = 7120
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 7120
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 9001
 			}
@@ -1113,16 +1113,16 @@ POPS = {
 	s:STATE_SINDH = {
 		region_state:SIN = {
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 1644600
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				religion = shiite
 				size = 24404
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				religion = hindu
 				size = 248000
 			}
@@ -1133,7 +1133,7 @@ POPS = {
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = sindi
+				culture = minority_indian
 				size = 12000
 			}
 		}
@@ -1155,7 +1155,7 @@ POPS = {
 				size = 6889
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 6718
 			}
@@ -1176,7 +1176,7 @@ POPS = {
 				size = 2122
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				religion = hindu
 				size = 6368
 			}
@@ -1309,17 +1309,17 @@ POPS = {
 				size = 4012
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 18020
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 3038
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 217
 			}
@@ -2049,7 +2049,7 @@ POPS = {
 				size = 710
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 203012
 			}
 			create_pop = {
@@ -2253,7 +2253,7 @@ POPS = {
 				size = 425012
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 1612
 			}
@@ -2306,7 +2306,7 @@ POPS = {
 	s:STATE_HILL_PUNJAB = {
 		region_state:PAN = {
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 367514
 			}
@@ -2316,7 +2316,7 @@ POPS = {
 				size = 200711
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 538084
 			}
@@ -2330,19 +2330,19 @@ POPS = {
 				size = 43400
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 245461
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu # jains
 				size = 5389
 			}
 		}
 		region_state:BIC = {
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 12311
 			}
@@ -2352,7 +2352,7 @@ POPS = {
 				size = 6102
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 4122
 			}
@@ -2362,14 +2362,14 @@ POPS = {
 				size = 3912
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 3102
 			}
 		}
 		region_state:PTA = {
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 388804
 			}
@@ -2379,7 +2379,7 @@ POPS = {
 				size = 33367
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 123432
 			}
@@ -2389,12 +2389,12 @@ POPS = {
 				size = 13367
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 132003
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu # jains
 				size = 4917
 			}

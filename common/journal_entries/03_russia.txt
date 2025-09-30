@@ -750,7 +750,7 @@ je_pacify_the_steppes = {
     complete = {
         any_subject_or_below = {
             filter = {
-                country_has_primary_culture = cu:kazak
+                country_has_primary_culture = cu:minority_central_asian
             }
             is_subject_type = subject_type_puppet
             liberty_desire <= 25
@@ -879,7 +879,7 @@ je_pacify_the_steppes = {
                 10 = {
                     random_country = {
                         limit = {
-                            country_has_primary_culture = cu:kazak
+                            country_has_primary_culture = cu:minority_central_asian
                             is_subject_of = root
                         }
                         trigger_event = { id = kazakhstan_events.6 }
@@ -889,10 +889,10 @@ je_pacify_the_steppes = {
                     random_country = {
                         limit = {
                             OR = {
-                                country_has_primary_culture = cu:kirgiz
-                                country_has_primary_culture = cu:uzbek
                                 country_has_primary_culture = cu:minority_central_asian
-                                country_has_primary_culture = cu:uighur
+                                country_has_primary_culture = cu:minority_central_asian
+                                country_has_primary_culture = cu:minority_central_asian
+                                country_has_primary_culture = cu:minority_central_asian
                             }
                             has_interest_marker_in_region = region_central_asia
                             c:RUS.relations:root <= 0

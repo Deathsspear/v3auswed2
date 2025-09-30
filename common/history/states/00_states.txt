@@ -121,7 +121,7 @@ STATES = {
 		}
 		add_claim = c:BIC
 		add_homeland = cu:minority_central_asian
-		add_homeland = cu:pashtun
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_EAST_BENGAL = {
 		create_state = {
@@ -3704,7 +3704,7 @@ STATES = {
 			owned_provinces = { x56F6E9 x105356 x6E9D54 x5AF594 x1A04E6 x705060 x8C4F5A x11152D x16F3F6 x3FFB31 xF90BDE x23DFA9 x02BBA0 x268E58 x808515 xDD447A x1507B8 xD7517F x8FC69D x60B021 x73A9E3 xDB079F xF5592F xB2850D x315160 xAE1ED1 xFBDCF5 xE4B4A2 x59EE31 xCC14D7 x882A58 xC7D26A }
 		}
 		add_claim = c:BIC
-		add_homeland = cu:sindi
+		add_homeland = cu:minority_indian
 	}
 	s:STATE_RAJPUTANA = {
 		create_state = {
@@ -3773,7 +3773,7 @@ STATES = {
 			owned_provinces = { x022D2B xD597DC x30122F xCF602F x706940 x2DBD82 x19E5C0 xEFC3B4 xCA516D xB4E322 }
 		}
 		add_claim = c:BIC
-		add_homeland = cu:panjabi
+		add_homeland = cu:minority_indian
 	}
 	s:STATE_CENTRAL_PROVINCES = {
 		create_state = {
@@ -3927,7 +3927,7 @@ STATES = {
 		}
 
 		add_homeland = cu:gujarati
-		add_homeland = cu:sindi
+		add_homeland = cu:minority_indian
 	}
 	s:STATE_MALWA = {
 		create_state = {
@@ -3975,7 +3975,7 @@ STATES = {
 			owned_provinces = { x01F1CD x04D4E4 x11F020 x172E64 x1C310A x1DE14C x21B060 x2DDA9A x303EFE x3521C5 x3DDDBF x48B87D x4B33C1 x50B0A0 x534D04 x590FA7 x5F1E9B x5FCB1C x66A6A3 x70BE78 x79438B x7FC191 x8079C0 x8B9115 x93C09D x951929 x9B7C7A xA462B0 xABBB11 xAC9392 xAEDA4D xBA3A4F xCEC816 xD3AFD6 xD5188D xE0B0A0 xE3326D xF4E206 xF767B3 }
 		}
 
-		add_homeland = cu:bihari
+		add_homeland = cu:minority_indian
 	}
 	s:STATE_WEST_BENGAL = {
 		create_state = {
@@ -4020,10 +4020,10 @@ STATES = {
 			owned_provinces = { xA030E0 x9A1864 xA77996 x0BB5E2 x1D0302 }
 		}
 		add_claim = c:BIC
-		add_homeland = cu:assamese
+		add_homeland = cu:minority_indian
 		add_homeland = cu:bengali
 		add_homeland = cu:manipuri
-		add_homeland = cu:naga
+		add_homeland = cu:burmese
 	}
 	s:STATE_AWADH = {
 		create_state = {
@@ -4079,7 +4079,7 @@ STATES = {
 		}
 
 		add_homeland = cu:burmese
-		add_homeland = cu:kachin
+		add_homeland = cu:burmese
 		add_homeland = cu:shan
 	}
 	s:STATE_SHAN_STATES = {
@@ -4093,7 +4093,7 @@ STATES = {
 			owned_provinces = { x1D8BBD x2414D9 x27DBA6 x2C8D05 x334200 x34E09D x36C9CC x4D639B x5745FF x66C0CA x747429 x772D64 x90EFDF x9F7026 xA125B4 xC20B31 xE7608F xEAF30B xF1F906 xF65E92 xF6A5C7 }
 		}
 
-		add_homeland = cu:kachin
+		add_homeland = cu:burmese
 		add_homeland = cu:shan
 	}
 
@@ -4108,7 +4108,7 @@ STATES = {
 			owned_provinces = { x47C5A9 x234C64 xFB1A2B x634D79 xDEFDA8 x90EF60 x3E75FA x75BE27 }
 		}
 		add_homeland = cu:burmese
-		add_homeland = cu:kachin
+		add_homeland = cu:burmese
 
 	}
 	s:STATE_PEGU = {
@@ -5700,7 +5700,7 @@ STATES = {
 
 		add_homeland = cu:minority_midde_east
 		add_homeland = cu:turkish
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 		add_claim = c:TUR
 	}
 	s:STATE_BAGHDAD = {
@@ -5720,7 +5720,7 @@ STATES = {
 
 		add_homeland = cu:minority_midde_east
 		add_homeland = cu:turkish
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 		add_homeland = cu:minority_midde_east
 	}
 	s:STATE_LARISTAN = {
@@ -5781,7 +5781,7 @@ STATES = {
 
 		add_homeland = cu:persian
 		add_homeland = cu:minority_central_asian
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 	}
 	s:STATE_KHUZESTAN = {
 		create_state = {
@@ -5854,7 +5854,7 @@ STATES = {
 		}
 
 		add_homeland = cu:persian
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 		add_homeland = cu:azerbaijani
 		add_homeland = cu:minority_caucasian
 		add_homeland = cu:minority_midde_east
@@ -5866,7 +5866,7 @@ STATES = {
 		}
 
 		add_homeland = cu:persian
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 	}
 	s:STATE_LURISTAN = {
 		create_state = {
@@ -6034,7 +6034,7 @@ STATES = {
 
 		add_homeland = cu:turkish
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 	}
 	s:STATE_KARS = {
 		create_state = {
@@ -6048,7 +6048,7 @@ STATES = {
 
 		add_homeland = cu:turkish
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 		add_homeland = cu:minority_caucasian
 	}
 	s:STATE_CRETE = {
@@ -6092,9 +6092,9 @@ STATES = {
 			owned_provinces = { x1BC1AF x1BF39F x3276E4 x339975 x3991B0 x3ACBE0 x42A020 x52BEAF x55B1FD x621FFA x64ABBA xA0B020 xAE8F58 xBBE7A9 xC57D6B xCB758F xDA8A5E xE7F59C xF0407A xF1FBC5 }
 		}
 
-		add_homeland = cu:pashtun
-		add_homeland = cu:tajik
-		add_homeland = cu:hazara
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_KABUL = {
 		create_state = {
@@ -6106,9 +6106,9 @@ STATES = {
 			owned_provinces = { x272245 xBB54C2 xA89F7A x8D643D x91126C }
 		}
 
-		add_homeland = cu:pashtun
-		add_homeland = cu:tajik
-		add_homeland = cu:hazara
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_HERAT = {
 		create_state = {
@@ -6117,7 +6117,7 @@ STATES = {
 		}
 
 		add_claim = c:PER
-		add_homeland = cu:pashtun
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_NORTHERN_BALUCHISTAN = {
 		create_state = {
@@ -6127,7 +6127,7 @@ STATES = {
 		}
 
 		add_homeland = cu:minority_central_asian
-		add_homeland = cu:pashtun
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_BALKH = {
 		create_state = {
@@ -6146,10 +6146,10 @@ STATES = {
 			owned_provinces = { xBFE803 x11B523 xB7ED78 xD7BD36 x8C7935 x7D64E2 xE63AF6 xF902AB xA77FF1 xEBD91F x8BB3DE }
 		}
 
-		add_homeland = cu:pashtun
-		add_homeland = cu:uzbek
-		add_homeland = cu:tajik
-		add_homeland = cu:hazara
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_QUETTA = {
@@ -6163,7 +6163,7 @@ STATES = {
 			owned_provinces = { x6F000D x1910AD x34A39B }
 		}
 		add_claim = c:BIC
-		add_homeland = cu:pashtun
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_CENTRAL_HIGHLANDS = {
 		create_state = {
@@ -6184,9 +6184,9 @@ STATES = {
 			state_type = unincorporated
 		}
 
-		add_homeland = cu:pashtun
-		add_homeland = cu:hazara
-		add_homeland = cu:tajik
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_PASHTUNISTAN = {
 		create_state = {
@@ -6204,7 +6204,7 @@ STATES = {
 			owned_provinces = { xA96256 x9DA767 x15A4E6 xF8FE8B xB8051E x4C120A xAFD189 x8C9774 }
 		}
 		add_claim = c:BIC
-		add_homeland = cu:pashtun
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_DIYARBAKIR = {
 		create_state = {
@@ -6214,7 +6214,7 @@ STATES = {
 
 		add_homeland = cu:turkish
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 		add_homeland = cu:minority_midde_east
 		add_homeland = cu:minority_midde_east
 	}
@@ -6465,7 +6465,7 @@ STATES = {
 		}
 
 		add_homeland = cu:tibetan
-		add_homeland = cu:nepali
+		add_homeland = cu:minority_indian
 	}
 	s:STATE_DZUNGARIA = {
 		create_state = {
@@ -6474,7 +6474,7 @@ STATES = {
 			state_type = unincorporated
 		}
 
-		add_homeland = cu:uighur
+		add_homeland = cu:minority_central_asian
 		add_homeland = cu:mongol
 	}
 	s:STATE_TIANSHAN = {
@@ -6484,7 +6484,7 @@ STATES = {
 			state_type = unincorporated
 		}
 
-		add_homeland = cu:uighur
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_SICHUAN = {
 		create_state = {
@@ -6992,8 +6992,8 @@ STATES = {
 			owned_provinces = { x7AAA53 x415040 x994DF0 x60D60F x5E72D3 }
 		}
 
-		add_homeland = cu:uzbek
-		add_homeland = cu:kazak
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_UZBEKIA = {
 		create_state = {
@@ -7001,8 +7001,8 @@ STATES = {
 			owned_provinces = { x078459 x086B0D x100231 x11BEB1 x14A7BE x156B96 x17227F x18805C x1F4F98 x20B021 x33A3BE x367C49 x3ABB84 x417F81 x44F40B x52C5B4 x5DEB84 x6B31FF x6BD3A0 x71F3E8 x72D3A8 x73D87A x7A0CCA x7A884B x7A943A x7BF1C1 x82E6C0 x865AAB x8A56DC x8B8972 x8D638E x8DE506 x95C1EA x97161C x973B9F x9A8732 x9F6258 xA02922 xA1DF6D xA3FA94 xA69653 xA69FFF xAF6AE5 xB0C419 xB1E3FB xB24806 xB38748 xC07A80 xC359F7 xC3D59A xC87F8A xC89C46 xCEA4C1 xD056DC xD38A78 xD5BC6F xD87EBF xDAD39B xDC6A33 xDFE90C xE72886 xED1489 xF5EF8A xF9BC1A xFD2FE1 xFD83A1 }
 		}
 
-		add_homeland = cu:uzbek
-		add_homeland = cu:kazak
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_TAJIKISTAN = {
 		create_state = {
@@ -7014,8 +7014,8 @@ STATES = {
 			owned_provinces = { x224CB7 x5B18B1 x62B5FA x65165E x6DA038 x6DD7B6 x94C7A6 x9856D4 xB09020 xD84D24 }
 		}
 
-		add_homeland = cu:uzbek
-		add_homeland = cu:tajik
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_KIRGHIZIA = {
 		create_state = {
@@ -7028,8 +7028,8 @@ STATES = {
 			state_type = unincorporated
 		}
 
-		add_homeland = cu:uzbek
-		add_homeland = cu:kirgiz
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_URALSK = {
 		create_state = {
@@ -7049,7 +7049,7 @@ STATES = {
 				x0264AE x0A68E0 x0BE32E x20999F x372422 x38F85A x396B2F x3BED19 x4015A9 x466F4E x7281B9 x73B0D9 x875397 x8A60EF x918816 x969B20 x9FC86F xA5EEB0 xAC0C13 xB8C2BA xBA7175 xBF10BF xD2C1B9 xD5697A xD97D9F x6BED25
 			}
 		}
-		add_homeland = cu:kazak
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_TURKMENIA = {
 		create_state = {
@@ -7062,7 +7062,7 @@ STATES = {
 			owned_provinces = { x5FF9CD xC57238 x85B179 x0C18E0 xE4C351 xC131A1 x521ED8 x2E361B x184E72 xEE6836 }
 		}
 
-		add_homeland = cu:uzbek
+		add_homeland = cu:minority_central_asian
 		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_SEMIRECHE = {
@@ -7072,8 +7072,8 @@ STATES = {
 				x05BD27 x0B48F9 x0CCA19 x103091 x145EE2 x2477C7 x28A6EA x2AE81D x3270A4 x364688 x3BB602 x45DFDC x4B61E6 x56B464 x574A12 x8F9B9C x998F61 xB9AE9B xC2E8CE xE43A4E xEF11DE xF5FD0D x0262FE x02DF90 x0990E1 x127785 x1416CB x17631D x189DA9 x19C964 x1CE293 x1DC340 x1FD20C x21AA2E x22FBC7 x2364BC x23E0DF x252E81 x25DC1F x31961B x33F767 x3654FD x368C92 x38CB07 x3AA215 x3CF0EA x3EE400 x400B80 x401D30 x41AB85 x45582E x49A5B5 x4A2889 x4A475F x4E6636 x50A114 x50B0E8 x52067C x54131D x56B714 x59E5CE x5A1C47 x5D882C x605A9C x60A3FF x60AE44 x6303A7 x63C79A x650F60 x651D0C x6A7D1F x6BEE56 x6D1821 x713216 x734BA8 x738664 x73AFA9 x74C286 x75B459 x769A37 x770159 x77B4A7 x785445 x787024 x7CE303 x7D13F1 x7E72F2 x85E4AE x87C29F x89A1F4 x8BC24A x8E28FC x8E8AB6 x8F8F1F x919A76 x91F95B x92F484 x975F4D x97C0DA x9975FC x9B348C xA251D4 xA32776 xA46BBE xA52F92 xA6311A xAD9B01 xAEA7A5 xB1EE41 xB4017B xB5640B xB6001C xB63030 xB8D094 xB925A0 xB94D3A xBA66D8 xBB3913 xC09120 xC2B8F7 xC7B7A6 xCB162A xCDE7C0 xCFF7E5 xD1F5E6 xDA9342 xDF8AFA xE1DDD3 xE3EEFE xE4CF4B xE76139 xE80E1A xE81971 xE8398F xEB97EF xEF0C75 xF158B9 xF1BD02 xF1EF2F xF29C97 xF2BDE8 xFC86E2 xFD4F55 xFDCF9F
 			}
 		}
-		add_homeland = cu:kazak
-		add_homeland = cu:kirgiz
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_JETISY = {
 		create_state = {
@@ -7083,9 +7083,9 @@ STATES = {
 			}
 			state_type = unincorporated
 		}
-		add_homeland = cu:kazak
-		add_homeland = cu:uighur
-		add_homeland = cu:kirgiz
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_AKMOLINSK = {
 		create_state = {
@@ -7097,8 +7097,8 @@ STATES = {
 			owned_provinces = { x0247E4 x10826C x18C6D4 x269596 x32B0B3 x32DF16 x391054 x41E1DD x46471E x470E92 x48D8BA x4ED6F6 x4F50D7 x550CEC x5A0540 x6218AA x66D355 x67CF5B x69FDFC x6B01A9 x6B4727 x705C49 x782B38 x87A6EF x880372 x880425 x9A571F x9A64D0 xA736F0 xABED3D xAC7D02 xB0BB12 xC47A4C xC790DB xC7DA51 xCEF3B7 xCF86EF xD2D2D7 xD37222 xD44E92 xD74258 xDF3E66 xDF6D72 xE34CC4 xE59BDA xE62636 xF2637F xF39F86 }
 		}
 
-		add_homeland = cu:kazak
-		add_homeland = cu:uzbek
+		add_homeland = cu:minority_central_asian
+		add_homeland = cu:minority_central_asian
 	}
 	s:STATE_KAMCHATKA = {
 		create_state = {
@@ -8073,7 +8073,7 @@ STATES = {
 
 		add_homeland = cu:turkish
 		add_homeland = cu:minority_caucasian
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 
 		add_claim = c:TUR
 	}
@@ -8084,7 +8084,7 @@ STATES = {
 		}
 
 		add_homeland = cu:minority_midde_east
-		add_homeland = cu:kurdish
+		add_homeland = cu:minority_midde_east
 		add_homeland = cu:minority_midde_east
 	}
 	s:STATE_BAJA_CALIFORNIA = {
@@ -8111,9 +8111,9 @@ STATES = {
 	    	country = c:KOK
 	    	owned_provinces = { x1C545C x5A2C97 x542EFD x6EA842 x7625F5 x8828FB xAD3425 xBB21A5 xC78F24 xD767AD xDBD8BE xFB192C x3D854F x4B7066 xB24B12 xC0D040 }
 	    }
-	    add_homeland = cu:kirgiz
-	    add_homeland = cu:uzbek
-	    add_homeland = cu:tajik
+	    add_homeland = cu:minority_central_asian
+	    add_homeland = cu:minority_central_asian
+	    add_homeland = cu:minority_central_asian
 	}
 
 	s:STATE_MERZ = {
@@ -8157,8 +8157,8 @@ STATES = {
 	    		x055D4A x065EF6 x0DDB1A x0F67BD x11D6B9 x1DE418 x22B945 x2B6372 x2BC301 x2C7272 x3E6A7A x4089EA x45E049 x46C8C5 x4C58F3 x4DD19B x54674C x5B6497 x5B689C x71EFE0 x721F04 x78E5EA x78FCB0 x8ABC27 x980CAE x9D8D01 xB2A1F3 xB626B0 xC09364 xC1A842 xC29F40 xC425C5 xC6A43A xC99085 xCC5769 xCD3064 xD7E661 xE13D8E xE922B8 xF73B80 xFC519D
 	    	}
 	    }
-	    add_homeland = cu:kazak
-	    add_homeland = cu:uzbek
+	    add_homeland = cu:minority_central_asian
+	    add_homeland = cu:minority_central_asian
 	}
 
 	s:STATE_AKTOBE = {
@@ -8166,7 +8166,7 @@ STATES = {
 	    	country = c:KZH
 	    	owned_provinces = { x03DEAB x05A5D3 x093A29 x0C16D5 x0CDDC8 x10D440 x10F2A4 x10F394 x12B014 x153EF8 x19DB52 x1A0A77 x1A765B x1A973F x1E7905 x1EB604 x1F5F1A x2173E6 x21907E x23B70B x2577CF x2660A5 x2973FB x2D0AAC x2E12FC x3190BF x328878 x32C0C8 x3354E8 x37BB95 x3A7473 x3D0E20 x3F854B x504F54 x510B92 x55C060 x56279A x588F70 x58D48C x59BA59 x5DCF1A x5EF765 x6025C2 x618800 x62EE42 x68D6C0 x6906B2 x69439D x6A8667 x6AD008 x6E0170 x70B0CC x742700 x74A226 x758597 x780B11 x7BAA61 x7FD811 x81BE7E x84FA13 x867C05 x86A90A x881AFB x88A88E x92F404 x94A660 x9C6012 xAE51B4 xAFDF44 xB0FEAB xB16E1C xB62DEC xB92DE8 xBB4E20 xBC84A6 xBD0769 xC05141 xC053C7 xC6E6CD xC866F3 xCBB325 xD04D31 xD32A64 xD4D80A xDAD022 xDB8ABA xDE558E xE2A5AC xE32413 xE4A7D1 xE91FBD xEC9E67 xEE6AAB xEEFA33 xF387A5 xF66290 xF9CD4F xFC1095 xFE2865 }
 	    }
-	    add_homeland = cu:kazak
+	    add_homeland = cu:minority_central_asian
 	}
 
 	s:STATE_KALMYKIA = {
@@ -8220,7 +8220,7 @@ STATES = {
 	    	owned_provinces = { x003D07 x00DA3C x0434D7 x0B35A0 x0DCAF1 x1084B6 x11A456 x135BEB x2121A0 x248B83 x341DB2 x352ACF x41D846 x45E723 x47EA0C x54F76C x5F82DE x61384B x616020 x6DC89F x74730E x75659C x75FC6F x783E80 x79F049 x7A26E0 x7B5279 x7D40C9 x7EB0D3 xA2AEA2 xB2B5F4 xB3B6D0 xB80B2E xBFDE90 xC57104 xCC3356 xD7547A xE66DB2 xEB7873 xF49A5A xFE56AF }
 	    }
 	    add_homeland = cu:russian
-	    add_homeland = cu:mordvin
+	    add_homeland = cu:finnish
 	}
 
 	s:STATE_RYAZAN = {
@@ -8450,7 +8450,7 @@ STATES = {
 		}
 		add_claim = c:BIC
 	    add_homeland = cu:pahari
-	    add_homeland = cu:panjabi
+	    add_homeland = cu:minority_indian
 	}
 
 	s:STATE_EASTERN_HIMALAYAS = {

@@ -582,7 +582,7 @@
 				size = 63000
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				religion = sunni
 				size = 96000
 			}
@@ -672,7 +672,7 @@
 	s:STATE_MOSUL = {
 		region_state:TUR = {
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 203004
 			}
 			create_pop = {
@@ -727,7 +727,7 @@
 				size = 43996
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 49600
 			}
 			create_pop = {
@@ -899,7 +899,7 @@
 				size = 8005
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 5004
 			}
 			create_pop = {
@@ -944,7 +944,7 @@
 				size = 5007
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 405
 			}
 			create_pop = {
@@ -966,7 +966,7 @@
 				size = 610733
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 72012
 			}
 			create_pop = {
@@ -978,7 +978,7 @@
 				size = 2042
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 3001
 			}
 			create_pop = {
@@ -1091,7 +1091,7 @@
 				size = 59201
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 4700
 			}
 			create_pop = {
@@ -1241,7 +1241,7 @@
 	s:STATE_URMIA = {
 		region_state:PER = {
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 155047
 			}
 			create_pop = {
@@ -1279,7 +1279,7 @@
 	s:STATE_PERSIAN_KURDISTAN = {
 		region_state:PER = {
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 322062
 			}
 			create_pop = {
@@ -1317,7 +1317,7 @@
 				size = 230377
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 20012
 			}
 			create_pop = {
@@ -1438,7 +1438,7 @@
 				size = 720204
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 20102
 			}
 			create_pop = {
@@ -1494,12 +1494,12 @@
 	s:STATE_DIYARBAKIR = {
 		region_state:TUR = {
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 260712
 			}
 			# Alevis, Bektashis, Zazaki and the more heterodox end of Anatolian folk Islam
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 91190
 				religion = shiite
 			}
@@ -1540,7 +1540,7 @@
 				size = 270062
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 24002
 			}
 			create_pop = {
@@ -1640,7 +1640,7 @@
 				size = 150831
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 166211
 			}
 			# Alevis, Bektashis, Zazaki and the more heterodox end of Anatolian folk Islam
@@ -1650,7 +1650,7 @@
 				religion = shiite
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 204090
 				religion = shiite
 			}
@@ -1705,7 +1705,7 @@
 				size = 4500
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 15000
 			}
 			create_pop = {
@@ -1733,7 +1733,7 @@
 				size = 17000
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 7000
 			}
 			create_pop = {
@@ -1749,7 +1749,7 @@
 				size = 865092
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 100023
 			}
 			# Alevis, Bektashis, Zazaki and the more heterodox end of Anatolian folk Islam
@@ -1759,7 +1759,7 @@
 				religion = shiite
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 24447
 				religion = shiite
 			}

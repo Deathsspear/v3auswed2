@@ -19,7 +19,7 @@
 				size = 15000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 10200
 			}
 			create_pop = {

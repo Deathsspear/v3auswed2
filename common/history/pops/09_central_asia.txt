@@ -19,7 +19,7 @@
 				size = 2440
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 19615
 			}
 			create_pop = {
@@ -104,7 +104,7 @@
 				size = 21000
 			}
 			create_pop = {
-				culture = kurdish
+				culture = minority_midde_east
 				size = 14894
 			}
 			create_pop = {
@@ -215,11 +215,11 @@
 				size = 1170657
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 116076
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 145276
 			}
 			create_pop = {
@@ -246,7 +246,7 @@
 				size = 85000
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 12000
 			}
 			create_pop = {
@@ -254,7 +254,7 @@
 				size = 31000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 42000
 			}
 		}
@@ -262,11 +262,11 @@
 	s:STATE_KAZAN = {
 		region_state:RUS = {
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 458719
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				religion = orthodox
 				size = 51351
 			}
@@ -283,7 +283,7 @@
 				size = 46043
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 15722
 			}
 			create_pop = {
@@ -299,7 +299,7 @@
 				size = 909377
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 54224
 			}
 			create_pop = {
@@ -307,7 +307,7 @@
 				size = 62827
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 67811
 			}
 			create_pop = {
@@ -333,11 +333,11 @@
 				size = 163230
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 10351
 			}
 			create_pop = {
-				culture = kalmyk
+				culture = minority_central_asian
 				size = 3605
 			}
 			create_pop = {
@@ -345,7 +345,7 @@
 				size = 45578
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 11574
 			}
 			create_pop = {
@@ -363,7 +363,7 @@
 	s:STATE_URALSK = {
 		region_state:RUS = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 61200
 			}
 			create_pop = {
@@ -371,14 +371,14 @@
 				size = 32112
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 4260
 			}
 		}
 
 		region_state:KZH = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 115489
 			}
 			create_pop = {
@@ -386,7 +386,7 @@
 				size = 10990
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 1400
 			}
 		}
@@ -401,7 +401,7 @@
 				size = 40
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 140
 			}
 		}
@@ -409,7 +409,7 @@
 	s:STATE_AKTOBE = {
 		region_state:KZH = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 126349
 			}
 			create_pop = {
@@ -425,11 +425,11 @@
 				size = 23130
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 216124
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 3420
 			}
 		}
@@ -437,7 +437,7 @@
 	s:STATE_AKMOLINSK = {
 		region_state:OZH = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 113348
 			}
 			create_pop = {
@@ -447,7 +447,7 @@
 		}
 		region_state:RUS = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 21500
 			}
 			create_pop = {
@@ -455,7 +455,7 @@
 				size = 16451
 			}
 			create_pop = {
-				culture = mordvin
+				culture = finnish
 				size = 3581
 			}
 			create_pop = {
@@ -463,7 +463,7 @@
 				size = 5004
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 2240
 			}
 		}
@@ -471,15 +471,15 @@
 	s:STATE_JETISY = {
 		region_state:CHI = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 50642
 			}
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				size = 43000
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 40000
 			}
 		}
@@ -487,7 +487,7 @@
 	s:STATE_KHIVA = {
 		region_state:KHI = {
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 428468
 			}
 			create_pop = {
@@ -495,7 +495,7 @@
 				size = 180427
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 61010
 			}
 			create_pop = {
@@ -531,7 +531,7 @@
 		}
 		region_state:KZH = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 9021
 			}
 			create_pop = {
@@ -544,7 +544,7 @@
 	s:STATE_UZBEKIA = {
 		region_state:BUK = {
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 692396
 			}
 			create_pop = {
@@ -552,16 +552,16 @@
 				size = 38000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 80004
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 68204
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = tajik
+				culture = minority_central_asian
 				size = 15000
 			}
 			create_pop = {
@@ -576,7 +576,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = uighur
+				culture = minority_central_asian
 				size = 4700
 			}
 			create_pop = {
@@ -593,49 +593,49 @@
 	s:STATE_TAJIKISTAN = {
 		region_state:BUK = {
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 181004
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 125200
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = tajik
+				culture = minority_central_asian
 				size = 19000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = uighur
+				culture = minority_central_asian
 				size = 3001
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 3230
 			}
 		}
 		region_state:KOK = {
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 191004
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 9124
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = tajik
+				culture = minority_central_asian
 				size = 8020
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = uighur
+				culture = minority_central_asian
 				size = 5030
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 23070
 			}
 		}
@@ -643,21 +643,21 @@
 	s:STATE_KIRGHIZIA = {
 		region_state:KOK = {
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 182150
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 130196
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = uzbek
+				culture = minority_central_asian
 				size = 20000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = uighur
+				culture = minority_central_asian
 				size = 5000
 			}
 			create_pop = {
@@ -666,42 +666,42 @@
 				size = 3500
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 16002
 			}
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				size = 12000
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 11600
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				religion = animist
 				size = 8000
 			}
 		}
 		region_state:CHI = {
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 30150
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 25000
 			}
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 16002
 			}
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				size = 11000
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				religion = animist
 				size = 6100
 			}
@@ -710,41 +710,41 @@
 	s:STATE_SYRDARYA = {
 		region_state:UZH = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 170120
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 21520
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 5105
 			}
 		}
 		region_state:OZH = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 36500
 			}
 		}
 		region_state:KZH = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 55000
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 4100
 			}
 		}
 		region_state:KOK = {
 			create_pop = {
-				culture = kazak
+				culture = minority_central_asian
 				size = 125000
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 31005
 			}
 		}
@@ -782,7 +782,7 @@
 				size = 45120
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 2005
 			}
 			create_pop = {
@@ -795,15 +795,15 @@
 	s:STATE_FERGANA = {
 		region_state:KOK = {
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 540592
 			}
 			create_pop = {
-				culture = kirgiz
+				culture = minority_central_asian
 				size = 201520
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 71600
 			}
 			create_pop = {
@@ -811,12 +811,12 @@
 				size = 1805
 			}
 			create_pop = {
-				culture = uighur
+				culture = minority_central_asian
 				pop_type = slaves
 				size = 11021
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				pop_type = slaves
 				size = 12221
 			}
@@ -859,140 +859,140 @@
 		region_state:KAB = {
 			# Peshawar (minority)
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 100040
 			}
 			# Dera Ismail
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 32185
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = sunni
 				size = 106869
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = hindu
 				size = 11002
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = hindu
 				pop_type = slaves
 				size = 21002
 			}
 			# Tribal Areas
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 555572
 			}
 		}
 		region_state:PAN = {
 			# Hazara District
 			create_pop = {
-				culture = panjabi # Hazarewal
+				culture = minority_indian # Hazarewal
 				religion = sunni
 				size = 362076
 			}
 			create_pop = {
-				culture = panjabi # Hazarewal
+				culture = minority_indian # Hazarewal
 				size = 25260
 				religion = hindu
 			}
 			create_pop = {
-				culture = panjabi # Hazarewal
+				culture = minority_indian # Hazarewal
 				size = 7630
 				religion = sikh
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 20005
 			}
 			# Peshawar (majority)
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 369023
 			}
 			create_pop = {
-				culture = panjabi # Hazarewal
+				culture = minority_indian # Hazarewal
 				religion = sunni
 				size = 76313
 			}
 			create_pop = {
-				culture = panjabi # Hazarewal
+				culture = minority_indian # Hazarewal
 				religion = hindu
 				size = 30004
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sunni
 				size = 10483
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				religion = sikh
 				size = 10003
 			}
 			# Bannu
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 137028
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = sunni
 				size = 5128
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = hindu
 				size = 15228
 			}
 			# Kohat
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 111779
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = sunni
 				size = 11453
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = hindu
 				size = 10008
 			}
 		}
 		region_state:CHT = {
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 140232
 			}
 			create_pop = {
-				culture = panjabi # Kohistani
+				culture = minority_indian # Kohistani
 				religion = sunni
 				size = 20001
 			}
 			create_pop = {
-				culture = kho
+				culture = minority_indian
 				religion = sunni
 				size = 55102
 			}
 			create_pop = {
-				culture = kho # Kalash
+				culture = minority_indian # Kalash
 				religion = animist
 				size = 7501
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				pop_type = slaves
 				size = 10000
 			}
 			create_pop = {
-				culture = kho # Kalash
+				culture = minority_indian # Kalash
 				religion = animist
 				pop_type = slaves
 				size = 2501
@@ -1002,11 +1002,11 @@
 	s:STATE_KANDAHAR = {
 		region_state:KAN = {
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 70172
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 25356
 			}
 			create_pop = {
@@ -1014,21 +1014,21 @@
 				size = 5123
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				religion = sunni
 				size = 12400
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 714404
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 15004
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = hazara
+				culture = minority_central_asian
 				size = 15000
 			}
 			create_pop = {
@@ -1041,52 +1041,52 @@
 	s:STATE_KABUL = {
 		region_state:KAB = {
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 631236
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 18600
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 304400
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 40996
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = hazara
+				culture = minority_central_asian
 				size = 20000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = panjabi
+				culture = minority_indian
 				religion = hindu
 				size = 32000
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = uzbek
+				culture = minority_central_asian
 				size = 5000
 			}
 		}
 		region_state:KAF = {
 			create_pop = {
-				culture = kho # nuristani
+				culture = minority_indian # nuristani
 				religion = hindu
 				size = 20344
 			}
 			create_pop = {
-				culture = kho # nuristani
+				culture = minority_indian # nuristani
 				religion = hindu
 				pop_type = slaves
 				size = 2000
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 4404
 			}
 		}
@@ -1104,24 +1104,24 @@
 				size = 20005
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				pop_type = slaves
 				size = 20025
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 182012
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 12000
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 101220
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 60120
 			}
 			create_pop = {
@@ -1138,7 +1138,7 @@
 				size = 21400
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 2404
 			}
 			create_pop = {
@@ -1156,15 +1156,15 @@
 	s:STATE_BALKH = {
 		region_state:KUN = {
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 82021
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 25102
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 12042
 			}
 			create_pop = {
@@ -1185,13 +1185,13 @@
 				pop_type = slaves
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 3021
 			}
 		}
 		region_state:BUK = {
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 18300
 			}
 			create_pop = {
@@ -1199,11 +1199,11 @@
 				size = 6300
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 9122
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				religion = sunni
 				size = 1111
 			}
@@ -1213,12 +1213,12 @@
 				pop_type = slaves
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 2000
 				pop_type = slaves
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 8410
 			}
 			create_pop = {
@@ -1230,13 +1230,13 @@
 				size = 4012
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 9022
 			}
 		}
 		region_state:MAI = {
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 31022
 			}
 			create_pop = {
@@ -1244,15 +1244,15 @@
 				size = 15021
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 6410
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 4102
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 1029
 				pop_type = slaves
 			}
@@ -1267,7 +1267,7 @@
 	s:STATE_QUETTA = {
 		region_state:KAB = {
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 75779
 			}
 			create_pop = {
@@ -1275,11 +1275,11 @@
 				size = 40315
 			}
 			create_pop = {
-				culture = sindi
+				culture = minority_indian
 				size = 25012
 			}
 			create_pop = {
-				culture = panjabi # Saraiki
+				culture = minority_indian # Saraiki
 				religion = hindu
 				size = 25022
 			}
@@ -1291,11 +1291,11 @@
 		}
 		region_state:KAN = {
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 47972
 			}
 			create_pop = {
-				culture = panjabi # Including Jatt
+				culture = minority_indian # Including Jatt
 				religion = hindu
 				size = 7177
 			}
@@ -1308,7 +1308,7 @@
 				size = 10012
 			}
 			create_pop = {
-				culture = panjabi
+				culture = minority_indian
 				size = 6001
 			}
 			create_pop = {
@@ -1322,58 +1322,58 @@
 	s:STATE_CENTRAL_HIGHLANDS = {
 		region_state:KAB = {
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 41200
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				pop_type = slaves
 				size = 41200
 			}
 			create_pop = {
-				culture = tajik
+				culture = minority_central_asian
 				size = 12100
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 7021
 			}
 			create_pop = {
-				culture = uzbek
+				culture = minority_central_asian
 				size = 4221
 			}
 		}
 		region_state:HER = {
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 7200
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				pop_type = slaves
 				size = 4200
 			}
 			create_pop = {
-				culture = tajik # Aimak
+				culture = minority_central_asian # Aimak
 				size = 22100
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 1021
 			}
 		}
 
 		region_state:KAN = {
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				size = 18012
 			}
 			create_pop = {
-				culture = tajik # Aimak
+				culture = minority_central_asian # Aimak
 				size = 6010
 			}
 			create_pop = {
-				culture = hazara
+				culture = minority_central_asian
 				pop_type = slaves
 				size = 4200
 			}
@@ -1403,7 +1403,7 @@
 				size = 512392
 			}
 			create_pop = {
-				culture = pashtun
+				culture = minority_central_asian
 				size = 34000
 			}
 			create_pop = {
@@ -1473,7 +1473,7 @@
 				size = 42000
 			}
 			create_pop = {
-				culture = kachin
+				culture = burmese
 				size = 24000
 			}
 		}
@@ -1481,11 +1481,11 @@
 	s:STATE_HIMALAYAS = {
 		region_state:NEP = {
 			create_pop = {
-				culture = nepali
+				culture = minority_indian
 				size = 2786418
 			}
 			create_pop = {
-				culture = bihari
+				culture = minority_indian
 				religion = animist
 				size = 688000
 			}
@@ -1498,15 +1498,15 @@
 	s:STATE_EASTERN_HIMALAYAS = {
 		region_state:TIB = {
 			create_pop = {
-				culture = naga
+				culture = burmese
 				size = 20102
 			}
 			create_pop = {
-				culture = kachin
+				culture = burmese
 				size = 21022
 			}
 			create_pop = {
-				culture = assamese
+				culture = minority_indian
 				size = 7012
 			}
 			create_pop = {
@@ -1520,7 +1520,7 @@
 				size = 60301
 			}
 			create_pop = {
-				culture = nepali
+				culture = minority_indian
 				size = 24091
 			}
 		}
@@ -1530,7 +1530,7 @@
 				size = 140396
 			}
 			create_pop = {
-				culture = nepali
+				culture = minority_indian
 				size = 16004
 			}
 		}

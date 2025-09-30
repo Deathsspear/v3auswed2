@@ -82,7 +82,7 @@ lao (check state)
 
 -burmese-
 karen
-kachin (check state)
+burmese (check state)
 lushai
 
 -khmer-
@@ -97,20 +97,20 @@ minority_midde_east
 minority_midde_east
 
 minority_indian
-assamese
+minority_indian
 bengali (keep for event)
-bihari
+minority_indian
 manipuri
-nepali
+minority_indian
 oriya
 sinhala
 avadhi
 kanauji
-panjabi
+minority_indian
 kashmiri
 gujarati
 marathi
-sindi
+minority_indian
 rajput (check state)
 kannada
 malayalam
@@ -123,17 +123,17 @@ deccani
 gondi
 chhattisgarhi
 bageli
-kho  ( Chitral)
+minority_indian  ( Chitral)
 
 minority_central_asian
-uzbek (check state)
-kazak (keep for russia event)
-kirgiz
-tajik (-> pashtun) (check state)
-pashtun (keep for formation)
-uighur
+minority_central_asian (check state)
+minority_central_asian (keep for russia event)
+minority_central_asian
+minority_central_asian (-> minority_central_asian) (check state)
 minority_central_asian (keep for formation)
-hazara
+minority_central_asian
+minority_central_asian (keep for formation)
+minority_central_asian
 minority_central_asian (check state)
 minority_central_asian
 minority_central_asian (check state)

@@ -402,8 +402,8 @@ has_je_subjugation_reason = {
 					region = sr:region_persia
 				}
 				OR = {
-					country_has_primary_culture = cu:pashtun
-					country_has_primary_culture = cu:tajik
+					country_has_primary_culture = cu:minority_central_asian
+					country_has_primary_culture = cu:minority_central_asian
 				}
 			}
 		}

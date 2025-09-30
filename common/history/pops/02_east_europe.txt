@@ -144,7 +144,7 @@
 				size = 8960
 			}
 			create_pop = {
-				culture = kalmyk
+				culture = minority_central_asian
 				size = 8320
 			}
 			create_pop = {
@@ -164,7 +164,7 @@
 				size = 5002
 			}
 			create_pop = {
-				culture = tatar
+				culture = minority_central_asian
 				size = 19124
 			}
 			create_pop = {
