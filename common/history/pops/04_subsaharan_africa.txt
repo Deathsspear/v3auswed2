@@ -899,7 +899,7 @@
 				size = 6000
 			}
 			create_pop = {
-				culture = nyamwezi
+				culture = minority_southern_african
 				size = 54200
 			}
 			create_pop = {
@@ -923,7 +923,7 @@
 			}
 			create_pop = {
 				pop_type = slaves
-				culture = nyamwezi
+				culture = minority_southern_african
 				size = 5000
 			}
 			create_pop = {

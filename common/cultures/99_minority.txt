@@ -1,7 +1,8 @@
 minority_east_african={
 	color= hsv{ 0.88 0.35 0.64 }
-	religion = sunni
-	traits = { east_african_culture_group african_heritage }
+	religion = animist
+	heritage = heritage_eastern_bantu
+	language = language_lacustrine_bantu
 	male_common_first_names={
 		Banyingela
 		Banza
@@ -47,7 +48,8 @@ minority_east_african={
 minority_southern_african={
 	color= hsv{ 0.45 0.6 0.34 }
 	religion = animist
-	traits = { southern_african_culture_group african_heritage }
+	heritage = heritage_southern_bantu
+	language = language_nguni
 	male_common_first_names={
 		Amadi
 		Andikan
@@ -119,8 +121,9 @@ minority_southern_african={
 
 minority_west_african={
 	color= hsv{ 0.98 0.38 0.94 }
-	religion = sunni
-	traits = { west_african_culture_group african_heritage }
+	religion = animist
+	heritage = heritage_guinean
+	language = language_yoruba
 	male_common_first_names={
 		Abisi
 		Adebo
@@ -192,7 +195,8 @@ minority_west_african={
 minority_central_african={
 	color= hsv{ 0.23 0.49 0.77 }
 	religion = sunni
-	traits = { central_african_culture_group african_heritage }
+	heritage = heritage_sahelian
+	language = language_tebu
 	male_common_first_names={
 		Adham
 		Ahmad
@@ -233,7 +237,8 @@ minority_central_african={
 minority_ethiopian={
 color= hsv{ 0.25 0.43 0.55 }
 	religion = oriental_orthodox
-	traits = { ethiopian east_african_culture_group african_heritage }
+	heritage = heritage_abyssinian
+	language = language_amharic
 	male_common_first_names={
 		Amare
 		Amha
@@ -280,7 +285,8 @@ color= hsv{ 0.25 0.43 0.55 }
 minority_south_american={
 	color= hsv{ 0.10 0.22 0.69 }
 	religion = catholic
-	traits = { indigenous_american_heritage south_american_group }
+	heritage = heritage_andean
+	language = language_quechuan
 	male_common_first_names={
 		Agustin
 		Alejandro
@@ -370,9 +376,15 @@ minority_south_american={
 }
 
 minority_central_american={
-	color={ 150 80 70 }
-	religion = animist
-	traits = { native_mesoamerican_culture_group indigenous_american_heritage }
+	color= hsv{ 0.69 0.08 0.55 }
+	religion = catholic
+	heritage = heritage_mesoamerican
+	language = language_mayan
+
+	obsessions = {
+		tobacco
+	}
+
 	male_common_first_names={
 		Agustin
 		Akbal
@@ -468,7 +480,8 @@ minority_central_american={
 minority_north_american={
 	color= hsv{ 0.63 0.30 0.52 }
 	religion = animist
-	traits = { indigenous_american_heritage north_american_group }
+	heritage = heritage_subarctic_indian
+	language = language_siouan
 	male_common_first_names={
 		Hehaka
 		Inkpaduta
@@ -519,8 +532,9 @@ minority_north_american={
 
 minority_indian={
 	color= hsv{ 0.79 0.37 0.36 }
-	religion = hindu
-	traits = { dravidian south_asian_heritage indo_aryan_language }
+	religion = sunni
+	heritage = heritage_gangetic
+	language = language_magadhan
 	male_common_first_names={
 		Ahmad
 		Alauddin
@@ -579,8 +593,9 @@ minority_indian={
 
 minority_melayu={
 	color= hsv{ 0.33 0.10 0.74 }
-	religion = sunni
-	traits = { southeast_asian_heritage malay_culture }
+	religion = animist
+	heritage = heritage_insulindian
+	language = language_batak
 	male_common_first_names={
 		Kiras
 		Nerus
@@ -629,8 +644,9 @@ minority_melayu={
 
 minority_east_asian={
 	color= hsv{ 0.1 0.43 0.34 }
-	religion = mahayana
-	traits = { east_asian_heritage }
+	religion = confucian
+	heritage = heritage_han
+	language = language_hakka
 	male_common_first_names={
 		Chen
 		Deng
@@ -698,7 +714,12 @@ minority_east_asian={
 minority_southeast_asian={
 	color= hsv{ 0.73 0.40 0.60 }
 	religion = theravada
-	traits = { southeast_asian_heritage }
+	heritage = heritage_tai
+	language = language_laotian
+
+	obsessions = {
+		liquor
+	}
 	male_common_first_names={
 		Anurutha
 		Chantha
@@ -745,7 +766,9 @@ minority_southeast_asian={
 minority_central_asian={
 	color= hsv{ 0.01 0.46 0.59 }
 	religion = sunni
-	traits = { iranian_turanian_culture_group central_asian_heritage }
+	heritage = heritage_uzbek
+	language = language_karluk
+	traditions = { tradition_persianate }
 	male_common_first_names={
 		Abd_al-Ahad
 		Abd_al-Karim
@@ -806,7 +829,12 @@ minority_central_asian={
 minority_polynesian={
 	color= hsv{ 0.73 0.49 0.65 }
 	religion = animist
-	traits = { polynesian_group indigenous_oceanic_heritage }
+	heritage = heritage_polynesian
+	language = language_polynesian
+
+	obsessions = {
+		fruit
+	}
 	male_common_first_names={
 		Finau
 		Havaiki
@@ -862,7 +890,14 @@ minority_polynesian={
 minority_caucasian={
 	color= hsv{ 0.33 0.26 0.43 }
 	religion = orthodox
-	traits = { caucasus_group european_heritage }
+	heritage = heritage_georgian
+	language = language_georgian
+
+	obsessions = {
+		wine
+	}
+
+	traditions = { tradition_caucasian }
 	male_common_first_names={
 		Akaki
 		Alexander
@@ -1002,12 +1037,13 @@ minority_caucasian={
 }
 
 minority_midde_east={
-	color= rgb{ 154 164 89 }
 	religion = sunni
 	obsessions = {
 		coffee
 	}
-	traits = { arab_speaking middle_eastern_heritage }
+	heritage = heritage_arab
+	language = language_arabic
+	traditions = { }
 	male_common_first_names={
 		Abd_Allah
 		Abd_al-Karim
@@ -1100,7 +1136,8 @@ minority_midde_east={
 minority_baltic={
 	color= hsv{ 0.42 0.48 0.83 }
 	religion = catholic
-	traits = { baltic_culture_group european_heritage }
+	heritage = heritage_baltic
+	language = language_baltic
 	male_common_first_names={
 		Adolfas
 		Aleksandras
@@ -1250,7 +1287,12 @@ minority_baltic={
 minority_scandinavian={
 	color= hsv{ 0.64 0.57 0.62 }
 	religion = protestant
-	traits = { scandinavian_culture_group european_heritage }
+	heritage = heritage_nordic
+	language = language_scandinavian
+
+	obsessions = {
+		coffee
+	}
 
 	male_common_first_names={
 		Albrecht Alexander Aron Arnold Anton August Axel Albert Anders Adolf Andreas Abraham Axel_Knut
@@ -1519,7 +1561,8 @@ minority_west_slavic={
 minority_spanish={
 	color= hsv{ 0.16 0.56 0.86 }
 	religion = catholic
-	traits = { iberian_culture_group hispanophone european_heritage }
+	heritage = heritage_latin_american_settler
+	language = language_hispanophone
 	male_common_first_names={
 		Agustin
 		Alberto
@@ -1845,7 +1888,12 @@ minority_iberian={
 minority_thai={
 	color= hsv{ 0.61 0.29 0.58 }
 	religion = theravada
-	traits = { tai southeast_asian_heritage }
+	heritage = heritage_tai
+	language = language_siamese
+
+	obsessions = {
+		tea
+	}
 	male_common_first_names={
 		Chao Chulalongkorn Charoon
 		Kashemsri
@@ -1901,7 +1949,8 @@ minority_thai={
 minority_burmese={
 	color= hsv{ 0.13 0.42 0.38 }
 	religion = theravada
-	traits = { burmese_language southeast_asian_heritage }
+	heritage = heritage_burmese
+	language = language_burmic
 	male_common_first_names={
 		Alaungphaya
 		Bodawphaya
@@ -1945,7 +1994,9 @@ minority_burmese={
 minority_khmer={
 	color= hsv{ 0.04 0.54 0.86 }
 	religion = theravada
-	traits = { khmer_language southeast_asian_heritage }
+	heritage = heritage_cambodian
+	language = language_khmeric
+	traditions = { }
 	male_common_first_names={
 		Ang
 		Norodom
@@ -1988,7 +2039,8 @@ minority_khmer={
 minority_siberian={
 	color= hsv{ 0.50 0.50 0.84 }
 	religion = animist
-	traits = { north_asian_heritage siberian_culture_group }
+	heritage = heritage_siberian
+	language = language_ewenic
 	male_common_first_names={
 		Afanasiy
 		Aleksandr
