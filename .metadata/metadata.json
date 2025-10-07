@@ -1,12 +1,1 @@
-{
-  "name" : "Vic3auswed2 DEV",
-	"id" : "",
-  "version" : "",
-  "supported_game_version" : "",
-  "short_description" : "",
-  "tags" : [],
-  "relationships" : [],
-  "game_custom_data" : {
-    "multiplayer_synchronized" : true
-  }
-}
+{"name":"Vic3auswed2","id":"","version":"","supported_game_version":"","short_description":"","tags":[],"relationships":[]}
