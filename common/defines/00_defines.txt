@@ -289,7 +289,6 @@ NPolitics = {
 	SUPPORT_UNIVERSAL_THRESHOLD = 0.75
 
 	INCOHERENCE_FACTOR = 5								# The amount to multiply the approval value with to get an incoherence score for legitimacy
-	INCOHERENCE_FROM_SECONDARY_PARTY_MEMBERS = 0.25		# The amount to multiply the approval value with if the interest group is in a party but is not the party whip
 	LEGITIMACY_PENALTY_FOR_EACH_EXCESS_ENTITY = 20		# How much Legitimacy is lost for each group in government above the allowance determined by country_legitimacy_govt_size_add
 
 	SHOW_CONFIRMATION_BELOW_LEGITIMACY = 25
@@ -338,7 +337,7 @@ NEconomy = {
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 200000		# The country_gdp modifier multiplier cannot be higher than this
 
 	ECONOMY_OF_SCALE_START_LEVEL = 1					# Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
-	USE_NATIONALIZED_ECONOMY_OF_SCALE_PENALTY = no		# Whether ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT should be applied to economy of scale modifier for buildings with nationalized levels
+	USE_NATIONALIZED_ECONOMY_OF_SCALE_PENALTY = no		# Whether ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT should be applied to economy of scale modifier for buildings with nationalized levels
 	ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT = 0.5	# Non-government building economy of scale modifier if multiplied by (1 - the fraction of nationalized levels * this)
 
 	IN_DEFAULT_MINIMUM_PENALTY_SCALE = 0.1				# This amount of the 'in default' throughput penalty is applied right away
@@ -377,8 +376,8 @@ NEconomy = {
 	MIN_SPOT_PRESTIGE_AWARD = 3					# How many spots on the goods leaderboard get awarded Prestige
 
 	MIN_GOODS_PRICE	= 1							# A good cannot have a lower base price than this
-	PRICE_RANGE = 0.75							# han price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
-	BUY_SELL_DIFF_AT_MAX_FACTOR = 2				# the difference between buy/consumption and sell/production at han/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
+	PRICE_RANGE = 0.75							# min price of a good is base * (1 - PRICE_RANGE), Max price is base * (1 + PRICE_RANGE), PRICE_RANGE is locked to [0-1]
+	BUY_SELL_DIFF_AT_MAX_FACTOR = 2				# the difference between buy/consumption and sell/production at min/max pricing, e.g. if set to 4 then if buy orders are 4x sell orders price is maxed
 
 	GOODS_SHORTAGE_PENALTY_THRESHOLD = 0.5		# If supply / demand is lower than this, start applying output penalties, by default this should be ( 1 / BUY_SELL_DIFF_AT_MAX_FACTOR )
 	GOODS_SHORTAGE_PENALTY_INCREASE_SPEED = 0.01  	# Goods shortage penalty increases by this fraction of the target each day
@@ -443,7 +442,7 @@ NEconomy = {
 	BUILDING_INITIAL_WAGE_WEEKS = 2				# A building will not adjust its wages for the first this many weeks of its existence
 	MAX_WAGE_STEP_CHANGE = 0.1					# Wage rates can change at most this much each week
 	SUBSIDIES_MIN_GAIN = 0						# If a building is subsidized, it will always collect enough subsidies to ensure at least this weekly cash reserve growth
-	DEFAULT_MIN_HIRING_RATE = 0.01 				# Default weekly han hiring limit applied in a building per profession as a ratio of full employment
+	DEFAULT_MIN_HIRING_RATE = 0.01 				# Default weekly min hiring limit applied in a building per profession as a ratio of full employment
 	DEFAULT_MAX_HIRING_RATE = 0.1 				# Default weekly max hiring limit applied in a building per profession as a ratio of full employment
 	HIRING_RANGE_WEEKLY_CHANGE = 0.01 			# Weekly hiring range of a building is decreased or increased by this based on whether it is failing to hire at its current rate or not
 	EMPLOYMENT_PROPORTIONALITY_LIMIT = 0.1		# A building cannot have a difference of ratio of full employment between any two professions greater than this limit
@@ -451,9 +450,10 @@ NEconomy = {
 	BUILDING_RAISE_WAGES_DIVIDEND_INCOME_FACTOR = 0.5 # A pop with dividend income has its wealth multiplied by 1 - ( the fraction of their income that is dividends * this ) to ensure buildings don't start wage dumping just because all employees are getting dividends
 	BUILDING_RAISE_WAGES_OWNERSHIP_BUILDING_FACTOR = 0.5 # Buildings that own other buildings multiply their target wages by this to ensure profitability
 	BUILDING_RAISE_WAGES_MIN_RELEVANT_POP_SIZE = 50 # Pops with less workforce than this are ignored when checking whether a profitable building should raise wages because of radicalizing workers
-	BUILDING_RAISE_WAGES_DISCRIMINATION_FACTOR = 0.66 # Profitable buildings only care to raise wages for discriminated pops if their wealth to expected SoL ratio is less than this
-	BUILDING_LOWER_WAGES_TARGET_WEALTH_MULT = 1.2 # Buildings will consider lowering wages if all significant pops working in them have this * the target wealth to expected SoL ratio
+	BUILDING_RAISE_WAGES_TARGET_WEALTH_MULT = 0.9 # Buildings will consider raising wages if any significant pops working in them have this or lower * the target wealth to expected SoL ratio
+	BUILDING_LOWER_WAGES_TARGET_WEALTH_MULT = 1.1 # Buildings will consider lowering wages if all significant pops working in them have this or higher * the target wealth to expected SoL ratio
 	BUILDING_PREFER_LAYOFFS_TARGET_WEALTH_MULT = 0.66 # Buildings will prefer laying off pops if any significant pops working in them have this * the target wealth to expected SoL ratio or below
+	BUILDING_FOREIGN_OWNERSHIP_WAGE_FACTOR = -0.25	# Buildings with foreign owners will have their wage targets adjusted by this amount (multiplied by foreign owned fraction), as the owners are less likely to care about radicals generated by low wages
 	BUILDING_DEFAULT_MIN_EARNINGS_TO_HIRE_EMPLOYEES = 3  # Non-subsidized buildings will not hire if it would result in their annual earnings/employee falling below this threshold (default value, can be overridden for building group)
 	BUILDING_PROFIT_TARGET_TO_RAISE_WAGES = 0.25	# Required profit margin to consider raising wages for SoL or employment reasons, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
 	BUILDING_PROFIT_TARGET_TO_LOWER_WAGES = 0.15	# If profit margin is this or below, buildings should lower their wages, with BUILDING_WEEKS_BETWEEN_PAY_CHANGES weeks cooldown
@@ -636,12 +636,12 @@ NEconomy = {
 	COLLECTIVIZATION_DEBT_RATIO = 0.5					# Ratio of the country max debt can be used for collectivizing
 	MIN_COLLECTIVIZATION_BUDGET = 1000000				# Min size of a collectivizing budget
 	DYNAMIC_INDUSTRY_CHARTER = no						# Do we want to use dynamic industry charter instead of scripted ones
-	COMPANY_INFLUENCE_LEVEL_STEPS = { 10 25 50 100 250 500 }
+	COMPANY_INFLUENCE_LEVEL_STEPS = { 10 50 100 250 500 1000 1500 2500 5000 10000 }
 	COMPANY_CHARTER_AUTHORITY_COST = 100				# Cost of establishing a company charter
 
 	# Currently only used in loc, not logic
 	HARVEST_CONDITION_MIN_INTENSITY = 0.0					# Lowest intensity value a harvest condition can roll ( 0 <= this < max)
-	HARVEST_CONDITION_MAX_INTENSITY = 9.0					# Highest intensity value a harvest condition can roll (han < this)
+	HARVEST_CONDITION_MAX_INTENSITY = 9.0					# Highest intensity value a harvest condition can roll (min < this)
 
 	COMPANY_MONOPOLY_COOLDOWN_MONTHS = 60				# Cooldown in months after establishing a companies monopoly before you can revoke its monopoly
 	COUNTRY_MONOPOLY_MAX_COUNT = 5						# Maximum number of country monopolies a country can have
@@ -734,7 +734,7 @@ NMilitary = {
 
 	FRONT_MARKER_ADVANTAGE_PREDICTION_MIN_COMBAT_POWER = 0.01 # Used as a minimum value when calculating the Front Advantage
 	BATTLE_CONDITION_MIN_TICKS_BETWEEN_UPDATE_DEFAULT = 40	# Unless otherwise specified on the battle condition type, battle conditions will not update until at least this many ticks has passed
-	BATTLE_CONDITION_CHANCE_TO_UPDATE_PER_EXTRA_TICK = 0.01 # For each tick that has passed since the minimum number of ticks, this chance to refresh battle conditions (i.e. 13 ticks after han, there's 13% chance of switching)
+	BATTLE_CONDITION_CHANCE_TO_UPDATE_PER_EXTRA_TICK = 0.01 # For each tick that has passed since the minimum number of ticks, this chance to refresh battle conditions (i.e. 13 ticks after min, there's 13% chance of switching)
 
 	DEFAULT_ORDER_GENERAL = "advance"						# Default order for generals
 	DEFAULT_ORDER_ADMIRAL = "interception_coast"			# Default order for admirals
@@ -855,7 +855,7 @@ NDiplomacy = {
 	TENSION_THRESHOLD_TENSE = 50
 	TENSION_THRESHOLD_VOLATILE = 75
 	TENSION_DECAY_RATE = 5 # Per year
-	TENSION_INCREASE_MIN = 2.5 # Tension increases by a han of this when a province is colonized
+	TENSION_INCREASE_MIN = 2.5 # Tension increases by a min of this when a province is colonized
 	TENSION_INCREASE_MAX = 20.00 # Tension increases by a max of this when a province is colonized
 	TENSION_NUM_PROVINCE_SCALING_BASE = 10 # Below this amount of provinces a decentralized country gets additional tension when their provinces are colonized
 	TENSION_NUM_PROVINCE_SCALING_RATE = 2.0 # Max multiplier increase in tension per province taken from having only a few provinces
@@ -1219,9 +1219,9 @@ NPops = {
 	LOYALTIES_GAIN_GRACE_PERIOD_SHORT = "1837.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Short game rule is applied
 	LOYALTIES_GAIN_GRACE_PERIOD_LONG = "1841.1.1"		# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Long game rule is applied
 	LOYALTIES_GAIN_GRACE_PERIOD_EXTRA_LONG = "1846.1.1"	# Until this date, only a scaling part of the Radicals and Loyalists gained from SOL changes will be applied if the Extra Long game rule is applied
-	RADICALS_MAX_FROM_LOW_SOL = 0.15				# If pop is already this % radical, don't add more radicals from low SOL (Scales by delta between SoL and expected han SoL)
+	RADICALS_MAX_FROM_LOW_SOL = 0.15				# If pop is already this % radical, don't add more radicals from low SOL (Scales by delta between SoL and expected min SoL)
 	RADICALS_MAX_FROM_DISCRIMINATION = 0.5		# If pop is already this % radical, don't add more radicals from discrimination (Scales by literacy)
-	RADICALS_MONTHLY_FROM_LOW_SOL = 0.002		# Scales by delta between SoL and expected han SoL
+	RADICALS_MONTHLY_FROM_LOW_SOL = 0.003		# Scales by delta between SoL and expected min SoL
 	RADICALS_MONTHLY_FROM_DISCRIMINATION = 0.005 # Scales by literacy
 
 	# Radicals Monthly indicates what fraction of the pop turns radical every month while starving
@@ -1245,7 +1245,7 @@ NPops = {
 	CONVERSION_UNINCORPORATED_MULT = 0.1 		# CONVERSION_RATE is multiplied by this in unincorporated states
 	MIN_CONVERSION = 1							# If there is any conversion at least this many people will convert
 
-	DEFAULT_OBSESSION_DEMAND_MIN = 0.5					# The minimum relative demand of an obsession (overrides han demand in buy package goods categories), can be overriden in pop need
+	DEFAULT_OBSESSION_DEMAND_MIN = 0.5					# The minimum relative demand of an obsession (overrides min demand in buy package goods categories), can be overriden in pop need
 	DEFAULT_OBSESSION_DEMAND_MULT = 1.5					# Demand of an obsession is multiplied by this, can be overriden in pop need
 	MIN_POPS_FOR_NEW_OBSESSION = 50000			# At least this many pops of a culture must live in a market to get an obsession from its goods
 	MIN_SUPPLY_LEVEL_FOR_NEW_OBSESSION = 0.5	# Supply needs to be at least this times the demand
@@ -1276,8 +1276,11 @@ NPops = {
 
 	LITERACY_DIEOFF_BIAS = 0.7					# Percentage of literate pops who die of old age compared to the current literacy rate, the higher this value the faster the population becomes illiterate when literacy suffers
 
-	SOL_CHANGE_POP_IMPACT_FACTOR = 0.05			# How large part of a pop become more loyalist or radical as a result of a change in standard of living
-
+	DEFAULT_SOL_CHANGE_IMPACT_FACTOR = 0.03		# How large part of a pop become more loyalist or radical as a result of a change in standard of living, can be overriden on specific pop types
+	SOL_CHANGE_IMPACT_FACTOR_REDUCTION_START = 15	# Above amount of SoL, we start scaling down loyalists/radicals from SoL changes
+	SOL_CHANGE_IMPACT_FACTOR_REDUCTION_END = 30 	# At this amount of SoL, we apply maximum scaling down of loyalists/radicals from SoL changes
+	SOL_CHANGE_IMPACT_FACTOR_REDUCTION_SCALE = 9 	# Loyalists/radicals from SoL changes is divided by ( 1 + this ) at maximum scaling
+	
 	SOL_STARVING_THRESHOLD = 5
 	SOL_STRUGGLING_THRESHOLD = 10
 
@@ -1385,7 +1388,7 @@ NPops = {
 	MASS_MIGRATION_ORIGIN_MIN_TURMOIL = 0.15									# Must have at least this much turmoil in cultural homelands to create a migration target
 	MASS_MIGRATION_ORIGIN_MIN_EMIGRANTS = 100000								# A country must have at least this many possible migrants to trigger a mass migration
 	MASS_MIGRATION_TARGET_MAX_TURMOIL = 0.30									# Must have this or less turmoil among the culture for a country to be picked as a mass migration target
-	MASS_MIGRATION_TARGET_MIN_ARABLE_LAND = 20									# A state must have at least this much arable land to be a mass migration target
+	MASS_MIGRATION_TARGET_MIN_ARABLE_LAND = 10									# A state must have at least this much arable land to be a mass migration target
 	MASS_MIGRATION_STATE_MIN_MARKET_ACCESS = 0.7								# A state must have at least this much market access to their market to be a mass migration target or origin state
 	MASS_MIGRATION_SPAWN_CHANCE = 2 											# Per week for each potential mass migration, scales with turmoil (1 = 1%)
 	MASS_MIGRATION_SPAWN_CHANCE_STRUGGLING_FACTOR = 0.2 						# Chance increases by this for each point of SoL below 10 for a culture in a country
@@ -1418,7 +1421,7 @@ NPops = {
 	MAX_COLONIAL_GROWTH = 0.02							# Colonies can grow by this much at most per day
 	COLONY_SPEED_PROVINCE_SIZE_STANDARD = 50			# Sets a baseline for how large (in provinces) a colonizable state region is
 	COLONY_SPEED_PER_PROVINCE_DIFF_FROM_STANDARD = 0.02	# For every province the state region has above or below COLONY_SPEED_PROVINCE_SIZE_STANDARD, increase or decrease colonization speed by this rate (as a percentage)
-	COLONY_SPEED_POPULATION_INCREMENT = 200000			# Determines the number of people across both colonizing and colonized states that should start slowing down the rate of colonization; set to 0 to disable
+	COLONY_SPEED_POPULATION_INCREMENT = 100000			# Determines the number of people across both colonizing and colonized states that should start slowing down the rate of colonization; set to 0 to disable
 	COLONY_SPEED_MALUS_PER_POPULATION_INCREMENT = 0.25	# Starting at COLONY_SPEED_THRESHOLD_FROM_POPULATION inhabitants, increase the number of days to complete by this amount proportional to population in the colony + state of province being colonized above 200K (e.g. at COLONY_SPEED_THRESHOLD_FROM_POPULATION = 200K, this set to 0.5, and at 300K total inhabitants, multiply growth by 1/1.25 = 0.8; at 600K inhabitants, multiply by 0.25)
 
 	INDIVIDUALS_PER_POP_INFRASTRUCTURE = 100000			# Multiply state_infrastructure_from_population_add by this to determine infra from population
@@ -1688,10 +1691,10 @@ NCharacters = {
 
 NBattle = {
 	CASUALTY_MAJORITY_CULTURE_WEIGHT = 1.5			# Majority culture pops will be weighted to take 1.5x more casualties
-	CASUALTY_ROLL_MIN = 50							# han ...
+	CASUALTY_ROLL_MIN = 50							# min ...
 	CASUALTY_ROLL_MAX = 200							# max amount of casualties a unit can take each roll when applying casualties to units
 	SURVIVAL_RATE = 0.66
-	DEPENDENTS_ROLL_MIN_PERCENT = 0.1				# han ...
+	DEPENDENTS_ROLL_MIN_PERCENT = 0.1				# min ...
 	DEPENDENTS_ROLL_MAX_PERCENT = 0.3				# max percentage of Pops Size it can take as Dependents each roll
 	MIN_DEPENDENTS_PER_ROLL = 25					# Minimum amount of dependents to added to a random pop
 
@@ -1738,7 +1741,7 @@ NWar = {
 
 	LAND_INVASION_TRAVEL_TIME_LIMIT_DAYS = 30							# How many days formation can travel at most for a land invasion
 	LAND_INVASION_PREPARATION_DURATION_DAYS = 14 						# How many days should pass since the first army arrived to the invasion front to start advancing it
-	NAVAL_INVASION_PREPARATION_DURATION_DAYS = 20 						# How many days should pass since the first army arrived to the naval invasion front to start advancing it without the sea node being blocked by enemy fleet #increased time before naval invasion begins - blaze
+	NAVAL_INVASION_PREPARATION_DURATION_DAYS = 14 						# How many days should pass since the first army arrived to the naval invasion front to start advancing it without the sea node being blocked by enemy fleet
 	LAND_INVASION_MAX_LAND_BATTLE_DEFEATS_AT_ZERO_OCCUPATION = 3 		# At this number of land defeats with zero occupation you fail the invasion
 	NAVAL_INVASION_MAX_LAND_BATTLE_DEFEATS_AT_ZERO_OCCUPATION = 3 		# At this number of land defeats with zero occupation you fail the naval invasion
 	NAVAL_INVASION_MIN_POWER_PROJECTION_RATIO_TO_BLOCK_LANDING = 0.25 	# How powerful a fleet must be to be considered as "blocking" a naval invading fleet
