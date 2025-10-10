@@ -269,7 +269,7 @@ SWE = {
 
 	tier = kingdom
 
-	cultures = { minority_scandinavian }
+	cultures = { minority_scandinavian swedish }
 	capital = STATE_SVEALAND
 }
 

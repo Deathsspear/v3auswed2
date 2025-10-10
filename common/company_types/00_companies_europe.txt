@@ -665,7 +665,7 @@ company_lkab = {
 	}
 
 	possible = {
-		has_technology_researched = open_hearth_process
+		has_technology_researched = bessemer_process
 		any_scope_state = {
 			state_region = s:STATE_NORRLAND
 			is_incorporated = yes
