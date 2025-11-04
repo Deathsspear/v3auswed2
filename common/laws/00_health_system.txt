@@ -34,7 +34,6 @@ law_charitable_health_system = {
 
 	modifier = {
 		country_institution_cost_institution_health_system_mult = -0.2
-		country_institution_health_system_max_investment_add = 2 #made charity hospitals not complete trash. - blaze
 	}
 
 	institution = institution_health_system
