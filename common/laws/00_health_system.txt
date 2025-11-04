@@ -107,7 +107,6 @@ law_public_health_insurance = {
 	}
 
 	modifier = {
-		country_institution_health_system_max_investment_add = 2
 	}
 
 	institution = institution_health_system
