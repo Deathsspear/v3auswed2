@@ -1,0 +1,43 @@
+﻿# these (and probably others) have a weird homeland requirement that does not play well with the culture consolidation modifier_integrated_colony
+# so they are manually written here.
+REPLACE:CAT = {
+	states = {
+		STATE_CATALONIA
+		STATE_VALENCIA
+		STATE_BALEARIC_ISLANDS
+	}
+
+	required_num_states = 2
+
+	ai_will_do = { always = no }
+}
+
+REPLACE:BYE = {
+	states = {
+		STATE_MINSK
+		STATE_BREST
+		STATE_MOGILEV
+		STATE_VITEBSK
+	}
+
+	ai_will_do = { always = no }
+}
+REPLACE:OCC = {
+	states = {
+		STATE_LANGUEDOC
+		STATE_AUVERGNE_LIMOUSIN
+		STATE_AQUITAINE
+		STATE_GUYENNE
+		STATE_RHONE
+		STATE_PROVENCE
+	}
+
+	ai_will_do = { always = no }
+}
+REPLACE:BRI = {
+	states = {
+		STATE_BRITTANY
+	}
+
+	ai_will_do = { always = no }
+}
