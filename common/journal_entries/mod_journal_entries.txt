@@ -548,7 +548,7 @@ REPLACE:je_spa_economic_regeneration_ultramar = {
 
     }
 
-    complete = { #adjusted completion conditions blaze
+    complete = { #adjusted completion conditions
         trigger_if = {
             limit = {
                 scope:journal_entry = {
@@ -557,16 +557,7 @@ REPLACE:je_spa_economic_regeneration_ultramar = {
                     }
                 }
             }
-            any_subject_or_below = {
-                count >= 1
-            }
-            any_subject_or_below = {
-                liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-                country_has_building_group_levels = {
-                    type = bg_plantations
-                    value >= 10
-                }
-            }
+            always = yes
         }
         trigger_else_if = {
             limit = {
@@ -582,84 +573,6 @@ REPLACE:je_spa_economic_regeneration_ultramar = {
         change_variable = {
             name = spa_economic_regeneration_var
             add = 1
-        }
-        if = {
-            limit = {
-                scope:journal_entry = {
-                    NOT = {
-                        has_variable = je_spa_economic_regeneration_creative_accounting_var
-                    }
-                }
-            }
-            show_as_tooltip = {
-                custom_tooltip = {
-                    text = every_colonial_subject_following_requirements_tt
-                }
-                ordered_subject_or_below = {
-                    order_by = gdp
-					position = 0
-					check_range_bounds = no
-                    add_modifier = {
-                        name = modifier_integrated_colony
-                        days = long_modifier_time
-                    }
-                }
-            }
-            hidden_effect = {
-                every_subject_or_below = {
-                    limit = {
-                        country_is_colonial_or_company = yes
-                        liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-                        country_has_building_group_levels = {
-                            type = bg_plantations
-                            value >= 40
-                        }
-                    }
-                    add_modifier = {
-                        name = modifier_integrated_colony
-                        days = long_modifier_time
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = {
-                scope:journal_entry = {
-                    has_variable = je_spa_economic_regeneration_creative_accounting_var
-                }
-            }
-            show_as_tooltip = {
-                custom_tooltip = {
-                    text = every_colonial_subject_following_requirements_tt
-                }
-                ordered_subject_or_below = {
-                    order_by = gdp
-					position = 0
-					check_range_bounds = no
-                    add_modifier = {
-                        name = modifier_integrated_colony
-                        days = normal_modifier_time
-                        multiplier = 0.5
-                    }
-                }
-            }
-            hidden_effect = {
-                every_subject_or_below = {
-                    limit = {
-                        country_is_colonial_or_company = yes
-                        liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
-                        country_has_building_group_levels = {
-                            type = bg_plantations
-                            value >= 20
-                        }
-                    }
-                    add_modifier = {
-                        name = modifier_integrated_colony
-                        days = normal_modifier_time
-                        multiplier = 0.5
-                    }
-                }
-            }
         }
     }
 
