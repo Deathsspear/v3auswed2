@@ -1,0 +1,5 @@
+﻿l_english:
+ cu_integration_decision: "Integrate Culture"
+ cu_integration_decision_desc: "Integrate cultures that share similar traits."
+ cu_homeland_decision: "Update Homelands"
+ cu_homeland_decision_desc: "Replace merged cultures homelands with homelands of the culture they got merged in."

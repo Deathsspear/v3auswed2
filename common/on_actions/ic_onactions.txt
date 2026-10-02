@@ -1,0 +1,42 @@
+﻿
+# Root = Releasing Country
+# scope:target = Released Country
+on_country_released_as_independent = {
+	on_actions = {
+		ic_onactions_1
+	}
+}
+
+on_country_released_as_own_subject = {
+	on_actions = {
+		ic_onactions_1
+	}
+}
+
+on_country_released_as_overlord_subject = {
+	on_actions = {
+		ic_onactions_1
+	}
+}
+
+on_decade_pulse_country = {
+	on_actions = {
+		ic_onactions_2
+	}
+}
+
+ic_onactions_1 = {
+	effect = {
+		scope:target = {
+			integrate_culture_custom_1 = yes
+			remove_primary_culture_custom_1 = yes
+		}
+		
+	}
+}
+
+ic_onactions_2 = {
+	events = { 
+		cu_integration_events.2
+	}
+}

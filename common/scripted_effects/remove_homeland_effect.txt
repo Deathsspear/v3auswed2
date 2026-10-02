@@ -1,0 +1,1063 @@
+﻿remove_homeland_custom_1 = {
+
+	# Indigenous North American
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:metis
+			is_homeland = cu:dakota
+			is_homeland = cu:cherokee
+			is_homeland = cu:muskogean
+			is_homeland = cu:pueblo
+			is_homeland = cu:inuit
+			is_homeland = cu:cree
+			is_homeland = cu:navajo
+			is_homeland = cu:athabaskan
+			is_homeland = cu:salish
+			is_homeland = cu:nez_perce
+			is_homeland = cu:comanche
+			is_homeland = cu:algonquian
+			is_homeland = cu:iroquoian
+			is_homeland = cu:caddoan
+			is_homeland = cu:paiute
+			is_homeland = cu:hokan
+			is_homeland = cu:apache
+			is_homeland = cu:oodham
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:siouan 
+				remove_homeland = cu:metis
+			remove_homeland = cu:dakota
+			remove_homeland = cu:cherokee
+			remove_homeland = cu:muskogean
+			remove_homeland = cu:pueblo
+			remove_homeland = cu:inuit
+			remove_homeland = cu:cree
+			remove_homeland = cu:navajo
+			remove_homeland = cu:athabaskan
+			remove_homeland = cu:salish
+			remove_homeland = cu:nez_perce
+			remove_homeland = cu:comanche
+			remove_homeland = cu:algonquian
+			remove_homeland = cu:iroquoian
+			remove_homeland = cu:caddoan
+			remove_homeland = cu:paiute
+			remove_homeland = cu:hokan
+			remove_homeland = cu:apache
+			remove_homeland = cu:oodham
+	}
+	}
+	
+	# Mesoamerican
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:mixtec
+			is_homeland = cu:miskito
+			is_homeland = cu:zapotec
+			is_homeland = cu:nahua
+			is_homeland = cu:tarascan
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:mayan 
+	 remove_homeland = cu:mixtec
+			remove_homeland = cu:miskito
+			remove_homeland = cu:zapotec
+			remove_homeland = cu:nahua
+			remove_homeland = cu:tarascan
+	}
+	}
+	
+	# Indigenous South American
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:quechua
+			is_homeland = cu:guarani
+			is_homeland = cu:aimara
+			is_homeland = cu:patagonian
+			is_homeland = cu:guajiro
+			is_homeland = cu:tupinamba
+			is_homeland = cu:muisca
+			is_homeland = cu:cariban
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:amazonian 
+	 remove_homeland = cu:quechua
+			remove_homeland = cu:guarani
+			remove_homeland = cu:aimara
+			remove_homeland = cu:patagonian
+			remove_homeland = cu:guajiro
+			remove_homeland = cu:tupinamba
+			remove_homeland = cu:muisca
+			remove_homeland = cu:cariban
+	}
+	}
+	
+	# South African
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:chewa
+			is_homeland = cu:khoisan
+			is_homeland = cu:lomwe
+			is_homeland = cu:makua
+			is_homeland = cu:nguni
+			is_homeland = cu:ovimbundu
+			is_homeland = cu:sena
+			is_homeland = cu:shona
+			is_homeland = cu:sotho
+			is_homeland = cu:tonga
+			is_homeland = cu:tswana
+			is_homeland = cu:xhosa
+			is_homeland = cu:yao
+			is_homeland = cu:zulu
+			is_homeland = cu:kavango_bantu
+			is_homeland = cu:malagasy
+			is_homeland = cu:griqua
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:herero 
+	 remove_homeland = cu:chewa
+			remove_homeland = cu:khoisan
+			remove_homeland = cu:lomwe
+			remove_homeland = cu:makua
+			remove_homeland = cu:nguni
+			remove_homeland = cu:ovimbundu
+			remove_homeland = cu:sena
+			remove_homeland = cu:shona
+			remove_homeland = cu:sotho
+			remove_homeland = cu:tonga
+			remove_homeland = cu:tswana
+			remove_homeland = cu:xhosa
+			remove_homeland = cu:yao
+			remove_homeland = cu:zulu
+			remove_homeland = cu:kavango_bantu
+			remove_homeland = cu:malagasy
+			remove_homeland = cu:griqua
+	}
+	}
+	
+	# Central African
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:bakongo
+			is_homeland = cu:baguirmi
+			is_homeland = cu:fang
+			is_homeland = cu:kanuri
+			is_homeland = cu:luba
+			is_homeland = cu:lunda
+			is_homeland = cu:mongo
+			is_homeland = cu:sara
+			is_homeland = cu:teda
+			is_homeland = cu:equatorial_bantu
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:fluvian_bantu 
+	 remove_homeland = cu:bakongo
+			remove_homeland = cu:baguirmi
+			remove_homeland = cu:fang
+			remove_homeland = cu:kanuri
+			remove_homeland = cu:luba
+			remove_homeland = cu:lunda
+			remove_homeland = cu:mongo
+			remove_homeland = cu:sara
+			remove_homeland = cu:teda
+			remove_homeland = cu:equatorial_bantu
+	}
+	}
+	
+	# West African
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:akan
+			is_homeland = cu:bambara
+			is_homeland = cu:bassa
+			is_homeland = cu:dyula
+			is_homeland = cu:edo
+			is_homeland = cu:ewe
+			is_homeland = cu:fon
+			is_homeland = cu:fulbe
+			is_homeland = cu:ibibio
+			is_homeland = cu:ibo
+			is_homeland = cu:kissi
+			is_homeland = cu:kru
+			is_homeland = cu:mande
+			is_homeland = cu:senufo
+			is_homeland = cu:songhai
+			is_homeland = cu:tiv
+			is_homeland = cu:wolof
+			is_homeland = cu:yoruba
+			is_homeland = cu:hausa
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:mossi 
+	 remove_homeland = cu:akan
+			remove_homeland = cu:bambara
+			remove_homeland = cu:bassa
+			remove_homeland = cu:dyula
+			remove_homeland = cu:edo
+			remove_homeland = cu:ewe
+			remove_homeland = cu:fon
+			remove_homeland = cu:fulbe
+			remove_homeland = cu:ibibio
+			remove_homeland = cu:ibo
+			remove_homeland = cu:kissi
+			remove_homeland = cu:kru
+			remove_homeland = cu:mande
+			remove_homeland = cu:senufo
+			remove_homeland = cu:songhai
+			remove_homeland = cu:tiv
+			remove_homeland = cu:wolof
+			remove_homeland = cu:yoruba
+			remove_homeland = cu:hausa
+	}
+	}
+	
+	# East African
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:nilotic
+			is_homeland = cu:azande
+			is_homeland = cu:baganda
+			is_homeland = cu:beja
+			is_homeland = cu:dinka
+			is_homeland = cu:fur
+			is_homeland = cu:kikuyu
+			is_homeland = cu:luo
+			is_homeland = cu:maasai
+			is_homeland = cu:nuer
+			is_homeland = cu:nuba
+			is_homeland = cu:ruanda
+			is_homeland = cu:rundi
+			is_homeland = cu:sukuma
+			is_homeland = cu:swahili
+			is_homeland = cu:nyamwezi
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:lacustrine_bantu 
+	 remove_homeland = cu:nilotic
+			remove_homeland = cu:azande
+			remove_homeland = cu:baganda
+			remove_homeland = cu:beja
+			remove_homeland = cu:dinka
+			remove_homeland = cu:fur
+			remove_homeland = cu:kikuyu
+			remove_homeland = cu:luo
+			remove_homeland = cu:maasai
+			remove_homeland = cu:nuer
+			remove_homeland = cu:nuba
+			remove_homeland = cu:ruanda
+			remove_homeland = cu:rundi
+			remove_homeland = cu:sukuma
+			remove_homeland = cu:swahili
+			remove_homeland = cu:nyamwezi
+	}
+	}
+	
+	# Arabic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:sudanese
+			is_homeland = cu:yemenite
+			is_homeland = cu:maghrebi
+			is_homeland = cu:misri
+			is_homeland = cu:mashriqi
+			is_homeland = cu:haratin
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:bedouin 
+	 remove_homeland = cu:sudanese
+			remove_homeland = cu:yemenite
+			remove_homeland = cu:maghrebi
+			remove_homeland = cu:misri
+			remove_homeland = cu:mashriqi
+			remove_homeland = cu:haratin
+	}
+	}
+	
+	# Ethiopian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:tigray
+			is_homeland = cu:amhara
+			is_homeland = cu:afar
+			is_homeland = cu:sidama
+			is_homeland = cu:somali
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:oromo 
+	 remove_homeland = cu:sudanese
+			remove_homeland = cu:yemenite
+			remove_homeland = cu:maghrebi
+			remove_homeland = cu:misri
+			remove_homeland = cu:mashriqi
+			remove_homeland = cu:berber
+			remove_homeland = cu:haratin
+			remove_homeland = cu:bidan
+			remove_homeland = cu:somali
+			remove_homeland = cu:somali
+	}
+	}
+	
+	# Iranian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:kurdish
+			is_homeland = cu:mazanderani
+			is_homeland = cu:luri
+			is_homeland = cu:azerbaijani
+			is_homeland = cu:assyrian
+			is_homeland = cu:pashtun
+			is_homeland = cu:baluchi
+			is_homeland = cu:tajik
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:persian 
+	 remove_homeland = cu:kurdish
+			remove_homeland = cu:mazanderani
+			remove_homeland = cu:luri
+			remove_homeland = cu:azerbaijani
+			remove_homeland = cu:assyrian
+			remove_homeland = cu:baluchi
+			remove_homeland = cu:pashtun
+			remove_homeland = cu:tajik
+	}
+	}
+	
+	# Central Asian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:kazak
+			is_homeland = cu:kirgiz
+			is_homeland = cu:uighur
+			is_homeland = cu:hazara
+			is_homeland = cu:turkmen
+			is_homeland = cu:north_caucasian
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:uzbek 
+	 remove_homeland = cu:kazak
+			remove_homeland = cu:kirgiz
+			remove_homeland = cu:uighur
+			remove_homeland = cu:hazara
+			remove_homeland = cu:turkmen
+			remove_homeland = cu:north_caucasian
+	}
+	}
+	
+	# Mongolian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:kalmyk
+			is_homeland = cu:tuvan
+			is_homeland = cu:buryat
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:mongol
+		remove_homeland = cu:kalmyk
+			remove_homeland = cu:tuvan
+			remove_homeland = cu:buryat	 
+	}
+	}
+	
+	# Siberian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:yakut
+			is_homeland = cu:ainu
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:siberian 
+	 remove_homeland = cu:yakut
+	 remove_homeland = cu:ainu
+	}
+	}
+	
+	# Tibetan
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:yi
+			is_homeland = cu:nepali
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:tibetan 
+	 remove_homeland = cu:yi
+			remove_homeland = cu:nepali
+	}
+	}
+	
+	# Chinese
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:hakka
+			is_homeland = cu:min
+			is_homeland = cu:yue
+			is_homeland = cu:miao
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:han 
+	 remove_homeland = cu:hakka
+			remove_homeland = cu:min
+			remove_homeland = cu:yue
+			remove_homeland = cu:miao
+	}
+	}
+	
+	# North Indian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:bundeli
+			is_homeland = cu:pahari
+			is_homeland = cu:bageli
+			is_homeland = cu:chhattisgarhi
+			is_homeland = cu:deccani
+			is_homeland = cu:gujarati
+			is_homeland = cu:bengali
+			is_homeland = cu:marathi
+			is_homeland = cu:pathan
+			is_homeland = cu:bihari
+			is_homeland = cu:oriya
+			is_homeland = cu:sinhala
+			is_homeland = cu:avadhi
+			is_homeland = cu:panjabi
+			is_homeland = cu:kashmiri
+			is_homeland = cu:sindi
+			is_homeland = cu:rajput
+			is_homeland = cu:kho
+			is_homeland = cu:assamese
+			is_homeland = cu:manipuri
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:hindustani 
+	 remove_homeland = cu:bundeli
+			remove_homeland = cu:pahari
+			remove_homeland = cu:bageli
+			remove_homeland = cu:chhattisgarhi
+			remove_homeland = cu:deccani
+			remove_homeland = cu:gujarati
+			remove_homeland = cu:bengali
+			remove_homeland = cu:marathi
+			remove_homeland = cu:pathan
+			remove_homeland = cu:bihari
+			remove_homeland = cu:oriya
+			remove_homeland = cu:sinhala
+			remove_homeland = cu:avadhi
+			remove_homeland = cu:panjabi
+			remove_homeland = cu:kashmiri
+			remove_homeland = cu:sindi
+			remove_homeland = cu:rajput
+			remove_homeland = cu:kho
+			remove_homeland = cu:assamese
+			remove_homeland = cu:manipuri
+	}
+	}
+	
+	# South Indian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:gondi
+			is_homeland = cu:kannada
+			is_homeland = cu:malayalam
+			is_homeland = cu:telegu
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:tamil 
+	 remove_homeland = cu:gondi
+			remove_homeland = cu:kannada
+			remove_homeland = cu:malayalam
+			remove_homeland = cu:telegu
+	}
+	}
+	
+	# Burmese
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:naga
+			is_homeland = cu:kachin
+			is_homeland = cu:karen
+			is_homeland = cu:lushai
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:burmese
+		remove_homeland = cu:naga
+			remove_homeland = cu:kachin
+			remove_homeland = cu:karen
+			remove_homeland = cu:lushai	 
+	}
+	}
+	
+	# Malay
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:batak
+			is_homeland = cu:dayak
+			is_homeland = cu:filipino
+			is_homeland = cu:moro
+			is_homeland = cu:javan
+			is_homeland = cu:moluccan
+			is_homeland = cu:bornean
+			is_homeland = cu:sumatran
+			is_homeland = cu:balinese
+			is_homeland = cu:champa
+			is_homeland = cu:tagalog
+			is_homeland = cu:ilocano
+			is_homeland = cu:visayan
+			is_homeland = cu:filipino_hispanophone
+			is_homeland = cu:lumad
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:malay 
+	 remove_homeland = cu:batak
+			remove_homeland = cu:dayak
+			remove_homeland = cu:filipino
+			remove_homeland = cu:moro
+			remove_homeland = cu:javan
+			remove_homeland = cu:moluccan
+			remove_homeland = cu:bornean
+			remove_homeland = cu:sumatran
+			remove_homeland = cu:balinese
+			remove_homeland = cu:champa
+			remove_homeland = cu:tagalog
+			remove_homeland = cu:ilocano
+			remove_homeland = cu:visayan
+			remove_homeland = cu:filipino_hispanophone
+			remove_homeland = cu:lumad
+	}
+	}
+	
+	# Tai
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:lao
+			is_homeland = cu:shan
+			is_homeland = cu:zhuang
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:thai 
+	 remove_homeland = cu:lao
+			remove_homeland = cu:shan
+			remove_homeland = cu:zhuang
+	}
+	}
+	
+	# Polynesian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:hawaiian
+			is_homeland = cu:melanesian
+			is_homeland = cu:micronesian
+			is_homeland = cu:maori
+			is_homeland = cu:yuanzhumin
+			is_homeland = cu:aborigine
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:polynesian 
+	 remove_homeland = cu:hawaiian
+			remove_homeland = cu:melanesian
+			remove_homeland = cu:micronesian
+			remove_homeland = cu:maori
+			remove_homeland = cu:yuanzhumin
+			remove_homeland = cu:aborigine
+	}
+	}
+	
+	# American
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:dixie
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:yankee
+		remove_homeland = cu:dixie	 
+	}
+	}
+	
+	# Central American
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:mexican
+			is_homeland = cu:caribeno
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:central_american 
+	 remove_homeland = cu:mexican
+			remove_homeland = cu:caribeno
+	}
+	}
+	
+	# Afro-American
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:afro_caribbean
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:afro_american 
+	 remove_homeland = cu:afro_caribbean
+	}
+	}
+	
+	# South American
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:south_andean
+			is_homeland = cu:venezuelan
+			is_homeland = cu:colombian
+			is_homeland = cu:ecuadorian
+			is_homeland = cu:peruvian
+			is_homeland = cu:chilean
+			is_homeland = cu:bolivian
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:north_andean 
+	 remove_homeland = cu:south_andean
+			remove_homeland = cu:venezuelan
+			remove_homeland = cu:colombian
+			remove_homeland = cu:ecuadorian
+			remove_homeland = cu:peruvian
+			remove_homeland = cu:chilean
+			remove_homeland = cu:bolivian
+	}
+	}
+	
+	# Platinean
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:argentine
+			is_homeland = cu:uruguayan
+			is_homeland = cu:paraguayan
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:platinean 
+	 remove_homeland = cu:argentine
+			remove_homeland = cu:uruguayan
+			remove_homeland = cu:paraguayan
+	}
+	}
+	
+	# Brazilian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:amazonic
+			is_homeland = cu:sulista
+			is_homeland = cu:nordestino
+			is_homeland = cu:paulista
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:brazilian 
+	 remove_homeland = cu:amazonic
+			remove_homeland = cu:sulista
+			remove_homeland = cu:nordestino
+			remove_homeland = cu:paulista
+	}
+	}
+	
+	# Portuguese
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:galician
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:portuguese 
+	 remove_homeland = cu:galician
+	}
+	}
+	
+	# Spanish
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:catalan
+			is_homeland = cu:basque
+			is_homeland = cu:asturleonese
+			is_homeland = cu:aragonese
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:spanish 
+	 remove_homeland = cu:catalan
+	 remove_homeland = cu:basque
+	 remove_homeland = cu:asturleonese
+	 remove_homeland = cu:aragonese
+	}
+	}
+	
+	# Celtic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:breton
+			is_homeland = cu:welsh
+			is_homeland = cu:scottish_gaelic
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:irish 
+	 remove_homeland = cu:breton
+			remove_homeland = cu:welsh
+			remove_homeland = cu:scottish_gaelic
+	}
+	}
+	
+	# French
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:occitan
+			is_homeland = cu:francoprovencal
+			is_homeland = cu:cajun
+			is_homeland = cu:wallonian
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:french
+		remove_homeland = cu:occitan
+			remove_homeland = cu:francoprovencal
+			remove_homeland = cu:cajun
+			remove_homeland = cu:wallonian	 
+	}
+	}
+	
+	# Dutch
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:flemish
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:dutch 
+	 remove_homeland = cu:flemish
+	}
+	}
+	
+	# Italian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:south_italian
+			is_homeland = cu:corsican
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:north_italian 
+	 remove_homeland = cu:south_italian
+			remove_homeland = cu:corsican
+	}
+	}
+	
+	# Germanic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:south_german
+			is_homeland = cu:alemannic
+			is_homeland = cu:east_german
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:north_german
+		remove_homeland = cu:south_german
+			remove_homeland = cu:alemannic	 
+			remove_homeland = cu:east_german
+	}
+	}
+	
+	# Nordic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:danish
+			is_homeland = cu:norwegian
+			is_homeland = cu:icelandic
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:swedish 
+	 remove_homeland = cu:danish
+			remove_homeland = cu:norwegian
+			remove_homeland = cu:icelandic
+	}
+	}
+	
+	# British
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:scottish
+			is_homeland = cu:scottish_gaelic
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:british 
+	 remove_homeland = cu:scottish
+	 remove_homeland = cu:scottish_gaelic
+	}
+	}
+	
+	# Finnic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:sami
+			is_homeland = cu:ugrian
+			is_homeland = cu:estonian
+			is_homeland = cu:karelian
+			is_homeland = cu:mordvin
+			is_homeland = cu:mari
+			is_homeland = cu:udmurt
+			is_homeland = cu:marathi
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:finnish 
+	 remove_homeland = cu:sami
+			remove_homeland = cu:ugrian
+			remove_homeland = cu:estonian
+			remove_homeland = cu:karelian
+			remove_homeland = cu:mordvin
+			remove_homeland = cu:mari
+			remove_homeland = cu:udmurt
+			remove_homeland = cu:marathi
+	}
+	}
+	
+	# Baltic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:latvian
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:lithuanian 
+	  remove_homeland = cu:latvian
+	}
+	}
+	
+	# East Slavic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:ukrainian
+			is_homeland = cu:byelorussian
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:russian 
+	 remove_homeland = cu:ukrainian
+			remove_homeland = cu:byelorussian
+	}
+	}
+	
+	# West Slavic
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:czech
+			is_homeland = cu:slovak
+			is_homeland = cu:sorb
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:polish 
+	 remove_homeland = cu:czech
+			remove_homeland = cu:slovak
+			remove_homeland = cu:sorb
+	}
+	}
+	
+	# Jugoslav
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:serb
+			is_homeland = cu:bulgarian
+			is_homeland = cu:slovene
+			is_homeland = cu:bosniak
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:croat 
+	 remove_homeland = cu:serb
+			remove_homeland = cu:bulgarian
+			remove_homeland = cu:slovene
+			remove_homeland = cu:bosniak
+	}
+	}
+	
+	# Caucasian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:armenian
+			is_homeland = cu:circassian
+			is_homeland = cu:chechen
+			is_homeland = cu:bosniak
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:georgian 
+	 remove_homeland = cu:armenian
+			remove_homeland = cu:circassian
+			remove_homeland = cu:chechen
+			remove_homeland = cu:bosniak
+	}
+	}
+	
+	#  Tatar
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:chuvash
+			is_homeland = cu:bashkir 
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:tatar 
+	 remove_homeland = cu:chuvash
+	 remove_homeland = cu:bashkir
+	}
+	}
+	
+	# Mon-Khmer
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:mon
+			is_homeland = cu:khmu
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:khmer 
+	 remove_homeland = cu:mon
+		remove_homeland = cu:khmu
+	}
+	}
+	
+	# Hungarian
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:szekely
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:hungarian 
+	 remove_homeland = cu:szekely
+	}
+	}
+	
+	# Berber
+	if = {
+    limit = { state_region = {
+		OR = {
+			is_homeland = cu:bidan
+			is_homeland = cu:tuareg
+		}
+    }
+	}
+	state_region = {
+     add_homeland = cu:berber 
+	 remove_homeland = cu:bidan
+	 remove_homeland = cu:tuareg
+	}
+	}
+}

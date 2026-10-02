@@ -1,0 +1,670 @@
+﻿integrate_culture_custom_1 = {
+   every_scope_pop = {
+   
+   # Indigenous North American
+	if = {
+    limit ={
+		OR = {
+			culture = cu:metis
+			culture = cu:dakota
+			culture = cu:cherokee
+			culture = cu:muskogean
+			culture = cu:pueblo
+			culture = cu:inuit
+			culture = cu:cree
+			culture = cu:navajo
+			culture = cu:athabaskan
+			culture = cu:salish
+			culture = cu:nez_perce
+			culture = cu:comanche
+			culture = cu:algonquian
+			culture = cu:iroquoian
+			culture = cu:caddoan
+			culture = cu:paiute
+			culture = cu:hokan
+			culture = cu:apache
+			culture = cu:oodham
+		}
+    }
+     change_pop_culture = { target = cu:siouan value = 1 }
+	}
+	
+	# Mesoamerican
+	if = {
+    limit ={
+		OR = {
+			culture = cu:mixtec
+			culture = cu:miskito
+			culture = cu:zapotec
+			culture = cu:nahua
+			culture = cu:tarascan
+		}
+    }
+     change_pop_culture = { target = cu:mayan value = 1 }
+	}
+	
+	# Indigenous South American
+	if = {
+    limit ={
+		OR = {
+			culture = cu:quechua
+			culture = cu:guarani
+			culture = cu:aimara
+			culture = cu:patagonian
+			culture = cu:guajiro
+			culture = cu:tupinamba
+			culture = cu:muisca
+			culture = cu:cariban
+		}
+    }
+     change_pop_culture = { target = cu:amazonian value = 1 }
+	}
+	
+	# South African
+	if = {
+    limit ={
+		OR = {
+			culture = cu:chewa
+			culture = cu:khoisan
+			culture = cu:lomwe
+			culture = cu:makua
+			culture = cu:nguni
+			culture = cu:ovimbundu
+			culture = cu:sena
+			culture = cu:shona
+			culture = cu:sotho
+			culture = cu:tonga
+			culture = cu:tswana
+			culture = cu:xhosa
+			culture = cu:yao
+			culture = cu:zulu
+			culture = cu:kavango_bantu
+			culture = cu:malagasy
+			culture = cu:griqua
+		}
+    }
+     change_pop_culture = { target = cu:herero value = 1 }
+	}
+	
+	# Central African
+	if = {
+    limit ={
+		OR = {
+			culture = cu:bakongo
+			culture = cu:baguirmi
+			culture = cu:fang
+			culture = cu:kanuri
+			culture = cu:luba
+			culture = cu:lunda
+			culture = cu:mongo
+			culture = cu:sara
+			culture = cu:teda
+			culture = cu:equatorial_bantu
+		}
+    }
+     change_pop_culture = { target = cu:fluvian_bantu value = 1 }
+	}
+	
+	# West African
+	if = {
+    limit ={
+		OR = {
+			culture = cu:akan
+			culture = cu:bambara
+			culture = cu:bassa
+			culture = cu:dyula
+			culture = cu:edo
+			culture = cu:ewe
+			culture = cu:fon
+			culture = cu:fulbe
+			culture = cu:ibibio
+			culture = cu:ibo
+			culture = cu:kissi
+			culture = cu:kru
+			culture = cu:mande
+			culture = cu:senufo
+			culture = cu:songhai
+			culture = cu:tiv
+			culture = cu:wolof
+			culture = cu:yoruba
+			culture = cu:hausa
+		}
+    }
+     change_pop_culture = { target = cu:mossi value = 1 }
+	}
+	
+	# East African
+	if = {
+    limit ={
+		OR = {
+			culture = cu:nilotic
+			culture = cu:azande
+			culture = cu:baganda
+			culture = cu:beja
+			culture = cu:dinka
+			culture = cu:fur
+			culture = cu:kikuyu
+			culture = cu:luo
+			culture = cu:maasai
+			culture = cu:nuer
+			culture = cu:nuba
+			culture = cu:ruanda
+			culture = cu:rundi
+			culture = cu:sukuma
+			culture = cu:swahili
+			culture = cu:nyamwezi
+		}
+    }
+     change_pop_culture = { target = cu:lacustrine_bantu value = 1 }
+	}
+	
+	# Arabic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:sudanese
+			culture = cu:yemenite
+			culture = cu:maghrebi
+			culture = cu:misri
+			culture = cu:mashriqi
+			culture = cu:haratin
+		}
+    }
+     change_pop_culture = { target = cu:bedouin value = 1 }
+	}
+	
+	# Ethiopian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:tigray
+			culture = cu:amhara
+			culture = cu:afar
+			culture = cu:sidama
+			culture = cu:somali
+		}
+    }
+     change_pop_culture = { target = cu:oromo value = 1 }
+	}
+	
+	# Iranian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:kurdish
+			culture = cu:mazanderani
+			culture = cu:luri
+			culture = cu:azerbaijani
+			culture = cu:assyrian
+			culture = cu:pashtun
+			culture = cu:baluchi
+         	culture = cu:tajik
+		}
+    }  
+     change_pop_culture = { target = cu:persian value = 1 }
+	}
+	
+	# Central Asian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:kazak
+			culture = cu:kirgiz
+			culture = cu:uighur
+			culture = cu:hazara
+			culture = cu:turkmen
+			culture = cu:north_caucasian
+		}
+    }
+     change_pop_culture = { target = cu:uzbek value = 1 }
+	}
+	
+	# Mongolian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:kalmyk
+			culture = cu:tuvan
+			culture = cu:buryat
+		}
+    }
+     change_pop_culture = { target = cu:mongol value = 1 }
+	}
+	
+	# Siberian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:yakut
+			culture = cu:ainu
+		}
+    }
+     change_pop_culture = { target = cu:siberian value = 1 }
+	}
+	
+	# Tibetan
+	if = {
+    limit ={
+		OR = {
+			culture = cu:yi
+			culture = cu:nepali
+		}
+    }
+     change_pop_culture = { target = cu:tibetan value = 1 }
+	}
+	
+	# Chinese
+	if = {
+    limit ={
+		OR = {
+			culture = cu:hakka
+			culture = cu:min
+			culture = cu:yue
+			culture = cu:miao
+		}
+    }
+     change_pop_culture = { target = cu:han value = 1 }
+	}
+	
+	# North Indian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:bundeli
+			culture = cu:pahari
+			culture = cu:bageli
+			culture = cu:chhattisgarhi
+			culture = cu:deccani
+			culture = cu:gujarati
+			culture = cu:bengali
+			culture = cu:marathi
+			culture = cu:pathan
+			culture = cu:bihari
+			culture = cu:oriya
+			culture = cu:sinhala
+			culture = cu:avadhi
+			culture = cu:panjabi
+			culture = cu:kashmiri
+			culture = cu:sindi
+			culture = cu:rajput
+			culture = cu:kho
+			culture = cu:assamese
+			culture = cu:manipuri
+		}
+    }
+     change_pop_culture = { target = cu:hindustani value = 1 }
+	}
+	
+	# South Indian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:gondi
+			culture = cu:kannada
+			culture = cu:malayalam
+			culture = cu:telegu
+		}
+    }
+     change_pop_culture = { target = cu:tamil value = 1 }
+	}
+	
+	# Burmese
+	if = {
+    limit ={
+		OR = {
+			culture = cu:naga
+			culture = cu:kachin
+			culture = cu:karen
+			culture = cu:lushai
+		}
+    }
+     change_pop_culture = { target = cu:burmese value = 1 }
+	}
+	
+	# Malay
+	if = {
+    limit ={
+		OR = {
+			culture = cu:batak
+			culture = cu:dayak
+			culture = cu:filipino
+			culture = cu:moro
+			culture = cu:javan
+			culture = cu:moluccan
+			culture = cu:bornean
+			culture = cu:sumatran
+			culture = cu:balinese
+			culture = cu:champa
+			culture = cu:tagalog
+			culture = cu:ilocano
+			culture = cu:visayan
+			culture = cu:filipino_hispanophone
+			culture = cu:lumad
+		}
+    }
+     change_pop_culture = { target = cu:malay value = 1 }
+	}
+	
+	# Tai
+	if = {
+    limit ={
+		OR = {
+			culture = cu:lao
+			culture = cu:shan
+			culture = cu:zhuang
+		}
+    }
+     change_pop_culture = { target = cu:thai value = 1 }
+	}
+	
+	# Polynesian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:hawaiian
+			culture = cu:melanesian
+			culture = cu:micronesian
+			culture = cu:maori
+			culture = cu:yuanzhumin
+			culture = cu:aborigine
+		}
+    }
+     change_pop_culture = { target = cu:polynesian value = 1 }
+	}
+	
+	# American
+	if = {
+    limit ={
+		OR = {
+			culture = cu:dixie
+		}
+    }
+     change_pop_culture = { target = cu:yankee value = 1 }
+	}
+	
+	# Central American
+	if = {
+    limit ={
+		OR = {
+			culture = cu:mexican
+			culture = cu:caribeno
+		}
+    }
+     change_pop_culture = { target = cu:central_american value = 1 }
+	}
+	
+	# Afro-American
+	if = {
+    limit ={
+		OR = {
+			culture = cu:afro_caribbean
+		}
+    }
+     change_pop_culture = { target = cu:afro_american value = 1 }
+	}
+	
+	# South American
+	if = {
+    limit ={
+		OR = {
+			culture = cu:south_andean
+			culture = cu:venezuelan
+			culture = cu:colombian
+			culture = cu:ecuadorian
+			culture = cu:peruvian
+			culture = cu:chilean
+			culture = cu:bolivian
+		}
+    }
+     change_pop_culture = { target = cu:north_andean value = 1 }
+	}
+	
+	# Platinean
+	if = {
+    limit ={
+		OR = {
+			culture = cu:argentine
+			culture = cu:uruguayan
+			culture = cu:paraguayan
+		}
+    }
+     change_pop_culture = { target = cu:platinean value = 1 }
+	}
+	
+	# Brazilian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:amazonic
+			culture = cu:sulista
+			culture = cu:nordestino
+			culture = cu:paulista
+		}
+    }
+     change_pop_culture = { target = cu:brazilian value = 1 }
+	}
+	
+	# Portuguese
+	if = {
+    limit ={
+		OR = {
+			culture = cu:galician
+		}
+    }
+     change_pop_culture = { target = cu:portuguese value = 1 }
+	}
+	
+	# Spanish
+	if = {
+    limit ={
+		OR = {
+			culture = cu:catalan
+			culture = cu:basque
+			culture = cu:asturleonese
+			culture = cu:aragonese
+		}
+    }
+     change_pop_culture = { target = cu:spanish value = 1 }
+	}
+	
+	# Celtic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:breton
+			culture = cu:welsh
+			culture = cu:scottish_gaelic
+		}
+    }
+     change_pop_culture = { target = cu:irish value = 1 }
+	}
+	
+	# French
+	if = {
+    limit ={
+		OR = {
+			culture = cu:occitan
+			culture = cu:francoprovencal
+			culture = cu:cajun
+			culture = cu:wallonian
+		}
+    }
+     change_pop_culture = { target = cu:french value = 1 }
+	}
+	
+	# Dutch
+	if = {
+    limit ={
+		OR = {
+			culture = cu:flemish
+		}
+    }
+     change_pop_culture = { target = cu:dutch value = 1 }
+	}
+	
+	# Italian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:south_italian
+			culture = cu:corsican
+		}
+    }
+     change_pop_culture = { target = cu:north_italian value = 1 }
+	}
+	
+	# Germanic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:south_german
+			culture = cu:alemannic
+			culture = cu:east_german
+		}
+    }
+     change_pop_culture = { target = cu:north_german value = 1 }
+	}
+	
+	# Nordic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:danish
+			culture = cu:norwegian
+			culture = cu:icelandic
+		}
+    }
+     change_pop_culture = { target = cu:swedish value = 1 }
+	}
+	
+	# British
+	if = {
+    limit ={
+		OR = {
+			culture = cu:scottish
+			culture = cu:scottish_gaelic
+		}
+    }
+     change_pop_culture = { target = cu:british value = 1 }
+	}
+	
+	# Finnic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:sami
+			culture = cu:ugrian
+			culture = cu:estonian
+			culture = cu:karelian
+			culture = cu:mordvin
+			culture = cu:mari
+			culture = cu:udmurt
+			culture = cu:marathi
+		}
+    }
+     change_pop_culture = { target = cu:finnish value = 1 }
+	}
+	
+	# Baltic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:latvian
+		}
+    }
+     change_pop_culture = { target = cu:lithuanian value = 1 }
+	}
+	
+	# East Slavic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:ukrainian
+			culture = cu:byelorussian
+		}
+    }
+     change_pop_culture = { target = cu:russian value = 1 }
+	}
+	
+	# West Slavic
+	if = {
+    limit ={
+		OR = {
+			culture = cu:czech
+			culture = cu:slovak
+			culture = cu:sorb
+		}
+    }
+     change_pop_culture = { target = cu:polish value = 1 }
+	}
+	
+	# Jugoslav
+	if = {
+    limit ={
+		OR = {
+			culture = cu:serb
+			culture = cu:bulgarian
+			culture = cu:slovene
+			culture = cu:bosniak
+		}
+    }
+     change_pop_culture = { target = cu:croat value = 1 }
+	}
+	
+	# Caucasian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:armenian
+			culture = cu:circassian
+			culture = cu:chechen
+			culture = cu:bosniak
+		}
+    }
+     change_pop_culture = { target = cu:georgian value = 1 }
+	}
+	
+	# Tatar
+	if = {
+    limit ={
+		OR = {
+			culture = cu:chuvash
+			culture = cu:bashkir
+		}
+    }
+     change_pop_culture = { target = cu:tatar value = 1 }
+	}
+	
+	# Mon-Khmer
+	if = {
+    limit ={
+		OR = {
+			culture = cu:mon
+			culture = cu:khmu
+		}
+    }
+     change_pop_culture = { target = cu:khmer value = 1 }
+	}
+	
+	# Hungarian
+	if = {
+    limit ={
+		OR = {
+			culture = cu:szekely
+		}
+    }
+     change_pop_culture = { target = cu:hungarian value = 1 }
+	}
+	
+	# Berber
+	if = {
+    limit ={
+		OR = {
+			culture = cu:bidan
+			culture = cu:tuareg
+		}
+    }
+     change_pop_culture = { target = cu:berber value = 1 }
+	}
+}
+}

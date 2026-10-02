@@ -1,0 +1,171 @@
+﻿REPLACE:je_german_unification_idea = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_german_unification
+
+
+	is_shown_in_lobby = {
+		AND = {
+			OR = {
+				country_has_primary_culture = cu:north_german
+				country_has_primary_culture = cu:south_german
+			}
+			NOR = {
+				c:PRU = THIS
+				c:AUS = THIS
+			}
+		}
+	}
+
+	is_shown_when_inactive = {
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+	}
+
+	possible = {
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+	}
+
+	complete = {
+		OR = {
+			cu:north_german ?= {
+			culture_current_fervor >= 40
+		}
+		cu:south_german ?= {
+			culture_current_fervor >= 30
+		}
+		}
+	}
+
+	on_complete = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_country = {
+						country_rank >= rank_value:great_power
+						OR = {
+							AND = {
+								country_has_primary_culture = cu:north_german
+								root = { country_has_primary_culture = cu:north_german }
+							}
+							AND = {
+								country_has_primary_culture = cu:south_german
+								root = { country_has_primary_culture = cu:south_german }
+							}
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						country_rank >= rank_value:great_power
+						OR = {
+							AND = {
+								country_has_primary_culture = cu:north_german
+								root = { country_has_primary_culture = cu:north_german }
+							}
+							AND = {
+								country_has_primary_culture = cu:south_german
+								root = { country_has_primary_culture = cu:south_german }
+							}
+						}
+					}
+					save_scope_as = german_unifier_candidate
+				}
+			}
+			else_if = {
+				limit = {
+					any_country = {
+						country_rank >= rank_value:great_power
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						country_rank >= rank_value:great_power
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}
+					save_scope_as = german_unifier_candidate
+				}
+			}
+			else_if = {
+				limit = {
+					any_country = {
+						country_rank >= rank_value:major_power
+						OR = {
+							AND = {
+								country_has_primary_culture = cu:north_german
+								root = { country_has_primary_culture = cu:north_german }
+							}
+							AND = {
+								country_has_primary_culture = cu:south_german
+								root = { country_has_primary_culture = cu:south_german }
+							}
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						country_rank >= rank_value:major_power
+						OR = {
+							AND = {
+								country_has_primary_culture = cu:north_german
+								root = { country_has_primary_culture = cu:north_german }
+							}
+							AND = {
+								country_has_primary_culture = cu:south_german
+								root = { country_has_primary_culture = cu:south_german }
+							}
+						}
+					}
+					save_scope_as = german_unifier_candidate
+				}
+			}
+			else_if = {
+				limit = {
+					any_country = {
+						country_rank >= rank_value:major_power
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						country_rank >= rank_value:major_power
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+					}
+					save_scope_as = german_unifier_candidate
+				}
+			}
+		}
+
+		hidden_effect = { set_variable = je_german_unification_idea }
+		trigger_event = { id = german_unification.5 } # German National Identity
+	}
+
+	status_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = je_german_unification_idea_status
+			}
+		}
+	}
+
+	weight = 1000
+	should_be_pinned_by_default = yes
+}

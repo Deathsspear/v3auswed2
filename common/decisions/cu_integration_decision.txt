@@ -1,0 +1,15 @@
+cu_integration_decision = {
+	is_shown = {
+		is_player = yes
+		NOT = { has_global_variable = culture_merged }
+	}
+
+	possible = {
+		is_player = yes
+	}
+
+	when_taken = {
+		trigger_event = { id = cu_integration_events.1 }	
+		set_global_variable = culture_merged
+	}
+}
