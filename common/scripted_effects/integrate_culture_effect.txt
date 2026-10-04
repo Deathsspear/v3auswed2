@@ -517,7 +517,7 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:south_german
+			#culture = cu:south_german
 			culture = cu:alemannic
 			culture = cu:east_german
 		}
