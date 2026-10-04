@@ -448,7 +448,7 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:galician
+			#culture = cu:galician
 		}
     }
      change_pop_culture = { target = cu:portuguese value = 1 }
@@ -458,10 +458,10 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:catalan
-			culture = cu:basque
-			culture = cu:asturleonese
-			culture = cu:aragonese
+			#culture = cu:catalan
+			#culture = cu:basque
+			#culture = cu:asturleonese
+			#culture = cu:aragonese
 		}
     }
      change_pop_culture = { target = cu:spanish value = 1 }
@@ -471,9 +471,9 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:breton
-			culture = cu:welsh
-			culture = cu:scottish_gaelic
+			#culture = cu:breton
+			#culture = cu:welsh
+			#culture = cu:scottish_gaelic
 		}
     }
      change_pop_culture = { target = cu:irish value = 1 }
@@ -483,10 +483,10 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:occitan
-			culture = cu:francoprovencal
+			#culture = cu:occitan
+			#culture = cu:francoprovencal
 			culture = cu:cajun
-			culture = cu:wallonian
+			#culture = cu:wallonian
 		}
     }
      change_pop_culture = { target = cu:french value = 1 }
@@ -496,7 +496,7 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:flemish
+			#culture = cu:flemish
 		}
     }
      change_pop_culture = { target = cu:dutch value = 1 }
@@ -506,8 +506,8 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:south_italian
-			culture = cu:corsican
+			#culture = cu:south_italian
+			#culture = cu:corsican
 		}
     }
      change_pop_culture = { target = cu:north_italian value = 1 }
@@ -519,7 +519,7 @@
 		OR = {
 			#culture = cu:south_german
 			#culture = cu:alemannic
-			culture = cu:east_german
+			#culture = cu:east_german
 		}
     }
      change_pop_culture = { target = cu:north_german value = 1 }
@@ -590,9 +590,9 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:czech
-			culture = cu:slovak
-			culture = cu:sorb
+			#culture = cu:czech
+			#culture = cu:slovak
+			#culture = cu:sorb
 		}
     }
      change_pop_culture = { target = cu:polish value = 1 }
