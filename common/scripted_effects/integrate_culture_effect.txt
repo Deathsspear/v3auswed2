@@ -579,8 +579,8 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:ukrainian
-			culture = cu:byelorussian
+			#culture = cu:ukrainian
+			#culture = cu:byelorussian
 		}
     }
      change_pop_culture = { target = cu:russian value = 1 }
