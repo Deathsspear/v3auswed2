@@ -8,7 +8,7 @@ REPLACE:unlock_power_bloc_principle_slot_3 = {
 		}
 		AND = {
 			#power_bloc_rank <= 5
-			num_power_bloc_members >= 4
+			num_power_bloc_members >= 1
 		}
 	}
 }
@@ -24,7 +24,7 @@ REPLACE:unlock_power_bloc_principle_slot_4 = {
 		}
 		AND = {
 			#power_bloc_rank <= 3
-			num_power_bloc_members >= 8
+			num_power_bloc_members >= 1
 		}
 	}
 }
