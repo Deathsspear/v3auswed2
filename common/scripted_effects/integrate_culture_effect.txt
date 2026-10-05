@@ -435,10 +435,10 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:amazonic
-			culture = cu:sulista
-			culture = cu:nordestino
-			culture = cu:paulista
+			#culture = cu:amazonic
+			#culture = cu:sulista
+			#culture = cu:nordestino
+			#culture = cu:paulista
 		}
     }
      change_pop_culture = { target = cu:brazilian value = 1 }
@@ -485,7 +485,7 @@
 		OR = {
 			#culture = cu:occitan
 			#culture = cu:francoprovencal
-			culture = cu:cajun
+			#culture = cu:cajun
 			#culture = cu:wallonian
 		}
     }
