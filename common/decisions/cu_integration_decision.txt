@@ -1,10 +1,12 @@
 cu_integration_decision = {
 	is_shown = {
+		always = no
 		is_player = yes
 		NOT = { has_global_variable = culture_merged }
 	}
 
 	possible = {
+		always = no
 		is_player = yes
 	}
 
