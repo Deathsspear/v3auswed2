@@ -6,3 +6,6 @@ REPLACE:modifier_has_annexed_another_subject = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_liberty_desire_add = 0
 }
+mod_private_construction_boost  = {
+	country_private_construction_allocation_mult = 1
+}

@@ -1,0 +1,40 @@
+boost_private_sector= {
+	is_shown = {
+		#always = no
+		is_player = yes
+		NOT = { has_global_variable = private_sector_boosted }
+		NOT = { has_law = law_type:law_laissez_faire }
+	}
+
+	possible = {
+		#always = no
+		is_player = yes
+	}
+
+	when_taken = {
+		add_modifier = { 
+			name = mod_private_construction_boost
+			multiplier = 0.25 # the base modifier is +100%, this makes things easier to do dynamically
+			is_decaying = no 
+			months = -1 
+		}
+		set_global_variable = private_sector_boosted
+	}
+}
+unboost_private_sector= {
+	is_shown = {
+		#always = no
+		is_player = yes
+		has_global_variable = private_sector_boosted
+	}
+
+	possible = {
+		#always = no
+		is_player = yes
+	}
+
+	when_taken = {
+		remove_modifier = mod_private_construction_boost
+		remove_global_variable = private_sector_boosted
+	}
+}

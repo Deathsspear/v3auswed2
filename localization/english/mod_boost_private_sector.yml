@@ -1,0 +1,5 @@
+﻿l_english:
+ boost_private_sector:0 "Add 25% to Private Construction Ratio"
+ boost_private_sector_desc:0 ""
+ unboost_private_sector:0 "Remove 25% from Private Construction Ratio"
+ unboost_private_sector_desc:0 ""

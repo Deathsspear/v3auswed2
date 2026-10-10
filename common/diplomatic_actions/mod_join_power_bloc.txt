@@ -4,7 +4,7 @@
 	should_notify_third_parties = yes
 	groups = { general }
 	confirmation_sound = "event:/SFX/UI/MapInteraction/SubjectInteractions/power_bloc_join_request"
-	texture = "gfx/interface/icons/diplomatic_actions/join_power_bloc.dds"
+	texture = "gfx/interface/icons/war_goals/join_power_bloc.dds"
 	selectable = {
 		NOT = { is_country_type = decentralized }
 		is_revolutionary = no
