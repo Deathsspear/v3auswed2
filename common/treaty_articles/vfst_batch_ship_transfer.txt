@@ -1,0 +1,255 @@
+﻿# Each article stores its immutable batch ID in input_quantity; input_ship is its UI representative.
+vfst_batch_ship_transfer = {
+    kind = directed
+    cost = 0
+    icon = "gfx/interface/icons/diplomatic_treaties_articles_icons/ship_transfer_treaties.dds"
+    flags = { giftable }
+    usage_limit = once_per_side
+    maintenance_paid_by = source_country
+    required_inputs = { ship quantity }
+    # Internal record ID, assigned by the Use List button; no editable quantity UI.
+    quantity_min_value = { value = 1 }
+    quantity_max_value = { value = 2000000000 }
+    visible = {
+        is_revolutionary = no
+        has_dlc_feature = ep2_content
+    }
+    can_ratify = {
+        custom_tooltip = {
+            text = vfst_manifest_required
+            exists = scope:article.input_quantity
+            scope:source_country = {
+                any_in_list = {
+                    variable = vfst_batches
+                    vfst_record_matches_article = yes
+                    OR = {
+                        # An already delivered receipt remains valid during renegotiation.
+                        has_variable = vfst_delivered
+                        AND = {
+                            vfst_manifest_valid = yes
+                            var:vfst_anchor = scope:article.input_ship
+                        }
+                    }
+                }
+            }
+        }
+        custom_tooltip = {
+            text = vfst_no_other_ship_articles
+            scope:treaty ?= {
+                NOT = {
+                    any_scope_article_option = {
+                        OR = {
+                            has_type = ship_transfer
+                            has_type = transfer_fleet_by_select_ship
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ship_valid_trigger = {
+        scope:input = {
+            owner = root
+            is_in_battle = no
+            scope:other_country = { has_port_country = yes }
+        }
+    }
+    on_entry_into_force = {
+        scope:article_options = {
+            save_scope_as = article
+            source_country = { save_scope_as = source_country }
+            target_country = { save_scope_as = target_country }
+            source_country = {
+                every_in_list = {
+                    variable = vfst_batches
+                    limit = {
+                        vfst_record_matches_article = yes
+                        vfst_manifest_valid = yes
+                        var:vfst_anchor = scope:article.input_ship
+                    }
+                    every_in_list = {
+                        variable = vfst_manifest
+                        set_ship_owner_multiple = scope:target_country
+                    }
+                    # Retain the immutable manifest and quote for later renegotiation.
+                    set_variable = { name = vfst_delivered value = yes }
+                    set_variable = { name = vfst_ui_closed value = yes }
+                    remove_variable = vfst_pending_treaty
+                    scope:target_country = { clear_ownership_transfer_fleet = yes }
+                }
+            }
+        }
+    }
+
+	on_withdrawal = {}
+
+	on_break = {
+		scope:withdrawing_country = {
+			if = {
+				limit = { this = scope:target_country }
+
+				change_relations = {
+					country = scope:non_withdrawing_country
+					value = {
+						add = {
+							value = -5
+							multiply = {
+								value = scope:treaty_options.remaining_binding_period
+								min = 365
+								divide = 365
+							}
+						}
+						max = -5
+						min = -100
+					}
+				}
+				change_infamy = {
+					value = {
+						add = {
+							value = 5
+							multiply = {
+								value = scope:treaty_options.remaining_binding_period
+								min = 365
+								divide = 365
+							}
+						}
+						min = 5
+						max = 50
+					}
+				}
+			}
+		}
+	}
+
+	ai = {
+
+		treaty_categories = {
+			military
+		}
+
+		evaluation_chance = {
+			value = 0
+		}
+
+		article_ai_usage = {
+			request
+            offer
+        }
+
+        combined_acceptance_cap_max = 50
+		
+		# Ship valuation lives in contextual_accept_score because it depends on
+		# scope:treaty.binding_period, which is only bound in contextual (where
+		# scope:treaty holds either the live treaty or the proposed STreatyOptions).
+		contextual_accept_score = {
+			value = 0
+
+			if = {
+				limit = { scope:source_country ?= this }
+
+				# We're giving up the ship. Charge acceptance equal to the
+				# per-week money flow that would deliver ai_ship_value over the
+				# binding period, at money_transfer's source rate (1/25 per £/wk).
+				#   ai_ship_value * 7 / (25 * binding_days)
+				# = (ai_ship_value / binding_weeks) / 25
+				subtract = {
+					desc = "DIPLOMATIC_ACCEPTANCE_SHIP_VALUE"
+					value = vfst_article_sale_value
+					multiply = 7
+					divide = 25
+					divide = {
+						value = scope:treaty.binding_period
+						min = 365
+					}
+				}
+
+
+			}
+			else = {
+				# We're receiving the ship. Credit acceptance at money_transfer's
+				# target rate (1/100 per £/wk), capped at +75.
+				add = {
+					desc = "DIPLOMATIC_ACCEPTANCE_SHIP_VALUE"
+					value = vfst_article_purchase_value
+					multiply = 7
+					divide = 100
+					divide = {
+						value = scope:treaty.binding_period
+						min = 365
+					}
+					max = 75
+				}
+
+				# Don't want to receive a ship that is already obsolete for us
+				if = {
+					limit = {
+						scope:source_country = {
+							any_in_list = {
+                                variable = vfst_batches
+                                vfst_record_matches_article = yes
+                                has_variable = vfst_obsolete
+                            }
+						}
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_SHIP_OBSOLETE"
+						value = -500
+					}
+				}
+			}
+
+			# Binding-period amplifier mirroring money_transfer: treaties of
+			# 5+ years scale the above up to 2x during new-proposal evaluation,
+			# so longer commitments carry proportionally more weight. Only fires
+			# when the treaty is not yet active.
+			if = {
+				limit = {
+					NOT = { exists = scope:is_treaty_active }
+					scope:treaty.binding_period >= 1825
+				}
+				multiply = {
+					desc = "DIPLOMATIC_ACCEPTANCE_BINDING_PERIOD"
+					value = 1
+					add = {
+						value = scope:treaty.binding_period
+						subtract = 1825
+						divide = 3650
+					}
+					min = 1
+					max = 2
+				}
+			}
+
+			# general multiplier to all ship trade values if necessary
+			# multiply = 0.33
+
+
+			# Veto one-sided ship grabs: if we're losing the ship and no other
+			# article in this treaty makes us the beneficiary (ship, money,
+			# goods, state, etc.), refuse outright. Applied after the binding-
+			# period amplifier so the flat -1000 is unaffected by it.
+			if = {
+				limit = {
+					scope:source_country ?= this
+					scope:treaty = {
+						NOT = {
+							any_scope_article_option = {
+								trigger_if = {
+									limit = {
+										is_directed = yes
+									}
+									target_country = scope:source_country
+								}
+							}
+						}
+					}
+				}
+				subtract = {
+					desc = "DIPLOMATIC_ACCEPTANCE_ONE_SIDED_SHIP_TRADE"
+					value = 1000
+				}
+			}
+		}
+	}
+
+}

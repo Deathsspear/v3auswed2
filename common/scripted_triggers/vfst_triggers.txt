@@ -1,0 +1,86 @@
+﻿# Player scope. Drafts are selected by BOTH seller and buyer, not by seller alone.
+vfst_selection_context_matches = {
+    exists = scope:seller
+    exists = scope:buyer
+    OR = { this = scope:seller this = scope:buyer }
+}
+
+# Batch container scope. The GUI root remains the controlling player country.
+vfst_ui_record_matches = {
+    trigger_if = {
+        limit = {
+            exists = var:vfst_seller
+            exists = var:vfst_buyer
+            exists = var:vfst_controller
+            has_variable = vfst_id
+            has_variable = vfst_count
+        }
+        var:vfst_seller = scope:seller
+        var:vfst_buyer = scope:buyer
+        var:vfst_controller = root
+        NOT = { has_variable = vfst_ui_closed }
+    }
+    trigger_else = { always = no }
+}
+
+# Ship scope. A frozen, unfulfilled record reserves its ships, even before proposal.
+# Only used for an unfrozen selection; it cannot reserve its own ships yet.
+vfst_ship_available = {
+    save_temporary_scope_as = vfst_candidate_ship
+    owner = scope:seller
+    is_in_battle = no
+    scope:seller = {
+        NOT = {
+            any_in_list = {
+                variable = vfst_batches
+                has_variable = vfst_frozen
+                NOT = { has_variable = vfst_delivered }
+                NOT = { has_variable = vfst_cancelled }
+                any_in_list = { variable = vfst_manifest this = scope:vfst_candidate_ship }
+            }
+        }
+    }
+}
+
+# Batch container scope; source_country / target_country are supplied by the article.
+vfst_record_parties_match = {
+    trigger_if = {
+        limit = {
+            exists = var:vfst_seller
+            exists = var:vfst_buyer
+        }
+        var:vfst_seller = scope:source_country
+        var:vfst_buyer = scope:target_country
+        has_variable = vfst_frozen
+    }
+    trigger_else = { always = no }
+}
+
+vfst_manifest_valid = {
+    vfst_record_parties_match = yes
+    NOT = { has_variable = vfst_cancelled }
+    NOT = { has_variable = vfst_delivered }
+    var:vfst_count > 0
+    vfst_manifest_size = var:vfst_count
+    exists = var:vfst_anchor
+    any_in_list = {
+        variable = vfst_manifest
+        count = all
+        owner = scope:source_country
+        is_in_battle = no
+    }
+    scope:target_country = { has_port_country = yes }
+}
+
+# Batch container scope. The ID is stored in the article's native numeric input.
+vfst_record_matches_article = {
+    trigger_if = {
+        limit = {
+            exists = scope:article.input_quantity
+            has_variable = vfst_id
+        }
+        vfst_record_parties_match = yes
+        var:vfst_id = scope:article.input_quantity
+    }
+    trigger_else = { always = no }
+}

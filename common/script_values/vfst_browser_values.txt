@@ -1,0 +1,58 @@
+﻿# Record scope. A page and the GUI use the same saved ship references.
+vfst_page_size = { value = 8 }
+vfst_catalog_size = {
+    value = 0
+    every_in_list = { variable = vfst_catalog add = 1 }
+}
+vfst_last_page = {
+    value = vfst_catalog_size
+    subtract = 1
+    min = 0
+    divide = vfst_page_size
+    floor = yes
+}
+vfst_clamped_page = {
+    value = var:vfst_page
+    min = 0
+    max = vfst_last_page
+}
+vfst_page_offset = {
+    value = var:vfst_page
+    multiply = vfst_page_size
+}
+vfst_page_end = {
+    value = vfst_page_offset
+    add = vfst_page_size
+}
+
+# Player-rooted GUI values. The empty browser displays page 1 / 1.
+vfst_ui_page_number = {
+    value = 1
+    scope:seller = {
+        every_in_list = {
+            variable = vfst_batches
+            limit = { vfst_ui_record_matches = yes has_variable = vfst_browser_ready }
+            add = var:vfst_page
+        }
+    }
+}
+vfst_ui_total_pages = {
+    value = 1
+    scope:seller = {
+        every_in_list = {
+            variable = vfst_batches
+            limit = { vfst_ui_record_matches = yes has_variable = vfst_browser_ready }
+            add = vfst_last_page
+        }
+    }
+}
+vfst_ui_filtered_count = {
+    value = 0
+    scope:seller = {
+        every_in_list = {
+            variable = vfst_batches
+            limit = { vfst_ui_record_matches = yes has_variable = vfst_browser_ready }
+            add = vfst_catalog_size
+        }
+    }
+}

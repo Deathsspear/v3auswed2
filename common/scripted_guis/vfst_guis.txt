@@ -1,0 +1,295 @@
+﻿# The GUI root is always the player; each seller stores independent batch containers.
+vfst_toggle_ship = {
+    scope = country
+    saved_scopes = { ship seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:buyer = { has_port_country = yes }
+        scope:seller = {
+            NOT = {
+                any_in_list = {
+                    variable = vfst_batches
+                    vfst_ui_record_matches = yes
+                    has_variable = vfst_frozen
+                }
+            }
+        }
+        OR = {
+            scope:ship = { vfst_ship_available = yes }
+            # A selection made before a competing freeze can still be unchecked.
+            scope:seller = {
+                any_in_list = {
+                    variable = vfst_batches
+                    vfst_ui_record_matches = yes
+                    any_in_list = { variable = vfst_manifest this = scope:ship }
+                }
+            }
+        }
+    }
+    effect = {
+        debug_log = "[VFST] selection click accepted"
+        debug_log_scopes = yes
+        if = {
+            limit = {
+                scope:seller = {
+                    any_in_list = { variable = vfst_batches vfst_ui_record_matches = yes }
+                }
+            }
+            scope:seller = {
+                random_in_list = {
+                    variable = vfst_batches
+                    limit = { vfst_ui_record_matches = yes }
+                    save_scope_as = vfst_record
+                }
+            }
+            debug_log = "[VFST] using existing selection record"
+        }
+        else = {
+            vfst_create_record = yes
+            debug_log = "[VFST] new selection record initialized"
+        }
+        # The first click writes directly to the record just created, without another lookup.
+        if = {
+            limit = { exists = scope:vfst_record }
+            scope:vfst_record = {
+                debug_log_scopes = yes
+                if = {
+                    limit = { any_in_list = { variable = vfst_manifest this = scope:ship } }
+                    remove_list_variable = { name = vfst_manifest target = scope:ship }
+                    debug_log = "[VFST] ship removed from selection record"
+                }
+                else = {
+                    add_to_variable_list = { name = vfst_manifest target = scope:ship }
+                    debug_log = "[VFST] ship added to selection record"
+                }
+                set_variable = { name = vfst_count value = vfst_manifest_size }
+                if = {
+                    limit = { vfst_manifest_size > 0 var:vfst_count > 0 }
+                    debug_log = "[VFST] selection readback has ships and a positive count"
+                }
+                else = { debug_log = "[VFST] selection readback is empty" }
+                if = {
+                    limit = {
+                        scope:seller = {
+                            any_in_list = { variable = vfst_batches this = scope:vfst_record }
+                        }
+                    }
+                    debug_log = "[VFST] record found in seller index"
+                }
+                else = { debug_log = "[VFST] ERROR: record missing from seller index" }
+                if = {
+                    limit = { vfst_ui_record_matches = yes }
+                    debug_log = "[VFST] selection record readable by UI matcher"
+                }
+                else = {
+                    debug_log = "[VFST] ERROR: saved selection does not match the current UI context"
+                    debug_log_scopes = yes
+                }
+            }
+        }
+        else = {
+            debug_log = "[VFST] ERROR: selection record scope is missing"
+            debug_log_scopes = yes
+        }
+    }
+}
+
+# Player country scope. Select available ships across every page of the current filter.
+vfst_select_all = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:buyer = { has_port_country = yes }
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                NOT = { has_variable = vfst_frozen }
+                any_in_list = {
+                    variable = vfst_catalog
+                    hit_points > 0
+                    vfst_ship_available = yes
+                }
+            }
+        }
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            every_in_list = {
+                variable = vfst_catalog
+                limit = { hit_points > 0 vfst_ship_available = yes }
+                save_scope_as = vfst_bulk_ship
+                scope:vfst_record = {
+                    if = {
+                        limit = {
+                            NOT = {
+                                any_in_list = { variable = vfst_manifest this = scope:vfst_bulk_ship }
+                            }
+                        }
+                        add_to_variable_list = { name = vfst_manifest target = scope:vfst_bulk_ship }
+                    }
+                }
+            }
+        }
+        scope:vfst_record = { set_variable = { name = vfst_count value = vfst_manifest_size } }
+    }
+}
+
+vfst_is_selected = {
+    scope = country
+    saved_scopes = { ship seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                any_in_list = { variable = vfst_manifest this = scope:ship }
+            }
+        }
+    }
+}
+
+vfst_is_frozen = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                has_variable = vfst_frozen
+            }
+        }
+    }
+}
+
+vfst_freeze = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:buyer = { has_port_country = yes }
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                NOT = { has_variable = vfst_frozen }
+                vfst_manifest_size > 0
+                any_in_list = {
+                    variable = vfst_manifest
+                    count = all
+                    vfst_ship_available = yes
+                }
+            }
+        }
+    }
+    effect = {
+        scope:seller = { save_scope_as = source_country }
+        scope:buyer = { save_scope_as = target_country }
+        scope:seller = {
+            every_in_list = {
+                variable = vfst_batches
+                limit = { vfst_ui_record_matches = yes }
+                random_in_list = { variable = vfst_manifest save_scope_as = vfst_chosen_anchor }
+                set_variable = { name = vfst_anchor value = scope:vfst_chosen_anchor }
+                set_variable = { name = vfst_count value = vfst_manifest_size }
+                set_variable = { name = vfst_sale_value value = vfst_manifest_sale_value }
+                set_variable = { name = vfst_purchase_value value = vfst_manifest_purchase_value }
+                if = {
+                    limit = {
+                        any_in_list = {
+                            variable = vfst_manifest
+                            is_ship_obsolete_for = scope:target_country
+                        }
+                    }
+                    set_variable = { name = vfst_obsolete value = yes }
+                }
+                set_variable = { name = vfst_frozen value = yes }
+            }
+        }
+    }
+}
+
+vfst_can_use = {
+    scope = country
+    saved_scopes = { ship seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        exists = scope:ship
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                has_variable = vfst_frozen
+                NOT = { has_variable = vfst_pending_treaty }
+                exists = var:vfst_anchor
+                var:vfst_anchor ?= scope:ship
+            }
+        }
+    }
+}
+
+vfst_can_add = {
+    scope = country
+    saved_scopes = { ship seller buyer batch_id }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        exists = scope:ship
+        scope:seller = { save_temporary_scope_as = source_country }
+        scope:buyer = { save_temporary_scope_as = target_country }
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                has_variable = vfst_id
+                exists = var:vfst_anchor
+                var:vfst_id ?= scope:batch_id
+                var:vfst_anchor ?= scope:ship
+                NOT = { has_variable = vfst_pending_treaty }
+                vfst_manifest_valid = yes
+            }
+        }
+    }
+}
+
+vfst_reset = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                NOT = { exists = var:vfst_pending_treaty }
+            }
+        }
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            save_scope_as = vfst_previous_record
+            vfst_cancel_record = yes
+        }
+        # A new ID keeps old draft articles invalid. Carry only the browser state over.
+        vfst_create_record = yes
+        scope:vfst_record = {
+            if = {
+                limit = { scope:vfst_previous_record = { has_variable = vfst_group_filter } }
+                set_variable = { name = vfst_group_filter value = scope:vfst_previous_record.var:vfst_group_filter }
+            }
+            if = {
+                limit = { scope:vfst_previous_record = { has_variable = vfst_type_filter } }
+                set_variable = { name = vfst_type_filter value = scope:vfst_previous_record.var:vfst_type_filter }
+            }
+            if = {
+                limit = { scope:vfst_previous_record = { has_variable = vfst_page } }
+                set_variable = { name = vfst_page value = scope:vfst_previous_record.var:vfst_page }
+            }
+        }
+        vfst_refresh_browser = yes
+    }
+}

@@ -1,0 +1,79 @@
+﻿# Batch container scope. Ship references are only list members, never variable owners.
+vfst_manifest_size = {
+    value = 0
+    every_in_list = { variable = vfst_manifest add = 1 }
+}
+
+# Evaluated ONCE when the list is frozen. Never recomputed from a later draft.
+vfst_manifest_sale_value = {
+    value = 0
+    every_in_list = {
+        variable = vfst_manifest
+        add = {
+            value = ai_ship_value
+            if = {
+                limit = { is_ship_very_obsolete_for = scope:source_country }
+                multiply = 0.1
+            }
+            else_if = {
+                limit = { is_ship_obsolete_for = scope:source_country }
+                multiply = 0.3
+            }
+        }
+    }
+}
+vfst_manifest_purchase_value = {
+    value = 0
+    every_in_list = { variable = vfst_manifest add = ai_ship_value }
+}
+
+# Article evaluation country scope. Look up the fixed record by source + ID.
+vfst_article_sale_value = {
+    value = 0
+    if = {
+        limit = { exists = scope:article.input_quantity }
+        scope:source_country = {
+            every_in_list = {
+                variable = vfst_batches
+                limit = { vfst_record_matches_article = yes }
+                add = var:vfst_sale_value
+            }
+        }
+    }
+}
+vfst_article_purchase_value = {
+    value = 0
+    if = {
+        limit = { exists = scope:article.input_quantity }
+        scope:source_country = {
+            every_in_list = {
+                variable = vfst_batches
+                limit = { vfst_record_matches_article = yes }
+                add = var:vfst_purchase_value
+            }
+        }
+    }
+}
+
+# Player-rooted GUI scope, with seller and buyer supplied through GuiScope.
+# Numeric results avoid passing container scopes to the GUI data model.
+vfst_ui_id = {
+    value = 0
+    scope:seller = {
+        every_in_list = {
+            variable = vfst_batches
+            limit = { vfst_ui_record_matches = yes has_variable = vfst_frozen }
+            add = var:vfst_id
+        }
+    }
+}
+vfst_ui_count = {
+    value = 0
+    scope:seller = {
+        every_in_list = {
+            variable = vfst_batches
+            limit = { vfst_ui_record_matches = yes }
+            add = var:vfst_count
+        }
+    }
+}

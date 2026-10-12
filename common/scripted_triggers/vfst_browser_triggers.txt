@@ -1,0 +1,40 @@
+﻿# Ship scope; the active selection container is scope:vfst_record.
+# Keep already-selected ships visible even if another draft reserved them meanwhile.
+vfst_browser_candidate = {
+    save_temporary_scope_as = vfst_browser_candidate_ship
+    owner = scope:seller
+    is_in_battle = no
+    hit_points > 0
+    scope:buyer = { has_port_country = yes }
+    OR = {
+        vfst_ship_available = yes
+        scope:vfst_record = {
+            any_in_list = { variable = vfst_manifest this = scope:vfst_browser_candidate_ship }
+        }
+    }
+}
+
+vfst_ship_matches_filter = {
+    trigger_if = {
+        limit = { scope:vfst_record = { has_variable = vfst_group_filter } }
+        OR = {
+            AND = {
+                scope:vfst_record = { var:vfst_group_filter = 1 }
+                ship_group = ship_group:ship_group_capital_ships
+            }
+            AND = {
+                scope:vfst_record = { var:vfst_group_filter = 2 }
+                ship_group = ship_group:ship_group_cruisers
+            }
+            AND = {
+                scope:vfst_record = { var:vfst_group_filter = 3 }
+                ship_group = ship_group:ship_group_torpedo_craft
+            }
+        }
+    }
+    trigger_if = {
+        limit = { scope:vfst_record = { has_variable = vfst_type_filter } }
+        is_ship_type = scope:vfst_record.var:vfst_type_filter
+    }
+    trigger_else = { always = yes }
+}

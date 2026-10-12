@@ -1,0 +1,381 @@
+﻿# Player root throughout. GUI callbacks supply the seller and buyer explicitly.
+vfst_browser_open = {
+    scope = country
+    saved_scopes = { seller buyer batch_article }
+    is_valid = { vfst_selection_context_matches = yes scope:batch_article = yes }
+    effect = {
+        # Creation callbacks can also run in a hidden non-batch input widget.
+        if = {
+            limit = { vfst_selection_context_matches = yes scope:batch_article = yes }
+            vfst_get_ui_record = yes
+            scope:vfst_record = {
+                vfst_close_filter_menus = yes
+                # Upgrade the old flat filter; keep its selected ships intact.
+                if = {
+                    limit = {
+                        has_variable = vfst_type_filter
+                        NOT = { has_variable = vfst_group_filter }
+                    }
+                    remove_variable = vfst_type_filter
+                    set_variable = { name = vfst_page value = 0 }
+                }
+            }
+            vfst_refresh_browser = yes
+        }
+    }
+}
+
+vfst_filter_type = {
+    scope = country
+    saved_scopes = { seller buyer ship_type }
+    is_valid = { vfst_selection_context_matches = yes exists = scope:ship_type }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            vfst_close_filter_menus = yes
+            set_variable = { name = vfst_type_filter value = scope:ship_type }
+            set_variable = { name = vfst_page value = 0 }
+        }
+        vfst_refresh_browser = yes
+    }
+}
+vfst_filter_all = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = { vfst_selection_context_matches = yes }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            vfst_close_filter_menus = yes
+            remove_variable = vfst_group_filter
+            remove_variable = vfst_type_filter
+            set_variable = { name = vfst_page value = 0 }
+        }
+        vfst_refresh_browser = yes
+    }
+}
+
+vfst_type_selected = {
+    scope = country
+    saved_scopes = { seller buyer ship_type }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                trigger_if = {
+                    limit = { has_variable = vfst_type_filter }
+                    var:vfst_type_filter = scope:ship_type
+                }
+                trigger_else = { always = no }
+            }
+        }
+    }
+}
+vfst_all_types_selected = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            NOT = {
+                any_in_list = {
+                    variable = vfst_batches
+                    vfst_ui_record_matches = yes
+                    has_variable = vfst_type_filter
+                }
+            }
+        }
+    }
+}
+
+vfst_prev_page = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                has_variable = vfst_browser_ready
+                var:vfst_page > 0
+            }
+        }
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            change_variable = { name = vfst_page subtract = 1 }
+            vfst_build_page = yes
+        }
+    }
+}
+vfst_next_page = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                has_variable = vfst_browser_ready
+                var:vfst_page < vfst_last_page
+            }
+        }
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            change_variable = { name = vfst_page add = 1 }
+            vfst_build_page = yes
+        }
+    }
+}
+
+vfst_on_page = {
+    scope = country
+    saved_scopes = { ship seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:ship = { owner = scope:seller is_in_battle = no hit_points > 0 }
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                any_in_list = { variable = vfst_page_ships this = scope:ship }
+            }
+        }
+    }
+}
+vfst_page_is_empty = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            NOT = {
+                any_in_list = {
+                    variable = vfst_batches
+                    vfst_ui_record_matches = yes
+                    any_in_list = {
+                        variable = vfst_page_ships
+                        owner = scope:seller
+                        is_in_battle = no
+                        hit_points > 0
+                    }
+                }
+            }
+        }
+    }
+}
+
+vfst_select_page = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:buyer = { has_port_country = yes }
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                NOT = { has_variable = vfst_frozen }
+                any_in_list = {
+                    variable = vfst_page_ships
+                    hit_points > 0
+                    vfst_ship_available = yes
+                }
+            }
+        }
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            every_in_list = {
+                variable = vfst_page_ships
+                limit = { hit_points > 0 vfst_ship_available = yes }
+                save_scope_as = vfst_bulk_ship
+                scope:vfst_record = {
+                    if = {
+                        limit = {
+                            NOT = { any_in_list = { variable = vfst_manifest this = scope:vfst_bulk_ship } }
+                        }
+                        add_to_variable_list = { name = vfst_manifest target = scope:vfst_bulk_ship }
+                    }
+                }
+            }
+            set_variable = { name = vfst_count value = vfst_manifest_size }
+        }
+    }
+}
+
+# Three broad groups. Subtypes remain the native ShipType objects from the picker.
+vfst_filter_group = {
+    scope = country
+    saved_scopes = { seller buyer group_number }
+    is_valid = {
+        vfst_selection_context_matches = yes
+        scope:group_number >= 1
+        scope:group_number <= 3
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            set_variable = { name = vfst_group_filter value = scope:group_number }
+            remove_variable = vfst_type_filter
+            set_variable = { name = vfst_page value = 0 }
+            vfst_close_filter_menus = yes
+        }
+        vfst_refresh_browser = yes
+    }
+}
+vfst_filter_group_all = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            remove_variable = vfst_type_filter
+            set_variable = { name = vfst_page value = 0 }
+            vfst_close_filter_menus = yes
+        }
+        vfst_refresh_browser = yes
+    }
+}
+vfst_group_selected = {
+    scope = country
+    saved_scopes = { seller buyer group_number }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                trigger_if = {
+                    limit = { has_variable = vfst_group_filter }
+                    var:vfst_group_filter = scope:group_number
+                }
+                trigger_else = { always = no }
+            }
+        }
+    }
+}
+vfst_all_groups_selected = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            NOT = {
+                any_in_list = {
+                    variable = vfst_batches
+                    vfst_ui_record_matches = yes
+                    has_variable = vfst_group_filter
+                }
+            }
+        }
+    }
+}
+vfst_type_in_group = {
+    scope = country
+    saved_scopes = { seller buyer ship_group }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                trigger_if = {
+                    limit = { has_variable = vfst_group_filter }
+                    OR = {
+                        AND = {
+                            var:vfst_group_filter = 1
+                            scope:ship_group = ship_group:ship_group_capital_ships
+                        }
+                        AND = {
+                            var:vfst_group_filter = 2
+                            scope:ship_group = ship_group:ship_group_cruisers
+                        }
+                        AND = {
+                            var:vfst_group_filter = 3
+                            scope:ship_group = ship_group:ship_group_torpedo_craft
+                        }
+                    }
+                }
+                trigger_else = { always = no }
+            }
+        }
+    }
+}
+
+vfst_toggle_group_menu = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            remove_variable = vfst_type_menu_open
+            if = {
+                limit = { has_variable = vfst_group_menu_open }
+                remove_variable = vfst_group_menu_open
+            }
+            else = { set_variable = { name = vfst_group_menu_open value = yes } }
+        }
+    }
+}
+vfst_group_menu_open = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                has_variable = vfst_group_menu_open
+            }
+        }
+    }
+}
+
+vfst_toggle_type_menu = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_valid = {
+        vfst_selection_context_matches = yes
+    }
+    effect = {
+        vfst_get_ui_record = yes
+        scope:vfst_record = {
+            remove_variable = vfst_group_menu_open
+            if = {
+                limit = { has_variable = vfst_type_menu_open }
+                remove_variable = vfst_type_menu_open
+            }
+            else = { set_variable = { name = vfst_type_menu_open value = yes } }
+        }
+    }
+}
+vfst_type_menu_open = {
+    scope = country
+    saved_scopes = { seller buyer }
+    is_shown = {
+        vfst_selection_context_matches = yes
+        scope:seller = {
+            any_in_list = {
+                variable = vfst_batches
+                vfst_ui_record_matches = yes
+                has_variable = vfst_type_menu_open
+            }
+        }
+    }
+}

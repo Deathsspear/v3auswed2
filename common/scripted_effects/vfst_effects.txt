@@ -1,0 +1,73 @@
+﻿# Player country scope. Create a separate persistent record on first selection.
+vfst_create_record = {
+    save_scope_as = vfst_player
+    scope:seller = {
+        if = {
+            limit = { NOT = { has_variable = vfst_next_id } }
+            set_variable = { name = vfst_next_id value = 0 }
+        }
+        change_variable = { name = vfst_next_id add = 1 }
+        create_container = {
+            parent = scope:seller
+            tags = { vfst_batch }
+            save_scope_as = vfst_record
+        }
+        # Initialize the saved object explicitly before publishing it in the country list.
+        scope:vfst_record = {
+            set_variable = { name = vfst_id value = scope:seller.var:vfst_next_id }
+            set_variable = { name = vfst_seller value = scope:seller }
+            set_variable = { name = vfst_buyer value = scope:buyer }
+            set_variable = { name = vfst_controller value = scope:vfst_player }
+            set_variable = { name = vfst_count value = 0 }
+        }
+        add_to_variable_list = { name = vfst_batches target = scope:vfst_record }
+    }
+}
+
+# Batch container scope. Keep the record ID and quote; invalidate this draft only.
+vfst_cancel_record = {
+    set_variable = { name = vfst_cancelled value = yes }
+    set_variable = { name = vfst_ui_closed value = yes }
+    remove_variable = vfst_pending_treaty
+}
+
+# Treaty scope. A pending proposal cannot be reset from its ship picker.
+vfst_lock_proposed_batch = {
+    save_scope_as = vfst_current_treaty
+    every_scope_article_option = {
+        limit = { has_type = vfst_batch_ship_transfer exists = input_quantity }
+        save_scope_as = article
+        source_country = { save_scope_as = source_country }
+        target_country = { save_scope_as = target_country }
+        source_country = {
+            every_in_list = {
+                variable = vfst_batches
+                limit = {
+                    vfst_record_matches_article = yes
+                    NOT = { has_variable = vfst_delivered }
+                    NOT = { has_variable = vfst_cancelled }
+                }
+                set_variable = { name = vfst_pending_treaty value = scope:vfst_current_treaty }
+            }
+        }
+    }
+}
+
+# Treaty scope. Release reservations for this refused/dissolved proposal only.
+# Delivered receipts are retained for the lifetime of their source country.
+vfst_release_proposed_batch = {
+    save_scope_as = vfst_current_treaty
+    first_country = { vfst_release_country_records = yes }
+    second_country = { vfst_release_country_records = yes }
+}
+vfst_release_country_records = {
+    every_in_list = {
+        variable = vfst_batches
+        limit = {
+            exists = var:vfst_pending_treaty
+            var:vfst_pending_treaty = scope:vfst_current_treaty
+            NOT = { has_variable = vfst_delivered }
+        }
+        vfst_cancel_record = yes
+    }
+}

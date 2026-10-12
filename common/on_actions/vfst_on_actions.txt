@@ -1,0 +1,20 @@
+﻿on_treaty_proposed = {
+	on_actions = { vfst_on_treaty_proposed }
+}
+on_treaty_proposal_declined = {
+	on_actions = { vfst_on_treaty_proposal_declined }
+}
+on_treaty_dissolved = {
+	on_actions = { vfst_on_treaty_dissolved }
+}
+
+# Append children so the original proposal and notification effects remain active.
+vfst_on_treaty_proposed = {
+	effect = { vfst_lock_proposed_batch = yes }
+}
+vfst_on_treaty_proposal_declined = {
+	effect = { vfst_release_proposed_batch = yes }
+}
+vfst_on_treaty_dissolved = {
+	effect = { vfst_release_proposed_batch = yes }
+}

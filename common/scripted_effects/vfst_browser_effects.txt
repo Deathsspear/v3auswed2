@@ -1,0 +1,73 @@
+﻿# Player country scope. Reuse the same per-seller/buyer/controller record as selection.
+vfst_get_ui_record = {
+    if = {
+        limit = {
+            scope:seller = {
+                any_in_list = { variable = vfst_batches vfst_ui_record_matches = yes }
+            }
+        }
+        scope:seller = {
+            random_in_list = {
+                variable = vfst_batches
+                limit = { vfst_ui_record_matches = yes }
+                save_scope_as = vfst_record
+            }
+        }
+    }
+    else = { vfst_create_record = yes }
+}
+
+# Player scope, with vfst_record saved. Reopening refreshes ownership/availability;
+# selection and frozen quotes are never cleared. Filtering restarts at page zero.
+vfst_refresh_browser = {
+    scope:vfst_record = {
+        if = {
+            limit = { NOT = { has_variable = vfst_page } }
+            set_variable = { name = vfst_page value = 0 }
+        }
+        clear_variable_list = vfst_catalog
+    }
+    scope:seller = {
+        every_scope_ship = {
+            limit = { vfst_browser_candidate = yes vfst_ship_matches_filter = yes }
+            save_scope_as = vfst_listed_ship
+            scope:vfst_record = {
+                add_to_variable_list = { name = vfst_catalog target = scope:vfst_listed_ship }
+            }
+        }
+    }
+    scope:vfst_record = {
+        set_variable = { name = vfst_page value = vfst_clamped_page }
+        vfst_build_page = yes
+        set_variable = { name = vfst_browser_ready value = yes }
+    }
+}
+
+# Record scope. Preserve catalog membership while checking/selecting ships so rows
+# do not slide between pages. The page list is also the select-page input.
+vfst_build_page = {
+    save_scope_as = vfst_record
+    clear_variable_list = vfst_page_ships
+    set_variable = { name = vfst_page_cursor value = 0 }
+    every_in_list = {
+        variable = vfst_catalog
+        save_scope_as = vfst_listed_ship
+        scope:vfst_record = {
+            if = {
+                limit = {
+                    var:vfst_page_cursor >= vfst_page_offset
+                    var:vfst_page_cursor < vfst_page_end
+                }
+                add_to_variable_list = { name = vfst_page_ships target = scope:vfst_listed_ship }
+            }
+            change_variable = { name = vfst_page_cursor add = 1 }
+        }
+    }
+    remove_variable = vfst_page_cursor
+}
+
+# Record scope. Menu state belongs to this seller/buyer/controller pair.
+vfst_close_filter_menus = {
+    remove_variable = vfst_group_menu_open
+    remove_variable = vfst_type_menu_open
+}
