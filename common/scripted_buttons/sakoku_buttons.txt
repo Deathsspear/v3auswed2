@@ -14,7 +14,7 @@
 			always = yes
 		}
 	}
-
+	cooldown = { days = short_modifier_time }
 	effect = {
 		trigger_event = { id = ep2_sakoku.2 }
 		show_as_tooltip = {
