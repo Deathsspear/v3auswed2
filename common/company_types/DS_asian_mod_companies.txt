@@ -1,5 +1,5 @@
 # Guthrie & Co.
-REPLACE: company_guthrie = {
+REPLACE:company_guthrie = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_guthrie.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
