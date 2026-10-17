@@ -1,0 +1,54 @@
+# Guthrie & Co.
+REPLACE: company_guthrie = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_guthrie.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_MEKONG }
+
+	building_types = {
+		building_rubber_plantation
+		building_tooling_workshop
+        building_textile_mill 
+	}
+
+	extension_building_types = {
+		building_cotton_plantation 
+        building_silk_plantation 
+	}
+
+	possible_prestige_goods = {
+		prestige_good_saigon_latex
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:vietnamese
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:vietnamese
+	}
+
+    possible = {
+		country_has_primary_culture = cu:vietnamese
+        any_scope_state = {
+			is_in_geographic_region = geographic_region_indochina
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_rubber_plantation
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_rubber_plantation_throughput_add = 0.15
+        building_group_bg_plantations_laborers_mortality_mult = 0.05		
+	}
+
+}
+
