@@ -15,3 +15,21 @@ prestige_good_gromwell_purple = {
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/gromwell_purple.dds"
 }
+
+prestige_good_anthracite_coal= {
+	possible = {
+		has_dlc_feature = mp1_content
+	}
+	base_good = coal
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/anthracite_coal.dds"
+}
+
+prestige_good_ginseng = {
+	possible = {
+		has_dlc_feature = mp1_content
+	}
+	base_good = tobacco
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/ginseng.dds"
+}

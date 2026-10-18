@@ -102,6 +102,123 @@ doyeinso_offices_mod_company = {
 				level >= 5
 			}
 		}
-
 }
 
+
+
+# Busan Trains
+busan_train_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_gold_mining.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/busan_train_company_undead.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_YEONGNAM }
+
+	building_types = {
+		building_coal_mine
+		building_steel_mill
+		building_motor_industry
+	}
+
+	extension_building_types = {
+		building_shipyard
+		building_railway
+	}
+
+	possible_prestige_goods = {
+		prestige_good_anthracite_coal
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		ship_armor_mult = 0.1
+		ship_critical_hit_chance_add = 0.1	
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = 
+			is_in_geographic_region = geographic_region_northeast_asia
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_coal_mine
+				level >= 5
+			}
+		}
+}
+
+# Sunhwaguk
+REPLACE:company_sunhwaguk = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/korea_sunhwaguk.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_tobacco_plantation
+		building_rice_farm
+		building_coffee_plantation
+	}
+
+	extension_building_types = {
+		building_food_industry
+		building_chemical_plant
+		
+	}
+
+	possible_prestige_goods = {
+		prestige_good_ginseng
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+			}
+
+	prosperity_modifier = {
+		country_tech_spread_mult = 0.15
+		building_group_bg_plantations_unincorporated_throughput_add = 0.1
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = 
+			is_in_geographic_region = geographic_region_northeast_asia
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_tobacco_plantation
+				level >= 5
+			}
+	}
+
+
+
+	ai_construction_targets = {
+		building_tobacco_plantation = {
+			level = 5
+			state_trigger = {
+				state_region = {
+					is_homeland = cu:korean
+				}
+				is_incorporated = yes
+			}
+		}
+	}
+}
