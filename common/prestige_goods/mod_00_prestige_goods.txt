@@ -6,3 +6,12 @@ prestige_good_saigon_latex = {
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/saigon_latex.dds"
 }
+
+prestige_good_gromwell_purple = {
+	possible = {
+		has_dlc_feature = mp1_content
+	}
+	base_good = dye
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/gromwell_purple.dds"
+}

@@ -52,3 +52,56 @@ REPLACE:company_guthrie = {
 
 }
 
+# Doyeinseo Offices
+doyeinso_offices_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_YANGHO }
+
+	building_types = {
+		building_dye_plantation
+		building_silk_plantation
+        building_textile_mill 
+	}
+
+	extension_building_types = {
+		building_cotton_plantation 
+        building_synthetics_plant
+	}
+
+	possible_prestige_goods = {
+		prestige_good_gromwell_purple
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		country_prestige_mult = 0.1
+        ship_accuracy_mult = 0.2
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = 
+			is_in_geographic_region = geographic_region_northeast_asia
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_dye_plantation
+				level >= 5
+			}
+		}
+
+}
+
