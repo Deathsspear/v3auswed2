@@ -1,9 +1,32 @@
 ﻿l_english:
- je_indochinese_federation_malay_button:0 "Integrate the Malays"
- je_indochinese_federation_khmer_button:0 "Integrate the Khmer"
- je_indochinese_federation_shan_button:0 "Integrate the Shan"
- je_indochinese_federation_lao_button:0 "Integrate the Lao"
- je_indochinese_federation_burmese_button:0 "Integrate the Burmese"
- je_indochinese_federation_thai_button:0 "Integrate the Thai"
- je_indochinese_colonisation_button:0 "Initiate Colonisation Campaign"
+ je_indochinese_federation_malay_button:0 "Echos in the Batu Caves"
+ je_indochinese_federation_malay_button_desc:0 "And so the King entered the Batu Caves, and he felt the weight of past pilgrims at his back. Their breaths echoed through the darkness, and they walked with him."
+
+ je_indochinese_federation_khmer_button:0 "Delivered from Angkor Wat"
+ je_indochinese_federation_khmer_button_desc:0  "And then the King lost himself in the complex at Angkor Wat for 40 days and 40 nights and Heaven did lead him from the maze, renewed."
+
+ je_indochinese_federation_shan_button:0 "Pilgrimage to the Pindaya Caves"
+ je_indochinese_federation_shan_button_desc:0 "And finally the King walked among the Buddas and he felt their eyes on him. As he left the Caves, their eyes followed, and he knew they would watch him for the rest of his days."
+
+ je_indochinese_federation_lao_button:0 "Meditate at Wat Xieng Thong"
+ je_indochinese_federation_lao_button_desc:0 "The King knelt on the hard stone of Wat Xieng Thong, the sacred ground of the Buddha, and felt a deep peace settle over him."
+
+ je_indochinese_federation_burmese_button:0 "Behold the Mahamuni Bronze"
+ je_indochinese_federation_burmese_button_desc:0 "The King set himself before the great Bronze Budda and he felt small."
+
+ je_indochinese_federation_thai_button:0 "Vows Before the Emerald Budda"
+ je_indochinese_federation_thai_button_desc:0 "And so the King did stand before the Emerald Budda and vowd he would not bring Heaven's Displeasure upon the Realm."
+
+ je_indochinese_colonisation_button:0 "Settle Tribal Areas"
+
  je_indochinese_campaign_button:0 "Begin the Consolidation of Indochina"
+
+ je_indochinese_federation_enact_the_federation_button:0 "Proclaim the Mandate of Heaven"
+
+ je_indochinese_federation_enact_the_federation_button_desc:0 "Truly the King has the Divine Approval, with the Mandate firmly held in his hands, the subjects of his realm kneel before him, and heaven's blessings carry Dai Nam into the future."
+
+ dai_nam_federated:0 "Dai Viet Nam"
+
+ je_indochinese_federation:0 "The Thien Menh Rituals"
+
+ je_indochinese_federation_reason:0 "My King, the sea itself has turned against us. Foreign sails darken nearby horizons, their captains circling the coasts like hyenas around a wounded cub, testing the defences of us and our neighbours. Our strength is scattered, the people divided, each nation guarding its own hearth while the storm gathers. This cannot stand. Forge the scattered peoples of this land into one nation beneath a single banner, by sword if you must. Then you must walk the road to each of their ancestral homelands, kneel at their holy altars, and claim the Mandate of Heaven for yourself. Only then will they call you sovereign, and only then will the heavens bless the dynasty that rises from the ashes of division."

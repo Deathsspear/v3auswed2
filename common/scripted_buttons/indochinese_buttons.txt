@@ -1,6 +1,6 @@
 ﻿je_indochinese_federation_malay_button = {
 	name = "je_indochinese_federation_malay_button"
-	#desc = "je_indochinese_federation_malay_button_desc"
+	desc = "je_indochinese_federation_malay_button_desc"
 
 	visible = {
 		NOT = {
@@ -60,7 +60,7 @@
 
 je_indochinese_federation_khmer_button = {
 	name = "je_indochinese_federation_khmer_button"
-	#desc = "je_indochinese_federation_khmer_button_desc"
+	desc = "je_indochinese_federation_khmer_button_desc"
 
 	visible = {
 		NOT = {
@@ -116,7 +116,7 @@ je_indochinese_federation_khmer_button = {
 }
 je_indochinese_federation_lao_button = {
 	name = "je_indochinese_federation_lao_button"
-	#desc = "je_indochinese_federation_lao_button_desc"
+	desc = "je_indochinese_federation_lao_button_desc"
 
 	visible = {
 		NOT = {
@@ -167,7 +167,7 @@ je_indochinese_federation_lao_button = {
 
 je_indochinese_federation_shan_button = {
 	name = "je_indochinese_federation_shan_button"
-	#desc = "je_indochinese_federation_shan_button_desc"
+	desc = "je_indochinese_federation_shan_button_desc"
 
 	visible = {
 		NOT = {
@@ -222,7 +222,7 @@ je_indochinese_federation_shan_button = {
 }
 je_indochinese_federation_burmese_button = {
 	name = "je_indochinese_federation_burmese_button"
-	#desc = "je_indochinese_federation_burmese_button_desc"
+	desc = "je_indochinese_federation_burmese_button_desc"
 
 	visible = {
 		NOT = {
@@ -288,7 +288,7 @@ je_indochinese_federation_burmese_button = {
 }
 je_indochinese_federation_thai_button = {
 	name = "je_indochinese_federation_thai_button"
-	#desc = "je_indochinese_federation_thai_button_desc"
+	desc = "je_indochinese_federation_thai_button_desc"
 
 	visible = {
 		
@@ -339,9 +339,9 @@ je_indochinese_federation_thai_button = {
 	}
 }
 
-je_indochinese_federation_enact_the_federation = {
-	name = "je_danubian_federation_enact_the_federation"
-	#desc = "je_danubian_federation_enact_the_federation_desc"
+je_indochinese_federation_enact_the_federation_button = {
+	name = "je_indochinese_federation_enact_the_federation_button"
+	desc = "je_indochinese_federation_enact_the_federation_button_desc"
 
 	visible = {
 		always = yes
@@ -368,7 +368,11 @@ je_indochinese_federation_enact_the_federation = {
 		custom_tooltip = {
 			text = federalization_signed_tt
 			set_variable = danubian_federation_final_act
-		}
+			}
+		add_modifier = { 
+			name = dai_nam_federated
+			months = -1
+			}
 	}
 
 	selected = {

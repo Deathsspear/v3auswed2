@@ -36,19 +36,21 @@
 		danubian_federation_calculate_path_to_victory = yes
 	}
 
+	scripted_button = indochinese_campaign_button
+	scripted_button = indochinese_colonisation_button
+
 	scripted_button = je_indochinese_federation_malay_button
 	scripted_button = je_indochinese_federation_khmer_button
 	scripted_button = je_indochinese_federation_lao_button
 	
-	scripted_button = indochinese_colonisation_button
 	
 	scripted_button = je_indochinese_federation_thai_button
-	scripted_button = indochinese_campaign_button
+
 	#scripted_button = je_danubian_federation_karen_button
 	scripted_button = je_indochinese_federation_burmese_button
 	scripted_button = je_indochinese_federation_shan_button
 	#scripted_button = je_danubian_federation_ukrainian_button
-	scripted_button = je_indochinese_federation_enact_the_federation
+	scripted_button = je_indochinese_federation_enact_the_federation_button
 
 	on_weekly_pulse = {
 
