@@ -43,6 +43,14 @@
 		#	name = indochinese_federation_button_cooldown
 		#	days = 180
 		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:malay
+			value = 0.1
+		}	
 	}
 
 	ai_chance = {
@@ -92,6 +100,14 @@ je_indochinese_federation_khmer_button = {
 		#	name = indochinese_federation_button_cooldown
 		#	days = 180
 		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:khmer
+			value = 0.1
+		}	
 	}
 
 	ai_chance = {
@@ -134,54 +150,21 @@ je_indochinese_federation_lao_button = {
 		#	name = indochinese_federation_button_cooldown
 		#	days = 180
 		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:lao
+			value = 0.1
+		}	
 	}
 
 	ai_chance = {
 		value = 100
 	}
 }
-je_indochinese_federation_shan_button = {
-	name = "je_indochinese_federation_shan_button"
-	#desc = "je_indochinese_federation_shan_button_desc"
 
-	visible = {
-		NOT = {
-				has_variable = indochinese_federation_shan_button
-			}
-	}
-
-	ai_chance = {
-		value = 10
-	}
-
-	possible = {
-		custom_tooltip = {
-			text = not_already_used_this_interaction_tt
-			NOT = {
-				has_variable = indochinese_federation_shan_button
-			}
-		}
-			owns_entire_state_region = STATE_LAOS
-			owns_entire_state_region = STATE_NAKHON_RATCHASIMA
-	}
-
-	effect = {
-		set_variable = indochinese_federation_shan_button
-		danubian_federation_integrate_culture = {
-			CULTURE = cu:shan
-		}
-		#custom_tooltip = je_indochinese_federation_lao_button_integrate_tt
-		#custom_tooltip = je_indochinese_federation_lao_button_disqualify_tt
-		#set_variable = {
-		#	name = indochinese_federation_button_cooldown
-		#	days = 180
-		#}
-	}
-
-	ai_chance = {
-		value = 100
-	}
-}
 je_indochinese_federation_shan_button = {
 	name = "je_indochinese_federation_shan_button"
 	#desc = "je_indochinese_federation_shan_button_desc"
@@ -223,6 +206,14 @@ je_indochinese_federation_shan_button = {
 		#	name = indochinese_federation_button_cooldown
 		#	days = 180
 		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:shan
+			value = 0.1
+		}	
 	}
 
 	ai_chance = {
@@ -281,6 +272,14 @@ je_indochinese_federation_burmese_button = {
 		#	name = indochinese_federation_button_cooldown
 		#	days = 180
 		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:burmese
+			value = 0.1
+		}	
 	}
 
 	ai_chance = {
@@ -325,6 +324,14 @@ je_indochinese_federation_thai_button = {
 		#	name = indochinese_federation_button_cooldown
 		#	days = 180
 		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:thai
+			value = 0.1
+		}	
 	}
 
 	ai_chance = {
