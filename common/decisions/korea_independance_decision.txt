@@ -1,0 +1,27 @@
+korea_independence_decision = {
+	is_shown = {
+		is_player = yes
+		country_has_primary_culture = cu:korean
+		country_scope = {
+			NOT = {
+				has_variable = declared_korean_independance
+			}
+		}
+	}
+
+	possible = {
+		is_player = yes
+		is_subject = yes
+		country_scope = {
+			NOT = {
+				has_variable = declared_korean_independance
+			}
+		}
+	}
+
+	when_taken = {
+		make_independent = yes
+		set_global_variable = declared_korean_independance
+	}
+}
+

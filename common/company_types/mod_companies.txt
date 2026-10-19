@@ -1527,7 +1527,7 @@ REPLACE:company_anglo_persian_oil = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
-### DS has this company in his korean changes REPLACE:company_sunhwaguk = {
+REPLACE:company_sunhwaguk = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/korea_sunhwaguk.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
