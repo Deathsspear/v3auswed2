@@ -1,0 +1,302 @@
+﻿namespace = louisiana
+
+# An Offer for Louisiana - USA EVENT
+louisiana.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = louisiana.1.t
+	desc = louisiana.1.d
+	flavor = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:louisiana_seller = {
+						c:USA ?= this
+					}
+				}
+				desc = louisiana.1.f_ru
+			}
+			triggered_desc = {
+				trigger = {
+					always = yes
+				}
+				desc = louisiana.1.f
+			}
+		}
+	}
+	
+	cooldown = { days = 180 }
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		# Scopes set in louisiana.4
+	}
+
+	option = {
+		name = louisiana.1.a
+		add_modifier = {
+			name = alaska_rus_big_money
+			months = 36
+			is_decaying = no
+		}
+		set_variable = gave_up_on_west #disables manifest destiny decision
+		scope:louisiana_buyer = {
+			trigger_event = { id = louisiana.2 days = 0 popup = yes }
+		}
+		c:FRA = {create_bidirectional_truce = {country = c:USA months = 120}}
+		ai_chance = {
+			base = 75
+		}
+	}
+	option = {
+		name = louisiana.1.b
+		default_option = yes
+		scope:louisiana_buyer = {
+			trigger_event = { id = louisiana.3 days = 0 popup = yes }
+		}
+		show_as_tooltip = {
+			change_relations = {
+				country = scope:louisiana_buyer
+				value = -20
+			}
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:louisiana_seller = {
+						NOT = {
+							has_variable = louisiana_sale_cooldown #Unsolicited offer
+						}
+					}
+				}
+				add = 25
+			}
+		}
+	}
+}
+
+# The Louisiana Purchase - FRA EVENT SUCCESS
+louisiana.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = louisiana.2.t
+	desc = louisiana.2.d
+	flavor = louisiana.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		# Scopes set in louisiana.4
+	}
+	
+	cooldown = { days = 180 }
+
+	option = {
+		name = louisiana.2.a
+		default_option = yes
+		add_modifier = {
+			name = alaska_usa_big_money
+			months = 36
+		}
+		scope:louisiana_seller = {
+			set_variable = successful_sale_of_louisiana
+		}
+		scope:louisiana_buyer = {
+    		louisiana_purchase_transfer = yes
+		}
+		change_relations = {
+			country = scope:louisiana_seller
+			value = 10
+		}
+	}
+}
+
+# Failed Louisiana Purchase
+louisiana.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = louisiana.3.t
+	desc = louisiana.3.d
+	flavor = louisiana.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		# Scopes set in louisiana.4
+	}
+	
+	cooldown = { days = 180 }
+
+	option = {
+		name = louisiana.3.a
+		default_option = yes
+		s:STATE_LOUISIANA = {
+			add_claim = ROOT
+		}
+		s:STATE_ARKANSAS = {
+			add_claim = ROOT
+		}
+		s:STATE_IOWA = {
+			add_claim = ROOT
+		}
+		s:STATE_KANSAS = {
+			add_claim = ROOT
+		}
+		s:STATE_NEBRASKA = {
+			add_claim = ROOT
+		}
+		s:STATE_MINNESOTA = {
+			add_claim = ROOT
+		}
+		s:STATE_NORTH_DAKOTA = {
+			add_claim = ROOT
+		}
+		s:STATE_SOUTH_DAKOTA = {
+			add_claim = ROOT
+		}
+		s:STATE_WYOMING = {
+			add_claim = ROOT
+		}
+		s:STATE_MONTANA = {
+			add_claim = ROOT
+		}
+		s:STATE_MISSOURI = {
+			add_claim = ROOT
+		}
+		change_relations = {
+			country = scope:louisiana_seller
+			value = -50
+		}
+	}
+	option = {
+		name = louisiana.3.b
+		default_option = yes
+		change_relations = {
+			country = scope:louisiana_seller
+			value = -10
+		}
+	}
+}
+
+# Making an Offer - FRA EVENT
+louisiana.4 = {
+	type = country_event
+	placement = ROOT
+
+	title = louisiana.4.t
+	desc = louisiana.4.d
+	flavor = louisiana.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		root = {
+			save_scope_as = louisiana_buyer
+		}
+		s:STATE_LOUISIANA = {
+			random_scope_state = {
+				limit = {
+					owner = {
+						NOT = {
+							is_country_type = decentralized
+						}
+					}
+				}
+				save_scope_as = louisiana_scope
+				if = { # For selling Russian-American Company
+					limit = {
+						owner = {
+							is_subject = yes
+							capital = {
+								state_region = s:STATE_LOUISIANA
+							}
+						}
+					}
+					owner.top_overlord = {
+						save_scope_as = louisiana_seller
+					}
+				}
+				else = { # For other cases
+					owner = {
+						save_scope_as = louisiana_seller
+					}
+				}
+			}
+		}
+	}
+	
+	cooldown = { days = 180 }
+
+	option = {
+		name = louisiana.4.a
+		ai_chance = {
+			base = 1
+		}
+		custom_tooltip = louisiana.4.tt1 # 3 million over a year for five years
+		scope:louisiana_seller ?= {
+			trigger_event = {
+				id = louisiana.1
+				popup = yes
+			}
+		}
+	}
+	option = { # perhaps another time
+		name = louisiana.4.c
+		default_option = yes
+		ai_chance = {
+			base = 0
+		}
+		scope:louisiana_seller = {
+			post_notification = louisiana_negotiations_fail
+		}
+	}
+}

@@ -1,0 +1,114 @@
+mod_enact_slavery= {
+	is_shown = {
+		#always = no
+		is_player = yes
+		c:FRA ?= THIS
+		NOT = {
+			OR = {
+				has_law = law_type:law_slave_trade
+				has_variable = enacted_slavery
+			}
+		}
+	}
+
+	possible = {
+		ruler = {has_ideology = ideology:ideology_legitimist}
+		#always = no
+		#is_player = yes
+	}
+	when_taken = {
+		set_global_variable = enacted_slavery
+		activate_law = law_type:law_slave_trade
+	}
+}
+
+mod_repudiate_paris = {
+	is_shown = {
+		#always = no
+		c:FRA ?= THIS
+		is_player = yes
+		#has_ideology = ideology:ideology_legitimist
+		
+	}
+
+	possible = {
+		ruler = {has_ideology = ideology:ideology_legitimist}
+		#always = no
+		#is_player = yes
+	}
+	when_taken = {
+		set_global_variable = repudiated_paris
+		s:STATE_QUEBEC= {
+        random_scope_state = {
+            #limit = {
+            #    owner = c:USA
+            #}
+            state_region = {
+                
+                add_claim = c:FRA
+            }
+        }
+		}
+		s:STATE_NEW_BRUNSWICK= {
+        random_scope_state = {
+            #limit = {
+            #    owner = c:USA
+            #}
+            state_region = {
+                
+                add_claim = c:FRA
+            }
+        }
+    }
+	s:STATE_ONTARIO= {
+        random_scope_state = {
+            #limit = {
+            #    owner = c:USA
+            #}
+            state_region = {
+                
+                add_claim = c:FRA
+            }
+        }
+	}
+}
+}
+
+mod_louisiana_unpurchase= {
+	is_shown = {
+		#always = no
+		c:FRA ?= THIS
+		is_player = yes
+		NOT = {has_global_variable = louisiana_offer_sent }
+	}
+
+	possible = {
+		#is_player = yes
+		ruler = {
+    		has_ideology = ideology:ideology_legitimist
+		}
+		#TODO MAKE THIS INVALIDATE MANIFEST DESTINY, SET 10 YEAR TRUCE BETWEEN FRANCE AND USA
+		custom_tooltip = {
+			text = mod_louisiana_unpurchase_text
+			#has_variable = legitimist_leader
+			s:STATE_ARKANSAS = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_KANSAS = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_MISSOURI = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_IOWA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_MINNESOTA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_NORTH_DAKOTA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_SOUTH_DAKOTA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_NEBRASKA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_MONTANA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_WYOMING = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_COLORADO = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_LOUISIANA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+			s:STATE_OKLAHOMA = { any_scope_state = { OR = { owner = c:USA owner = { is_subject_of = c:USA } } } }
+		}
+	}
+
+	when_taken = {
+		set_global_variable = louisiana_offer_sent
+		trigger_event = louisiana.4
+	}
+}

@@ -1,0 +1,201 @@
+louisiana_purchase_transfer = {
+    # Each region must be listed explicitly.
+    # Transfer only the USA-owned state in each region.
+
+	s:STATE_ARKANSAS = {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_KANSAS = {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+    s:STATE_MISSOURI = {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_IOWA = {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_MINNESOTA = {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_NORTH_DAKOTA= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_SOUTH_DAKOTA= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_NEBRASKA= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_MONTANA= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_WYOMING= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_COLORADO= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_LOUISIANA= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+	s:STATE_OKLAHOMA= {
+        random_scope_state = {
+            limit = {
+                OR = {
+                    owner = c:USA
+                    owner = { is_subject_of = c:USA }
+                }
+            }
+            state_region = {
+                remove_claim = scope:louisiana_seller
+                add_claim = scope:louisiana_buyer
+            }
+            set_state_owner = scope:louisiana_buyer
+        }
+    }
+    # Add the remaining state regions using the same pattern.
+}
