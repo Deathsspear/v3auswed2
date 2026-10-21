@@ -1216,7 +1216,7 @@ STATE_SEOUL = {
         building_coal_mine = 12
         building_lead_mine = 27
         building_logging_camp = 19
-        building_whaling_station = 3
+        building_whaling_station = 16
         building_fishing_wharf = 6
         building_gold_mine = 2
     }
@@ -1240,7 +1240,7 @@ STATE_BUSAN = {
         building_coal_mine = 6
         building_lead_mine = 12
         building_logging_camp = 7
-        building_whaling_station = 7
+        building_whaling_station = 12
         building_fishing_wharf = 11
     }
     naval_exit_id = 3058
@@ -1263,7 +1263,7 @@ STATE_YANGHO = {
         building_sulfur_mine = 6
         building_lead_mine = 11
         building_logging_camp = 7
-        building_whaling_station = 2
+        building_whaling_station = 6
         building_fishing_wharf = 8
     }
     naval_exit_id = 3058
@@ -1288,6 +1288,7 @@ STATE_SARIWON = {
         building_logging_camp = 21
         building_fishing_wharf = 17
         building_gold_mine = 2
+        building_whaling_station = 19
     }
     naval_exit_id = 3059
 }
