@@ -149,7 +149,7 @@ busan_train_mod_company = {
 			is_in_geographic_region = geographic_region_northeast_asia
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_coal_mine
+				is_building_type = building_motor_industry
 				level >= 5
 			}
 		}

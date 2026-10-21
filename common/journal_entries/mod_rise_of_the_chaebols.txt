@@ -113,16 +113,46 @@ je_chaebol_control = {
 
 	on_complete = {
 		set_variable = chaebol_risen
-		remove_modifier = the_chaebols_anthracite_interest
-		remove_modifier = the_chaebols_living_engines_interest
-		remove_modifier = the_chaebols_gromwell_purple_interest
-		remove_modifier = the_chaebols_ginseng_interest
-		remove_modifier = the_chaebols_koksan_leaf_interest
-		remove_modifier = the_chaebols_leviathans_balm_interest
-		remove_modifier = the_chaebols_dragonfly_robes_interest
-		remove_modifier = the_chaebols_siwidae_cannons_interest
-		remove_modifier = the_chaebols_established_modifier
-		remove_modifier = the_chaebols_inefficient_modifier
+		if = {
+			limit = { has_modifier = the_chaebols_anthracite_interest }
+			remove_modifier = the_chaebols_anthracite_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_living_engines_interest }
+			remove_modifier = the_chaebols_living_engines_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_gromwell_purple_interest }
+			remove_modifier = the_chaebols_gromwell_purple_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_ginseng_interest }
+			remove_modifier = the_chaebols_ginseng_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_koksan_leaf_interest }
+			remove_modifier = the_chaebols_koksan_leaf_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_leviathans_balm_interest }
+			remove_modifier = the_chaebols_leviathans_balm_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_dragonfly_robes_interest }
+			remove_modifier = the_chaebols_dragonfly_robes_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_siwidae_cannons_interest }
+			remove_modifier = the_chaebols_siwidae_cannons_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_established_modifier }
+			remove_modifier = the_chaebols_established_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_inefficient_modifier }
+			remove_modifier = the_chaebols_inefficient_modifier
+		}
 		add_modifier = {
 			name = the_chaebols_subdued
 		}

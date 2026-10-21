@@ -17,7 +17,7 @@
 				has_variable = je_chaebol_control_anthracite
 			}		
 		}
-		
+
 		custom_tooltip = {
 		text = pyongyang_mining_prosperous
 		company:pyongyang_mining_mod_company = {
@@ -82,7 +82,7 @@ je_chaebol_control_gromwell_purple = {
 		custom_tooltip = {
 			text = not_already_used_this_interaction_tt
 			NOT = {
-				has_variable = je_chaebol_control_living_engines
+				has_variable = je_chaebol_control_gromwell_purple
 			}
 		
 		}
