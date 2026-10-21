@@ -349,8 +349,8 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:lao
-			culture = cu:shan
+			#culture = cu:lao
+			#culture = cu:shan
 			culture = cu:zhuang
 		}
     }
@@ -364,9 +364,9 @@
 			culture = cu:hawaiian
 			culture = cu:melanesian
 			culture = cu:micronesian
-			culture = cu:maori
+			#culture = cu:maori
 			culture = cu:yuanzhumin
-			culture = cu:aborigine
+			#culture = cu:aborigine
 		}
     }
      change_pop_culture = { target = cu:polynesian value = 1 }
@@ -376,7 +376,7 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:dixie
+			#culture = cu:dixie
 		}
     }
      change_pop_culture = { target = cu:yankee value = 1 }

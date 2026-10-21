@@ -27,8 +27,8 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:siouan 
-				remove_homeland = cu:metis
+     		add_homeland = cu:siouan 
+			#remove_homeland = cu:metis
 			remove_homeland = cu:dakota
 			remove_homeland = cu:cherokee
 			remove_homeland = cu:muskogean
@@ -365,8 +365,8 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:uzbek 
-	 remove_homeland = cu:kazak
+    		add_homeland = cu:uzbek 
+			remove_homeland = cu:kazak
 			remove_homeland = cu:kirgiz
 			remove_homeland = cu:uighur
 			remove_homeland = cu:hazara
@@ -574,7 +574,7 @@
 			remove_homeland = cu:tagalog
 			remove_homeland = cu:ilocano
 			remove_homeland = cu:visayan
-			remove_homeland = cu:filipino_hispanophone
+			#remove_homeland = cu:filipino_hispanophone
 			remove_homeland = cu:lumad
 	}
 	}
@@ -590,10 +590,10 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:thai 
-	 remove_homeland = cu:lao
-			remove_homeland = cu:shan
-			remove_homeland = cu:zhuang
+     #add_homeland = cu:thai 
+	# remove_homeland = cu:lao
+			#remove_homeland = cu:shan
+			#remove_homeland = cu:zhuang
 	}
 	}
 	
@@ -630,8 +630,8 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:yankee
-		remove_homeland = cu:dixie	 
+     #add_homeland = cu:yankee
+		#remove_homeland = cu:dixie	 
 	}
 	}
 	
@@ -721,11 +721,11 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:brazilian 
-	 remove_homeland = cu:amazonic
-			remove_homeland = cu:sulista
-			remove_homeland = cu:nordestino
-			remove_homeland = cu:paulista
+     #add_homeland = cu:brazilian 
+	 #remove_homeland = cu:amazonic
+			#remove_homeland = cu:sulista
+			#remove_homeland = cu:nordestino
+			#remove_homeland = cu:paulista
 	}
 	}
 	
@@ -738,8 +738,8 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:portuguese 
-	 remove_homeland = cu:galician
+     #add_homeland = cu:portuguese 
+	 #remove_homeland = cu:galician
 	}
 	}
 	
@@ -755,11 +755,11 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:spanish 
-	 remove_homeland = cu:catalan
-	 remove_homeland = cu:basque
-	 remove_homeland = cu:asturleonese
-	 remove_homeland = cu:aragonese
+     #add_homeland = cu:spanish 
+	 #remove_homeland = cu:catalan
+	 #remove_homeland = cu:basque
+	 #remove_homeland = cu:asturleonese
+	 #remove_homeland = cu:aragonese
 	}
 	}
 	
@@ -774,10 +774,10 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:irish 
-	 remove_homeland = cu:breton
-			remove_homeland = cu:welsh
-			remove_homeland = cu:scottish_gaelic
+     		#add_homeland = cu:irish 
+	 		#remove_homeland = cu:breton
+			#remove_homeland = cu:welsh
+			#remove_homeland = cu:scottish_gaelic
 	}
 	}
 	
@@ -793,11 +793,11 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:french
-		remove_homeland = cu:occitan
-			remove_homeland = cu:francoprovencal
-			remove_homeland = cu:cajun
-			remove_homeland = cu:wallonian	 
+     		#add_homeland = cu:french
+			#remove_homeland = cu:occitan
+			#remove_homeland = cu:francoprovencal
+			#remove_homeland = cu:cajun
+			#remove_homeland = cu:wallonian	 
 	}
 	}
 	
@@ -810,8 +810,8 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:dutch 
-	 remove_homeland = cu:flemish
+     #add_homeland = cu:dutch 
+	 #remove_homeland = cu:flemish
 	}
 	}
 	
@@ -825,9 +825,9 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:north_italian 
-	 remove_homeland = cu:south_italian
-			remove_homeland = cu:corsican
+     #add_homeland = cu:north_italian 
+	 #remove_homeland = cu:south_italian
+	 #remove_homeland = cu:corsican
 	}
 	}
 	
@@ -842,10 +842,10 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:north_german
-		remove_homeland = cu:south_german
-			remove_homeland = cu:alemannic	 
-			remove_homeland = cu:east_german
+     	#add_homeland = cu:north_german
+		#remove_homeland = cu:south_german
+		#remove_homeland = cu:alemannic	 
+		#remove_homeland = cu:east_german
 	}
 	}
 	
@@ -877,9 +877,9 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:british 
-	 remove_homeland = cu:scottish
-	 remove_homeland = cu:scottish_gaelic
+     #add_homeland = cu:british 
+	 #remove_homeland = cu:scottish
+	 #remove_homeland = cu:scottish_gaelic
 	}
 	}
 	
@@ -935,9 +935,9 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:russian 
-	 remove_homeland = cu:ukrainian
-			remove_homeland = cu:byelorussian
+     #add_homeland = cu:russian 
+	 #remove_homeland = cu:ukrainian
+			#remove_homeland = cu:byelorussian
 	}
 	}
 	
@@ -952,10 +952,10 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:polish 
-	 remove_homeland = cu:czech
-			remove_homeland = cu:slovak
-			remove_homeland = cu:sorb
+     #add_homeland = cu:polish 
+	# remove_homeland = cu:czech
+			#remove_homeland = cu:slovak
+			#remove_homeland = cu:sorb
 	}
 	}
 	
@@ -971,11 +971,11 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:croat 
-	 remove_homeland = cu:serb
-			remove_homeland = cu:bulgarian
-			remove_homeland = cu:slovene
-			remove_homeland = cu:bosniak
+     #add_homeland = cu:croat 
+	 #remove_homeland = cu:serb
+			#remove_homeland = cu:bulgarian
+			#remove_homeland = cu:slovene
+			#remove_homeland = cu:bosniak
 	}
 	}
 	
@@ -991,11 +991,11 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:georgian 
-	 remove_homeland = cu:armenian
-			remove_homeland = cu:circassian
-			remove_homeland = cu:chechen
-			remove_homeland = cu:bosniak
+     #add_homeland = cu:georgian 
+	 #remove_homeland = cu:armenian
+			#remove_homeland = cu:circassian
+			#remove_homeland = cu:chechen
+			#remove_homeland = cu:bosniak
 	}
 	}
 	
@@ -1040,8 +1040,8 @@
     }
 	}
 	state_region = {
-     add_homeland = cu:hungarian 
-	 remove_homeland = cu:szekely
+     #add_homeland = cu:hungarian 
+	 #remove_homeland = cu:szekely
 	}
 	}
 	
