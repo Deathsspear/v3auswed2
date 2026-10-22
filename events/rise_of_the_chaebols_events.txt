@@ -36,6 +36,14 @@ chaebol_event.1 = {
 		add_modifier = {
 			name = the_chaebols_landowners_happy_modifier
 		}			
+		ig:ig_landowners = {
+            remove_ideology = ideology_paternalistic 
+            add_ideology = ideology_chaebol_paternalistic
+        }
+		ig:ig_landowners = {
+            remove_ideology = ideology_hierarchic 
+            add_ideology = ideology_chaebol_hierarchic
+        }
 	}
 }
 
@@ -64,10 +72,136 @@ chaebol_event.2 = {
 	duration = 3
 	
 	option = {
-		name = chaebol_event.1.a #the rise of the chaebols
+		name = chaebol_event.2.a  #it was a nice idea
 		default_option = yes
-		remove_modifier= {
-			name = the_chaebols_modifier
+		remove_modifier = the_chaebols_modifier
+		remove_modifier = the_chaebols_inefficient_modifier
+		remove_modifier = the_chaebols_landowners_happy_modifier
+	}
+}
+
+chaebol_event.3 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = c:KOR
+		this = c:KOR
+	}
+
+	title = chaebol_event.3.t
+	desc = chaebol_event.3.d
+	flavor = chaebol_event.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+	
+	option = {
+		name = chaebol_event.3.a 
+		default_option = yes
+		add_modifier = {
+			name = the_chaebols_give_temporary_approval
+			days = 1460
+		}
+		add_loyalists = {
+   			value = 0.1            
+    		interest_group = ig:ig_landowners
+		}
+		ig:ig_landowners = {
+    		set_interest_group_name = the_chaebols_name
+		}
+	}
+}
+
+chaebol_event.4 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+		exists = c:KOR
+		this = c:KOR
+	}
+
+	title = chaebol_event.4.t
+	desc = chaebol_event.4.d
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+	
+	option = {
+		name = chaebol_event.4.a  #it was a nice idea
+		default_option = yes
+		if = {
+			limit = { has_modifier = the_chaebols_modifier }
+			remove_modifier = the_chaebols_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_inefficient_modifier }
+			remove_modifier = the_chaebols_inefficient_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_landowners_happy_modifier }
+			remove_modifier = the_chaebols_landowners_happy_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_anthracite_interest }
+			remove_modifier = the_chaebols_anthracite_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_living_engines_interest }
+			remove_modifier = the_chaebols_living_engines_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_gromwell_purple_interest }
+			remove_modifier = the_chaebols_gromwell_purple_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_ginseng_interest }
+			remove_modifier = the_chaebols_ginseng_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_koksan_leaf_interest }
+			remove_modifier = the_chaebols_koksan_leaf_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_leviathans_balm_interest }
+			remove_modifier = the_chaebols_leviathans_balm_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_dragonfly_robes_interest }
+			remove_modifier = the_chaebols_dragonfly_robes_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_siwidae_cannons_interest }
+			remove_modifier = the_chaebols_siwidae_cannons_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_established_modifier }
+			remove_modifier = the_chaebols_established_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_inefficient_modifier }
+			remove_modifier = the_chaebols_inefficient_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_established_modifier }
+			remove_modifier = the_chaebols_established_modifier
 		}
 	}
 }

@@ -1,6 +1,6 @@
 the_chaebols_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		country_max_companies_add = 8
+		country_max_companies_add = 7
 		country_free_charters_add = 25
 }
 
@@ -72,4 +72,9 @@ the_chaebols_subdued = {
 		country_authority_mult = -0.05
 		country_bureaucracy_mult = -0.05
 		interest_group_ig_landowners_pol_str_mult = -0.2		
+}
+
+the_chaebols_give_temporary_approval = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		interest_group_ig_landowners_approval_add = 2	
 }

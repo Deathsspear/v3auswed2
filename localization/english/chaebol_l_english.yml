@@ -8,7 +8,7 @@
  the_chaebols_established_modifier:0 "An Uneasy Partnership"
  the_chaebols_landowners_happy_modifier:0 "Landowners Support Industrial Expansion"
  je_chaebol_control:0 "Control the Chaebols"
- je_chaebol_control_reason:0 "The establishment of the Chaebols has brought rapid industrialisation to the realm, but has also strengthened the hand of the landowners, you must take action to reign them in, and ensure the Crown benefits from this newfound wealth."
+ je_chaebol_control_reason:0 "The establishment of the Chaebols has brought rapid industrialisation to the realm, but has also strengthened the hand of the landowners, you must take action to reign them in, and ensure the Crown benefits from this newfound wealth.\n \n #R If you fail to complete this journal entry you will lose your extra company slots, do not pursue companies other than those listed here, do not disband any of these companies once formed. #R "
  pyongyang_mining_prosperous:0 "Pyongyang Mining is Prosperous"
  je_chaebol_control_anthracite:0 "Regulate Anthracite"
  je_chaebol_control_anthracite_desc:0 "Enact a proclamation to control the movement of Anthracite across provincial borders and thereby exert influence over Pyongyang Mining."
@@ -51,6 +51,21 @@
  the_chaebols_subdued:0 "The Golden Share"
 
  je_chaebol_rise:0 "The Rise of the Chaebols"
- je_chaebol_rise_reason:0 "Begin... And with your word, the Yangban Officials began to change. No longer mere beaurarats or officers but now, more. Will you come to regret this decision? \n  \n #R If you fail to complete this journal entry you will lose your extra company slots, do not pursue companies other than those listed here."
+ je_chaebol_rise_reason:0 "Begin... And with your word, the Yangban Officials began to change. No longer mere beaurarats or officers but now, more. Will you come to regret this decision? \n  \n #R If you fail to complete this journal entry you will lose your extra company slots, do not pursue companies other than those listed here, do not disband any of these companies once formed. #R"
  
- 
+ chaebol_event.2.t:0 "All that work for nothing :("
+ chaebol_event.2.d:0 "You have truly failed miserably, historians will remember you poorly."
+ chaebol_event.2.a:0 "All that work for nothing :("
+ chaebol_event.4.t:0 "All that work for nothing :("
+ chaebol_event.4.d:0 "You have truly failed miserably, historians will remember you poorly."
+ chaebol_event.4.a:0 "All that work for nothing :("
+ chaebol_event.3.t:0 "Your Efforts Are Appreciated"
+ chaebol_event.3.d:0 "You founded them to be servants. To make you rich. And truly, it seemed like a good idea at the time."
+ chaebol_event.3.f:0 "That these eight would slip your control could not have been forseen. But slip they have. The Yangban Officials have already been consumed. Will you reassert control, or be devoured yourself?"
+ chaebol_event.3.a:0 "Your Creations Appreicate Your Efforts"
+ the_chaebols_name:0 "The Chaebols"
+ ideology_chaebol_paternalistic:0 "Chaebol Paternalistic"
+ ideology_chaebol_paternalistic_desc:0 "This group has little faith in the populace attempting to govern itself, but favours evolving away from the traditional aristocracy towards a system better able to benefit the new institutions they control."
+ ideology_chaebol_hierarchic: "Chaebol Hierarchic"
+ ideology_chaebol_hierarchic_desc: "This group favours maintaining a hierarchy but supports change to shift power to the new institutions they control."
+  

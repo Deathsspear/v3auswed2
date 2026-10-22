@@ -1,0 +1,95 @@
+update_tech_decision = {
+	is_shown = {
+		is_player = yes
+		OR = {
+			country_has_primary_culture = cu:korean
+			country_has_primary_culture = cu:vietnamese
+		}
+		OR = {
+			NOT = { has_technology_researched = cotton_gin }
+			NOT = { has_technology_researched = lathe }
+			NOT = { has_technology_researched = atmospheric_engine }
+			NOT = { has_technology_researched = mechanical_tools }
+			NOT = { has_technology_researched = mandatory_service }
+			NOT = { has_technology_researched = line_infantry }
+			NOT = { has_technology_researched = army_reserves }
+			NOT = { has_technology_researched = napoleonic_warfare }
+			NOT = { has_technology_researched = paddle_steamer }
+			NOT = { has_technology_researched = urban_planning }
+			NOT = { has_technology_researched = law_enforcement }
+			NOT = { has_technology_researched = stock_exchange }
+			NOT = { has_technology_researched = currency_standards }
+			NOT = { has_technology_researched = colonization }
+			NOT = { has_technology_researched = banking }
+			NOT = { has_technology_researched = corporate_charters }
+			NOT = { has_technology_researched = academia }
+			NOT = { has_technology_researched = mass_communication }
+			NOT = { has_technology_researched = medical_degrees }
+			NOT = { has_technology_researched = romanticism }
+			NOT = { has_technology_researched = empiricism }
+			NOT = { has_technology_researched = dialectics }
+			NOT = { has_technology_researched = egalitarianism }
+		}
+	}
+
+	possible = {
+		is_player = yes
+		OR = {
+			NOT = { has_technology_researched = cotton_gin }
+			NOT = { has_technology_researched = lathe }
+			NOT = { has_technology_researched = atmospheric_engine }
+			NOT = { has_technology_researched = mechanical_tools }
+			NOT = { has_technology_researched = mandatory_service }
+			NOT = { has_technology_researched = line_infantry }
+			NOT = { has_technology_researched = army_reserves }
+			NOT = { has_technology_researched = napoleonic_warfare }
+			NOT = { has_technology_researched = paddle_steamer }
+			NOT = { has_technology_researched = urban_planning }
+			NOT = { has_technology_researched = law_enforcement }
+			NOT = { has_technology_researched = stock_exchange }
+			NOT = { has_technology_researched = currency_standards }
+			NOT = { has_technology_researched = colonization }
+			NOT = { has_technology_researched = banking }
+			NOT = { has_technology_researched = corporate_charters }
+			NOT = { has_technology_researched = academia }
+			NOT = { has_technology_researched = mass_communication }
+			NOT = { has_technology_researched = medical_degrees }
+			NOT = { has_technology_researched = romanticism }
+			NOT = { has_technology_researched = empiricism }
+			NOT = { has_technology_researched = dialectics }
+			NOT = { has_technology_researched = egalitarianism }
+			}
+		}
+
+	when_taken = {
+		#Production
+		add_technology_researched = cotton_gin
+		add_technology_researched = lathe
+		add_technology_researched = atmospheric_engine
+		add_technology_researched = mechanical_tools
+
+		#Military
+		add_technology_researched = mandatory_service
+		add_technology_researched = line_infantry
+		add_technology_researched = army_reserves
+		add_technology_researched = napoleonic_warfare
+		add_technology_researched = paddle_steamer
+
+		#Society
+		add_technology_researched = urban_planning
+		add_technology_researched = law_enforcement
+		add_technology_researched = stock_exchange
+		add_technology_researched = currency_standards
+		add_technology_researched = colonization
+		add_technology_researched = banking
+		add_technology_researched = corporate_charters
+		add_technology_researched = academia
+		add_technology_researched = mass_communication
+		add_technology_researched = medical_degrees
+		add_technology_researched = romanticism
+		add_technology_researched = empiricism
+		add_technology_researched = dialectics
+		add_technology_researched = egalitarianism
+	}
+}
+

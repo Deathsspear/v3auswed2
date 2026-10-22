@@ -159,7 +159,7 @@ je_chaebol_control = {
 	}
 
 	timeout = 7300
-	on_timeout = { id = chaebol_event.2 popup = yes }
+	on_timeout = { id = chaebol_event.4 popup = yes }
 
 	fail = {
 
