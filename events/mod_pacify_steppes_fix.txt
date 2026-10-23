@@ -1,0 +1,94 @@
+namespace = kazakhstan_events
+
+kazakhstan_events.99 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "gfx/event_pictures/ep1_central_asian_city.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = kazakhstan_events.3.t
+	desc = kazakhstan_events.3.d
+	flavor = kazakhstan_events.3.f
+
+	dlc = dlc010
+
+	duration = 3
+
+	trigger = {
+
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = kazakhstan_events.3.a
+        default_option = yes
+        every_country = {
+        	limit = {
+        		this = {
+					OR = {
+						country_has_primary_culture = cu:uzbek
+						country_has_primary_culture = cu:kazak
+
+					}
+        			
+        			is_subject_of = ROOT
+        		}
+        	}
+        	ROOT = {
+       			annex = prev
+        	}
+        }
+		every_state_region = {
+			limit = {
+				region = sr:region_central_asia
+				NOT = {
+					any_scope_state = {
+						owner = {
+							OR = {
+								country_has_primary_culture = cu:manchu
+								country_has_primary_culture = cu:han
+							}
+						}
+					}
+				}
+			}
+			add_claim = c:RUS
+		}
+	}
+	option = {
+		name = kazakhstan_events.3.b
+        every_country = {
+        	limit = {
+        		this = {
+					OR = {
+						country_has_primary_culture = cu:uzbek
+						country_has_primary_culture = cu:kazak
+					}
+        			is_subject_of = ROOT
+        		}
+        	}
+        	ROOT = {
+       			annex = prev
+        	}
+        }
+        every_scope_state = {
+        	limit = {
+        		state_region = {
+        			is_homeland = cu:uzbek
+        		}
+        	}
+        	add_modifier = {
+        		name = modifier_defeat_of_kenesary_khan
+        		days = normal_modifier_time
+        	}
+        }
+	}
+}
