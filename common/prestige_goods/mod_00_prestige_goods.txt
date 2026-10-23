@@ -1,4 +1,4 @@
-prestige_good_saigon_latex = {
+﻿prestige_good_saigon_latex = {
 	possible = {
 		has_dlc_feature = mp1_content
 	}
@@ -38,19 +38,19 @@ prestige_good_living_locomotive = {
 	possible = {
 		has_dlc_feature = mp1_content
 	}
-	base_good = engines
+	base_good = tools
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/living_locomotive.dds"
 }
 
-prestige_good_koksan_leaf = {
-	possible = {
-		has_dlc_feature = mp1_content
-	}
-	base_good = tobacco
-	prestige_bonus = 0.1
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/koksan_leaf.dds"
-}
+#prestige_good_koksan_leaf = {
+#	possible = {
+#		has_dlc_feature = mp1_content
+#	}
+#	base_good = tobacco
+#	prestige_bonus = 0.1
+#	texture = "gfx/interface/icons/goods_icons/prestige_goods/koksan_leaf.dds"
+#}
 
 prestige_good_leviathans_balm = {
 	possible = {
@@ -74,7 +74,7 @@ prestige_good_siwidae_cannons = {
 	possible = {
 		has_dlc_feature = mp1_content
 	}
-	base_good = artillery
+	base_good = fertilizer
 	prestige_bonus = 0.1
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/siwidae_artillery.dds"
 }

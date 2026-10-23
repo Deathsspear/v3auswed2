@@ -1,4 +1,4 @@
-update_tech_decision = {
+﻿update_tech_decision = {
 	is_shown = {
 		is_player = yes
 		OR = {

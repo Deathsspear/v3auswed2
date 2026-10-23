@@ -1,4 +1,4 @@
-the_chaebols_modifier = {
+﻿the_chaebols_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 		country_max_companies_add = 7
 		country_free_charters_add = 25
@@ -27,51 +27,51 @@ the_chaebols_established_modifier = {
 
 the_chaebols_anthracite_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_living_engines_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_gromwell_purple_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_ginseng_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_koksan_leaf_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_leviathans_balm_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_dragonfly_robes_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_siwidae_cannons_interest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.02
+		tax_dividends_add = 0.01
 }
 
 the_chaebols_subdued = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-		tax_dividends_add = 0.2
+		tax_dividends_add = 0.15
 		country_prestige_mult = 0.1
 		country_authority_mult = -0.05
 		country_bureaucracy_mult = -0.05
-		interest_group_ig_landowners_pol_str_mult = -0.2		
+		interest_group_ig_landowners_pol_str_mult = -0.3		
 }
 
 the_chaebols_give_temporary_approval = {

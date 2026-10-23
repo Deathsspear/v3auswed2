@@ -1,4 +1,4 @@
-REPLACE:je_caucasian_war = {
+﻿REPLACE:je_caucasian_war = {
     icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
     group = je_group_russia_expansion

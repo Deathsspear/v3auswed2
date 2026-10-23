@@ -1,4 +1,4 @@
-# Guthrie & Co.
+﻿# Guthrie & Co.
 REPLACE:company_guthrie = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_guthrie.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
@@ -49,7 +49,6 @@ REPLACE:company_guthrie = {
 		building_rubber_plantation_throughput_add = 0.15
         building_group_bg_plantations_laborers_mortality_mult = 0.05		
 	}
-
 }
 
 # Doyeinseo Offices
@@ -70,8 +69,6 @@ doyeinso_offices_mod_company = {
 		building_dye_plantation
         building_synthetics_plant
 	}
-
-
 
 	possible_prestige_goods = {
 		prestige_good_gromwell_purple
@@ -95,14 +92,15 @@ doyeinso_offices_mod_company = {
 
   	possible = {
 		country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_dye_plantation
 				level >= 5
 			}
 		}
+	}
 }
 
 # Busan Trains
@@ -117,6 +115,7 @@ busan_train_mod_company = {
 	building_types = {
 		building_steel_mill
 		building_motor_industry
+		building_tooling_workshop
 	}
 
 	extension_building_types = {
@@ -140,19 +139,20 @@ busan_train_mod_company = {
 	}
 
 	prosperity_modifier = {
-		ship_armor_mult = 0.1
+		ship_armor_mult = 0.15
 	}
 
   	possible = {
 		country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_motor_industry
 				level >= 5
 			}
 		}
+	}
 }
 
 # Pyongyang Mining
@@ -190,19 +190,20 @@ pyongyang_mining_mod_company = {
 	}
 
 	prosperity_modifier = {
-		ship_critical_hit_chance_add = 0.1	
+		ship_critical_hit_chance_add = 0.15
 	}
 
   	possible = {
 			country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_coal_mine
 				level >= 5
 			}
 		}
+	}
 }
 
 
@@ -218,6 +219,7 @@ royal_herbalists_guild_mod_company = {
 	building_types = {
 		building_tea_plantation
 		building_opium_plantation
+		building_tobacco_plantation
 	}
 
 	extension_building_types = {
@@ -242,70 +244,73 @@ royal_herbalists_guild_mod_company = {
 
 	prosperity_modifier = {
 		state_mortality_mult = -0.1
+		building_group_bg_plantations_unincorporated_throughput_add = 0.2
 	}
 
   	possible = {
 		country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_tea_plantation
 				level >= 5
 			}
 		}
+	}
 }
 
 
-# Hwanghae Plantation Company
-hwanghae_plantation_mod_company = {
-	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
-
-	flavored_company = yes
-
-	preferred_headquarters = { STATE_YANGHO }
-
-	building_types = {
-		building_tobacco_plantation
-		building_rice_farm
-	}
-
-	extension_building_types = {
-		building_coffee_plantation
-		building_rubber_plantation
-	}
-
-	possible_prestige_goods = {
-		prestige_good_koksan_leaf
-	}
-
-	prestige_goods_trigger = {
-	}
-
-	potential = {
-		country_has_primary_culture = cu:korean
-	}
-
-	attainable = {
-		country_has_primary_culture = cu:korean
-	}
-
-	prosperity_modifier = {
-		building_group_bg_plantations_unincorporated_throughput_add = 0.2
-	}
-
-  	possible = {
-		country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
-			is_incorporated = yes
-			any_scope_building = {
-				is_building_type = building_tobacco_plantation
-				level >= 5
-			}
-		}
-}
+#Hwanghae Plantation Company
+#hwanghae_plantation_mod_company = {
+#	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
+#	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+#
+#	flavored_company = yes
+#
+#	preferred_headquarters = { STATE_YANGHO }
+#
+#	building_types = {
+#		building_tobacco_plantation
+#		building_rice_farm
+#	}
+#
+#	extension_building_types = {
+#		building_coffee_plantation
+#		building_rubber_plantation
+#	}
+#
+#	possible_prestige_goods = {
+#		prestige_good_koksan_leaf
+#	}
+#
+#	prestige_goods_trigger = {
+#	}
+#
+#	potential = {
+#		country_has_primary_culture = cu:korean
+#	}
+#
+#	attainable = {
+#		country_has_primary_culture = cu:korean
+#	}
+#
+#	prosperity_modifier = {
+#		building_group_bg_plantations_unincorporated_throughput_add = 0.2
+#	}
+#
+#  	possible = {
+#		country_has_primary_culture = cu:korean
+#       	any_scope_state = {
+#			is_in_geographic_region = geographic_region_korea
+#			is_incorporated = yes
+#			any_scope_building = {
+#				is_building_type = building_tobacco_plantation
+#				level >= 5
+#			}
+#		}
+#	}
+#}
 
 # Dunwall Whaling
 dunwall_whaling_mod_company = {
@@ -347,14 +352,15 @@ dunwall_whaling_mod_company = {
 
   	possible = {
 		country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_whaling_station
 				level >= 5
 			}
 		}
+	}
 }
 
 # Mosi Textiles
@@ -392,19 +398,20 @@ mosi_textiles_mod_company = {
 	}
 
 	prosperity_modifier = {
-		interest_group_approval_add = 3
+		interest_group_approval_add = 1
 	}
 
   	possible = {
 		country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mill
 				level >= 5
 			}
 		}
+	}
 }
 
 # Gigi-Gang Arsenal
@@ -418,13 +425,14 @@ gigigang_arsenal_mod_company = {
 
 	building_types = {
 		building_arms_industry
-		building_artillery_foundry
-		building_munition_plant
+		building_chemical_plants
+		building_explosives_factory
 	}
 
 	extension_building_types = {
-		building_explosives_factory
+		building_munition_plant
 		building_logging_camp
+		building_artillery_foundry
 	}
 
 	possible_prestige_goods = {
@@ -449,12 +457,13 @@ gigigang_arsenal_mod_company = {
 
   	possible = {
 		country_has_primary_culture = cu:korean
-        	any_scope_state = 
-			is_in_geographic_region = geographic_region_northeast_asia
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_artillery_foundry
 				level >= 5
 			}
 		}
+	}
 }

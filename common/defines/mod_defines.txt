@@ -1,4 +1,4 @@
-NDiplomacy = {
+﻿NDiplomacy = {
 TREATY_DEFAULT_BINDING_DURATION_YEARS = 1 #adjusted default binding duration to 1 year. - blaze
 
 }

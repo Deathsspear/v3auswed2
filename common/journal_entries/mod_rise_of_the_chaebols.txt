@@ -1,4 +1,4 @@
-je_chaebol_rise = {
+﻿je_chaebol_rise = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_historical_content
@@ -20,7 +20,7 @@ je_chaebol_rise = {
 		has_company = busan_train_mod_company 
 		has_company = pyongyang_mining_mod_company 
 		has_company = royal_herbalists_guild_mod_company 
-		has_company = hwanghae_plantation_mod_company 
+		#has_company = hwanghae_plantation_mod_company 
 		has_company = dunwall_whaling_mod_company 
 		has_company = mosi_textiles_mod_company 
 		has_company = gigigang_arsenal_mod_company 
@@ -34,10 +34,9 @@ je_chaebol_rise = {
 	}
 
 	timeout = 5475
-	on_timeout = { id = chaebol_event.2 popup = yes }
+	on_timeout = { trigger_event = { id = chaebol_event.2 popup = yes } }
 
 	fail = {
-
 	}
 
 	on_fail = {
@@ -57,6 +56,7 @@ je_chaebol_control = {
 
 	possible = {
 		c:KOR ?= this
+		has_variable = chaebol_risen
 	}
 
 	immediate = {
@@ -71,7 +71,7 @@ je_chaebol_control = {
 
 	scripted_button = je_chaebol_control_ginseng
 
-	scripted_button = je_chaebol_control_koksan_leaf
+	#scripted_button = je_chaebol_control_koksan_leaf
 
 	scripted_button = je_chaebol_control_leviathans_balm
 
@@ -93,10 +93,10 @@ je_chaebol_control = {
 			text = ginseng_controlled
 			has_variable = je_chaebol_control_ginseng	
 		}
-		custom_tooltip = {
-			text = koksan_leaf_controlled
-			has_variable = je_chaebol_control_koksan_leaf	
-		}
+		#custom_tooltip = {
+		#	text = koksan_leaf_controlled
+		#	has_variable = je_chaebol_control_koksan_leaf	
+		#}
 		custom_tooltip = {
 			text = leviathans_balm_controlled
 			has_variable = je_chaebol_control_leviathans_balm	
@@ -112,7 +112,6 @@ je_chaebol_control = {
 	}
 
 	on_complete = {
-		set_variable = chaebol_risen
 		if = {
 			limit = { has_modifier = the_chaebols_anthracite_interest }
 			remove_modifier = the_chaebols_anthracite_interest
@@ -129,10 +128,10 @@ je_chaebol_control = {
 			limit = { has_modifier = the_chaebols_ginseng_interest }
 			remove_modifier = the_chaebols_ginseng_interest
 		}
-		if = {
-			limit = { has_modifier = the_chaebols_koksan_leaf_interest }
-			remove_modifier = the_chaebols_koksan_leaf_interest
-		}
+		#if = {
+		#	limit = { has_modifier = the_chaebols_koksan_leaf_interest }
+		#	remove_modifier = the_chaebols_koksan_leaf_interest
+		#}
 		if = {
 			limit = { has_modifier = the_chaebols_leviathans_balm_interest }
 			remove_modifier = the_chaebols_leviathans_balm_interest
@@ -159,10 +158,9 @@ je_chaebol_control = {
 	}
 
 	timeout = 7300
-	on_timeout = { id = chaebol_event.4 popup = yes }
+	on_timeout = { trigger_event = { id = chaebol_event.4 popup = yes } }
 
 	fail = {
-
 	}
 
 	on_fail = {

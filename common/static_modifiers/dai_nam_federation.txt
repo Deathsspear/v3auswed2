@@ -1,4 +1,4 @@
-dai_nam_federated = {
+﻿dai_nam_federated = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	country_prestige_add = 25
 	battle_defense_owned_province_mult = 0.15
