@@ -1,4 +1,4 @@
-cu_homeland_decision = {
+﻿cu_homeland_decision = {
 	is_shown = {
 		always = no
 		is_player = yes

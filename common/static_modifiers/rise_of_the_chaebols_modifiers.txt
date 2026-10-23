@@ -1,0 +1,80 @@
+﻿the_chaebols_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		country_max_companies_add = 7
+		country_free_charters_add = 25
+}
+
+the_chaebols_landowners_happy_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		interest_group_ig_landowners_approval_add = 2
+		building_construction_sector_throughput_add = 0.05
+}
+
+the_chaebols_inefficient_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+		country_company_throughput_bonus_add = -0.25
+		country_company_construction_efficiency_bonus_add = -0.35
+		country_authority_mult = -0.10
+		country_bureaucracy_mult = -0.10
+		state_decree_cost_mult = 0.50
+		country_consumption_tax_cost_mult = 0.50
+}
+
+the_chaebols_established_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		interest_group_ig_landowners_pol_str_mult = 0.2
+}
+
+the_chaebols_anthracite_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_living_engines_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_gromwell_purple_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_ginseng_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_koksan_leaf_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_leviathans_balm_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_dragonfly_robes_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_siwidae_cannons_interest = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.01
+}
+
+the_chaebols_subdued = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		tax_dividends_add = 0.15
+		country_prestige_mult = 0.1
+		country_authority_mult = -0.05
+		country_bureaucracy_mult = -0.05
+		interest_group_ig_landowners_pol_str_mult = -0.3		
+}
+
+the_chaebols_give_temporary_approval = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		interest_group_ig_landowners_approval_add = 2	
+}

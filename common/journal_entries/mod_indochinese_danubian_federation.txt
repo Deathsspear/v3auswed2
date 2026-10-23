@@ -1,0 +1,133 @@
+﻿je_indochinese_federation = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		#has_dlc_feature = ip3_content
+		#has_technology_researched = nationalism
+		c:DAI ?= this
+	}
+
+	possible = {
+		c:DAI ?= this
+		#NOT = { is_unification_candidate = GER }
+		#has_technology_researched = pan-nationalism
+		NOR = {
+			has_law_or_variant = law_type:law_ethnostate
+			has_law_or_variant = law_type:law_national_supremacy
+		}
+	}
+
+	immediate = {
+		ig:ig_armed_forces ?= {
+			save_scope_as = armed_forces_ig
+		}
+		set_variable = { name = count_integrated_cultures value = 0 }
+		set_variable = { name = count_disqualified_cultures value = 0 }
+		#if = {
+			#limit = {
+				#NOT = {
+				#	has_variable = received_federation_proposal
+				#}
+			#}
+			trigger_event = { id = austria_federation.1 popup = yes }
+		#}
+		danubian_federation_calculate_path_to_victory = yes
+	}
+
+	scripted_button = indochinese_campaign_button
+	scripted_button = indochinese_colonisation_button
+
+	scripted_button = je_indochinese_federation_malay_button
+	scripted_button = je_indochinese_federation_khmer_button
+	scripted_button = je_indochinese_federation_lao_button
+	
+	
+	scripted_button = je_indochinese_federation_thai_button
+
+	#scripted_button = je_danubian_federation_karen_button
+	scripted_button = je_indochinese_federation_burmese_button
+	scripted_button = je_indochinese_federation_shan_button
+	#scripted_button = je_danubian_federation_ukrainian_button
+	scripted_button = je_indochinese_federation_enact_the_federation_button
+
+	on_weekly_pulse = {
+
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			danubian_federation_calculate_path_to_victory = yes
+		}
+	}
+
+		complete = {
+			trigger_if = {
+				limit = {
+					has_variable = count_integrated_cultures
+				}
+				custom_tooltip = {
+					text = has_integrated_5_danubian_cultures_tt
+					var:count_integrated_cultures >= 5
+				}
+			}
+			custom_tooltip = {
+				text = danubian_federation_final_act_tt
+				has_variable = danubian_federation_final_act
+			}
+			is_diplomatic_play_committed_participant = no
+			is_at_war = no
+		}
+
+	on_complete = {
+	
+		
+		trigger_event = { id = austria_federation.2 }
+		set_variable = danubian_federation_done_with
+		#set_variable = achievement_danubian_federation
+	}
+
+	event_outcome_completed_desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = event_effects_austria_federation.2_tt
+			}
+		}
+	}
+
+	fail = {
+			has_law_or_variant = law_type:law_ethnostate
+			has_law_or_variant = law_type:law_national_supremacy
+	}
+
+	on_fail = {
+		custom_tooltip = lose_integrated_cultures_tt
+		if = {
+			limit = {
+				has_variable_list = aus_integrated_cultures
+			}
+			every_in_list = {
+				variable = aus_integrated_cultures
+				if = {
+					limit = {
+						is_primary_culture_of = ROOT
+					}
+					ROOT = {
+						remove_primary_culture = prev
+					}
+				}
+			}
+		}
+		set_variable = danubian_federation_done_with
+	}
+
+	#invalid = {
+	#	has_variable = shelved_federation_proposal
+	#}
+
+	weight = 100
+
+		
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}

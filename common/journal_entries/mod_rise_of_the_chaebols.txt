@@ -1,0 +1,170 @@
+﻿je_chaebol_rise = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		c:KOR ?= this
+	}
+
+	possible = {
+		c:KOR ?= this
+		}
+
+	immediate = {
+		trigger_event = { id = chaebol_event.1 popup = yes }
+	}
+
+	complete = {
+		has_company = doyeinso_offices_mod_company 
+		has_company = busan_train_mod_company 
+		has_company = pyongyang_mining_mod_company 
+		has_company = royal_herbalists_guild_mod_company 
+		#has_company = hwanghae_plantation_mod_company 
+		has_company = dunwall_whaling_mod_company 
+		has_company = mosi_textiles_mod_company 
+		has_company = gigigang_arsenal_mod_company 
+	}
+
+	on_complete = {
+		set_variable = chaebol_risen
+		add_modifier = {
+			name = the_chaebols_established_modifier
+		}
+	}
+
+	timeout = 5475
+	on_timeout = { trigger_event = { id = chaebol_event.2 popup = yes } }
+
+	fail = {
+	}
+
+	on_fail = {
+	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
+
+je_chaebol_control = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		c:KOR ?= this
+	}
+
+	possible = {
+		c:KOR ?= this
+		has_variable = chaebol_risen
+	}
+
+	immediate = {
+		trigger_event = { id = chaebol_event.3 popup = yes }
+	}
+
+	scripted_button = je_chaebol_control_anthracite
+
+	scripted_button = je_chaebol_control_living_engines
+
+	scripted_button = je_chaebol_control_gromwell_purple
+
+	scripted_button = je_chaebol_control_ginseng
+
+	#scripted_button = je_chaebol_control_koksan_leaf
+
+	scripted_button = je_chaebol_control_leviathans_balm
+
+	scripted_button = je_chaebol_control_dragonfly_robes
+
+	scripted_button = je_chaebol_control_siwidae_cannons
+
+
+	complete = {
+		custom_tooltip = {
+			text = anthracite_controlled
+			has_variable = je_chaebol_control_anthracite	
+		}
+		custom_tooltip = {
+			text = living_engines_controlled
+			has_variable = je_chaebol_control_living_engines	
+		}
+		custom_tooltip = {
+			text = ginseng_controlled
+			has_variable = je_chaebol_control_ginseng	
+		}
+		#custom_tooltip = {
+		#	text = koksan_leaf_controlled
+		#	has_variable = je_chaebol_control_koksan_leaf	
+		#}
+		custom_tooltip = {
+			text = leviathans_balm_controlled
+			has_variable = je_chaebol_control_leviathans_balm	
+		}
+		custom_tooltip = {
+			text = dragonfly_robes_controlled
+			has_variable = je_chaebol_control_dragonfly_robes	
+		}
+		custom_tooltip = {
+			text = siwidae_cannons_controlled
+			has_variable = je_chaebol_control_siwidae_cannons	
+		}
+	}
+
+	on_complete = {
+		if = {
+			limit = { has_modifier = the_chaebols_anthracite_interest }
+			remove_modifier = the_chaebols_anthracite_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_living_engines_interest }
+			remove_modifier = the_chaebols_living_engines_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_gromwell_purple_interest }
+			remove_modifier = the_chaebols_gromwell_purple_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_ginseng_interest }
+			remove_modifier = the_chaebols_ginseng_interest
+		}
+		#if = {
+		#	limit = { has_modifier = the_chaebols_koksan_leaf_interest }
+		#	remove_modifier = the_chaebols_koksan_leaf_interest
+		#}
+		if = {
+			limit = { has_modifier = the_chaebols_leviathans_balm_interest }
+			remove_modifier = the_chaebols_leviathans_balm_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_dragonfly_robes_interest }
+			remove_modifier = the_chaebols_dragonfly_robes_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_siwidae_cannons_interest }
+			remove_modifier = the_chaebols_siwidae_cannons_interest
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_established_modifier }
+			remove_modifier = the_chaebols_established_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_inefficient_modifier }
+			remove_modifier = the_chaebols_inefficient_modifier
+		}
+		add_modifier = {
+			name = the_chaebols_subdued
+		}
+	}
+
+	timeout = 7300
+	on_timeout = { trigger_event = { id = chaebol_event.4 popup = yes } }
+
+	fail = {
+	}
+
+	on_fail = {
+	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}

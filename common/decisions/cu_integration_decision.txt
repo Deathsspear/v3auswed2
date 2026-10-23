@@ -1,4 +1,4 @@
-cu_integration_decision = {
+﻿cu_integration_decision = {
 	is_shown = {
 		always = no
 		is_player = yes

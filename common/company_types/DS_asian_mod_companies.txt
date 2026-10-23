@@ -1,0 +1,469 @@
+﻿# Guthrie & Co.
+REPLACE:company_guthrie = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/company_guthrie.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_MEKONG }
+
+	building_types = {
+		building_rubber_plantation
+		building_tooling_workshop
+        building_textile_mill 
+	}
+
+	extension_building_types = {
+		building_cotton_plantation 
+        building_silk_plantation 
+	}
+
+	possible_prestige_goods = {
+		prestige_good_saigon_latex
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:vietnamese
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:vietnamese
+	}
+
+    possible = {
+		country_has_primary_culture = cu:vietnamese
+        any_scope_state = {
+			is_in_geographic_region = geographic_region_indochina
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_rubber_plantation
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_rubber_plantation_throughput_add = 0.15
+        building_group_bg_plantations_laborers_mortality_mult = 0.05		
+	}
+}
+
+# Doyeinseo Offices
+doyeinso_offices_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_YANGHO }
+
+	extension_building_types = {
+		building_glassworks
+		building_paper_mill
+	}
+
+	building_types = {
+		building_dye_plantation
+        building_synthetics_plant
+	}
+
+	possible_prestige_goods = {
+		prestige_good_gromwell_purple
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		country_prestige_mult = 0.1
+        country_bureaucracy_mult = 0.05
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_dye_plantation
+				level >= 5
+			}
+		}
+	}
+}
+
+# Busan Trains
+busan_train_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_gold_mining.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/busan_train_company_undead.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_BUSAN }
+
+	building_types = {
+		building_steel_mill
+		building_motor_industry
+		building_tooling_workshop
+	}
+
+	extension_building_types = {
+		building_shipyard
+		building_railway	
+	}
+
+	possible_prestige_goods = {
+		prestige_good_living_locomotive
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		ship_armor_mult = 0.15
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_motor_industry
+				level >= 5
+			}
+		}
+	}
+}
+
+# Pyongyang Mining
+pyongyang_mining_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_gold_mining.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_PYONGYANG }
+
+	building_types = {
+		building_coal_mine
+		building_lead_mine
+	}
+
+	extension_building_types = {
+		building_iron_mine
+		building_gold_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_anthracite_coal
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		ship_critical_hit_chance_add = 0.15
+	}
+
+  	possible = {
+			country_has_primary_culture = cu:korean
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_coal_mine
+				level >= 5
+			}
+		}
+	}
+}
+
+
+# Royal Herbalists Guild
+royal_herbalists_guild_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_wine_and_fruit.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_BUSAN }
+
+	building_types = {
+		building_tea_plantation
+		building_opium_plantation
+		building_tobacco_plantation
+	}
+
+	extension_building_types = {
+        building_banana_plantation
+		building_sulfur_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_ginseng
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		state_mortality_mult = -0.1
+		building_group_bg_plantations_unincorporated_throughput_add = 0.2
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_tea_plantation
+				level >= 5
+			}
+		}
+	}
+}
+
+
+#Hwanghae Plantation Company
+#hwanghae_plantation_mod_company = {
+#	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
+#	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+#
+#	flavored_company = yes
+#
+#	preferred_headquarters = { STATE_YANGHO }
+#
+#	building_types = {
+#		building_tobacco_plantation
+#		building_rice_farm
+#	}
+#
+#	extension_building_types = {
+#		building_coffee_plantation
+#		building_rubber_plantation
+#	}
+#
+#	possible_prestige_goods = {
+#		prestige_good_koksan_leaf
+#	}
+#
+#	prestige_goods_trigger = {
+#	}
+#
+#	potential = {
+#		country_has_primary_culture = cu:korean
+#	}
+#
+#	attainable = {
+#		country_has_primary_culture = cu:korean
+#	}
+#
+#	prosperity_modifier = {
+#		building_group_bg_plantations_unincorporated_throughput_add = 0.2
+#	}
+#
+#  	possible = {
+#		country_has_primary_culture = cu:korean
+#       	any_scope_state = {
+#			is_in_geographic_region = geographic_region_korea
+#			is_incorporated = yes
+#			any_scope_building = {
+#				is_building_type = building_tobacco_plantation
+#				level >= 5
+#			}
+#		}
+#	}
+#}
+
+# Dunwall Whaling
+dunwall_whaling_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_fishing.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_SEOUL }
+
+	building_types = {
+		building_fishing_wharf
+		building_whaling_station
+	}
+
+	extension_building_types = {
+		building_oil_rig	
+		building_food_industry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_leviathans_balm
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		building_whaling_station_throughput_add = 1
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_whaling_station
+				level >= 5
+			}
+		}
+	}
+}
+
+# Mosi Textiles
+mosi_textiles_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_fabrics.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_SEOUL }
+
+	building_types = {
+		building_textile_mill
+		building_cotton_plantation	
+	}
+
+	extension_building_types = {
+		building_silk_plantation
+		building_livestock_ranch		
+	}
+
+	possible_prestige_goods = {
+		prestige_good_dragonfly_robes
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		interest_group_approval_add = 1
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mill
+				level >= 5
+			}
+		}
+	}
+}
+
+# Gigi-Gang Arsenal
+gigigang_arsenal_mod_company = {
+	icon = "gfx/interface/icons/company_icons/basic_munitions.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_SEOUL }
+
+	building_types = {
+		building_arms_industry
+		building_chemical_plants
+		building_explosives_factory
+	}
+
+	extension_building_types = {
+		building_munition_plant
+		building_logging_camp
+		building_artillery_foundry
+	}
+
+	possible_prestige_goods = {
+		prestige_good_siwidae_cannons
+	}
+
+	prestige_goods_trigger = {
+	}
+
+	potential = {
+		country_has_primary_culture = cu:korean
+	}
+
+	attainable = {
+		country_has_primary_culture = cu:korean
+	}
+
+	prosperity_modifier = {
+		ship_accuracy_mult  = 0.1
+		battle_defense_owned_province_mult = 0.1
+	}
+
+  	possible = {
+		country_has_primary_culture = cu:korean
+        	any_scope_state = {
+			is_in_geographic_region = geographic_region_korea
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_artillery_foundry
+				level >= 5
+			}
+		}
+	}
+}
