@@ -1,0 +1,11 @@
+﻿l_english:
+ building_investment_rights:0 "Building Investment Rights"
+ building_investment_rights_desc:0 "Grants one country foreign investment rights for one selected building type in another country."
+ building_investment_rights_effects_desc:0 "A limited investment agreement that permits the investing country to construct and own only the selected building type in the granting country.\nTreaty leverage generation: +30\nMaximum strategic region involvement: 200\nAcceptance: 10% of ordinary investment rights\nContinuously improves relations between both countries"
+ building_investment_rights_article_short_desc:0 "Allows [TARGET_COUNTRY.GetNameNoFormatting] to build and own one selected building type in [SOURCE_COUNTRY.GetNameNoFormatting]"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_BUILDING_INVESTMENT_RIGHTS_EFFECT:0 "• [TARGET_COUNTRY.GetName] may build and own [SelectLocalization(ArticleDraft.HasInputValue('building_type'), ArticleDraft.GetBuildingType.GetName, 'concept_building')] in [SOURCE_COUNTRY.GetName]"
+ TREATY_ARTICLE_FLAG_IS_BUILDING_INVESTMENT_RIGHTS_EFFECT:0 "• [TARGET_COUNTRY.GetName] may build and own [Article.GetBuildingType.GetName] in [SOURCE_COUNTRY.GetName]"
+ BUILDING_INVESTMENT_RIGHTS_BUILDING_REQUIRED:0 "A building type must be selected."
+ BUILDING_INVESTMENT_RIGHTS_INCOMPATIBLE_WITH_INVESTMENT_RIGHTS:0 "Ordinary investment rights already exist in this direction between these countries, so building investment rights cannot be signed."
+ INVESTMENT_RIGHTS_INCOMPATIBLE_WITH_BUILDING_INVESTMENT_RIGHTS:0 "Building investment rights already exist in this direction between these countries, so ordinary investment rights cannot be signed."
+ building_investment_building_allowed:0 "The investor has building investment rights for this building type."

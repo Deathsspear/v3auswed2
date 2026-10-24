@@ -1,0 +1,1 @@
+# Intentionally empty. No vanilla building definition is replaced.

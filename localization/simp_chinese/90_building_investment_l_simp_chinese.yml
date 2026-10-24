@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ building_investment_rights:0 "建筑投资权"
+ building_investment_rights_desc:0 "授予一个国家在另一个国家境内投资一种指定原版建筑的权利。"
+ building_investment_rights_effects_desc:0 "一项有限投资协议，允许投资国仅在授予国境内建造并拥有选定的建筑类型。\n条约影响产生：+30\n最高战略区域参与度：200\n接受度：普通投资权的10%\n持续改善双方关系"
+ building_investment_rights_article_short_desc:0 "允许[TARGET_COUNTRY.GetNameNoFormatting]在[SOURCE_COUNTRY.GetNameNoFormatting]境内建造并拥有一种指定建筑"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_BUILDING_INVESTMENT_RIGHTS_EFFECT:0 "•[TARGET_COUNTRY.GetName]可以在[SOURCE_COUNTRY.GetName]境内建造并拥有[SelectLocalization(ArticleDraft.HasInputValue('building_type'), ArticleDraft.GetBuildingType.GetName, 'concept_building')]"
+ TREATY_ARTICLE_FLAG_IS_BUILDING_INVESTMENT_RIGHTS_EFFECT:0 "•[TARGET_COUNTRY.GetName]可以在[SOURCE_COUNTRY.GetName]境内建造并拥有[Article.GetBuildingType.GetName]"
+ BUILDING_INVESTMENT_RIGHTS_BUILDING_REQUIRED:0 "必须选择一种建筑类型。"
+ BUILDING_INVESTMENT_RIGHTS_INCOMPATIBLE_WITH_INVESTMENT_RIGHTS:0 "两国在该投资方向上已经存在普通投资权，不能同时签署建筑投资权。"
+ INVESTMENT_RIGHTS_INCOMPATIBLE_WITH_BUILDING_INVESTMENT_RIGHTS:0 "两国在该投资方向上已经存在建筑投资权，不能同时签署普通投资权。"
+ building_investment_building_allowed:0 "投资国拥有该建筑类型的建筑投资权。"
