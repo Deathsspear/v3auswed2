@@ -1,13 +1,13 @@
 ﻿cu_homeland_decision = {
 	is_shown = {
-		always = no
+		#always = no
 		is_player = yes
 		NOT = { has_global_variable = homeland_merged }
 		has_global_variable = culture_merged
 	}
 
 	possible = {
-		always = no
+		#always = no
 		is_player = yes
 	}
 
