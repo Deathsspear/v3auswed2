@@ -1,4 +1,4 @@
-﻿types right_click_menu_types {
+types right_click_menu_types {
 	type right_click_menu_item = button {
 		name = "right_click_menu_item"
 		align = left|nobaseline
@@ -9302,6 +9302,11 @@ template article_input_items {
 		visible = "[ArticleDraft.HasType('acquire_monopoly_for_company')]"
 	}
 
+	### BUILDING INVESTMENT RIGHTS
+	article_input_building_investment = {
+		visible = "[ArticleDraft.HasType('building_investment_rights')]"
+	}
+
 	### LAW LIST
 	article_input_law_list = {
 		visible = "[ArticleDraft.HasType('law_commitment')]"
@@ -11844,6 +11849,251 @@ types article_input_types
 		}
 	}
 
+	### BUILDING INVESTMENT RIGHTS
+	type building_investment_explicit_item = container {
+		size = { 100 120 }
+
+		grid_button = {
+			tooltipwidget = {
+				FancyTooltip_BuildingType = {}
+			}
+			blockoverride "min_width" { min_width = 100 }
+			blockoverride "properties" {
+				enabled = yes
+				onclick = "[ArticleDraft.SetBuildingType(BuildingType.Self)]"
+			}
+			blockoverride "texture" { texture = "[BuildingType.GetIcon]" }
+			blockoverride "text_middle" { text = "[BuildingType.GetNameNoFormatting]" }
+			blockoverride "text_bottom_alpha" {
+				alpha = "[Select_float(GreaterThan_int32(BuildingType.GetNumLevelsInCountryRaw(ArticleDraft.GetFirstOrSource.Self),'(int32)0'),'(float)1.0','(float)0.5')]"
+			}
+			blockoverride "text_bottom" {
+				raw_text = "[SelectLocalization(GreaterThan_int32(BuildingType.GetNumLevelsInCountryRaw(ArticleDraft.GetFirstOrSource.Self),'(int32)0'),BuildingType.GetProductivitySpanDesc(ArticleDraft.GetFirstOrSource.Self),'NO_LEVELS')]"
+			}
+			blockoverride "default_button" { using = default_button }
+		}
+
+		icon = {
+			visible = "[ObjectsEqual(ArticleDraft.GetBuildingType.Self, BuildingType.Self)]"
+			alwaystransparent = yes
+			size = { 100% 100% }
+			using = highlighted_square_selection
+		}
+	}
+
+	type article_input_building_investment = flowcontainer {
+		parentanchor = hcenter
+		direction = vertical
+
+		default_header_clean_faded = {
+			layoutpolicy_horizontal = expanding
+			size = { 300 44 }
+			blockoverride "text" { text = "ARTICLE_INPUT_SELECT_BUILDING_TYPE_HEADER" }
+		}
+
+		fixedgridbox = {
+			parentanchor = hcenter
+			datamodel = "[DataModelRepeatedItem('(int32)47')]"
+			datamodel_wrap = 3
+			flipdirection = yes
+			addcolumn = 100
+			addrow = 120
+
+			item = {
+				container = {
+					size = { 100 120 }
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)0')]" 
+					datacontext = "[GetBuildingType('building_food_industry')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)1')]" 
+					datacontext = "[GetBuildingType('building_textile_mill')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)2')]" 
+					datacontext = "[GetBuildingType('building_furniture_manufactory')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)3')]" 
+					datacontext = "[GetBuildingType('building_glassworks')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)4')]" 
+					datacontext = "[GetBuildingType('building_tooling_workshop')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)5')]" 
+					datacontext = "[GetBuildingType('building_paper_mill')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)6')]" 
+					datacontext = "[GetBuildingType('building_chemical_plant')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)7')]" 
+					datacontext = "[GetBuildingType('building_explosives_factory')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)8')]" 
+					datacontext = "[GetBuildingType('building_synthetics_plant')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)9')]" 
+					datacontext = "[GetBuildingType('building_steel_mill')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)10')]" 
+					datacontext = "[GetBuildingType('building_motor_industry')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)11')]" 
+					datacontext = "[GetBuildingType('building_automotive_industry')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)12')]" 
+					datacontext = "[GetBuildingType('building_electrics_industry')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)13')]" 
+					datacontext = "[GetBuildingType('building_shipyard')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)14')]" 
+					datacontext = "[GetBuildingType('building_arms_industry')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)15')]" 
+					datacontext = "[GetBuildingType('building_artillery_foundry')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)16')]" 
+					datacontext = "[GetBuildingType('building_munition_plant')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)17')]" 
+					datacontext = "[GetBuildingType('building_rye_farm')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)18')]" 
+					datacontext = "[GetBuildingType('building_wheat_farm')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)19')]" 
+					datacontext = "[GetBuildingType('building_rice_farm')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)20')]" 
+					datacontext = "[GetBuildingType('building_maize_farm')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)21')]" 
+					datacontext = "[GetBuildingType('building_millet_farm')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)22')]" 
+					datacontext = "[GetBuildingType('building_livestock_ranch')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)23')]" 
+					datacontext = "[GetBuildingType('building_vineyard')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)24')]" 
+					datacontext = "[GetBuildingType('building_coffee_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)25')]" 
+					datacontext = "[GetBuildingType('building_cotton_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)26')]" 
+					datacontext = "[GetBuildingType('building_dye_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)27')]" 
+					datacontext = "[GetBuildingType('building_opium_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)28')]" 
+					datacontext = "[GetBuildingType('building_tea_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)29')]" 
+					datacontext = "[GetBuildingType('building_tobacco_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)30')]" 
+					datacontext = "[GetBuildingType('building_sugar_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)31')]" 
+					datacontext = "[GetBuildingType('building_banana_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)32')]" 
+					datacontext = "[GetBuildingType('building_silk_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)33')]" 
+					datacontext = "[GetBuildingType('building_coal_mine')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)34')]" 
+					datacontext = "[GetBuildingType('building_iron_mine')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)35')]" 
+					datacontext = "[GetBuildingType('building_lead_mine')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)36')]" 
+					datacontext = "[GetBuildingType('building_sulfur_mine')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)37')]" 
+					datacontext = "[GetBuildingType('building_gold_mine')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)38')]" 
+					datacontext = "[GetBuildingType('building_logging_camp')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)39')]" 
+					datacontext = "[GetBuildingType('building_rubber_plantation')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)40')]" 
+					datacontext = "[GetBuildingType('building_fishing_wharf')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)41')]" 
+					datacontext = "[GetBuildingType('building_whaling_station')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)42')]" 
+					datacontext = "[GetBuildingType('building_oil_rig')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)43')]" 
+					datacontext = "[GetBuildingType('building_art_academy')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)44')]" 
+					datacontext = "[GetBuildingType('building_power_plant')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)45')]" 
+					datacontext = "[GetBuildingType('building_port')]" 
+				}
+				building_investment_explicit_item = {
+					visible = "[EqualTo_int32(PdxGuiWidget.AccessParent.GetIndexInDataModel, '(int32)46')]" 
+					datacontext = "[GetBuildingType('building_railway')]" 
+				}
+				}
+			}
+		}
+	}
 	### COMPANY MONOPOLY
 	type article_input_company_monopoly = flowcontainer {
 		parentanchor = hcenter
