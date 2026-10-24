@@ -2357,3 +2357,74 @@ REPLACE:company_massey_harris = {
 		value = 3 # Higher base value for flavored companies
 	}
 }
+# Kablin Irmãos & Cia.
+REPLACE:company_kablin = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/brazil_kablin_irmaos_and_cia.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	flavored_company = yes
+
+	building_types = {
+		building_paper_mill
+		building_logging_camp
+	}
+
+	extension_building_types = {
+		building_sulfur_mine
+	}
+
+	possible_prestige_goods = {
+		prestige_good_rosewood
+	}
+
+	potential = {
+		has_interest_marker_in_region = sr:region_brazil
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				region = sr:region_brazil
+			}
+		}
+	}
+
+	possible = {
+		#has_technology_researched = mechanical_tools
+		any_scope_state = {
+			region = sr:region_brazil
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_paper_mill
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_tooling_workshop_throughput_add = 0.1
+		state_infrastructure_from_population_max_add = 15
+	}
+
+	ai_will_do = {
+		has_technology_researched = mechanical_tools
+		any_scope_state = {
+			region = sr:region_brazil
+			is_incorporated = yes
+		}
+	}
+
+	ai_construction_targets = {
+		building_paper_mill = {
+			level = 5
+			state_trigger = {
+				region = sr:region_brazil
+				is_incorporated = yes
+			}
+		}
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
