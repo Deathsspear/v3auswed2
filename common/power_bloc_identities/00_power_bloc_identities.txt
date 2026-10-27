@@ -41,7 +41,7 @@
 
 	cohesion = {
 		add = {
-			add = 0.15
+			add = 1
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_BASE
 		}
@@ -170,7 +170,7 @@ identity_sovereign_empire = {
 		power_bloc_invite_acceptance_major_power_add = -10
 		power_bloc_invite_acceptance_unrecognized_major_power_add = -10
 		power_bloc_invite_acceptance_add = -30
-		power_bloc_cohesion_per_member_add = -3
+		power_bloc_cohesion_per_member_add = -10
 	}
 
 	leader_modifier = {
@@ -212,7 +212,7 @@ identity_sovereign_empire = {
 
 	cohesion = {
 		add = {
-			add = 0.3
+			add = 1
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_BASE
 		}
@@ -517,7 +517,7 @@ identity_military_treaty_organization = {
 
 	cohesion = {
 		add = {
-			add = 0.3
+			add = 1
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_BASE
 		}
@@ -688,7 +688,7 @@ identity_religious = {
 
 	cohesion = {
 		add = {
-			add = 0.3
+			add = 1
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_BASE
 		}
@@ -878,7 +878,7 @@ identity_cultural = {
 
 	cohesion = {
 		add = {
-			add = 0.3
+			add = 1
 			multiply = define:NPowerBlocs|COHESION_TARGET_MAX
 			desc = POWER_BLOC_COHESION_BASE
 		}

@@ -56,6 +56,8 @@ doyeinso_offices_mod_company = {
 	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
+	category = aristocrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_YANGHO }
@@ -108,6 +110,8 @@ busan_train_mod_company = {
 	icon = "gfx/interface/icons/company_icons/basic_gold_mining.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/busan_train_company_undead.dds"
 
+	category = aristocrat_owned.
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_BUSAN }
@@ -148,7 +152,7 @@ busan_train_mod_company = {
 			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_motor_industry
+				is_building_type = building_tooling_workshop
 				level >= 5
 			}
 		}
@@ -159,6 +163,8 @@ busan_train_mod_company = {
 pyongyang_mining_mod_company = {
 	icon = "gfx/interface/icons/company_icons/basic_gold_mining.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = yes
 
@@ -211,6 +217,8 @@ pyongyang_mining_mod_company = {
 royal_herbalists_guild_mod_company = {
 	icon = "gfx/interface/icons/company_icons/basic_wine_and_fruit.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = yes
 
@@ -266,6 +274,8 @@ royal_herbalists_guild_mod_company = {
 #	icon = "gfx/interface/icons/company_icons/basic_silk_and_dye.dds"
 #	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 #
+#	category = aristocrat_owned
+#
 #	flavored_company = yes
 #
 #	preferred_headquarters = { STATE_YANGHO }
@@ -316,6 +326,8 @@ royal_herbalists_guild_mod_company = {
 dunwall_whaling_mod_company = {
 	icon = "gfx/interface/icons/company_icons/basic_fishing.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_harbor_shipbuilding.dds"
+
+	category = aristocrat_owned
 
 	flavored_company = yes
 
@@ -368,6 +380,8 @@ mosi_textiles_mod_company = {
 	icon = "gfx/interface/icons/company_icons/basic_fabrics.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
+	category = aristocrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_SEOUL }
@@ -419,13 +433,15 @@ gigigang_arsenal_mod_company = {
 	icon = "gfx/interface/icons/company_icons/basic_munitions.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 
+	category = aristocrat_owned
+
 	flavored_company = yes
 
 	preferred_headquarters = { STATE_SEOUL }
 
 	building_types = {
 		building_arms_industry
-		building_chemical_plants
+		building_chemical_plant
 		building_explosives_factory
 	}
 
@@ -451,8 +467,8 @@ gigigang_arsenal_mod_company = {
 	}
 
 	prosperity_modifier = {
-		ship_accuracy_mult  = 0.1
-		battle_defense_owned_province_mult = 0.1
+		ship_accuracy_mult = 0.1
+		battle_defense_owned_province_mult = 0.10
 	}
 
   	possible = {
@@ -461,7 +477,7 @@ gigigang_arsenal_mod_company = {
 			is_in_geographic_region = geographic_region_korea
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_artillery_foundry
+				is_building_type = building_chemical_plant
 				level >= 5
 			}
 		}

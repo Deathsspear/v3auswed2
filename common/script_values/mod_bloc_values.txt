@@ -1,0 +1,30 @@
+﻿REPLACE:power_bloc_mandate_progress_by_rank = {
+
+    value = {
+    if = {
+        limit = {
+            year < 1870
+        }
+        value = 31
+    }   
+    if = {
+        limit = {
+            year >= 1870
+        }
+        value = 155
+    }    
+
+#    subtract = power_bloc_rank
+#    min = 1
+
+#    if = {
+#        limit = {
+#            power_bloc_rank > 5
+#        }
+#        multiply = 4
+#    }
+
+    desc = "POWER_BLOC_MANDATE_PROGRESS_BASE"
+    
+    }
+}

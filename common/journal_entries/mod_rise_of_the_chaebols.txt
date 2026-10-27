@@ -33,7 +33,7 @@
 		}
 	}
 
-	timeout = 5475
+	timeout = 9125
 	on_timeout = { trigger_event = { id = chaebol_event.2 popup = yes } }
 
 	fail = {
@@ -157,7 +157,7 @@ je_chaebol_control = {
 		}
 	}
 
-	timeout = 7300
+	timeout = 12775
 	on_timeout = { trigger_event = { id = chaebol_event.4 popup = yes } }
 
 	fail = {
