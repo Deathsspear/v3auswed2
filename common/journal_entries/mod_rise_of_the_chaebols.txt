@@ -93,10 +93,10 @@ je_chaebol_control = {
 			text = ginseng_controlled
 			has_variable = je_chaebol_control_ginseng	
 		}
-		#custom_tooltip = {
-		#	text = koksan_leaf_controlled
-		#	has_variable = je_chaebol_control_koksan_leaf	
-		#}
+		custom_tooltip = {
+			text = gromwell_purple_controlled
+			has_variable = je_chaebol_control_gromwell_purple	
+		}
 		custom_tooltip = {
 			text = leviathans_balm_controlled
 			has_variable = je_chaebol_control_leviathans_balm	
@@ -151,6 +151,10 @@ je_chaebol_control = {
 		if = {
 			limit = { has_modifier = the_chaebols_inefficient_modifier }
 			remove_modifier = the_chaebols_inefficient_modifier
+		}
+		if = {
+			limit = { has_modifier = the_chaebols_landowners_happy_modifier }
+			remove_modifier = the_chaebols_landowners_happy_modifier
 		}
 		add_modifier = {
 			name = the_chaebols_subdued

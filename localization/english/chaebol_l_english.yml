@@ -44,7 +44,7 @@
  anthracite_controlled:0 "An interest in Anthracite secured"
  living_engines_controlled:0 "An interest in Living Tools secured"
  ginseng_controlled:0 "An interest in Ginseng secured"
- koksan_leaf_controlled:0 "An interest in Koksan Leaf secured"
+ gromwell_purple_controlled:0 "An interest in Gromwell Purple secured"
  leviathans_balm_controlled:0 "An interest in Leviathans Balm secured"
  dragonfly_robes_controlled:0 "An interest in Dragonfly Robes secured"
  siwidae_cannons_controlled:0 "An interest in Sulfur Bentonite secured"
@@ -68,4 +68,4 @@
  ideology_chaebol_paternalistic_desc:0 "This group has little faith in the populace attempting to govern itself, but favours evolving away from the traditional aristocracy towards a system better able to benefit the new institutions they control."
  ideology_chaebol_hierarchic: "Chaebol Hierarchic"
  ideology_chaebol_hierarchic_desc: "This group favours maintaining a hierarchy but supports change to shift power to the new institutions they control."
-  
+ the_chaebols_give_temporary_approval:0 "Your Efforts Are Appreciated"
