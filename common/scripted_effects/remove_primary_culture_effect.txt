@@ -565,8 +565,8 @@
 			country_has_primary_culture = cu:dixie
 		}
     }
-     add_primary_culture = cu:yankee
-		remove_primary_culture = cu:dixie	 
+     #add_primary_culture = cu:yankee
+		#remove_primary_culture = cu:dixie	 
 	}
 	
 	# Central American
@@ -655,8 +655,8 @@
 			country_has_primary_culture = cu:galician
 		}
     }
-     add_primary_culture = cu:portuguese 
-	 remove_primary_culture = cu:galician
+     #add_primary_culture = cu:portuguese 
+	 #remove_primary_culture = cu:galician
 	}
 	
 	# Spanish
@@ -669,11 +669,11 @@
 			country_has_primary_culture = cu:aragonese
 		}
     }
-     add_primary_culture = cu:spanish 
-	 remove_primary_culture = cu:catalan
-	 remove_primary_culture = cu:basque
-	 remove_primary_culture = cu:asturleonese
-	 remove_primary_culture = cu:aragonese
+    #add_primary_culture = cu:spanish 
+	 #remove_primary_culture = cu:catalan
+	 #remove_primary_culture = cu:basque
+	 #remove_primary_culture = cu:asturleonese
+	# remove_primary_culture = cu:aragonese
 	}
 	
 	# Celtic
@@ -701,11 +701,11 @@
 			country_has_primary_culture = cu:wallonian
 		}
     }
-     add_primary_culture = cu:french
-		remove_primary_culture = cu:occitan
-			remove_primary_culture = cu:francoprovencal
-			remove_primary_culture = cu:cajun
-			remove_primary_culture = cu:wallonian	 
+     #add_primary_culture = cu:french
+		#remove_primary_culture = cu:occitan
+			#remove_primary_culture = cu:francoprovencal
+			#remove_primary_culture = cu:cajun
+			#remove_primary_culture = cu:wallonian	 
 	}
 	
 	# Dutch
@@ -715,8 +715,8 @@
 			country_has_primary_culture = cu:flemish
 		}
     }
-     add_primary_culture = cu:dutch 
-	 remove_primary_culture = cu:flemish
+     #add_primary_culture = cu:dutch 
+	 #remove_primary_culture = cu:flemish
 	}
 	
 	# Italian
@@ -727,9 +727,9 @@
 			country_has_primary_culture = cu:corsican
 		}
     }
-     add_primary_culture = cu:north_italian 
-	 remove_primary_culture = cu:south_italian
-			remove_primary_culture = cu:corsican
+     #add_primary_culture = cu:north_italian 
+	# remove_primary_culture = cu:south_italian
+			#remove_primary_culture = cu:corsican
 	}
 	
 	# Germanic
@@ -741,10 +741,10 @@
 			country_has_primary_culture = cu:east_german
 		}
     }
-     add_primary_culture = cu:north_german
-		remove_primary_culture = cu:south_german
-			remove_primary_culture = cu:alemannic
-			remove_primary_culture = cu:east_german	
+     #add_primary_culture = cu:north_german
+		#remove_primary_culture = cu:south_german
+			#remove_primary_culture = cu:alemannic
+			#remove_primary_culture = cu:east_german	
 	}
 	
 	# Nordic
@@ -817,9 +817,9 @@
 			country_has_primary_culture = cu:byelorussian
 		}
     }
-     add_primary_culture = cu:russian 
-	 remove_primary_culture = cu:ukrainian
-			remove_primary_culture = cu:byelorussian
+     #add_primary_culture = cu:russian 
+	 #remove_primary_culture = cu:ukrainian
+			#remove_primary_culture = cu:byelorussian
 	}
 	
 	# West Slavic
@@ -831,10 +831,10 @@
 			country_has_primary_culture = cu:sorb
 		}
     }
-     add_primary_culture = cu:polish 
-	 remove_primary_culture = cu:czech
-			remove_primary_culture = cu:slovak
-			remove_primary_culture = cu:sorb
+     #add_primary_culture = cu:polish 
+	# remove_primary_culture = cu:czech
+			#remove_primary_culture = cu:slovak
+			#remove_primary_culture = cu:sorb
 	}
 	
 	# Jugoslav
