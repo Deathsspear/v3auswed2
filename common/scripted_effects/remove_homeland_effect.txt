@@ -355,23 +355,23 @@
 	if = {
     limit = { state_region = {
 		OR = {
-			is_homeland = cu:kazak
-			is_homeland = cu:kirgiz
-			is_homeland = cu:uighur
-			is_homeland = cu:hazara
-			is_homeland = cu:turkmen
-			is_homeland = cu:north_caucasian
+			# is_homeland = cu:kazak
+			# is_homeland = cu:kirgiz
+			# is_homeland = cu:uighur
+			# is_homeland = cu:hazara
+			# is_homeland = cu:turkmen
+			# is_homeland = cu:north_caucasian
 		}
     }
 	}
 	state_region = {
-    		add_homeland = cu:uzbek 
-			remove_homeland = cu:kazak
-			remove_homeland = cu:kirgiz
-			remove_homeland = cu:uighur
-			remove_homeland = cu:hazara
-			remove_homeland = cu:turkmen
-			remove_homeland = cu:north_caucasian
+    		# add_homeland = cu:uzbek 
+			# remove_homeland = cu:kazak
+			# remove_homeland = cu:kirgiz
+			# remove_homeland = cu:uighur
+			# remove_homeland = cu:hazara
+			# remove_homeland = cu:turkmen
+			# remove_homeland = cu:north_caucasian
 	}
 	}
 	

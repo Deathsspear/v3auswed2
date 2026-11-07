@@ -5,7 +5,7 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:metis
+			# culture = cu:metis
 			culture = cu:dakota
 			culture = cu:cherokee
 			culture = cu:muskogean
@@ -208,15 +208,15 @@
 	if = {
     limit ={
 		OR = {
-			culture = cu:kazak
-			culture = cu:kirgiz
-			culture = cu:uighur
-			culture = cu:hazara
-			culture = cu:turkmen
-			culture = cu:north_caucasian
+			# culture = cu:kazak
+			# culture = cu:kirgiz
+			# culture = cu:uighur
+			# culture = cu:hazara
+			# culture = cu:turkmen
+			# culture = cu:north_caucasian
 		}
     }
-     change_pop_culture = { target = cu:uzbek value = 1 }
+    #  change_pop_culture = { target = cu:uzbek value = 1 }
 	}
 	
 	# Mongolian
