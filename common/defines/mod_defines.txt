@@ -6,4 +6,12 @@ TREATY_DEFAULT_BINDING_DURATION_YEARS = 1 #adjusted default binding duration to 
 NPowerBlocs = {
     FORMATION_COOLDOWN_MONTHS = 6	
     POWER_BLOC_INFLUENCE_COST = 0
+    LEAVE_COOLDOWN_MONTHS = 24
+}
+NCountry = {
+    INCORPORATION_TIME_SAME_CULTURE = 2				# Years if the state is a Homeland of one of the country's primary cultures
+	INCORPORATION_TIME_SAME_HERITAGE_AND_LANGUAGE = 5			# Years if the state is a Homeland of a culture that matches of one of the country's primary cultures' Heritage and Language traits
+	INCORPORATION_TIME_SAME_HERITAGE_OR_LANGUAGE = 5			# Years if the state is a Homeland of a culture that matches of one of the country's primary cultures' Heritage or Language traits
+	INCORPORATION_TIME_SAME_TRAIT_GROUP = 7				# Years if the state is a Homeland of a culture with any trait in common with a country's primary cultures
+	INCORPORATION_TIME_NO_MATCH = 10				# Years if the state's Homeland cultures have nothing in common with the country's primary cultures
 }
