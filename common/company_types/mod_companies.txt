@@ -248,7 +248,7 @@ REPLACE:company_ilva = {
 			region = STATE_PIEDMONT
 			building = building_steel_mill
 			levels >= 5
-			#is_incorporated = yes
+			is_incorporated = yes
 		}
 	}
 
