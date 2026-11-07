@@ -971,11 +971,11 @@
     }
 	}
 	state_region = {
-     #add_homeland = cu:croat 
-	 #remove_homeland = cu:serb
-			#remove_homeland = cu:bulgarian
-			#remove_homeland = cu:slovene
-			#remove_homeland = cu:bosniak
+     add_homeland = cu:croat 
+	 remove_homeland = cu:serb
+			remove_homeland = cu:bulgarian
+			remove_homeland = cu:slovene
+			remove_homeland = cu:bosniak
 	}
 	}
 	
