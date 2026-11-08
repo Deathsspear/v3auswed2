@@ -92,4 +92,34 @@
 		add_technology_researched = egalitarianism
 	}
 }
+update_tech_decision_nl = {
+	is_shown = {
+		c:NET ?= THIS
+		is_player = yes
+		NOT = { has_global_variable = nl_tech_boost }
+	}
 
+	possible = {
+		is_player = yes
+		}
+
+	when_taken = {
+		#intensive agriculture, railways, general staff, percussion cap, power of the purse, screw frigate, central banking, central archives
+		#Production
+		add_technology_researched = intensive_agriculture
+		add_technology_researched = railways
+		
+
+		#Military
+		add_technology_researched = general_staff
+		add_technology_researched = power_of_the_purse
+		add_technology_researched = screw_frigate
+		add_technology_researched = percussion_cap
+
+		#Society
+		add_technology_researched = central_banking
+		add_technology_researched = central_archives
+		
+		set_global_variable = nl_tech_boost
+	}
+}
