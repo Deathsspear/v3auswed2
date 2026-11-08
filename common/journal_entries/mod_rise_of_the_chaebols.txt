@@ -3,6 +3,10 @@
 
 	group = je_group_historical_content
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_when_inactive = {
 		c:KOR ?= this
 	}
@@ -15,7 +19,12 @@
 		trigger_event = { id = chaebol_event.1 popup = yes }
 	}
 
-	complete = {
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {	
 		has_company = doyeinso_offices_mod_company 
 		has_company = busan_train_mod_company 
 		has_company = pyongyang_mining_mod_company 
@@ -24,31 +33,37 @@
 		has_company = dunwall_whaling_mod_company 
 		has_company = mosi_textiles_mod_company 
 		has_company = gigigang_arsenal_mod_company 
-	}
-
-	on_complete = {
+		}
+		effect = {
 		set_variable = chaebol_risen
 		add_modifier = {
 			name = the_chaebols_established_modifier
 		}
 	}
-
+}
 	timeout = 9125
-	on_timeout = { trigger_event = { id = chaebol_event.2 popup = yes } }
-
-	fail = {
-	}
-
-	on_fail = {
-	}
 
 	should_be_pinned_by_default_uninvolved_or_context = yes
+
+outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+		effect = {
+			trigger_event = { id = chaebol_event.2 popup = yes }
+		}
+	}
 }
 
 je_chaebol_control = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 
 	group = je_group_historical_content
+	
+	activation_description = {
+		always = yes
+	}
 
 	is_shown_when_inactive = {
 		c:KOR ?= this
@@ -80,7 +95,12 @@ je_chaebol_control = {
 	scripted_button = je_chaebol_control_siwidae_cannons
 
 
-	complete = {
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
 		custom_tooltip = {
 			text = anthracite_controlled
 			has_variable = je_chaebol_control_anthracite	
@@ -110,8 +130,7 @@ je_chaebol_control = {
 			has_variable = je_chaebol_control_siwidae_cannons	
 		}
 	}
-
-	on_complete = {
+	effect = {
 		if = {
 			limit = { has_modifier = the_chaebols_anthracite_interest }
 			remove_modifier = the_chaebols_anthracite_interest
@@ -160,14 +179,17 @@ je_chaebol_control = {
 			name = the_chaebols_subdued
 		}
 	}
+}
 
 	timeout = 12775
-	on_timeout = { trigger_event = { id = chaebol_event.4 popup = yes } }
-
-	fail = {
-	}
-
-	on_fail = {
+	outcome = {
+		header = JOURNAL_ENTRY_TIMEOUT
+		effect_header = JOURNAL_ENTRY_ON_TIMEOUT
+		flags = { timeout }
+		conclusion_desc = JOURNAL_ENTRY_TIMEOUT_CONCLUSION_DESC
+		effect = {
+			trigger_event = { id = chaebol_event.4 popup = yes }
+		}
 	}
 
 	should_be_pinned_by_default_uninvolved_or_context = yes
