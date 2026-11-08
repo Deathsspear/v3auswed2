@@ -608,7 +608,7 @@
 			culture = cu:bosniak
 		}
     }
-     change_pop_culture = { target = cu:croat value = 1 }
+     #change_pop_culture = { target = cu:croat value = 1 }
 	}
 	
 	# Caucasian
@@ -621,7 +621,7 @@
 			culture = cu:bosniak
 		}
     }
-     change_pop_culture = { target = cu:georgian value = 1 }
+     #change_pop_culture = { target = cu:georgian value = 1 }
 	}
 	
 	# Tatar

@@ -847,11 +847,11 @@
 			country_has_primary_culture = cu:bosniak
 		}
     }
-     add_primary_culture = cu:croat 
-	 remove_primary_culture = cu:serb
-			remove_primary_culture = cu:bulgarian
-			remove_primary_culture = cu:slovene
-			remove_primary_culture = cu:bosniak
+    #  add_primary_culture = cu:croat 
+	#  remove_primary_culture = cu:serb
+	# 		remove_primary_culture = cu:bulgarian
+	# 		remove_primary_culture = cu:slovene
+	# 		remove_primary_culture = cu:bosniak
 	}
 	
 	# Caucasian
@@ -864,11 +864,11 @@
 			country_has_primary_culture = cu:bosniak
 		}
     }
-     add_primary_culture = cu:georgian 
-	 remove_primary_culture = cu:armenian
-			remove_primary_culture = cu:circassian
-			remove_primary_culture = cu:chechen
-			remove_primary_culture = cu:bosniak
+    #  add_primary_culture = cu:georgian 
+	#  remove_primary_culture = cu:armenian
+	# 		remove_primary_culture = cu:circassian
+	# 		remove_primary_culture = cu:chechen
+	# 		remove_primary_culture = cu:bosniak
 	}
 	
 	#  Tatar
@@ -901,11 +901,11 @@
 	if = {
     limit ={
 		OR = {
-			country_has_primary_culture = cu:szekely
+			# country_has_primary_culture = cu:szekely
 		}
     }
-     add_primary_culture = cu:hungarian 
-	 remove_primary_culture = cu:szekely
+    #  add_primary_culture = cu:hungarian 
+	#  remove_primary_culture = cu:szekely
 	}
 	
 	# Berber
