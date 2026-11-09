@@ -295,8 +295,8 @@ louisiana.4 = {
 		ai_chance = {
 			base = 0
 		}
-		scope:louisiana_seller = {
-			post_notification = louisiana_negotiations_fail
-		}
+		# scope:louisiana_seller = {
+		# 	post_notification = louisiana_negotiations_fail
+		# }
 	}
 }
