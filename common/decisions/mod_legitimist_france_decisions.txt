@@ -1,4 +1,4 @@
-mod_enact_slavery= {
+﻿mod_enact_slavery= {
 	is_shown = {
 		#always = no
 		is_player = yes
