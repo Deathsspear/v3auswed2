@@ -1,4 +1,4 @@
-on_game_started = {
+﻿on_game_started = {
     on_actions = {
         mod_austria_setup_states_action
     }

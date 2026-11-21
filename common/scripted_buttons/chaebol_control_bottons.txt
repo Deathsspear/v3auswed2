@@ -1,0 +1,280 @@
+﻿je_chaebol_control_anthracite = {
+	name = "je_chaebol_control_anthracite"
+	desc = "je_chaebol_control_anthracite_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_anthracite
+			}		
+		}
+
+		custom_tooltip = {
+		text = pyongyang_mining_prosperous
+		company:pyongyang_mining_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_anthracite
+		add_modifier = the_chaebols_anthracite_interest 
+	}
+}
+
+je_chaebol_control_living_engines = {
+	name = "je_chaebol_control_living_engines"
+	desc = "je_chaebol_control_living_engines_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_living_engines
+			}
+		
+		}
+		custom_tooltip = {
+		text = busan_trains_prosperous
+		company:busan_train_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_living_engines
+		add_modifier = the_chaebols_living_engines_interest
+	}
+}
+
+je_chaebol_control_gromwell_purple = {
+	name = "je_chaebol_control_gromwell_purple"
+	desc = "je_chaebol_control_gromwell_purple_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_gromwell_purple
+			}
+		
+		}
+		custom_tooltip = {
+		text = doyeinso_offices_prosperous
+		company:doyeinso_offices_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_gromwell_purple
+		add_modifier = the_chaebols_gromwell_purple_interest
+	}
+}
+
+je_chaebol_control_ginseng = {
+	name = "je_chaebol_control_ginseng"
+	desc = "je_chaebol_control_ginseng_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_ginseng
+			}
+		
+		}
+		custom_tooltip = {
+		text = royal_herbalists_prosperous
+		company:royal_herbalists_guild_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_ginseng
+		add_modifier = the_chaebols_ginseng_interest
+		cu:korean = {
+    		add_cultural_obsession = tea
+		}
+		cu:korean = {
+           remove_cultural_obsession = liquor
+        }
+	}
+}
+
+je_chaebol_control_koksan_leaf = {
+	name = "je_chaebol_control_koksan_leaf"
+	desc = "je_chaebol_control_koksan_leaf_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_koksan_leaf
+			}
+		
+		}
+		custom_tooltip = {
+		text = hwanghae_plantation_prosperous
+		company:hwanghae_plantation_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_koksan_leaf
+		add_modifier = the_chaebols_koksan_leaf_interest
+		cu:korean = {
+    		add_cultural_obsession = tobacco
+		}
+	}
+}
+
+je_chaebol_control_leviathans_balm = {
+	name = "je_chaebol_control_leviathans_balm"
+	desc = "je_chaebol_control_leviathans_balm_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_leviathans_balm
+			}
+		
+		}
+		custom_tooltip = {
+		text = dunwall_whaling_prosperous
+		company:dunwall_whaling_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_leviathans_balm
+		add_modifier = the_chaebols_leviathans_balm_interest
+	}
+}
+
+je_chaebol_control_dragonfly_robes = {
+	name = "je_chaebol_control_dragonfly_robes"
+	desc = "je_chaebol_control_dragonfly_robes_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_dragonfly_robes
+			}
+		
+		}
+		custom_tooltip = {
+		text = mosi_textiles_prosperous
+		company:mosi_textiles_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_dragonfly_robes
+		add_modifier = the_chaebols_dragonfly_robes_interest
+	}
+}
+
+je_chaebol_control_siwidae_cannons = {
+	name = "je_chaebol_control_siwidae_cannons"
+	desc = "je_chaebol_control_siwidae_cannons_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = je_chaebol_control_siwidae_cannons
+			}
+		
+		}
+		custom_tooltip = {
+		text = gigigang_arsenal_prosperous
+		company:gigigang_arsenal_mod_company = {
+    		company_is_prosperous = yes
+			}
+		}
+	}
+
+	effect = {
+		set_variable = je_chaebol_control_siwidae_cannons
+		add_modifier = the_chaebols_siwidae_cannons_interest
+	}
+}

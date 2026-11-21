@@ -1,3 +1,3 @@
-mod_private_construction_boost  = {
+﻿mod_private_construction_boost  = {
 	country_private_construction_allocation_mult = 1
 }

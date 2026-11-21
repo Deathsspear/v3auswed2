@@ -1,4 +1,4 @@
-cu_integration_decision = {
+﻿cu_integration_decision = {
 	is_shown = {
 		always = no
 		is_player = yes
@@ -6,7 +6,7 @@ cu_integration_decision = {
 	}
 
 	possible = {
-		always = no
+		#always = no
 		is_player = yes
 	}
 

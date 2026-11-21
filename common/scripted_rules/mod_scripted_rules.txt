@@ -1,4 +1,4 @@
-REPLACE:unlock_power_bloc_principle_slot_3 = {
+﻿REPLACE:unlock_power_bloc_principle_slot_3 = {
 	hidden_trigger = {
 		has_dlc_feature = power_bloc_features
 	}

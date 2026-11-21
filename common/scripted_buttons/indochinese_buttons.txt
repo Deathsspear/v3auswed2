@@ -1,0 +1,523 @@
+﻿je_indochinese_federation_malay_button = {
+	name = "je_indochinese_federation_malay_button"
+	desc = "je_indochinese_federation_malay_button_desc"
+
+	visible = {
+		NOT = {
+				has_variable = indochinese_federation_malay_button
+			}
+		#always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = indochinese_federation_malay_button
+			}
+		}
+			s:STATE_MALAYA= {
+				any_scope_state = {
+					owner = c:DAI
+				}
+			}
+			s:STATE_TENASSERIM= {
+				any_scope_state = {
+					owner = c:DAI
+				}
+			}
+	}
+
+	effect = {
+		set_variable = indochinese_federation_malay_button
+		danubian_federation_integrate_culture = {
+			CULTURE = cu:malay
+		}
+		#custom_tooltip = je_indochinese_federation_malay_button_integrate_tt
+		#custom_tooltip = je_indochinese_federation_malay_button_disqualify_tt
+		#set_variable = {
+		#	name = indochinese_federation_button_cooldown
+		#	days = 180
+		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:malay
+			value = 0.1
+		}	
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_indochinese_federation_khmer_button = {
+	name = "je_indochinese_federation_khmer_button"
+	desc = "je_indochinese_federation_khmer_button_desc"
+
+	visible = {
+		NOT = {
+				has_variable = indochinese_federation_khmer_button
+			}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		#custom_tooltip = {
+		#	text = indochinese_federation_button_cooldown_tt
+		#	NOT = {
+		#		has_variable = indochinese_federation_button_cooldown
+		#	}
+		#}
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = indochinese_federation_khmer_button
+			}
+		}
+		owns_entire_state_region = STATE_MEKONG
+		owns_entire_state_region = STATE_CAMBODIA
+	}
+
+	effect = {
+		set_variable = indochinese_federation_khmer_button
+		danubian_federation_integrate_culture = {
+			CULTURE = cu:khmer
+		}
+		#custom_tooltip = je_indochinese_federation_khmer_button_integrate_tt
+		#custom_tooltip = je_indochinese_federation_khmer_button_disqualify_tt
+		#set_variable = {
+		#	name = indochinese_federation_button_cooldown
+		#	days = 180
+		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:khmer
+			value = 0.1
+		}	
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+je_indochinese_federation_lao_button = {
+	name = "je_indochinese_federation_lao_button"
+	desc = "je_indochinese_federation_lao_button_desc"
+
+	visible = {
+		NOT = {
+				has_variable = indochinese_federation_lao_button
+			}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = indochinese_federation_lao_button
+			}
+		}
+			owns_entire_state_region = STATE_LAOS
+			owns_entire_state_region = STATE_NAKHON_RATCHASIMA
+	}
+
+	effect = {
+		set_variable = indochinese_federation_lao_button
+		danubian_federation_integrate_culture = {
+			CULTURE = cu:lao
+		}
+		#custom_tooltip = je_indochinese_federation_lao_button_integrate_tt
+		#custom_tooltip = je_indochinese_federation_lao_button_disqualify_tt
+		#set_variable = {
+		#	name = indochinese_federation_button_cooldown
+		#	days = 180
+		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:lao
+			value = 0.1
+		}	
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_indochinese_federation_shan_button = {
+	name = "je_indochinese_federation_shan_button"
+	desc = "je_indochinese_federation_shan_button_desc"
+
+	visible = {
+		NOT = {
+				has_variable = indochinese_federation_shan_button
+			}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = indochinese_federation_shan_button
+			}
+		}
+			owns_entire_state_region = STATE_CHIANG_MAI
+			#owns_entire_state_region = STATE_SHAN_STATES
+			s:STATE_SHAN_STATES= {
+				any_scope_state = {
+					owner = c:DAI
+				}
+			}
+		}
+
+	effect = {
+		set_variable = indochinese_federation_shan_button
+		danubian_federation_integrate_culture = {
+			CULTURE = cu:shan
+		}
+		#custom_tooltip = je_indochinese_federation_lao_button_integrate_tt
+		#custom_tooltip = je_indochinese_federation_lao_button_disqualify_tt
+		#set_variable = {
+		#	name = indochinese_federation_button_cooldown
+		#	days = 180
+		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:shan
+			value = 0.1
+		}	
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+je_indochinese_federation_burmese_button = {
+	name = "je_indochinese_federation_burmese_button"
+	desc = "je_indochinese_federation_burmese_button_desc"
+
+	visible = {
+		NOT = {
+				has_variable = indochinese_federation_burmese_button
+			}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = indochinese_federation_burmese_button
+			}
+		}
+		#always = yes
+		s:STATE_PEGU= {
+				any_scope_state = {
+					owner = c:DAI
+				}
+			}
+			s:STATE_MANDALAY= {
+				any_scope_state = {
+					owner = c:DAI
+				}
+			}
+			s:STATE_KACHIN= {
+				any_scope_state = {
+					owner = c:DAI
+				}
+			}
+		
+
+		}
+
+	effect = {
+		set_variable = indochinese_federation_burmese_button
+		danubian_federation_integrate_culture = {
+			CULTURE = cu:burmese
+		}
+		#custom_tooltip = je_indochinese_federation_lao_button_integrate_tt
+		#custom_tooltip = je_indochinese_federation_lao_button_disqualify_tt
+		#set_variable = {
+		#	name = indochinese_federation_button_cooldown
+		#	days = 180
+		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:burmese
+			value = 0.1
+		}	
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+je_indochinese_federation_thai_button = {
+	name = "je_indochinese_federation_thai_button"
+	desc = "je_indochinese_federation_thai_button_desc"
+
+	visible = {
+		
+			NOT = {
+				has_variable = indochinese_federation_thai_button
+			}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = not_already_used_this_interaction_tt
+			NOT = {
+				has_variable = indochinese_federation_thai_button
+			}
+		}
+			owns_entire_state_region = STATE_NAKHON_RATCHASIMA
+			owns_entire_state_region = STATE_CHIANG_MAI
+			owns_entire_state_region = STATE_BANGKOK
+		}
+
+	effect = {
+		set_variable = indochinese_federation_thai_button
+		danubian_federation_integrate_culture = {
+			CULTURE = cu:thai
+		}
+		#custom_tooltip = je_indochinese_federation_lao_button_integrate_tt
+		#custom_tooltip = je_indochinese_federation_lao_button_disqualify_tt
+		#set_variable = {
+		#	name = indochinese_federation_button_cooldown
+		#	days = 180
+		#}
+		add_radicals = {
+			CULTURE = cu:vietnamese
+			value = 0.03
+		}
+		add_loyalists = {
+			CULTURE = cu:thai
+			value = 0.1
+		}	
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+je_indochinese_federation_enact_the_federation_button = {
+	name = "je_indochinese_federation_enact_the_federation_button"
+	desc = "je_indochinese_federation_enact_the_federation_button_desc"
+
+	visible = {
+		always = yes
+	}
+
+	ai_chance = {
+		value = 10
+	}
+
+	possible = {
+		trigger_if = {
+			limit = {
+				has_variable = count_integrated_cultures
+			}
+			custom_tooltip = {
+				text = has_integrated_5_danubian_cultures_tt
+				var:count_integrated_cultures >= 5
+				NOT = { has_variable = danubian_federation_final_act }
+			}
+		}
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = federalization_signed_tt
+			set_variable = danubian_federation_final_act
+			}
+		add_modifier = { 
+			name = dai_nam_federated
+			months = -1
+			}
+	}
+
+	selected = {
+		custom_tooltip = {
+			text = federalization_was_signed_tt
+			has_variable = danubian_federation_final_act
+		}
+	}
+
+	ai_chance = {
+		value = 100
+	}
+}
+
+indochinese_colonisation_button = {
+	name = "je_indochinese_colonisation_button"
+	#desc = "indochinese_colonisation_button_desc"
+
+	visible = {
+		#always = yes
+		NOT = {
+			has_variable = indochinese_colonisation_var
+		}
+	}
+
+	possible = {
+		has_technology_researched = colonization
+	}
+
+	effect = {
+		#trigger_event = { id = persia_events.3 popup = yes }
+		set_variable = indochinese_colonisation_var
+		#show_as_tooltip = {
+				activate_law = law_type:law_frontier_colonization
+				#add_modifier = {
+				#	name = modifier_turkmen_subjugation
+				#	days = normal_modifier_time
+				#}
+			#}
+			#else = {
+			#	add_modifier = {
+			#		name = modifier_turkmen_subjugation
+			#		days = normal_modifier_time
+			#		multiplier = 2
+			#	}
+			#}
+			#add_modifier = {
+			#	name = modifier_turkmen_logistics
+			#	days = normal_modifier_time
+			#	multiplier = money_amount_multiplier_very_large
+			#}
+			#add_radicals = {
+			#	culture = cu:turkmen
+			#	value = medium_radicals
+			#}
+			#add_loyalists = {
+			#	culture = cu:persian
+			#	value = small_radicals
+			#}
+		}
+
+	ai_chance = {
+		value = 20
+		if = {
+			limit = {
+				OR = {
+					is_at_war = yes
+					in_default = yes
+				}
+			}
+			add = -100
+		}
+	}
+}
+
+indochinese_campaign_button = {
+	name = "je_indochinese_campaign_button"
+	#desc = "indochinese_campaign_button_desc"
+
+	visible = {
+		#always = yes
+		NOT = {
+			has_variable = indochinese_campaign_var
+		}
+	}
+
+	possible = {
+		always = yes
+	}
+
+	effect = {
+		#trigger_event = { id = persia_events.3 popup = yes }
+		set_variable = indochinese_campaign_var
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_BANGKOK }
+			}
+			s:STATE_BANGKOK = {
+				add_claim = c:DAI
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_LAOS }
+			}
+			s:STATE_LAOS = {
+				add_claim = c:DAI
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_CHIANG_MAI }
+			}
+			s:STATE_CHIANG_MAI = {
+				add_claim = c:DAI
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_CAMBODIA }
+			}
+			s:STATE_CAMBODIA = {
+				add_claim = c:DAI
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_TENASSERIM }
+			}
+			s:STATE_TENASSERIM = {
+				add_claim = c:DAI
+			}
+		}
+		}
+
+	ai_chance = {
+		value = 20
+		if = {
+			limit = {
+				OR = {
+					is_at_war = yes
+					in_default = yes
+				}
+			}
+			add = -100
+		}
+	}
+}

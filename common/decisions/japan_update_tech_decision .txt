@@ -1,0 +1,32 @@
+﻿japan_update_tech_decision = {
+	is_shown = {
+		is_player = yes
+		OR = {
+			country_has_primary_culture = cu:japanese
+		}
+		OR = {
+			NOT = { has_technology_researched = atmospheric_engine }
+			NOT = { has_technology_researched = stock_exchange }
+			NOT = { has_technology_researched = corporate_charters }
+		}
+	}
+
+	possible = {
+		is_player = yes
+		OR = {
+			NOT = { has_technology_researched = atmospheric_engine }
+			NOT = { has_technology_researched = stock_exchange }
+			NOT = { has_technology_researched = corporate_charters }
+		}
+	}
+
+	when_taken = {
+		#Production
+		add_technology_researched = atmospheric_engine
+
+		#Society
+		add_technology_researched = stock_exchange
+		add_technology_researched = corporate_charters
+	}
+}
+

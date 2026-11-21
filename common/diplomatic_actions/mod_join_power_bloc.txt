@@ -9,6 +9,8 @@
 		NOT = { is_country_type = decentralized }
 		is_revolutionary = no
 		is_subject = no
+		is_in_power_bloc = no
+
 	}
 
 	potential = {
@@ -18,6 +20,7 @@
 	}
 
 	possible = {
+		
 		# Must not be able to immediately start a power struggle
 		#custom_tooltip = {
 			#text = "NO_POWER_STRUGGLE_BLOC_JOIN"

@@ -1,4 +1,4 @@
-boost_private_sector= {
+﻿boost_private_sector= {
 	is_shown = {
 		#always = no
 		is_player = yes
