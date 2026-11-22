@@ -1,8 +1,19 @@
 ﻿on_game_started = {
     on_actions = {
         mod_austria_setup_states_action
+		mod_rubber_boom
     }
 }
+	mod_rubber_boom = {
+		effect = {
+			every_state = {
+				limit = {
+					has_potential_resource = building_rubber_plantation
+				}
+				force_resource_discovery = building_rubber_plantation
+			}
+		}
+	}
 
     mod_austria_setup_states_action = {
     effect = {
