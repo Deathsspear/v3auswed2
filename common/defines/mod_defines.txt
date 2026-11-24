@@ -1,6 +1,6 @@
 ﻿NDiplomacy = {
 TREATY_DEFAULT_BINDING_DURATION_YEARS = 1 #adjusted default binding duration to 1 year. - blaze
-
+WAR_GOAL_CONTAIN_THREAT_YEARS_SINCE_CONQUEST = 20
 }
 
 NPowerBlocs = {
