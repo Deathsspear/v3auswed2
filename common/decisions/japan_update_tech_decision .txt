@@ -3,6 +3,7 @@
 		is_player = yes
 		OR = {
 			country_has_primary_culture = cu:japanese
+			this = c:PER
 		}
 		OR = {
 			NOT = { has_technology_researched = atmospheric_engine }
