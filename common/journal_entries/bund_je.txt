@@ -83,7 +83,7 @@ je_german_confederation = {
 
 	# Collapses the Confederation if any two German unification candidates fight each other
 	outcome = {
-		#header = je_german_confederation_collapse_header
+		header = je_german_confederation_collapse_header
 		effect_header = je_german_confederation_collapse_effect_header
 		color = "red_outcome"
 		conclusion_desc = je_german_confederation_collapse_desc

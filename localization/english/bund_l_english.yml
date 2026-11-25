@@ -10,6 +10,6 @@
  je_german_confederation_status_active:0 "The Federal Diet is active. Member states are protected by mutual defense."
  bund_call_to_arms_button:0 "Declare a Federal War"
  bund_call_to_arms_button_desc:0 "Invoke Article 11 of the Federal Act to call all member states of the German Confederation to our defense. Any member siding with the foreign aggressor will be expelled from the Confederation."
- je_german_confederation_collapse_header:0 "General war has broken out between unification candidates in the Confederation."
+ je_german_confederation_collapse_header:0 "The Confederation will collapse in the event that:\n"
  je_german_confederation_collapse_tt:0 "General war has broken out between unification candidates in the Confederation."
  je_german_confederation_collapse_effect_tt:0 "The Confederation dissolves."

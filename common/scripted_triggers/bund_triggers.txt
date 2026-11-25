@@ -35,26 +35,19 @@ bund_play_is_answerable = {
 	is_war = no
 	target_is = scope:bund_caller
 	initiator = {
-		save_temporary_scope_as = bund_aggressor
 		NOT = { bund_is_member = yes }
-	}
-	# The aggressor must hold a war goal against Federal Territory owned by the defender.
-	# Wiki: is_target_of_wargoal is a state trigger, "target of any war goal in wars involving"
-	# the given country. Its wiki syntax example reads has_war_goal = <country>, so confirm the
-	# exact key with script_docs. Also confirm it counts a play that has not become a war yet.
-	scope:bund_caller = {
-		any_scope_state = {
-			bund_state_is_federal_territory = yes
-			is_target_of_wargoal = scope:bund_aggressor
+		save_temporary_scope_as = bund_aggressor
+		scope:bund_caller = {
+			any_scope_state = {
+				bund_state_is_federal_territory = yes
+				is_target_of_wargoal = scope:bund_aggressor
+			}
 		}
 	}
 }
 
-# Country scope (a member). Does this member have an answerable play right now?
 bund_has_answerable_play = {
 	save_temporary_scope_as = bund_caller
-	is_diplomatic_play_target = yes
-	# any_diplomatic_play is a documented global iterator (scope none)
 	any_diplomatic_play = {
 		bund_play_is_answerable = yes
 	}

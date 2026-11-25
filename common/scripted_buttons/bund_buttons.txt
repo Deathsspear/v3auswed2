@@ -11,15 +11,21 @@ bund_call_to_arms_button = {
 	cooldown = { days = 60 }
 
 	possible = {
-		bund_has_answerable_play = yes
+		# custom_tooltip = {
+			# text = bund_call_to_arms_possible_tt
+			bund_has_answerable_play = yes
+		# }
 	}
 
+	
 	# Confirmed key: ai_chance = { value = N } (used by Community Mod Framework buttons)
 	ai_chance = {
 		value = 100
 	}
-
 	effect = {
-		bund_call_to_arms_effect = yes
+		#custom_tooltip = bund_call_to_arms_effect_tt
+		#hidden_effect = {
+			bund_call_to_arms_effect = yes
+		#}
 	}
 }
