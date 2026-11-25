@@ -1,0 +1,12 @@
+﻿l_english:
+ bund_map_federal_territory:0 "Territory of the German Confederation"
+ bund_map_member_non_federal:0 "Held by a Confederation member but outside the Confederation"
+ building_bundesfestung:0 "Bundesfestung"
+ pmg_base_building_bundesfestung:0 "Federal Garrison"
+ pm_bundesfestung_active:0 "Joint Confederate Garrison"
+ pm_bundesfestung_inactive:0 "Disbanded Federal Garrison"
+ je_german_confederation:0 "The German Confederation"
+ je_german_confederation_reason:0 "Bound by the Federal Act of 1815, the sovereign princes and free cities of Germany are pledged to mutual defense against foreign aggression. Should two German unification candidates go to war, the Confederation will collapse."
+ je_german_confederation_status_active:0 "The Federal Diet is active. Member states are protected by mutual defense."
+ bund_call_to_arms_button:0 "Declare a Federal War"
+ bund_call_to_arms_button_desc:0 "Invoke Article 11 of the Federal Act to call all member states of the German Confederation to our defense. Any member siding with the foreign aggressor will be expelled and have their federal fortress deactivated."

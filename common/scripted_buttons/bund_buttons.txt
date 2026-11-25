@@ -1,0 +1,25 @@
+bund_call_to_arms_button = {
+	name = bund_call_to_arms_button
+	desc = bund_call_to_arms_button_desc
+
+	visible = {
+		bund_is_member = yes
+	}
+
+	# Confirmed: vanilla buttons use cooldown = { days = ... } (je_tsarpoints_button_1 etc.)
+	# VERIFY: a plain number is accepted; vanilla uses named values like short_modifier_time
+	cooldown = { days = 60 }
+
+	possible = {
+		bund_has_answerable_play = yes
+	}
+
+	# Confirmed key: ai_chance = { value = N } (used by Community Mod Framework buttons)
+	ai_chance = {
+		value = 100
+	}
+
+	effect = {
+		bund_call_to_arms_effect = yes
+	}
+}

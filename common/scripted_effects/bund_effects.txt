@@ -1,0 +1,32 @@
+# Country scope: the member pressing the button.
+bund_call_to_arms_effect = {
+	save_scope_as = bund_caller
+
+	# VERIFY: random_diplomatic_play as a country-scope iterator
+	random_diplomatic_play = {
+		limit = { bund_play_is_answerable = yes }
+		save_scope_as = bund_play
+	}
+
+	# every_country_in_german_confederation is a vanilla iterator (used by je_grunderzeit)
+	every_country_in_german_confederation = {
+		limit = {
+			bund_is_member = yes
+			NOT = { this = scope:bund_caller }
+		}
+		save_temporary_scope_as = bund_ally
+		# add_target_backers is documented in the play scope on the Effect wiki page.
+		# VERIFY the list syntax; if it rejects a scope: reference, try the bare tag form.
+		scope:bund_play = {
+			add_target_backers = { scope:bund_ally }
+		}
+	}
+
+	# Federal mobilisation delay. Vic3 has no pause effect for a play, so this pushes the
+	# war timer back by removing escalation instead. 20 is a placeholder: measure how many
+	# escalation points a play gains in 20 days and set it to that.
+	# VERIFY: add_escalation accepts a negative integer
+	scope:bund_play = {
+		add_escalation = -20
+	}
+}

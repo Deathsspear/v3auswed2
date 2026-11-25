@@ -1,0 +1,85 @@
+﻿je_german_confederation = {
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    group = je_group_global_international_situations
+
+    activation_description = {
+        always = yes
+    }
+
+    should_be_involved = {
+        country_is_in_german_confederation = yes
+        NOT = { has_variable = bund_expelled }
+    }
+
+    should_show_when_not_involved = {
+        OR = {
+            is_in_geographic_region = geographic_region_europe
+            top_overlord ?= {
+                country_is_in_german_confederation = yes
+            }
+        }
+    }
+
+    should_be_pinned_by_default_involved = yes
+    should_be_pinned_by_default_uninvolved_or_context = no
+
+    can_revolution_inherit = yes
+    weight = 1000
+
+    is_shown_when_inactive = {
+        NOT = { has_global_variable = bund_collapsed }
+    }
+
+    possible = {
+        NOT = { has_global_variable = bund_collapsed }
+    }
+
+    scripted_button = bund_call_to_arms_button
+
+    status_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = je_german_confederation_status_active
+                trigger = {
+                    NOT = { has_global_variable = bund_collapsed }
+                }
+            }
+        }
+    }
+
+    # Collapses the Confederation if any two German unification candidates fight each other
+    outcome = {
+        header = je_german_confederation_collapse_header
+        effect_header = je_german_confederation_collapse_effect_header
+        color = "red_negative"
+        conclusion_desc = je_german_confederation_collapse_desc
+        flags = { historical }
+
+        trigger = {
+            scope:journal_entry = {
+                any_scope_je_involved = {
+                    is_unification_candidate = yes
+                    save_temporary_scope_as = candidate_one
+                    scope:journal_entry = {
+                        any_scope_je_involved = {
+                            is_unification_candidate = yes
+                            NOT = { this = scope:candidate_one }
+                            has_war_with = scope:candidate_one
+                        }
+                    }
+                }
+            }
+        }
+
+        effect = {
+            set_global_variable = bund_collapsed
+            every_state = {
+                limit = { has_building = building_bundesfestung }
+                activate_production_method = {
+                    building_type = building_bundesfestung
+                    production_method = pm_bundesfestung_inactive
+                }
+            }
+        }
+    }
+}

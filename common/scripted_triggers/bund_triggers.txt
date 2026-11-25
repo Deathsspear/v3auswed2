@@ -1,0 +1,95 @@
+# German Confederation (Bund) triggers
+# Items marked VERIFY use names I could not confirm against vanilla files. The game
+# reports unknown keys in error.log on startup, so each one is cheap to check.
+
+# Country scope. Membership comes from vanilla (country_is_in_german_confederation is used by
+# vanilla je_grunderzeit), minus anyone expelled by this mod.
+bund_is_member = {
+	country_is_in_german_confederation = yes
+	NOT = { has_variable = bund_expelled }
+	NOT = { has_global_variable = bund_collapsed }
+}
+
+# State scope. True for land that counts as Federal Territory.
+# Austria and Prussia only count for the regions that were inside the Bund; every other
+# member counts for all of its land. Hungary, Galicia, Lombardy-Venetia, Dalmatia,
+# Transylvania, etc. are deliberately absent, so a play for them never unlocks the button.
+bund_state_is_federal_territory = {
+	owner ?= { bund_is_member = yes }
+	OR = {
+		# Members other than Austria and Prussia: everything they own
+		owner ?= {
+			NOT = {
+				OR = {
+					this = c:AUS
+					this = c:PRU
+				}
+			}
+		}
+		# Austria: Bund regions only
+		AND = {
+			owner ?= { this = c:AUS }
+			OR = {
+				# VERIFY every s: key against map_data/state_regions
+				state_region = s:STATE_LOWER_AUSTRIA
+				state_region = s:STATE_UPPER_AUSTRIA
+				state_region = s:STATE_STYRIA
+				state_region = s:STATE_TYROL
+				state_region = s:STATE_CARNIOLA
+				state_region = s:STATE_BOHEMIA
+				state_region = s:STATE_MORAVIA
+				# Judgment call: the Austrian Littoral (Trieste/Gorizia/Istria) was in the Bund
+				# state_region = s:STATE_ISTRIA
+			}
+		}
+		# Prussia: Bund regions only (East Prussia, West Prussia and Posen were outside)
+		AND = {
+			owner ?= { this = c:PRU }
+			OR = {
+				# VERIFY
+				state_region = s:STATE_BRANDENBURG
+				state_region = s:STATE_POMERANIA
+				state_region = s:STATE_SILESIA
+				state_region = s:STATE_WESTPHALIA
+				state_region = s:STATE_RHINELAND
+				state_region = s:STATE_SAXONY
+			}
+		}
+	}
+}
+
+# State scope. Owned by a member but outside the Confederation (Austria's Hungary, Galicia,
+# Lombardy-Venetia etc.; Prussia's East/West Prussia and Posen). Drawn as cross-hatching.
+bund_state_is_member_non_federal = {
+	owner ?= { bund_is_member = yes }
+	NOT = { bund_state_is_federal_territory = yes }
+}
+
+# Diplomatic play scope. Is this a play the member (scope:bund_caller) may answer?
+# Needs scope:bund_caller saved by the caller.
+bund_play_is_answerable = {
+	# VERIFY: is_war on a play scope
+	is_war = no
+	target = { this = scope:bund_caller }
+	initiator = {
+		save_temporary_scope_as = bund_aggressor
+		NOT = { bund_is_member = yes }
+	}
+	# The aggressor must hold a war goal against Federal Territory owned by the defender.
+	# VERIFY: is_target_of_wargoal (state scope) and which side of it takes the argument
+	scope:bund_caller = {
+		any_scope_state = {
+			bund_state_is_federal_territory = yes
+			is_target_of_wargoal = scope:bund_aggressor
+		}
+	}
+}
+
+# Country scope (a member). Does this member have an answerable play right now?
+bund_has_answerable_play = {
+	save_temporary_scope_as = bund_caller
+	# VERIFY: any_diplomatic_play as a country-scope iterator
+	any_diplomatic_play = {
+		bund_play_is_answerable = yes
+	}
+}
