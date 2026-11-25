@@ -83,37 +83,45 @@ je_german_confederation = {
 
 	# Collapses the Confederation if any two German unification candidates fight each other
 	outcome = {
-		header = je_german_confederation_collapse_header
+		#header = je_german_confederation_collapse_header
 		effect_header = je_german_confederation_collapse_effect_header
-		color = "red_negative"
+		color = "red_outcome"
 		conclusion_desc = je_german_confederation_collapse_desc
 		flags = { historical }
 
 		trigger = {
-			scope:journal_entry = {
-				any_scope_je_involved = {
-					is_unification_candidate = GER
-					save_temporary_scope_as = candidate_one
-					scope:journal_entry = {
-						any_scope_je_involved = {
-							is_unification_candidate = GER
-							NOT = { this = scope:candidate_one }
-							has_war_with = scope:candidate_one
+			custom_tooltip = {
+				text = je_german_confederation_collapse_tt
+				scope:journal_entry ?= {
+					any_scope_je_involved = {
+						is_unification_candidate = GER
+						save_temporary_scope_as = candidate_one
+						scope:journal_entry ?= {
+							any_scope_je_involved = {
+								is_unification_candidate = GER
+								NOT = { this = scope:candidate_one }
+								has_war_with = scope:candidate_one
+							}
 						}
 					}
 				}
 			}
 		}
 
-		effect = {
-			set_global_variable = bund_collapsed
-			every_state = {
-				limit = { has_building = building_bundesfestung }
-				activate_production_method = {
-					building_type = building_bundesfestung
-					production_method = pm_bundesfestung_inactive
-				}
-			}
-		}
+		# effect = {
+		# 	custom_tooltip = {
+		# 		text = je_german_confederation_collapse_effect_tt
+		# 		set_global_variable = bund_collapsed
+		# 		hidden_effect = {
+		# 			every_state = {
+		# 				limit = { has_building = building_bundesfestung }
+		# 				activate_production_method = {
+		# 					building_type = building_bundesfestung
+		# 					production_method = pm_bundesfestung_inactive
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 	}
 }
